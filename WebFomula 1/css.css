@@ -1,3 +1,5 @@
+/*INDEX*/
+
 /*Con este "header", cambiamos el color y el alto de nuestra cabecera*/
 header{
     height: 50px;
@@ -22,16 +24,21 @@ header{
     ;
 }
 /*Con el hover hacemos que cuando se pase por encima el ratón no le salga ninguna decoración y siga con el color blanco*/
-nav div ul li a:hover{
+nav div ul li a p:hover{
     text-decoration: none;
     color: #9C9C9C;
 }
 
-nav div ul li a{
-    color: #ffff;
+nav div ul li a p{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.blanco{
+    color: white;
 }
 /*Otorgamos las propiedades del tipo de fuente, tamaño, padding,etc a nuestro menú*/
-nav div ul li{
+nav div ul li p{
     font-family: Arial;
     font-size: 20px;    
     text-decoration: none;
@@ -190,8 +197,31 @@ section div img{
     border-radius: 6px;
 }
 
-.navsmboton{
-    margin-top: -150px;
-    color: #fff;
+.fondoh{
+    background-color: #1E0553;
 }
 
+.calendario{
+    width: 70%;
+    padding-top: 50px;
+}
+
+.fondocalen{
+    background-color: #150439;
+}
+
+.bordecal{
+    border: solid;
+    border-color: #fff;
+    border-width: 2px;
+    border-top: 0px;
+    border-left: 0px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 13px;
+
+}
+
+.altura{
+    height: 500px;
+}
