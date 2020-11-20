@@ -178,18 +178,20 @@ figcaption{
 
 /*CSS de los grandes premios*/
 
-.sectionbody{
-    background-color: #12112D;
-    
-}
 
 section div{
     height: 70px;
     width: 40px;
-    background-color: ;
+
 }
 
 section div img{
     height: 50%;
     border-radius: 6px;
 }
+
+.navsmboton{
+    margin-top: -150px;
+    color: #fff;
+}
+
