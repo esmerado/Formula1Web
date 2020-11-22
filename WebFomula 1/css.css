@@ -13,7 +13,7 @@ header{
 }
 /*Damos color y altura al "nav"*/
 .nav{
-    background-color: #1E0553;   
+    background-color: #3C3C3C;   
     height: 120px; 
 }
 /*Otorgamos las propiedades al logo del nav*/
@@ -31,7 +31,7 @@ nav div ul li a p:hover{
 
 nav div ul li a p{
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: formula1basic;
 }
 
 .blanco{
@@ -59,7 +59,7 @@ nav div ul li p{
     border-color: black;
     padding: 2px;
     width: 80%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: formula1basic;
 
 }
 /*Al pulsar el botón 1 el fondo se vuelve gris*/
@@ -80,21 +80,20 @@ nav div ul li p{
     border-radius: 6px;
     color: white;
     background-color: black;
-    border-color: black;
     padding: 2px;
     width: 120%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: formula1basic;
     margin-left: -40px;
-    background-color: #1E0553;
+    background-color: #3C3C3C;
     color: white;
-    border-color: #1E0553;
+    border-color: #3C3C3C;
     transition: 0.3s;
 }
 /*Cambiamos los colores al pulsarse*/
 .imgsub:hover{
     background-color: #fff;
-    color: #1E0553;
-    font-family: Arial, Helvetica, sans-serif;
+    color: #3C3C3C;
+    font-family:formula1basic;
     font-weight: bold;
     overflow: hidden;
 }
@@ -111,12 +110,7 @@ nav div ul li p{
 .marcoFoto img:hover {
     transform:scale(1.1);
 }
-/*A todos los "figcaption" les otorgamos las siguientes propiedades*/
-figcaption{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    font-weight: bold; 
-}
+
 /*Configuramos nuestro borde grande*/
 .borde{
     border:solid;
@@ -124,7 +118,7 @@ figcaption{
     border-radius: 30px;
     border-left: 0px;
     border-top-left-radius: 1px;
-    border-color: #1E0553;
+    border-color: #3C3C3C;
     border-width: 10px;
     border-bottom: 0px;
     border-bottom-right-radius:0px ;
@@ -142,7 +136,7 @@ figcaption{
 }
 /*Configuramos el borde pequeño al ser selccionado*/
 .bordemini:hover{
-    border-color: #1E0553;
+    border-color: #3C3C3C;
     opacity: 100%;
 }
 /*todo lo sobrante de nuestros div de img se elimina*/
@@ -152,13 +146,13 @@ figcaption{
 /*Características de nuestro texto 1*/
 .text1{
     margin-bottom: 20px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: formula1;
     font-size: xx-large;
     color: black;
 }
 /*Caracterísitcas de nuestros texto pequeños de color rojo*/
 .seccion{
-    color: #1E0553;
+    color: #3C3C3C;
     font:110% monospace;
     margin-bottom: -9px;
     margin-top: 10px;
@@ -198,7 +192,7 @@ section div img{
 }
 
 .fondoh{
-    background-color: #1E0553;
+    background-color: #3C3C3C;
 }
 
 .calendario{
@@ -209,7 +203,7 @@ section div img{
 }
 
 .fondocalen{
-    background-color: #150439;
+    background-color: #3C3C3C;
 }
 
 .bordecal{
@@ -238,14 +232,14 @@ section div img{
 }
 
 .pcalen{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:formula1basic;
     text-align: center;
     color: #9B9B9B;
     font-size: 80%;
 }
 
 .pcalen2{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:formula1basic;
     text-align: center;
     color: #9B9B9B;
     font-size: 110%;
@@ -273,36 +267,85 @@ table{
     border-collapse: collapse;
 }
 
+table tr td{
+    padding: 10px;
+}
+
+table tr{
+    border-style: solid;
+    border-color: grey;
+}
+
+.hola{
+    border-radius: 6px
+}
+
 .tablaclasi{
     vertical-align: middle;
 }
+
+.c1{
+    font-family: formula1;
+}
+
+.c2{
+    font-family: formula1basic;
+}
+
+.c3{
+    font-family: formula1;
+}
+
+.c4{
+    font-family: formula1basic;
+}
+
+.c5{
+    font-family: formula1;
+    margin-top: 15px;
+    border: solid;
+    border-color: #DBDBDB;
+    width: 80px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    width: 80%;
+}
+
+.c5:hover{
+    color: #000;
+}
+
+.borderclasi:hover{
+    background-color: #3C3C3C;
+    transition: all .4s ease;
+    color: #fff;
+}
+
+.footer{
+    height: 200px;
+    width: auto;
+    background-color: #3C3C3C;
+}
+
+.h2footer{
+    color: #ffffff;
+    font-family: formula1;
+    margin-top: 10px;
+    text-justify: none;
+}
+
 
 
 
 /*FUENTES*/
 @font-face {
-    font-family: 'formula1display-black';
-    src: url('formula1-black-webfont.woff2') format('woff2'),
-         url('formula1-black-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+    font-family: formula1;
+    src: url(../Fuentes/Formula1-Bold.ttf);
 
 }
 
-@font-face {
-    font-family: 'formula1display-bold';
-    src: url('formula1-bold-webfont.woff2') format('woff2'),
-         url('formula1-bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'pricedownblack';
-    src: url('pricedown_bl-webfont.woff2') format('woff2'),
-         url('pricedown_bl-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+@font-face{
+    font-family: formula1basic;
+    src: url(../Fuentes/Formula1-Regular.ttf);
 }
