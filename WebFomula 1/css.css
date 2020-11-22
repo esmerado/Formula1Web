@@ -257,9 +257,6 @@ a:link, a:visited, a:active{
     text-decoration: none;
 }
 
-.margen{
-    
-}
 
 table{
     border-color: black;
@@ -283,6 +280,8 @@ table tr{
 .tablaclasi{
     vertical-align: middle;
 }
+
+/*FOOTER*/
 
 .c1{
     font-family: formula1;
@@ -312,10 +311,6 @@ table tr{
     width: 80%;
 }
 
-.c5:hover{
-    color: #000;
-}
-
 .borderclasi:hover{
     background-color: #3C3C3C;
     transition: all .4s ease;
@@ -323,21 +318,59 @@ table tr{
 }
 
 .footer{
-    height: 200px;
+    height: 300px;
     width: auto;
     background-color: #3C3C3C;
 }
 
-.h2footer{
+.h4footer{
     color: #ffffff;
     font-family: formula1;
     margin-top: 10px;
     text-justify: none;
+    width: 300px;
+    padding: 20px;
+}
+
+table tr td img{
+    width: 30px;
+}
+
+.flink{
+    font-family: formula1;
+    text-decoration: none;
+    color: #ffffff;
 }
 
 
+.flink:link, {
+    font-family: formula1;
+    text-decoration: none;
+    color: #ffffff;
+}
 
+.flink:visited{
+    font-family: formula1;
+    text-decoration: none;
+    color: #fff;
+}
 
+.flink:active{
+    font-family: formula1;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.ftable{
+    margin-top: -10px;
+    border-style: none;
+    border-color: #3C3C3C;
+}
+
+.copy{
+    color: #ffffff;
+    margin-top: -130px;
+}
 /*FUENTES*/
 @font-face {
     font-family: formula1;
