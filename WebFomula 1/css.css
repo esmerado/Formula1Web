@@ -183,7 +183,7 @@ figcaption{
 }
 
 
-/*CSS de los grandes premios*/
+/*CSS de los grandes premios PAGINA 1*/
 
 
 section div{
@@ -226,7 +226,9 @@ section div img{
 }
 
 .altura{
-    height: 500px;
+    height: 400px;
+
+
 }
 
 .h1calen {
@@ -253,7 +255,27 @@ section div img{
     margin-bottom: -4px;
 }
 
+.podiopg1{
+    color: #9B9B9B;
+}
 
+a:link, a:visited, a:active{
+    text-decoration: none;
+}
+
+.margen{
+    
+}
+
+table{
+    border-color: black;
+    border-style: solid;
+    border-collapse: collapse;
+}
+
+.tablaclasi{
+    vertical-align: middle;
+}
 
 
 
