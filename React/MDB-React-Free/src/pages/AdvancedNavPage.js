@@ -1,26 +1,26 @@
 import React from 'react';
 import {
-  MDBEdgeHeader,
-  MDBContainer,
-  MDBRow,
-  MDBCol,
-  MDBJumbotron,
-  MDBIcon,
-  MDBAnimation
-} from 'mdbreact';
+  lgBEdgeHeader,
+  lgBContainer,
+  lgBRow,
+  lgBCol,
+  lgBJumbotron,
+  lgBIcon,
+  lgBAnimation
+} from 'lgbreact';
 import MenuLink from '../components/menuLink';
 
 const AdvancedNavPage = () => {
   return (
     <>
-      <MDBEdgeHeader color='indigo darken-3' className='sectionPage' />
-      <MDBAnimation type='zoomIn' duration='500ms'>
-        <MDBContainer>
-          <MDBRow>
-            <MDBCol md='8' className='mt-3 mx-auto'>
-              <MDBJumbotron>
+      <lgBEdgeHeader color='indigo darken-3' className='sectionPage' />
+      <lgBAnimation type='zoomIn' duration='500ms'>
+        <lgBContainer>
+          <lgBRow>
+            <lgBCol lg='8' className='mt-3 mx-auto'>
+              <lgBJumbotron>
                 <h1 className='text-center'>
-                  <MDBIcon icon='code' className='indigo-text mr-2' />
+                  <lgBIcon icon='code' className='indigo-text mr-2' />
                   Advanced
                 </h1>
                 <ul className='list-unstyled example-components-list'>
@@ -40,11 +40,11 @@ const AdvancedNavPage = () => {
                   />
                   
                 </ul>
-              </MDBJumbotron>
-            </MDBCol>
-          </MDBRow>
-        </MDBContainer>
-      </MDBAnimation>
+              </lgBJumbotron>
+            </lgBCol>
+          </lgBRow>
+        </lgBContainer>
+      </lgBAnimation>
     </>
   );
 };

@@ -1,17 +1,17 @@
 import React from 'react';
 import {
-  MDBContainer,
-  MDBInputGroup,
-  MDBBtn,
-  MDBDropdown,
-  MDBDropdownMenu,
-  MDBDropdownItem,
-  MDBDropdownToggle,
-  MDBIcon,
-  MDBCol,
-  MDBInput,
-  MDBRow
-} from 'mdbreact';
+  lgBContainer,
+  lgBInputGroup,
+  lgBBtn,
+  lgBDropdown,
+  lgBDropdownMenu,
+  lgBDropdownItem,
+  lgBDropdownToggle,
+  lgBIcon,
+  lgBCol,
+  lgBInput,
+  lgBRow
+} from 'lgbreact';
 import DocsLink from '../components/docsLink';
 import SectionContainer from '../components/sectionContainer';
 
@@ -71,60 +71,60 @@ class InputGroupPage extends React.Component {
 
   render() {
     return (
-      <MDBContainer className='inpGroup mb-5'>
+      <lgBContainer className='inpGroup mb-5'>
         <DocsLink
           header='Inputs Group'
-          href='https://mdbootstrap.com/docs/react/forms/input-group/'
+          href='https://lgbootstrap.com/docs/react/forms/input-group/'
         />
         <SectionContainer noBorder>
-          <MDBRow>
-            <MDBCol md='6'>
+          <lgBRow>
+            <lgBCol lg='6'>
               <SectionContainer
                 header='Default input groups'
                 description='Default styling for Bootstrap Input Group component'
               >
-                <MDBInputGroup
+                <lgBInputGroup
                   containerClassName='mb-3'
                   prepend='@'
                   hint='Username'
                 />
-                <MDBInputGroup
+                <lgBInputGroup
                   containerClassName='mb-3'
                   append='@example.com'
                   hint="Recipient's username"
                 />
-                <MDBInputGroup
+                <lgBInputGroup
                   label='Your vanity URL'
                   containerClassName='mb-3'
                   prepend='https://example.com/users/'
                   id='basic-url'
                 />
-                <MDBInputGroup
+                <lgBInputGroup
                   containerClassName='mb-3'
                   prepend='$'
                   append='.00'
                 />
-                <MDBInputGroup prepend='With textarea' type='textarea' />
+                <lgBInputGroup prepend='With textarea' type='textarea' />
               </SectionContainer>
-            </MDBCol>
-            <MDBCol md='6'>
+            </lgBCol>
+            <lgBCol lg='6'>
               <SectionContainer
                 header='Material input groups'
                 description='Material Design styling for Bootstrap Input Group component'
               >
-                <MDBInputGroup
+                <lgBInputGroup
                   material
                   containerClassName='mb-3 mt-0'
                   prepend='@'
                   hint='Username'
                 />
-                <MDBInputGroup
+                <lgBInputGroup
                   material
                   hint="Recipient's username"
                   containerClassName='mb-3 mt-0'
                   append='@example.com'
                 />
-                <MDBInputGroup
+                <lgBInputGroup
                   material
                   label='Your vanity URL'
                   labelClassName='mb-0 ml-2'
@@ -132,28 +132,28 @@ class InputGroupPage extends React.Component {
                   prepend='https://example.com/users/'
                   id='basic-url-material'
                 />
-                <MDBInputGroup
+                <lgBInputGroup
                   material
                   containerClassName='mb-3'
                   prepend='$'
                   append='.00'
                 />
-                <MDBInputGroup
+                <lgBInputGroup
                   material
                   className='mb-0'
                   prepend='With textarea'
                   type='textarea'
                 />
               </SectionContainer>
-            </MDBCol>
-          </MDBRow>
+            </lgBCol>
+          </lgBRow>
         </SectionContainer>
 
         <SectionContainer
           header='Wrapping'
           description='Input groups wrap by default via flex-wrap: wrap in order to accommodate custom form field validation within an input group. You may disable this with containerClassName="flex-nowrap".'
         >
-          <MDBInputGroup
+          <lgBInputGroup
             containerClassName='flex-nowrap mb-3'
             prepend='@'
             hint='Username'
@@ -161,86 +161,86 @@ class InputGroupPage extends React.Component {
         </SectionContainer>
 
         <SectionContainer header='Sizing' noBottom noBorder>
-          <MDBRow>
-            <MDBCol md='6'>
+          <lgBRow>
+            <lgBCol lg='6'>
               <SectionContainer>
-                <MDBInputGroup
+                <lgBInputGroup
                   containerClassName='mb-3'
                   prepend='Small'
                   size='sm'
                 />
-                <MDBInputGroup containerClassName='mb-3' prepend='Default' />
-                <MDBInputGroup
+                <lgBInputGroup containerClassName='mb-3' prepend='Default' />
+                <lgBInputGroup
                   containerClassName='mb-3'
                   prepend='Large'
                   size='lg'
                 />
               </SectionContainer>
-            </MDBCol>
+            </lgBCol>
 
-            <MDBCol md='6'>
+            <lgBCol lg='6'>
               <SectionContainer>
-                <MDBInputGroup
+                <lgBInputGroup
                   material
                   containerClassName='mb-2 mt-0'
                   prepend='Small'
                   size='sm'
                 />
-                <MDBInputGroup
+                <lgBInputGroup
                   material
                   containerClassName='mb-2 mt-0'
                   prepend='Default'
                 />
-                <MDBInputGroup
+                <lgBInputGroup
                   material
                   containerClassName='mb-2 mt-0'
                   prepend='Large'
                   size='lg'
                 />
               </SectionContainer>
-            </MDBCol>
-          </MDBRow>
+            </lgBCol>
+          </lgBRow>
         </SectionContainer>
 
         <SectionContainer header='Multiple inputs' noBottom noBorder>
-          <MDBRow>
-            <MDBCol md='6'>
+          <lgBRow>
+            <lgBCol lg='6'>
               <SectionContainer>
-                <MDBInputGroup
+                <lgBInputGroup
                   prepend='First and last name'
                   inputs={
                     <>
-                      <MDBInput noTag type='text' />
-                      <MDBInput noTag type='text' />
+                      <lgBInput noTag type='text' />
+                      <lgBInput noTag type='text' />
                     </>
                   }
                 />
               </SectionContainer>
-            </MDBCol>
+            </lgBCol>
 
-            <MDBCol md='6'>
+            <lgBCol lg='6'>
               <SectionContainer>
-                <MDBInputGroup
+                <lgBInputGroup
                   material
                   containerClassName='m-0'
                   prepend='First and last name'
                   inputs={
                     <>
-                      <MDBInput noTag type='text' hint='Type sth' />
-                      <MDBInput noTag type='text' hint='Type sth' />
+                      <lgBInput noTag type='text' hint='Type sth' />
+                      <lgBInput noTag type='text' hint='Type sth' />
                     </>
                   }
                 />
               </SectionContainer>
-            </MDBCol>
-          </MDBRow>
+            </lgBCol>
+          </lgBRow>
         </SectionContainer>
 
         <SectionContainer header='Multiple addons' noBottom noBorder>
-          <MDBRow>
-            <MDBCol md='6'>
+          <lgBRow>
+            <lgBCol lg='6'>
               <SectionContainer>
-                <MDBInputGroup
+                <lgBInputGroup
                   containerClassName='mb-3'
                   prepend={
                     <>
@@ -249,7 +249,7 @@ class InputGroupPage extends React.Component {
                     </>
                   }
                 />
-                <MDBInputGroup
+                <lgBInputGroup
                   append={
                     <>
                       <span className='input-group-text'>$</span>
@@ -258,312 +258,312 @@ class InputGroupPage extends React.Component {
                   }
                 />
               </SectionContainer>
-            </MDBCol>
+            </lgBCol>
 
-            <MDBCol md='6'>
+            <lgBCol lg='6'>
               <SectionContainer>
-                <MDBInputGroup
+                <lgBInputGroup
                   containerClassName='mt-0 mb-3'
                   material
                   prepend={
                     <>
-                      <span className='input-group-text md-addon'>$</span>
-                      <span className='input-group-text md-addon'>0.00</span>
+                      <span className='input-group-text lg-addon'>$</span>
+                      <span className='input-group-text lg-addon'>0.00</span>
                     </>
                   }
                 />
-                <MDBInputGroup
+                <lgBInputGroup
                   containerClassName='my-0'
                   material
                   append={
                     <>
-                      <span className='input-group-text md-addon'>$</span>
-                      <span className='input-group-text md-addon'>0.00</span>
+                      <span className='input-group-text lg-addon'>$</span>
+                      <span className='input-group-text lg-addon'>0.00</span>
                     </>
                   }
                 />
               </SectionContainer>
-            </MDBCol>
-          </MDBRow>
+            </lgBCol>
+          </lgBRow>
         </SectionContainer>
 
         <SectionContainer header='Button addons' noBottom noBorder>
-          <MDBRow>
-            <MDBCol md='6'>
+          <lgBRow>
+            <lgBCol lg='6'>
               <SectionContainer>
-                <MDBInputGroup
+                <lgBInputGroup
                   containerClassName='mb-3'
                   prepend={
-                    <MDBBtn
+                    <lgBBtn
                       color='primary'
                       outline
-                      size='md'
+                      size='lg'
                       className='m-0 px-3 py-2 z-depth-0'
                     >
                       BUTTON
-                    </MDBBtn>
+                    </lgBBtn>
                   }
                 />
 
-                <MDBInputGroup
+                <lgBInputGroup
                   hint="Recipient's username"
                   containerClassName='mb-3'
                   append={
-                    <MDBBtn
+                    <lgBBtn
                       outline
-                      size='md'
+                      size='lg'
                       className='m-0 px-3 py-2 z-depth-0'
                     >
                       BUTTON
-                    </MDBBtn>
+                    </lgBBtn>
                   }
                 />
 
-                <MDBInputGroup
+                <lgBInputGroup
                   containerClassName='mb-3'
                   prepend={
                     <>
-                      <MDBBtn
+                      <lgBBtn
                         color='secondary'
                         outline
-                        size='md'
+                        size='lg'
                         className='m-0 px-3 py-2 z-depth-0'
                       >
                         BUTTON
-                      </MDBBtn>
-                      <MDBBtn
+                      </lgBBtn>
+                      <lgBBtn
                         color='secondary'
                         outline
-                        size='md'
+                        size='lg'
                         className='m-0 px-3 py-2 z-depth-0'
                       >
                         BUTTON
-                      </MDBBtn>
+                      </lgBBtn>
                     </>
                   }
                 />
 
-                <MDBInputGroup
+                <lgBInputGroup
                   hint="Recipient's username"
                   containerClassName='mb-3'
                   append={
                     <>
-                      <MDBBtn
+                      <lgBBtn
                         color='info'
                         outline
-                        size='md'
+                        size='lg'
                         className='m-0 px-3 py-2 z-depth-0'
                       >
                         BUTTON
-                      </MDBBtn>
-                      <MDBBtn
+                      </lgBBtn>
+                      <lgBBtn
                         color='info'
                         outline
-                        size='md'
+                        size='lg'
                         className='m-0 px-3 py-2 z-depth-0'
                       >
                         BUTTON
-                      </MDBBtn>
+                      </lgBBtn>
                     </>
                   }
                 />
               </SectionContainer>
-            </MDBCol>
+            </lgBCol>
 
-            <MDBCol md='6'>
+            <lgBCol lg='6'>
               <SectionContainer>
-                <MDBInputGroup
+                <lgBInputGroup
                   material
                   containerClassName='mb-3 mt-0'
                   prepend={
-                    <MDBBtn size='md' className='m-0 px-3 py-2 z-depth-0'>
+                    <lgBBtn size='lg' className='m-0 px-3 py-2 z-depth-0'>
                       BUTTON
-                    </MDBBtn>
+                    </lgBBtn>
                   }
                 />
 
-                <MDBInputGroup
+                <lgBInputGroup
                   material
                   containerClassName='mb-3 mt-0'
                   hint="Recipient's username"
                   append={
-                    <MDBBtn
+                    <lgBBtn
                       color='secondary'
-                      size='md'
+                      size='lg'
                       className='m-0 px-3 py-2 z-depth-0'
                     >
                       BUTTON
-                    </MDBBtn>
+                    </lgBBtn>
                   }
                 />
 
-                <MDBInputGroup
+                <lgBInputGroup
                   material
                   containerClassName='mb-3 mt-0'
                   prepend={
                     <>
-                      <MDBBtn
+                      <lgBBtn
                         color='info'
-                        size='md'
+                        size='lg'
                         className='m-0 px-3 py-2 z-depth-1'
                       >
                         BUTTON
-                      </MDBBtn>
-                      <MDBBtn
+                      </lgBBtn>
+                      <lgBBtn
                         color='info'
-                        size='md'
+                        size='lg'
                         className='m-0 px-3 py-2 z-depth-1'
                       >
                         BUTTON
-                      </MDBBtn>
+                      </lgBBtn>
                     </>
                   }
                 />
 
-                <MDBInputGroup
+                <lgBInputGroup
                   material
                   hint="Recipient's username"
                   containerClassName='mb-4 mt-0'
                   append={
                     <>
-                      <MDBBtn
+                      <lgBBtn
                         color='primary'
-                        size='md'
+                        size='lg'
                         className='m-0 px-3 py-2 z-depth-1'
                       >
                         BUTTON
-                      </MDBBtn>
-                      <MDBBtn
+                      </lgBBtn>
+                      <lgBBtn
                         color='primary'
-                        size='md'
+                        size='lg'
                         className='m-0 px-3 py-2 z-depth-1'
                       >
                         BUTTON
-                      </MDBBtn>
+                      </lgBBtn>
                     </>
                   }
                 />
               </SectionContainer>
-            </MDBCol>
-          </MDBRow>
+            </lgBCol>
+          </lgBRow>
         </SectionContainer>
 
         <SectionContainer header='Buttons with dropdowns'>
-          <MDBInputGroup
+          <lgBInputGroup
             containerClassName='mb-3'
             prepend={
-              <MDBDropdown>
-                <MDBDropdownToggle
+              <lgBDropdown>
+                <lgBDropdownToggle
                   color='primary'
-                  size='md'
+                  size='lg'
                   className='m-0 px-3 z-depth-0'
                 >
-                  Dropdown <MDBIcon icon='caret-down' className='ml-1' />
-                </MDBDropdownToggle>
-                <MDBDropdownMenu color='white'>
-                  <MDBDropdownItem>Action</MDBDropdownItem>
-                  <MDBDropdownItem>Another Action</MDBDropdownItem>
-                  <MDBDropdownItem>Something else here</MDBDropdownItem>
-                  <MDBDropdownItem divider />
-                  <MDBDropdownItem>Separated link</MDBDropdownItem>
-                </MDBDropdownMenu>
-              </MDBDropdown>
+                  Dropdown <lgBIcon icon='caret-down' className='ml-1' />
+                </lgBDropdownToggle>
+                <lgBDropdownMenu color='white'>
+                  <lgBDropdownItem>Action</lgBDropdownItem>
+                  <lgBDropdownItem>Another Action</lgBDropdownItem>
+                  <lgBDropdownItem>Something else here</lgBDropdownItem>
+                  <lgBDropdownItem divider />
+                  <lgBDropdownItem>Separated link</lgBDropdownItem>
+                </lgBDropdownMenu>
+              </lgBDropdown>
             }
           />
 
-          <MDBInputGroup
+          <lgBInputGroup
             containerClassName='mb-3'
             append={
-              <MDBDropdown>
-                <MDBDropdownToggle
+              <lgBDropdown>
+                <lgBDropdownToggle
                   color='default'
-                  size='md'
+                  size='lg'
                   className='m-0 px-3 z-depth-0'
                 >
-                  Dropdown <MDBIcon icon='caret-down' className='ml-1' />
-                </MDBDropdownToggle>
-                <MDBDropdownMenu>
-                  <MDBDropdownItem>Action</MDBDropdownItem>
-                  <MDBDropdownItem>Another Action</MDBDropdownItem>
-                  <MDBDropdownItem>Something else here</MDBDropdownItem>
-                  <MDBDropdownItem divider />
-                  <MDBDropdownItem>Separated link</MDBDropdownItem>
-                </MDBDropdownMenu>
-              </MDBDropdown>
+                  Dropdown <lgBIcon icon='caret-down' className='ml-1' />
+                </lgBDropdownToggle>
+                <lgBDropdownMenu>
+                  <lgBDropdownItem>Action</lgBDropdownItem>
+                  <lgBDropdownItem>Another Action</lgBDropdownItem>
+                  <lgBDropdownItem>Something else here</lgBDropdownItem>
+                  <lgBDropdownItem divider />
+                  <lgBDropdownItem>Separated link</lgBDropdownItem>
+                </lgBDropdownMenu>
+              </lgBDropdown>
             }
           />
         </SectionContainer>
 
         <SectionContainer header='Segmented buttons'>
-          <MDBInputGroup
+          <lgBInputGroup
             containerClassName='mb-3'
             prepend={
               <>
-                <MDBBtn
+                <lgBBtn
                   outline
                   color='primary'
-                  size='md'
+                  size='lg'
                   className='m-0 px-3 py-2 z-depth-0 rounded-0'
                 >
                   ACTION
-                </MDBBtn>
-                <MDBDropdown>
-                  <MDBDropdownToggle
+                </lgBBtn>
+                <lgBDropdown>
+                  <lgBDropdownToggle
                     outline
                     color='primary'
-                    size='md'
+                    size='lg'
                     className='m-0 px-2 z-depth-0 rounded-0'
                   >
-                    <MDBIcon icon='caret-down' />
-                  </MDBDropdownToggle>
-                  <MDBDropdownMenu>
-                    <MDBDropdownItem>Action</MDBDropdownItem>
-                    <MDBDropdownItem>Another Action</MDBDropdownItem>
-                    <MDBDropdownItem>Something else here</MDBDropdownItem>
-                    <MDBDropdownItem divider />
-                    <MDBDropdownItem>Separated link</MDBDropdownItem>
-                  </MDBDropdownMenu>
-                </MDBDropdown>
+                    <lgBIcon icon='caret-down' />
+                  </lgBDropdownToggle>
+                  <lgBDropdownMenu>
+                    <lgBDropdownItem>Action</lgBDropdownItem>
+                    <lgBDropdownItem>Another Action</lgBDropdownItem>
+                    <lgBDropdownItem>Something else here</lgBDropdownItem>
+                    <lgBDropdownItem divider />
+                    <lgBDropdownItem>Separated link</lgBDropdownItem>
+                  </lgBDropdownMenu>
+                </lgBDropdown>
               </>
             }
           />
 
-          <MDBInputGroup
+          <lgBInputGroup
             containerClassName='mb-3'
             append={
               <>
-                <MDBBtn
+                <lgBBtn
                   outline
                   color='info'
-                  size='md'
+                  size='lg'
                   className='m-0 px-3 py-2 z-depth-0 rounded-0'
                 >
                   ACTION
-                </MDBBtn>
-                <MDBDropdown>
-                  <MDBDropdownToggle
+                </lgBBtn>
+                <lgBDropdown>
+                  <lgBDropdownToggle
                     outline
                     color='info'
-                    size='md'
+                    size='lg'
                     className='m-0 px-2 z-depth-0 rounded-0'
                   >
-                    <MDBIcon icon='caret-down' />
-                  </MDBDropdownToggle>
-                  <MDBDropdownMenu>
-                    <MDBDropdownItem>Action</MDBDropdownItem>
-                    <MDBDropdownItem>Another Action</MDBDropdownItem>
-                    <MDBDropdownItem>Something else here</MDBDropdownItem>
-                    <MDBDropdownItem divider />
-                    <MDBDropdownItem>Separated link</MDBDropdownItem>
-                  </MDBDropdownMenu>
-                </MDBDropdown>
+                    <lgBIcon icon='caret-down' />
+                  </lgBDropdownToggle>
+                  <lgBDropdownMenu>
+                    <lgBDropdownItem>Action</lgBDropdownItem>
+                    <lgBDropdownItem>Another Action</lgBDropdownItem>
+                    <lgBDropdownItem>Something else here</lgBDropdownItem>
+                    <lgBDropdownItem divider />
+                    <lgBDropdownItem>Separated link</lgBDropdownItem>
+                  </lgBDropdownMenu>
+                </lgBDropdown>
               </>
             }
           />
         </SectionContainer>
 
         <SectionContainer header='Custom select'>
-          <MDBInputGroup
+          <lgBInputGroup
             containerClassName='mb-3'
             prepend='Options'
             inputs={
@@ -576,7 +576,7 @@ class InputGroupPage extends React.Component {
             }
           />
 
-          <MDBInputGroup
+          <lgBInputGroup
             containerClassName='mb-3'
             append='Options'
             inputs={
@@ -589,17 +589,17 @@ class InputGroupPage extends React.Component {
             }
           />
 
-          <MDBInputGroup
+          <lgBInputGroup
             containerClassName='mb-3'
             prepend={
-              <MDBBtn
-                color='mdb-color'
+              <lgBBtn
+                color='lgb-color'
                 outline
-                size='md'
+                size='lg'
                 className='m-0 px-3 py-2 z-depth-0'
               >
                 BUTTON
-              </MDBBtn>
+              </lgBBtn>
             }
             inputs={
               <select className='browser-default custom-select'>
@@ -611,17 +611,17 @@ class InputGroupPage extends React.Component {
             }
           />
 
-          <MDBInputGroup
+          <lgBInputGroup
             containerClassName='mb-3'
             append={
-              <MDBBtn
-                color='mdb-color'
+              <lgBBtn
+                color='lgb-color'
                 outline
-                size='md'
+                size='lg'
                 className='m-0 px-3 py-2 z-depth-0'
               >
                 BUTTON
-              </MDBBtn>
+              </lgBBtn>
             }
             inputs={
               <select className='browser-default custom-select'>
@@ -635,7 +635,7 @@ class InputGroupPage extends React.Component {
         </SectionContainer>
 
         <SectionContainer header='Custom file input'>
-          <MDBInputGroup
+          <lgBInputGroup
             prepend='Upload'
             inputs={
               <div className='custom-file'>
@@ -652,7 +652,7 @@ class InputGroupPage extends React.Component {
             containerClassName='mb-3'
           />
 
-          <MDBInputGroup
+          <lgBInputGroup
             append='Upload'
             inputs={
               <div className='custom-file'>
@@ -669,16 +669,16 @@ class InputGroupPage extends React.Component {
             containerClassName='mb-3'
           />
 
-          <MDBInputGroup
+          <lgBInputGroup
             prepend={
-              <MDBBtn
-                color='mdb-color'
+              <lgBBtn
+                color='lgb-color'
                 outline
-                size='md'
+                size='lg'
                 className='m-0 px-3 py-2 z-depth-0'
               >
                 BUTTON
-              </MDBBtn>
+              </lgBBtn>
             }
             inputs={
               <div className='custom-file'>
@@ -695,16 +695,16 @@ class InputGroupPage extends React.Component {
             containerClassName='mb-3'
           />
 
-          <MDBInputGroup
+          <lgBInputGroup
             append={
-              <MDBBtn
-                color='mdb-color'
+              <lgBBtn
+                color='lgb-color'
                 outline
-                size='md'
+                size='lg'
                 className='m-0 px-3 py-2 z-depth-0'
               >
                 BUTTON
-              </MDBBtn>
+              </lgBBtn>
             }
             inputs={
               <div className='custom-file'>
@@ -727,21 +727,21 @@ class InputGroupPage extends React.Component {
           header='Colorful input groups'
           description='Default styling for Bootstrap Input Group component'
         >
-          <MDBInputGroup
+          <lgBInputGroup
             containerClassName='custom-input-group mb-3'
             prepend='@'
             textClassName='amber lighten-3'
             className='amber-border'
             hint='Username'
           />
-          <MDBInputGroup
+          <lgBInputGroup
             containerClassName='custom-input-group mb-3'
             prepend='$'
             append='.00'
             textClassName='lime lighten-2'
             className='lime-border'
           />
-          <MDBInputGroup
+          <lgBInputGroup
             containerClassName='custom-input-group mb-3'
             prepend={
               <>
@@ -751,14 +751,14 @@ class InputGroupPage extends React.Component {
             }
             className='red-border'
           />
-          <MDBInputGroup
+          <lgBInputGroup
             containerClassName='custom-input-group mb-3'
             append='@example.com'
             textClassName='purple lighten-3'
             hint="Recipient's Username"
             className='purple-border'
           />
-          <MDBInputGroup
+          <lgBInputGroup
             label='Your vanity URL'
             containerClassName='custom-input-group mb-3'
             prepend='https://example.com/users/'
@@ -767,7 +767,7 @@ class InputGroupPage extends React.Component {
             className='blue-border'
           />
         </SectionContainer>
-      </MDBContainer>
+      </lgBContainer>
     );
   }
 }

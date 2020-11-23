@@ -1,205 +1,205 @@
 import React from 'react';
 import {
-  MDBBreadcrumb,
-  MDBBreadcrumbItem,
-  MDBContainer,
-  MDBNavbar,
-  MDBNavbarNav,
-  MDBNavItem
-} from 'mdbreact';
+  lgBBreadcrumb,
+  lgBBreadcrumbItem,
+  lgBContainer,
+  lgBNavbar,
+  lgBNavbarNav,
+  lgBNavItem
+} from 'lgbreact';
 import DocsLink from '../components/docsLink';
 import SectionContainer from '../components/sectionContainer';
 
 const BreadcrumbPage = props => {
   return (
-    <MDBContainer>
+    <lgBContainer>
       <DocsLink
         title='Breadcrumb'
-        href='https://mdbootstrap.com/docs/react/navigation/breadcrumb/'
+        href='https://lgbootstrap.com/docs/react/navigation/breadcrumb/'
       />
 
       <SectionContainer header='Basic examples'>
-        <MDBBreadcrumb>
-          <MDBBreadcrumbItem active>Home</MDBBreadcrumbItem>
-        </MDBBreadcrumb>
+        <lgBBreadcrumb>
+          <lgBBreadcrumbItem active>Home</lgBBreadcrumbItem>
+        </lgBBreadcrumb>
 
-        <MDBBreadcrumb>
-          <MDBBreadcrumbItem>Home</MDBBreadcrumbItem>
-          <MDBBreadcrumbItem active>Library</MDBBreadcrumbItem>
-        </MDBBreadcrumb>
+        <lgBBreadcrumb>
+          <lgBBreadcrumbItem>Home</lgBBreadcrumbItem>
+          <lgBBreadcrumbItem active>Library</lgBBreadcrumbItem>
+        </lgBBreadcrumb>
 
-        <MDBBreadcrumb>
-          <MDBBreadcrumbItem>Home</MDBBreadcrumbItem>
-          <MDBBreadcrumbItem>Library</MDBBreadcrumbItem>
-          <MDBBreadcrumbItem active>Data</MDBBreadcrumbItem>
-        </MDBBreadcrumb>
+        <lgBBreadcrumb>
+          <lgBBreadcrumbItem>Home</lgBBreadcrumbItem>
+          <lgBBreadcrumbItem>Library</lgBBreadcrumbItem>
+          <lgBBreadcrumbItem active>Data</lgBBreadcrumbItem>
+        </lgBBreadcrumb>
       </SectionContainer>
 
       <SectionContainer header='With dark background'>
-        <MDBBreadcrumb light color='default'>
-          <MDBBreadcrumbItem>Home</MDBBreadcrumbItem>
-          <MDBBreadcrumbItem active>Library</MDBBreadcrumbItem>
-        </MDBBreadcrumb>
+        <lgBBreadcrumb light color='default'>
+          <lgBBreadcrumbItem>Home</lgBBreadcrumbItem>
+          <lgBBreadcrumbItem active>Library</lgBBreadcrumbItem>
+        </lgBBreadcrumb>
 
-        <MDBBreadcrumb light color='primary'>
-          <MDBBreadcrumbItem>Home</MDBBreadcrumbItem>
-          <MDBBreadcrumbItem active>Library</MDBBreadcrumbItem>
-        </MDBBreadcrumb>
+        <lgBBreadcrumb light color='primary'>
+          <lgBBreadcrumbItem>Home</lgBBreadcrumbItem>
+          <lgBBreadcrumbItem active>Library</lgBBreadcrumbItem>
+        </lgBBreadcrumb>
 
-        <MDBBreadcrumb light color='secondary'>
-          <MDBBreadcrumbItem>Home</MDBBreadcrumbItem>
-          <MDBBreadcrumbItem>Library</MDBBreadcrumbItem>
-          <MDBBreadcrumbItem active>Data</MDBBreadcrumbItem>
-        </MDBBreadcrumb>
+        <lgBBreadcrumb light color='secondary'>
+          <lgBBreadcrumbItem>Home</lgBBreadcrumbItem>
+          <lgBBreadcrumbItem>Library</lgBBreadcrumbItem>
+          <lgBBreadcrumbItem active>Data</lgBBreadcrumbItem>
+        </lgBBreadcrumb>
       </SectionContainer>
 
       <SectionContainer header='With light background'>
-        <MDBBreadcrumb color='cyan lighten-4'>
-          <MDBBreadcrumbItem>Home</MDBBreadcrumbItem>
-          <MDBBreadcrumbItem>Library</MDBBreadcrumbItem>
-          <MDBBreadcrumbItem active>Data</MDBBreadcrumbItem>
-        </MDBBreadcrumb>
+        <lgBBreadcrumb color='cyan lighten-4'>
+          <lgBBreadcrumbItem>Home</lgBBreadcrumbItem>
+          <lgBBreadcrumbItem>Library</lgBBreadcrumbItem>
+          <lgBBreadcrumbItem active>Data</lgBBreadcrumbItem>
+        </lgBBreadcrumb>
 
-        <MDBBreadcrumb color='pink lighten-4'>
-          <MDBBreadcrumbItem>Home</MDBBreadcrumbItem>
-          <MDBBreadcrumbItem active>Library</MDBBreadcrumbItem>
-        </MDBBreadcrumb>
+        <lgBBreadcrumb color='pink lighten-4'>
+          <lgBBreadcrumbItem>Home</lgBBreadcrumbItem>
+          <lgBBreadcrumbItem active>Library</lgBBreadcrumbItem>
+        </lgBBreadcrumb>
 
-        <MDBBreadcrumb color='purple lighten-4'>
-          <MDBBreadcrumbItem>Home</MDBBreadcrumbItem>
-          <MDBBreadcrumbItem active>Library</MDBBreadcrumbItem>
-        </MDBBreadcrumb>
+        <lgBBreadcrumb color='purple lighten-4'>
+          <lgBBreadcrumbItem>Home</lgBBreadcrumbItem>
+          <lgBBreadcrumbItem active>Library</lgBBreadcrumbItem>
+        </lgBBreadcrumb>
       </SectionContainer>
 
       <SectionContainer header='With uppercases'>
-        <MDBBreadcrumb uppercase color='cyan lighten-4'>
-          <MDBBreadcrumbItem>Home</MDBBreadcrumbItem>
-          <MDBBreadcrumbItem active>Library</MDBBreadcrumbItem>
-        </MDBBreadcrumb>
+        <lgBBreadcrumb uppercase color='cyan lighten-4'>
+          <lgBBreadcrumbItem>Home</lgBBreadcrumbItem>
+          <lgBBreadcrumbItem active>Library</lgBBreadcrumbItem>
+        </lgBBreadcrumb>
 
-        <MDBBreadcrumb bold uppercase color='cyan lighten-4'>
-          <MDBBreadcrumbItem>Home</MDBBreadcrumbItem>
-          <MDBBreadcrumbItem active>Library</MDBBreadcrumbItem>
-        </MDBBreadcrumb>
+        <lgBBreadcrumb bold uppercase color='cyan lighten-4'>
+          <lgBBreadcrumbItem>Home</lgBBreadcrumbItem>
+          <lgBBreadcrumbItem active>Library</lgBBreadcrumbItem>
+        </lgBBreadcrumb>
       </SectionContainer>
 
       <SectionContainer header='With icons'>
-        <MDBBreadcrumb light color='pink lighten-4'>
-          <MDBBreadcrumbItem icon='star'>Home</MDBBreadcrumbItem>
-        </MDBBreadcrumb>
+        <lgBBreadcrumb light color='pink lighten-4'>
+          <lgBBreadcrumbItem icon='star'>Home</lgBBreadcrumbItem>
+        </lgBBreadcrumb>
 
-        <MDBBreadcrumb light color='pink lighten-3'>
-          <MDBBreadcrumbItem icon='star'>Home</MDBBreadcrumbItem>
-          <MDBBreadcrumbItem icon='star' active>
+        <lgBBreadcrumb light color='pink lighten-3'>
+          <lgBBreadcrumbItem icon='star'>Home</lgBBreadcrumbItem>
+          <lgBBreadcrumbItem icon='star' active>
             Library
-          </MDBBreadcrumbItem>
-        </MDBBreadcrumb>
+          </lgBBreadcrumbItem>
+        </lgBBreadcrumb>
 
-        <MDBBreadcrumb light color='pink lighten-2'>
-          <MDBBreadcrumbItem icon='star'>Home</MDBBreadcrumbItem>
-          <MDBBreadcrumbItem icon='star'>Library</MDBBreadcrumbItem>
-          <MDBBreadcrumbItem icon='star' active>
+        <lgBBreadcrumb light color='pink lighten-2'>
+          <lgBBreadcrumbItem icon='star'>Home</lgBBreadcrumbItem>
+          <lgBBreadcrumbItem icon='star'>Library</lgBBreadcrumbItem>
+          <lgBBreadcrumbItem icon='star' active>
             Data
-          </MDBBreadcrumbItem>
-        </MDBBreadcrumb>
+          </lgBBreadcrumbItem>
+        </lgBBreadcrumb>
       </SectionContainer>
 
       <SectionContainer header='With arrows'>
-        <MDBBreadcrumb color='indigo lighten-4'>
-          <MDBBreadcrumbItem appendIcon icon='caret-right'>
+        <lgBBreadcrumb color='indigo lighten-4'>
+          <lgBBreadcrumbItem appendIcon icon='caret-right'>
             Home
-          </MDBBreadcrumbItem>
-          <MDBBreadcrumbItem appendIcon icon='caret-right'>
+          </lgBBreadcrumbItem>
+          <lgBBreadcrumbItem appendIcon icon='caret-right'>
             Library
-          </MDBBreadcrumbItem>
-          <MDBBreadcrumbItem appendIcon active>
+          </lgBBreadcrumbItem>
+          <lgBBreadcrumbItem appendIcon active>
             Data
-          </MDBBreadcrumbItem>
-        </MDBBreadcrumb>
+          </lgBBreadcrumbItem>
+        </lgBBreadcrumb>
 
-        <MDBBreadcrumb color='blue-grey lighten-4'>
-          <MDBBreadcrumbItem appendIcon icon='angle-double-right'>
+        <lgBBreadcrumb color='blue-grey lighten-4'>
+          <lgBBreadcrumbItem appendIcon icon='angle-double-right'>
             Home
-          </MDBBreadcrumbItem>
-          <MDBBreadcrumbItem appendIcon icon='angle-double-right'>
+          </lgBBreadcrumbItem>
+          <lgBBreadcrumbItem appendIcon icon='angle-double-right'>
             Library
-          </MDBBreadcrumbItem>
-          <MDBBreadcrumbItem appendIcon active>
+          </lgBBreadcrumbItem>
+          <lgBBreadcrumbItem appendIcon active>
             Data
-          </MDBBreadcrumbItem>
-        </MDBBreadcrumb>
+          </lgBBreadcrumbItem>
+        </lgBBreadcrumb>
 
-        <MDBBreadcrumb color='purple lighten-4'>
-          <MDBBreadcrumbItem appendIcon icon='angle-right'>
+        <lgBBreadcrumb color='purple lighten-4'>
+          <lgBBreadcrumbItem appendIcon icon='angle-right'>
             Home
-          </MDBBreadcrumbItem>
-          <MDBBreadcrumbItem appendIcon icon='angle-right'>
+          </lgBBreadcrumbItem>
+          <lgBBreadcrumbItem appendIcon icon='angle-right'>
             Library
-          </MDBBreadcrumbItem>
-          <MDBBreadcrumbItem appendIcon active>
+          </lgBBreadcrumbItem>
+          <lgBBreadcrumbItem appendIcon active>
             Data
-          </MDBBreadcrumbItem>
-        </MDBBreadcrumb>
+          </lgBBreadcrumbItem>
+        </lgBBreadcrumb>
 
-        <MDBBreadcrumb color='red lighten-4'>
-          <MDBBreadcrumbItem appendIcon icon='angle-double-left'>
+        <lgBBreadcrumb color='red lighten-4'>
+          <lgBBreadcrumbItem appendIcon icon='angle-double-left'>
             Home
-          </MDBBreadcrumbItem>
-          <MDBBreadcrumbItem appendIcon icon='angle-double-left'>
+          </lgBBreadcrumbItem>
+          <lgBBreadcrumbItem appendIcon icon='angle-double-left'>
             Library
-          </MDBBreadcrumbItem>
-          <MDBBreadcrumbItem appendIcon active>
+          </lgBBreadcrumbItem>
+          <lgBBreadcrumbItem appendIcon active>
             Data
-          </MDBBreadcrumbItem>
-        </MDBBreadcrumb>
+          </lgBBreadcrumbItem>
+        </lgBBreadcrumb>
 
-        <MDBBreadcrumb color='cyan lighten-4'>
-          <MDBBreadcrumbItem appendIcon icon='angle-left'>
+        <lgBBreadcrumb color='cyan lighten-4'>
+          <lgBBreadcrumbItem appendIcon icon='angle-left'>
             Home
-          </MDBBreadcrumbItem>
-          <MDBBreadcrumbItem appendIcon icon='angle-left'>
+          </lgBBreadcrumbItem>
+          <lgBBreadcrumbItem appendIcon icon='angle-left'>
             Library
-          </MDBBreadcrumbItem>
-          <MDBBreadcrumbItem appendIcon active>
+          </lgBBreadcrumbItem>
+          <lgBBreadcrumbItem appendIcon active>
             Data
-          </MDBBreadcrumbItem>
-        </MDBBreadcrumb>
+          </lgBBreadcrumbItem>
+        </lgBBreadcrumb>
 
-        <MDBBreadcrumb color='amber lighten-4'>
-          <MDBBreadcrumbItem appendIcon icon='caret-left'>
+        <lgBBreadcrumb color='amber lighten-4'>
+          <lgBBreadcrumbItem appendIcon icon='caret-left'>
             Home
-          </MDBBreadcrumbItem>
-          <MDBBreadcrumbItem appendIcon icon='caret-left'>
+          </lgBBreadcrumbItem>
+          <lgBBreadcrumbItem appendIcon icon='caret-left'>
             Library
-          </MDBBreadcrumbItem>
-          <MDBBreadcrumbItem appendIcon active>
+          </lgBBreadcrumbItem>
+          <lgBBreadcrumbItem appendIcon active>
             Data
-          </MDBBreadcrumbItem>
-        </MDBBreadcrumb>
+          </lgBBreadcrumbItem>
+        </lgBBreadcrumb>
       </SectionContainer>
 
       <SectionContainer header='With hamburger button'>
-        <MDBNavbar color='indigo' style={{ marginTop: '20px' }} dark>
+        <lgBNavbar color='indigo' style={{ marginTop: '20px' }} dark>
           <span className='navbar-toggler-icon' />
-          <MDBNavbarNav left>
-            <MDBBreadcrumb color='indigo'>
-              <MDBBreadcrumbItem>Home</MDBBreadcrumbItem>
-              <MDBBreadcrumbItem active>Library</MDBBreadcrumbItem>
-            </MDBBreadcrumb>
-          </MDBNavbarNav>
-          <MDBNavbarNav right>
-            <MDBNavItem>
+          <lgBNavbarNav left>
+            <lgBBreadcrumb color='indigo'>
+              <lgBBreadcrumbItem>Home</lgBBreadcrumbItem>
+              <lgBBreadcrumbItem active>Library</lgBBreadcrumbItem>
+            </lgBBreadcrumb>
+          </lgBNavbarNav>
+          <lgBNavbarNav right>
+            <lgBNavItem>
               <input
                 className='form-control form-control-sm ml-3 w-75'
                 type='text'
                 placeholder='Search'
                 aria-label='Search'
               />
-            </MDBNavItem>
-          </MDBNavbarNav>
-        </MDBNavbar>
+            </lgBNavItem>
+          </lgBNavbarNav>
+        </lgBNavbar>
       </SectionContainer>
-    </MDBContainer>
+    </lgBContainer>
   );
 };
 

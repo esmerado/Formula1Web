@@ -1,404 +1,404 @@
 import React from 'react';
 import {
-  MDBPagination,
-  MDBPageItem,
-  MDBPageNav,
-  MDBContainer,
-  MDBCol,
-  MDBRow
-} from 'mdbreact';
+  lgBPagination,
+  lgBPageItem,
+  lgBPageNav,
+  lgBContainer,
+  lgBCol,
+  lgBRow
+} from 'lgbreact';
 import DocsLink from '../components/docsLink';
 import SectionContainer from '../components/sectionContainer';
 
 const PaginationPage = () => {
   return (
-    <MDBContainer>
+    <lgBContainer>
       <DocsLink
         title='Pagination'
-        href='https://mdbootstrap.com/docs/react/components/pagination/'
+        href='https://lgbootstrap.com/docs/react/components/pagination/'
       />
 
-      <MDBRow>
-        <MDBCol>
+      <lgBRow>
+        <lgBCol>
           <SectionContainer
             header='Basic example'
             className='d-flex justify-content-center'
           >
-            <MDBPagination style={{ marginTop: '1rem' }}>
-              <MDBPageItem disabled>
-                <MDBPageNav aria-label='Previous'>
+            <lgBPagination style={{ marginTop: '1rem' }}>
+              <lgBPageItem disabled>
+                <lgBPageNav aria-label='Previous'>
                   <span aria-hidden='true'>&laquo;</span>
-                </MDBPageNav>
-              </MDBPageItem>
-              <MDBPageItem active>
-                <MDBPageNav>
+                </lgBPageNav>
+              </lgBPageItem>
+              <lgBPageItem active>
+                <lgBPageNav>
                   1 <span className='sr-only'>(current)</span>
-                </MDBPageNav>
-              </MDBPageItem>
-              <MDBPageItem>
-                <MDBPageNav>2</MDBPageNav>
-              </MDBPageItem>
-              <MDBPageItem>
-                <MDBPageNav>3</MDBPageNav>
-              </MDBPageItem>
-              <MDBPageItem>
-                <MDBPageNav>4</MDBPageNav>
-              </MDBPageItem>
-              <MDBPageItem>
-                <MDBPageNav>5</MDBPageNav>
-              </MDBPageItem>
-              <MDBPageItem disabled>
-                <MDBPageNav aria-label='Previous'>
+                </lgBPageNav>
+              </lgBPageItem>
+              <lgBPageItem>
+                <lgBPageNav>2</lgBPageNav>
+              </lgBPageItem>
+              <lgBPageItem>
+                <lgBPageNav>3</lgBPageNav>
+              </lgBPageItem>
+              <lgBPageItem>
+                <lgBPageNav>4</lgBPageNav>
+              </lgBPageItem>
+              <lgBPageItem>
+                <lgBPageNav>5</lgBPageNav>
+              </lgBPageItem>
+              <lgBPageItem disabled>
+                <lgBPageNav aria-label='Previous'>
                   <span aria-hidden='true'>&raquo;</span>
-                </MDBPageNav>
-              </MDBPageItem>
-            </MDBPagination>
+                </lgBPageNav>
+              </lgBPageItem>
+            </lgBPagination>
           </SectionContainer>
-        </MDBCol>
-      </MDBRow>
+        </lgBCol>
+      </lgBRow>
 
-      <MDBRow>
-        <MDBCol>
+      <lgBRow>
+        <lgBCol>
           <SectionContainer
             header='Bootstrap Pagination'
             className='d-flex justify-content-center'
           >
-            <MDBPagination style={{ marginTop: '1rem' }} circle>
-              <MDBPageItem disabled>
-                <MDBPageNav>
+            <lgBPagination style={{ marginTop: '1rem' }} circle>
+              <lgBPageItem disabled>
+                <lgBPageNav>
                   <span>First</span>
-                </MDBPageNav>
-              </MDBPageItem>
-              <MDBPageItem disabled>
-                <MDBPageNav aria-label='Previous'>
+                </lgBPageNav>
+              </lgBPageItem>
+              <lgBPageItem disabled>
+                <lgBPageNav aria-label='Previous'>
                   <span aria-hidden='true'>&laquo;</span>
                   <span className='sr-only'>Previous</span>
-                </MDBPageNav>
-              </MDBPageItem>
-              <MDBPageItem active>
-                <MDBPageNav>
+                </lgBPageNav>
+              </lgBPageItem>
+              <lgBPageItem active>
+                <lgBPageNav>
                   1 <span className='sr-only'>(current)</span>
-                </MDBPageNav>
-              </MDBPageItem>
-              <MDBPageItem>
-                <MDBPageNav>2</MDBPageNav>
-              </MDBPageItem>
-              <MDBPageItem>
-                <MDBPageNav>3</MDBPageNav>
-              </MDBPageItem>
-              <MDBPageItem>
-                <MDBPageNav>4</MDBPageNav>
-              </MDBPageItem>
-              <MDBPageItem>
-                <MDBPageNav>5</MDBPageNav>
-              </MDBPageItem>
-              <MDBPageItem>
-                <MDBPageNav>&raquo;</MDBPageNav>
-              </MDBPageItem>
-              <MDBPageItem>
-                <MDBPageNav>Last</MDBPageNav>
-              </MDBPageItem>
-            </MDBPagination>
+                </lgBPageNav>
+              </lgBPageItem>
+              <lgBPageItem>
+                <lgBPageNav>2</lgBPageNav>
+              </lgBPageItem>
+              <lgBPageItem>
+                <lgBPageNav>3</lgBPageNav>
+              </lgBPageItem>
+              <lgBPageItem>
+                <lgBPageNav>4</lgBPageNav>
+              </lgBPageItem>
+              <lgBPageItem>
+                <lgBPageNav>5</lgBPageNav>
+              </lgBPageItem>
+              <lgBPageItem>
+                <lgBPageNav>&raquo;</lgBPageNav>
+              </lgBPageItem>
+              <lgBPageItem>
+                <lgBPageNav>Last</lgBPageNav>
+              </lgBPageItem>
+            </lgBPagination>
           </SectionContainer>
-        </MDBCol>
-      </MDBRow>
+        </lgBCol>
+      </lgBRow>
 
-      <MDBRow>
-        <MDBCol>
+      <lgBRow>
+        <lgBCol>
           <SectionContainer
-            header='MDBPagination color'
+            header='lgBPagination color'
             className='d-flex align-items-center flex-column'
           >
-            <MDBPagination style={{ marginTop: '1rem' }} color='blue'>
-              <MDBPageItem disabled>
-                <MDBPageNav aria-label='Previous'>
+            <lgBPagination style={{ marginTop: '1rem' }} color='blue'>
+              <lgBPageItem disabled>
+                <lgBPageNav aria-label='Previous'>
                   <span aria-hidden='true'>&laquo;</span>
                   <span className='sr-only'>Previous</span>
-                </MDBPageNav>
-              </MDBPageItem>
-              <MDBPageItem active>
-                <MDBPageNav>
+                </lgBPageNav>
+              </lgBPageItem>
+              <lgBPageItem active>
+                <lgBPageNav>
                   1 <span className='sr-only'>(current)</span>
-                </MDBPageNav>
-              </MDBPageItem>
-              <MDBPageItem>
-                <MDBPageNav>2</MDBPageNav>
-              </MDBPageItem>
-              <MDBPageItem>
-                <MDBPageNav>3</MDBPageNav>
-              </MDBPageItem>
-              <MDBPageItem>
-                <MDBPageNav>4</MDBPageNav>
-              </MDBPageItem>
-              <MDBPageItem>
-                <MDBPageNav>5</MDBPageNav>
-              </MDBPageItem>
-              <MDBPageItem>
-                <MDBPageNav>&raquo;</MDBPageNav>
-              </MDBPageItem>
-            </MDBPagination>
+                </lgBPageNav>
+              </lgBPageItem>
+              <lgBPageItem>
+                <lgBPageNav>2</lgBPageNav>
+              </lgBPageItem>
+              <lgBPageItem>
+                <lgBPageNav>3</lgBPageNav>
+              </lgBPageItem>
+              <lgBPageItem>
+                <lgBPageNav>4</lgBPageNav>
+              </lgBPageItem>
+              <lgBPageItem>
+                <lgBPageNav>5</lgBPageNav>
+              </lgBPageItem>
+              <lgBPageItem>
+                <lgBPageNav>&raquo;</lgBPageNav>
+              </lgBPageItem>
+            </lgBPagination>
 
-            <MDBPagination style={{ marginTop: '1rem' }} color='red'>
-              <MDBPageItem disabled>
-                <MDBPageNav aria-label='Previous'>
+            <lgBPagination style={{ marginTop: '1rem' }} color='red'>
+              <lgBPageItem disabled>
+                <lgBPageNav aria-label='Previous'>
                   <span aria-hidden='true'>&laquo;</span>
                   <span className='sr-only'>Previous</span>
-                </MDBPageNav>
-              </MDBPageItem>
-              <MDBPageItem active>
-                <MDBPageNav>
+                </lgBPageNav>
+              </lgBPageItem>
+              <lgBPageItem active>
+                <lgBPageNav>
                   1 <span className='sr-only'>(current)</span>
-                </MDBPageNav>
-              </MDBPageItem>
-              <MDBPageItem>
-                <MDBPageNav>2</MDBPageNav>
-              </MDBPageItem>
-              <MDBPageItem>
-                <MDBPageNav>3</MDBPageNav>
-              </MDBPageItem>
-              <MDBPageItem>
-                <MDBPageNav>4</MDBPageNav>
-              </MDBPageItem>
-              <MDBPageItem>
-                <MDBPageNav>5</MDBPageNav>
-              </MDBPageItem>
-              <MDBPageItem>
-                <MDBPageNav>&raquo;</MDBPageNav>
-              </MDBPageItem>
-            </MDBPagination>
+                </lgBPageNav>
+              </lgBPageItem>
+              <lgBPageItem>
+                <lgBPageNav>2</lgBPageNav>
+              </lgBPageItem>
+              <lgBPageItem>
+                <lgBPageNav>3</lgBPageNav>
+              </lgBPageItem>
+              <lgBPageItem>
+                <lgBPageNav>4</lgBPageNav>
+              </lgBPageItem>
+              <lgBPageItem>
+                <lgBPageNav>5</lgBPageNav>
+              </lgBPageItem>
+              <lgBPageItem>
+                <lgBPageNav>&raquo;</lgBPageNav>
+              </lgBPageItem>
+            </lgBPagination>
 
-            <MDBPagination style={{ marginTop: '1rem' }} color='teal'>
-              <MDBPageItem disabled>
-                <MDBPageNav aria-label='Previous'>
+            <lgBPagination style={{ marginTop: '1rem' }} color='teal'>
+              <lgBPageItem disabled>
+                <lgBPageNav aria-label='Previous'>
                   <span aria-hidden='true'>&laquo;</span>
                   <span className='sr-only'>Previous</span>
-                </MDBPageNav>
-              </MDBPageItem>
-              <MDBPageItem active>
-                <MDBPageNav>
+                </lgBPageNav>
+              </lgBPageItem>
+              <lgBPageItem active>
+                <lgBPageNav>
                   1 <span className='sr-only'>(current)</span>
-                </MDBPageNav>
-              </MDBPageItem>
-              <MDBPageItem>
-                <MDBPageNav>2</MDBPageNav>
-              </MDBPageItem>
-              <MDBPageItem>
-                <MDBPageNav>3</MDBPageNav>
-              </MDBPageItem>
-              <MDBPageItem>
-                <MDBPageNav>4</MDBPageNav>
-              </MDBPageItem>
-              <MDBPageItem>
-                <MDBPageNav>5</MDBPageNav>
-              </MDBPageItem>
-              <MDBPageItem>
-                <MDBPageNav>&raquo;</MDBPageNav>
-              </MDBPageItem>
-            </MDBPagination>
+                </lgBPageNav>
+              </lgBPageItem>
+              <lgBPageItem>
+                <lgBPageNav>2</lgBPageNav>
+              </lgBPageItem>
+              <lgBPageItem>
+                <lgBPageNav>3</lgBPageNav>
+              </lgBPageItem>
+              <lgBPageItem>
+                <lgBPageNav>4</lgBPageNav>
+              </lgBPageItem>
+              <lgBPageItem>
+                <lgBPageNav>5</lgBPageNav>
+              </lgBPageItem>
+              <lgBPageItem>
+                <lgBPageNav>&raquo;</lgBPageNav>
+              </lgBPageItem>
+            </lgBPagination>
 
-            <MDBPagination style={{ marginTop: '1rem' }} color='dark'>
-              <MDBPageItem disabled>
-                <MDBPageNav aria-label='Previous'>
+            <lgBPagination style={{ marginTop: '1rem' }} color='dark'>
+              <lgBPageItem disabled>
+                <lgBPageNav aria-label='Previous'>
                   <span aria-hidden='true'>&laquo;</span>
                   <span className='sr-only'>Previous</span>
-                </MDBPageNav>
-              </MDBPageItem>
-              <MDBPageItem active>
-                <MDBPageNav>
+                </lgBPageNav>
+              </lgBPageItem>
+              <lgBPageItem active>
+                <lgBPageNav>
                   1 <span className='sr-only'>(current)</span>
-                </MDBPageNav>
-              </MDBPageItem>
-              <MDBPageItem>
-                <MDBPageNav>2</MDBPageNav>
-              </MDBPageItem>
-              <MDBPageItem>
-                <MDBPageNav>3</MDBPageNav>
-              </MDBPageItem>
-              <MDBPageItem>
-                <MDBPageNav>4</MDBPageNav>
-              </MDBPageItem>
-              <MDBPageItem>
-                <MDBPageNav>5</MDBPageNav>
-              </MDBPageItem>
-              <MDBPageItem>
-                <MDBPageNav>&raquo;</MDBPageNav>
-              </MDBPageItem>
-            </MDBPagination>
+                </lgBPageNav>
+              </lgBPageItem>
+              <lgBPageItem>
+                <lgBPageNav>2</lgBPageNav>
+              </lgBPageItem>
+              <lgBPageItem>
+                <lgBPageNav>3</lgBPageNav>
+              </lgBPageItem>
+              <lgBPageItem>
+                <lgBPageNav>4</lgBPageNav>
+              </lgBPageItem>
+              <lgBPageItem>
+                <lgBPageNav>5</lgBPageNav>
+              </lgBPageItem>
+              <lgBPageItem>
+                <lgBPageNav>&raquo;</lgBPageNav>
+              </lgBPageItem>
+            </lgBPagination>
 
-            <MDBPagination style={{ marginTop: '1rem' }} color='bluegrey'>
-              <MDBPageItem disabled>
-                <MDBPageNav aria-label='Previous'>
+            <lgBPagination style={{ marginTop: '1rem' }} color='bluegrey'>
+              <lgBPageItem disabled>
+                <lgBPageNav aria-label='Previous'>
                   <span aria-hidden='true'>&laquo;</span>
                   <span className='sr-only'>Previous</span>
-                </MDBPageNav>
-              </MDBPageItem>
-              <MDBPageItem active>
-                <MDBPageNav>
+                </lgBPageNav>
+              </lgBPageItem>
+              <lgBPageItem active>
+                <lgBPageNav>
                   1 <span className='sr-only'>(current)</span>
-                </MDBPageNav>
-              </MDBPageItem>
-              <MDBPageItem>
-                <MDBPageNav>2</MDBPageNav>
-              </MDBPageItem>
-              <MDBPageItem>
-                <MDBPageNav>3</MDBPageNav>
-              </MDBPageItem>
-              <MDBPageItem>
-                <MDBPageNav>4</MDBPageNav>
-              </MDBPageItem>
-              <MDBPageItem>
-                <MDBPageNav>5</MDBPageNav>
-              </MDBPageItem>
-              <MDBPageItem>
-                <MDBPageNav>&raquo;</MDBPageNav>
-              </MDBPageItem>
-            </MDBPagination>
+                </lgBPageNav>
+              </lgBPageItem>
+              <lgBPageItem>
+                <lgBPageNav>2</lgBPageNav>
+              </lgBPageItem>
+              <lgBPageItem>
+                <lgBPageNav>3</lgBPageNav>
+              </lgBPageItem>
+              <lgBPageItem>
+                <lgBPageNav>4</lgBPageNav>
+              </lgBPageItem>
+              <lgBPageItem>
+                <lgBPageNav>5</lgBPageNav>
+              </lgBPageItem>
+              <lgBPageItem>
+                <lgBPageNav>&raquo;</lgBPageNav>
+              </lgBPageItem>
+            </lgBPagination>
 
-            <MDBPagination style={{ marginTop: '1rem' }} color='amber'>
-              <MDBPageItem disabled>
-                <MDBPageNav aria-label='Previous'>
+            <lgBPagination style={{ marginTop: '1rem' }} color='amber'>
+              <lgBPageItem disabled>
+                <lgBPageNav aria-label='Previous'>
                   <span aria-hidden='true'>&laquo;</span>
                   <span className='sr-only'>Previous</span>
-                </MDBPageNav>
-              </MDBPageItem>
-              <MDBPageItem active>
-                <MDBPageNav>
+                </lgBPageNav>
+              </lgBPageItem>
+              <lgBPageItem active>
+                <lgBPageNav>
                   1 <span className='sr-only'>(current)</span>
-                </MDBPageNav>
-              </MDBPageItem>
-              <MDBPageItem>
-                <MDBPageNav>2</MDBPageNav>
-              </MDBPageItem>
-              <MDBPageItem>
-                <MDBPageNav>3</MDBPageNav>
-              </MDBPageItem>
-              <MDBPageItem>
-                <MDBPageNav>4</MDBPageNav>
-              </MDBPageItem>
-              <MDBPageItem>
-                <MDBPageNav>5</MDBPageNav>
-              </MDBPageItem>
-              <MDBPageItem>
-                <MDBPageNav>&raquo;</MDBPageNav>
-              </MDBPageItem>
-            </MDBPagination>
+                </lgBPageNav>
+              </lgBPageItem>
+              <lgBPageItem>
+                <lgBPageNav>2</lgBPageNav>
+              </lgBPageItem>
+              <lgBPageItem>
+                <lgBPageNav>3</lgBPageNav>
+              </lgBPageItem>
+              <lgBPageItem>
+                <lgBPageNav>4</lgBPageNav>
+              </lgBPageItem>
+              <lgBPageItem>
+                <lgBPageNav>5</lgBPageNav>
+              </lgBPageItem>
+              <lgBPageItem>
+                <lgBPageNav>&raquo;</lgBPageNav>
+              </lgBPageItem>
+            </lgBPagination>
 
-            <MDBPagination style={{ marginTop: '1rem' }} color='purple'>
-              <MDBPageItem disabled>
-                <MDBPageNav aria-label='Previous'>
+            <lgBPagination style={{ marginTop: '1rem' }} color='purple'>
+              <lgBPageItem disabled>
+                <lgBPageNav aria-label='Previous'>
                   <span aria-hidden='true'>&laquo;</span>
                   <span className='sr-only'>Previous</span>
-                </MDBPageNav>
-              </MDBPageItem>
-              <MDBPageItem active>
-                <MDBPageNav>
+                </lgBPageNav>
+              </lgBPageItem>
+              <lgBPageItem active>
+                <lgBPageNav>
                   1 <span className='sr-only'>(current)</span>
-                </MDBPageNav>
-              </MDBPageItem>
-              <MDBPageItem>
-                <MDBPageNav>2</MDBPageNav>
-              </MDBPageItem>
-              <MDBPageItem>
-                <MDBPageNav>3</MDBPageNav>
-              </MDBPageItem>
-              <MDBPageItem>
-                <MDBPageNav>4</MDBPageNav>
-              </MDBPageItem>
-              <MDBPageItem>
-                <MDBPageNav>5</MDBPageNav>
-              </MDBPageItem>
-              <MDBPageItem>
-                <MDBPageNav>&raquo;</MDBPageNav>
-              </MDBPageItem>
-            </MDBPagination>
+                </lgBPageNav>
+              </lgBPageItem>
+              <lgBPageItem>
+                <lgBPageNav>2</lgBPageNav>
+              </lgBPageItem>
+              <lgBPageItem>
+                <lgBPageNav>3</lgBPageNav>
+              </lgBPageItem>
+              <lgBPageItem>
+                <lgBPageNav>4</lgBPageNav>
+              </lgBPageItem>
+              <lgBPageItem>
+                <lgBPageNav>5</lgBPageNav>
+              </lgBPageItem>
+              <lgBPageItem>
+                <lgBPageNav>&raquo;</lgBPageNav>
+              </lgBPageItem>
+            </lgBPagination>
 
-            <MDBPagination style={{ marginTop: '1rem' }} color='darkgrey'>
-              <MDBPageItem disabled>
-                <MDBPageNav aria-label='Previous'>
+            <lgBPagination style={{ marginTop: '1rem' }} color='darkgrey'>
+              <lgBPageItem disabled>
+                <lgBPageNav aria-label='Previous'>
                   <span aria-hidden='true'>&laquo;</span>
                   <span className='sr-only'>Previous</span>
-                </MDBPageNav>
-              </MDBPageItem>
-              <MDBPageItem active>
-                <MDBPageNav>
+                </lgBPageNav>
+              </lgBPageItem>
+              <lgBPageItem active>
+                <lgBPageNav>
                   1 <span className='sr-only'>(current)</span>
-                </MDBPageNav>
-              </MDBPageItem>
-              <MDBPageItem>
-                <MDBPageNav>2</MDBPageNav>
-              </MDBPageItem>
-              <MDBPageItem>
-                <MDBPageNav>3</MDBPageNav>
-              </MDBPageItem>
-              <MDBPageItem>
-                <MDBPageNav>4</MDBPageNav>
-              </MDBPageItem>
-              <MDBPageItem>
-                <MDBPageNav>5</MDBPageNav>
-              </MDBPageItem>
-              <MDBPageItem>
-                <MDBPageNav>&raquo;</MDBPageNav>
-              </MDBPageItem>
-            </MDBPagination>
+                </lgBPageNav>
+              </lgBPageItem>
+              <lgBPageItem>
+                <lgBPageNav>2</lgBPageNav>
+              </lgBPageItem>
+              <lgBPageItem>
+                <lgBPageNav>3</lgBPageNav>
+              </lgBPageItem>
+              <lgBPageItem>
+                <lgBPageNav>4</lgBPageNav>
+              </lgBPageItem>
+              <lgBPageItem>
+                <lgBPageNav>5</lgBPageNav>
+              </lgBPageItem>
+              <lgBPageItem>
+                <lgBPageNav>&raquo;</lgBPageNav>
+              </lgBPageItem>
+            </lgBPagination>
           </SectionContainer>
-        </MDBCol>
-      </MDBRow>
+        </lgBCol>
+      </lgBRow>
 
-      <MDBRow>
-        <MDBCol>
+      <lgBRow>
+        <lgBCol>
           <SectionContainer
             header='Sizing'
             className='d-flex align-items-center flex-column'
           >
-            <MDBPagination style={{ marginTop: '1rem' }} size='lg'>
-              <MDBPageItem>
-                <MDBPageNav aria-label='Previous'>
+            <lgBPagination style={{ marginTop: '1rem' }} size='lg'>
+              <lgBPageItem>
+                <lgBPageNav aria-label='Previous'>
                   <span aria-hidden='true'>&laquo;</span>
                   <span className='sr-only'>Previous</span>
-                </MDBPageNav>
-              </MDBPageItem>
-              <MDBPageItem>
-                <MDBPageNav>
+                </lgBPageNav>
+              </lgBPageItem>
+              <lgBPageItem>
+                <lgBPageNav>
                   1 <span className='sr-only'>(current)</span>
-                </MDBPageNav>
-              </MDBPageItem>
-              <MDBPageItem>
-                <MDBPageNav>2</MDBPageNav>
-              </MDBPageItem>
-              <MDBPageItem>
-                <MDBPageNav>3</MDBPageNav>
-              </MDBPageItem>
-              <MDBPageItem>
-                <MDBPageNav>&raquo;</MDBPageNav>
-              </MDBPageItem>
-            </MDBPagination>
+                </lgBPageNav>
+              </lgBPageItem>
+              <lgBPageItem>
+                <lgBPageNav>2</lgBPageNav>
+              </lgBPageItem>
+              <lgBPageItem>
+                <lgBPageNav>3</lgBPageNav>
+              </lgBPageItem>
+              <lgBPageItem>
+                <lgBPageNav>&raquo;</lgBPageNav>
+              </lgBPageItem>
+            </lgBPagination>
 
-            <MDBPagination style={{ marginTop: '1rem' }} size='sm'>
-              <MDBPageItem>
-                <MDBPageNav aria-label='Previous'>
+            <lgBPagination style={{ marginTop: '1rem' }} size='sm'>
+              <lgBPageItem>
+                <lgBPageNav aria-label='Previous'>
                   <span aria-hidden='true'>&laquo;</span>
                   <span className='sr-only'>Previous</span>
-                </MDBPageNav>
-              </MDBPageItem>
-              <MDBPageItem>
-                <MDBPageNav>
+                </lgBPageNav>
+              </lgBPageItem>
+              <lgBPageItem>
+                <lgBPageNav>
                   1 <span className='sr-only'>(current)</span>
-                </MDBPageNav>
-              </MDBPageItem>
-              <MDBPageItem>
-                <MDBPageNav>2</MDBPageNav>
-              </MDBPageItem>
-              <MDBPageItem>
-                <MDBPageNav>3</MDBPageNav>
-              </MDBPageItem>
-              <MDBPageItem>
-                <MDBPageNav>&raquo;</MDBPageNav>
-              </MDBPageItem>
-            </MDBPagination>
+                </lgBPageNav>
+              </lgBPageItem>
+              <lgBPageItem>
+                <lgBPageNav>2</lgBPageNav>
+              </lgBPageItem>
+              <lgBPageItem>
+                <lgBPageNav>3</lgBPageNav>
+              </lgBPageItem>
+              <lgBPageItem>
+                <lgBPageNav>&raquo;</lgBPageNav>
+              </lgBPageItem>
+            </lgBPagination>
           </SectionContainer>
-        </MDBCol>
-      </MDBRow>
-    </MDBContainer>
+        </lgBCol>
+      </lgBRow>
+    </lgBContainer>
   );
 };
 

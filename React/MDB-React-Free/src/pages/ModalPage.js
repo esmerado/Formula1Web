@@ -1,19 +1,19 @@
 import React, { Component } from 'react';
 import {
-  MDBContainer,
-  MDBBtn,
-  MDBModal,
-  MDBModalBody,
-  MDBModalHeader,
-  MDBModalFooter,
-  MDBPopover,
-  MDBPopoverBody,
-  MDBPopoverHeader,
-  MDBTooltip,
-  MDBRow,
-  MDBCol,
-  MDBInput
-} from 'mdbreact';
+  lgBContainer,
+  lgBBtn,
+  lgBModal,
+  lgBModalBody,
+  lgBModalHeader,
+  lgBModalFooter,
+  lgBPopover,
+  lgBPopoverBody,
+  lgBPopoverHeader,
+  lgBTooltip,
+  lgBRow,
+  lgBCol,
+  lgBInput
+} from 'lgbreact';
 import DocsLink from '../components/docsLink';
 import SectionContainer from '../components/sectionContainer';
 
@@ -40,7 +40,7 @@ class ModalPage extends Component {
     modal19: false,
     modal20: false,
     backdrop: false,
-    mailAddress: '@mdo'
+    mailAddress: '@lgo'
   };
 
   toggle = nr => () => {
@@ -87,277 +87,277 @@ class ModalPage extends Component {
       modal9
     } = this.state;
     return (
-      <MDBContainer>
-        <DocsLink title='Modal' href='https://mdbootstrap.com/docs/react/modals/basic/' />
+      <lgBContainer>
+        <DocsLink title='Modal' href='https://lgbootstrap.com/docs/react/modals/basic/' />
         <SectionContainer header='Basic example' flexCenter>
-          <MDBBtn color='danger' onClick={this.toggle(1)}>
+          <lgBBtn color='danger' onClick={this.toggle(1)}>
             Modal
-          </MDBBtn>
-          <MDBModal backdrop={false} isOpen={modal1} toggle={this.toggle(1)}>
-            <MDBModalHeader toggle={this.toggle(1)}>Modal title</MDBModalHeader>
-            <MDBModalBody>
+          </lgBBtn>
+          <lgBModal backdrop={false} isOpen={modal1} toggle={this.toggle(1)}>
+            <lgBModalHeader toggle={this.toggle(1)}>Modal title</lgBModalHeader>
+            <lgBModalBody>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
               ea commodo consequat.
-            </MDBModalBody>
-            <MDBModalFooter>
-              <MDBBtn color='secondary' onClick={this.toggle(1)}>
+            </lgBModalBody>
+            <lgBModalFooter>
+              <lgBBtn color='secondary' onClick={this.toggle(1)}>
                 Close
-              </MDBBtn>
-              <MDBBtn color='primary'>Save changes</MDBBtn>
-            </MDBModalFooter>
-          </MDBModal>
+              </lgBBtn>
+              <lgBBtn color='primary'>Save changes</lgBBtn>
+            </lgBModalFooter>
+          </lgBModal>
         </SectionContainer>
 
         <SectionContainer header='Central modal' flexCenter className='flex-wrap'>
-          <MDBBtn color='primary' onClick={this.toggle(2)}>
+          <lgBBtn color='primary' onClick={this.toggle(2)}>
             Medium modal
-          </MDBBtn>
-          <MDBModal isOpen={modal2} toggle={this.toggle(2)}>
-            <MDBModalHeader toggle={this.toggle(2)}>Modal title</MDBModalHeader>
-            <MDBModalBody>
+          </lgBBtn>
+          <lgBModal isOpen={modal2} toggle={this.toggle(2)}>
+            <lgBModalHeader toggle={this.toggle(2)}>Modal title</lgBModalHeader>
+            <lgBModalBody>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
               ea commodo consequat.
-            </MDBModalBody>
-            <MDBModalFooter>
-              <MDBBtn color='secondary' onClick={this.toggle(2)}>
+            </lgBModalBody>
+            <lgBModalFooter>
+              <lgBBtn color='secondary' onClick={this.toggle(2)}>
                 Close
-              </MDBBtn>
-              <MDBBtn color='primary'>Save changes</MDBBtn>
-            </MDBModalFooter>
-          </MDBModal>
+              </lgBBtn>
+              <lgBBtn color='primary'>Save changes</lgBBtn>
+            </lgBModalFooter>
+          </lgBModal>
 
-          <MDBBtn color='primary' onClick={this.toggle(3)}>
+          <lgBBtn color='primary' onClick={this.toggle(3)}>
             Small modal
-          </MDBBtn>
-          <MDBModal isOpen={modal3} toggle={this.toggle(3)} size='sm'>
-            <MDBModalHeader toggle={this.toggle(3)}>Modal title</MDBModalHeader>
-            <MDBModalBody>
+          </lgBBtn>
+          <lgBModal isOpen={modal3} toggle={this.toggle(3)} size='sm'>
+            <lgBModalHeader toggle={this.toggle(3)}>Modal title</lgBModalHeader>
+            <lgBModalBody>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua.
-            </MDBModalBody>
-            <MDBModalFooter>
-              <MDBBtn color='secondary' size='sm' onClick={this.toggle(3)}>
+            </lgBModalBody>
+            <lgBModalFooter>
+              <lgBBtn color='secondary' size='sm' onClick={this.toggle(3)}>
                 Close
-              </MDBBtn>
-              <MDBBtn color='primary' size='sm'>
+              </lgBBtn>
+              <lgBBtn color='primary' size='sm'>
                 Save changes
-              </MDBBtn>
-            </MDBModalFooter>
-          </MDBModal>
+              </lgBBtn>
+            </lgBModalFooter>
+          </lgBModal>
 
-          <MDBBtn color='primary' onClick={this.toggle(4)}>
+          <lgBBtn color='primary' onClick={this.toggle(4)}>
             Large modal
-          </MDBBtn>
-          <MDBModal isOpen={modal4} toggle={this.toggle(4)} size='lg'>
-            <MDBModalHeader toggle={this.toggle(4)}>Modal title</MDBModalHeader>
-            <MDBModalBody>
+          </lgBBtn>
+          <lgBModal isOpen={modal4} toggle={this.toggle(4)} size='lg'>
+            <lgBModalHeader toggle={this.toggle(4)}>Modal title</lgBModalHeader>
+            <lgBModalBody>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
               ea commodo consequat.
-            </MDBModalBody>
-            <MDBModalFooter>
-              <MDBBtn color='secondary' onClick={this.toggle(4)}>
+            </lgBModalBody>
+            <lgBModalFooter>
+              <lgBBtn color='secondary' onClick={this.toggle(4)}>
                 Close
-              </MDBBtn>
-              <MDBBtn color='primary'>Save changes</MDBBtn>
-            </MDBModalFooter>
-          </MDBModal>
+              </lgBBtn>
+              <lgBBtn color='primary'>Save changes</lgBBtn>
+            </lgBModalFooter>
+          </lgBModal>
 
-          <MDBBtn color='primary' onClick={this.toggle(5)}>
+          <lgBBtn color='primary' onClick={this.toggle(5)}>
             Fluid modal
-          </MDBBtn>
-          <MDBModal isOpen={modal5} toggle={this.toggle(5)} size='fluid'>
-            <MDBModalHeader toggle={this.toggle(5)}>Modal title</MDBModalHeader>
-            <MDBModalBody>
+          </lgBBtn>
+          <lgBModal isOpen={modal5} toggle={this.toggle(5)} size='fluid'>
+            <lgBModalHeader toggle={this.toggle(5)}>Modal title</lgBModalHeader>
+            <lgBModalBody>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
               ea commodo consequat.
-            </MDBModalBody>
-            <MDBModalFooter>
-              <MDBBtn color='secondary' onClick={this.toggle(5)}>
+            </lgBModalBody>
+            <lgBModalFooter>
+              <lgBBtn color='secondary' onClick={this.toggle(5)}>
                 Close
-              </MDBBtn>
-              <MDBBtn color='primary'>Save changes</MDBBtn>
-            </MDBModalFooter>
-          </MDBModal>
+              </lgBBtn>
+              <lgBBtn color='primary'>Save changes</lgBBtn>
+            </lgBModalFooter>
+          </lgBModal>
         </SectionContainer>
 
         <SectionContainer header='Side modal' flexCenter>
-          <MDBBtn color='secondary' onClick={this.toggle(6)}>
+          <lgBBtn color='secondary' onClick={this.toggle(6)}>
             Top right
-          </MDBBtn>
-          <MDBModal isOpen={modal6} toggle={this.toggle(6)} side position='top-right'>
-            <MDBModalHeader toggle={this.toggle(6)}>Modal title</MDBModalHeader>
-            <MDBModalBody>
+          </lgBBtn>
+          <lgBModal isOpen={modal6} toggle={this.toggle(6)} side position='top-right'>
+            <lgBModalHeader toggle={this.toggle(6)}>Modal title</lgBModalHeader>
+            <lgBModalBody>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
               ea commodo consequat.
-            </MDBModalBody>
-            <MDBModalFooter>
-              <MDBBtn color='secondary' onClick={this.toggle(6)}>
+            </lgBModalBody>
+            <lgBModalFooter>
+              <lgBBtn color='secondary' onClick={this.toggle(6)}>
                 Close
-              </MDBBtn>
-              <MDBBtn color='primary'>Save changes</MDBBtn>
-            </MDBModalFooter>
-          </MDBModal>
+              </lgBBtn>
+              <lgBBtn color='primary'>Save changes</lgBBtn>
+            </lgBModalFooter>
+          </lgBModal>
 
-          <MDBBtn color='secondary' onClick={this.toggle(7)}>
+          <lgBBtn color='secondary' onClick={this.toggle(7)}>
             Bottom left
-          </MDBBtn>
-          <MDBModal isOpen={modal7} toggle={this.toggle(7)} side position='bottom-left'>
-            <MDBModalHeader toggle={this.toggle(7)}>Modal title</MDBModalHeader>
-            <MDBModalBody>
+          </lgBBtn>
+          <lgBModal isOpen={modal7} toggle={this.toggle(7)} side position='bottom-left'>
+            <lgBModalHeader toggle={this.toggle(7)}>Modal title</lgBModalHeader>
+            <lgBModalBody>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
               ea commodo consequat.
-            </MDBModalBody>
-            <MDBModalFooter>
-              <MDBBtn color='secondary' onClick={this.toggle(7)}>
+            </lgBModalBody>
+            <lgBModalFooter>
+              <lgBBtn color='secondary' onClick={this.toggle(7)}>
                 Close
-              </MDBBtn>
-              <MDBBtn color='primary'>Save changes</MDBBtn>
-            </MDBModalFooter>
-          </MDBModal>
+              </lgBBtn>
+              <lgBBtn color='primary'>Save changes</lgBBtn>
+            </lgBModalFooter>
+          </lgBModal>
         </SectionContainer>
 
         <SectionContainer header='Fluid modal' flexCenter>
-          <MDBBtn color='info' onClick={this.toggle(8)}>
+          <lgBBtn color='info' onClick={this.toggle(8)}>
             Right
-          </MDBBtn>
-          <MDBModal isOpen={modal8} toggle={this.toggle(8)} fullHeight position='right'>
-            <MDBModalHeader toggle={this.toggle(8)}>Modal title</MDBModalHeader>
-            <MDBModalBody>
+          </lgBBtn>
+          <lgBModal isOpen={modal8} toggle={this.toggle(8)} fullHeight position='right'>
+            <lgBModalHeader toggle={this.toggle(8)}>Modal title</lgBModalHeader>
+            <lgBModalBody>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
               ea commodo consequat.
-            </MDBModalBody>
-            <MDBModalFooter>
-              <MDBBtn color='secondary' onClick={this.toggle(8)}>
+            </lgBModalBody>
+            <lgBModalFooter>
+              <lgBBtn color='secondary' onClick={this.toggle(8)}>
                 Close
-              </MDBBtn>
-              <MDBBtn color='primary'>Save changes</MDBBtn>
-            </MDBModalFooter>
-          </MDBModal>
+              </lgBBtn>
+              <lgBBtn color='primary'>Save changes</lgBBtn>
+            </lgBModalFooter>
+          </lgBModal>
 
-          <MDBBtn color='info' onClick={this.toggle(9)}>
+          <lgBBtn color='info' onClick={this.toggle(9)}>
             Bottom
-          </MDBBtn>
-          <MDBModal isOpen={modal9} toggle={this.toggle(9)} fullHeight position='bottom'>
-            <MDBModalHeader toggle={this.toggle(9)}>Modal title</MDBModalHeader>
-            <MDBModalBody>
+          </lgBBtn>
+          <lgBModal isOpen={modal9} toggle={this.toggle(9)} fullHeight position='bottom'>
+            <lgBModalHeader toggle={this.toggle(9)}>Modal title</lgBModalHeader>
+            <lgBModalBody>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
               ea commodo consequat.
-            </MDBModalBody>
-            <MDBModalFooter>
-              <MDBBtn color='secondary' onClick={this.toggle(9)}>
+            </lgBModalBody>
+            <lgBModalFooter>
+              <lgBBtn color='secondary' onClick={this.toggle(9)}>
                 Close
-              </MDBBtn>
-              <MDBBtn color='primary'>Save changes</MDBBtn>
-            </MDBModalFooter>
-          </MDBModal>
+              </lgBBtn>
+              <lgBBtn color='primary'>Save changes</lgBBtn>
+            </lgBModalFooter>
+          </lgBModal>
         </SectionContainer>
 
         <SectionContainer header='Frame modal' flexCenter>
-          <MDBBtn color='warning' onClick={this.toggle(10)}>
+          <lgBBtn color='warning' onClick={this.toggle(10)}>
             Bottom
-          </MDBBtn>
-          <MDBModal isOpen={modal10} toggle={this.toggle(10)} frame position='bottom'>
-            <MDBModalBody className='text-center'>
+          </lgBBtn>
+          <lgBModal isOpen={modal10} toggle={this.toggle(10)} frame position='bottom'>
+            <lgBModalBody className='text-center'>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua.
-              <MDBBtn color='secondary' onClick={this.toggle(10)}>
+              <lgBBtn color='secondary' onClick={this.toggle(10)}>
                 Close
-              </MDBBtn>
-              <MDBBtn color='primary'>Save changes</MDBBtn>
-            </MDBModalBody>
-          </MDBModal>
-          <MDBBtn color='warning' onClick={this.toggle(11)}>
+              </lgBBtn>
+              <lgBBtn color='primary'>Save changes</lgBBtn>
+            </lgBModalBody>
+          </lgBModal>
+          <lgBBtn color='warning' onClick={this.toggle(11)}>
             Top
-          </MDBBtn>
-          <MDBModal isOpen={modal11} toggle={this.toggle(11)} frame position='top'>
-            <MDBModalBody className='text-center'>
+          </lgBBtn>
+          <lgBModal isOpen={modal11} toggle={this.toggle(11)} frame position='top'>
+            <lgBModalBody className='text-center'>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua.
-              <MDBBtn color='secondary' onClick={this.toggle(11)}>
+              <lgBBtn color='secondary' onClick={this.toggle(11)}>
                 Close
-              </MDBBtn>
-              <MDBBtn color='primary'>Save changes</MDBBtn>
-            </MDBModalBody>
-          </MDBModal>
+              </lgBBtn>
+              <lgBBtn color='primary'>Save changes</lgBBtn>
+            </lgBModalBody>
+          </lgBModal>
         </SectionContainer>
 
         <SectionContainer header='Remove backdrop' flexCenter>
-          <MDBBtn onClick={this.toggle(12)}>Modal</MDBBtn>
-          <MDBModal
+          <lgBBtn onClick={this.toggle(12)}>Modal</lgBBtn>
+          <lgBModal
             isOpen={modal12}
             toggle={this.toggle(12)}
             backdrop={false}
           >
-            <MDBModalHeader toggle={this.toggle(12)}>Modal title</MDBModalHeader>
-            <MDBModalBody>
+            <lgBModalHeader toggle={this.toggle(12)}>Modal title</lgBModalHeader>
+            <lgBModalBody>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
               ea commodo consequat.
-            </MDBModalBody>
-            <MDBModalFooter>
-              <MDBBtn color='secondary' onClick={this.toggle(12)}>
+            </lgBModalBody>
+            <lgBModalFooter>
+              <lgBBtn color='secondary' onClick={this.toggle(12)}>
                 Close
-              </MDBBtn>
-              <MDBBtn color='primary'>Save changes</MDBBtn>
-            </MDBModalFooter>
-          </MDBModal>
+              </lgBBtn>
+              <lgBBtn color='primary'>Save changes</lgBBtn>
+            </lgBModalFooter>
+          </lgBModal>
         </SectionContainer>
 
         <SectionContainer header='Disable backdrop' flexCenter>
-          <MDBBtn onClick={this.toggle(19)} color='danger'>
+          <lgBBtn onClick={this.toggle(19)} color='danger'>
             Modal
-          </MDBBtn>
-          <MDBModal isOpen={modal19} toggle={this.toggle(19)} disableBackdrop>
-            <MDBModalHeader toggle={this.toggle(19)}>Modal title</MDBModalHeader>
-            <MDBModalBody>
+          </lgBBtn>
+          <lgBModal isOpen={modal19} toggle={this.toggle(19)} disableBackdrop>
+            <lgBModalHeader toggle={this.toggle(19)}>Modal title</lgBModalHeader>
+            <lgBModalBody>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
               ea commodo consequat.
-            </MDBModalBody>
-            <MDBModalFooter>
-              <MDBBtn color='secondary' onClick={this.toggle(19)}>
+            </lgBModalBody>
+            <lgBModalFooter>
+              <lgBBtn color='secondary' onClick={this.toggle(19)}>
                 Close
-              </MDBBtn>
-              <MDBBtn color='primary'>Save changes</MDBBtn>
-            </MDBModalFooter>
-          </MDBModal>
+              </lgBBtn>
+              <lgBBtn color='primary'>Save changes</lgBBtn>
+            </lgBModalFooter>
+          </lgBModal>
         </SectionContainer>
 
         <SectionContainer header='Focus Trap' flexCenter>
-          <MDBBtn onClick={this.toggle(20)} color='success'>
+          <lgBBtn onClick={this.toggle(20)} color='success'>
             Modal
-          </MDBBtn>
-          <MDBModal isOpen={modal20} toggle={this.toggle(20)} disableFocusTrap={false}>
-            <MDBModalHeader toggle={this.toggle(20)}>Modal title</MDBModalHeader>
-            <MDBModalBody>
+          </lgBBtn>
+          <lgBModal isOpen={modal20} toggle={this.toggle(20)} disableFocusTrap={false}>
+            <lgBModalHeader toggle={this.toggle(20)}>Modal title</lgBModalHeader>
+            <lgBModalBody>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
               ea commodo consequat.
-            </MDBModalBody>
-            <MDBModalFooter>
-              <MDBBtn color='secondary' onClick={this.toggle(20)}>
+            </lgBModalBody>
+            <lgBModalFooter>
+              <lgBBtn color='secondary' onClick={this.toggle(20)}>
                 Close
-              </MDBBtn>
-              <MDBBtn color='primary'>Save changes</MDBBtn>
-            </MDBModalFooter>
-          </MDBModal>
+              </lgBBtn>
+              <lgBBtn color='primary'>Save changes</lgBBtn>
+            </lgBModalFooter>
+          </lgBModal>
         </SectionContainer>
 
         <SectionContainer header='Scrolling long content' flexCenter>
-          <MDBBtn color='primary' onClick={this.toggle(13)}>
+          <lgBBtn color='primary' onClick={this.toggle(13)}>
             Modal
-          </MDBBtn>
-          <MDBModal isOpen={modal13} toggle={this.toggle(13)}>
-            <MDBModalHeader toggle={this.toggle(13)}>Modal title</MDBModalHeader>
-            <MDBModalBody>
+          </lgBBtn>
+          <lgBModal isOpen={modal13} toggle={this.toggle(13)}>
+            <lgBModalHeader toggle={this.toggle(13)}>Modal title</lgBModalHeader>
+            <lgBModalBody>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
               ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
@@ -385,173 +385,173 @@ class ModalPage extends Component {
               exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet,
               consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
               ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </MDBModalBody>
-            <MDBModalFooter>
-              <MDBBtn color='secondary' onClick={this.toggle(13)}>
+            </lgBModalBody>
+            <lgBModalFooter>
+              <lgBBtn color='secondary' onClick={this.toggle(13)}>
                 Close
-              </MDBBtn>
-              <MDBBtn color='primary'>Save changes</MDBBtn>
-            </MDBModalFooter>
-          </MDBModal>
+              </lgBBtn>
+              <lgBBtn color='primary'>Save changes</lgBBtn>
+            </lgBModalFooter>
+          </lgBModal>
         </SectionContainer>
 
         <SectionContainer header='Vertically centered' flexCenter>
-          <MDBBtn color='primary' onClick={this.toggle(14)}>
+          <lgBBtn color='primary' onClick={this.toggle(14)}>
             Modal
-          </MDBBtn>
-          <MDBModal isOpen={modal14} toggle={this.toggle(14)} centered>
-            <MDBModalHeader toggle={this.toggle(14)}>Modal title</MDBModalHeader>
-            <MDBModalBody>
+          </lgBBtn>
+          <lgBModal isOpen={modal14} toggle={this.toggle(14)} centered>
+            <lgBModalHeader toggle={this.toggle(14)}>Modal title</lgBModalHeader>
+            <lgBModalBody>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
               ea commodo consequat.
-            </MDBModalBody>
-            <MDBModalFooter>
-              <MDBBtn color='secondary' onClick={this.toggle(14)}>
+            </lgBModalBody>
+            <lgBModalFooter>
+              <lgBBtn color='secondary' onClick={this.toggle(14)}>
                 Close
-              </MDBBtn>
-              <MDBBtn color='primary'>Save changes</MDBBtn>
-            </MDBModalFooter>
-          </MDBModal>
+              </lgBBtn>
+              <lgBBtn color='primary'>Save changes</lgBBtn>
+            </lgBModalFooter>
+          </lgBModal>
         </SectionContainer>
 
         <SectionContainer header='Tooltips and popovers' flexCenter>
-          <MDBBtn color='primary' onClick={this.toggle(15)}>
+          <lgBBtn color='primary' onClick={this.toggle(15)}>
             Modal
-          </MDBBtn>
-          <MDBModal isOpen={modal15} toggle={this.toggle(15)}>
-            <MDBModalHeader toggle={this.toggle(15)}>Modal title</MDBModalHeader>
-            <MDBModalBody>
+          </lgBBtn>
+          <lgBModal isOpen={modal15} toggle={this.toggle(15)}>
+            <lgBModalHeader toggle={this.toggle(15)}>Modal title</lgBModalHeader>
+            <lgBModalBody>
               This
-              <MDBPopover popover clickable id='popper1' placement='right'>
-                <MDBBtn color='secondary'>button</MDBBtn>
+              <lgBPopover popover clickable id='popper1' placement='right'>
+                <lgBBtn color='secondary'>button</lgBBtn>
                 <div>
-                  <MDBPopoverHeader>MDBPopover title</MDBPopoverHeader>
-                  <MDBPopoverBody>MDBPopover body content is set in this attribute.</MDBPopoverBody>
+                  <lgBPopoverHeader>lgBPopover title</lgBPopoverHeader>
+                  <lgBPopoverBody>lgBPopover body content is set in this attribute.</lgBPopoverBody>
                 </div>
-              </MDBPopover>
+              </lgBPopover>
               triggers a popover on click.
               <hr />
-              <MDBTooltip id='popper4' tag='span' domElement>
+              <lgBTooltip id='popper4' tag='span' domElement>
                 <a href='!#'>This link</a>
                 <span>Tooltip</span>
-              </MDBTooltip>{' '}
+              </lgBTooltip>{' '}
               and{' '}
-              <MDBTooltip id='popper3' tag='span' domElement>
+              <lgBTooltip id='popper3' tag='span' domElement>
                 <a href='!#'>that link</a>
                 <span>Tooltip</span>
-              </MDBTooltip>{' '}
+              </lgBTooltip>{' '}
               have tooltips on hover.
-            </MDBModalBody>
-            <MDBModalFooter>
-              <MDBBtn color='secondary' onClick={this.toggle(15)}>
+            </lgBModalBody>
+            <lgBModalFooter>
+              <lgBBtn color='secondary' onClick={this.toggle(15)}>
                 Close
-              </MDBBtn>
-              <MDBBtn color='primary'>Save changes</MDBBtn>
-            </MDBModalFooter>
-          </MDBModal>
+              </lgBBtn>
+              <lgBBtn color='primary'>Save changes</lgBBtn>
+            </lgBModalFooter>
+          </lgBModal>
         </SectionContainer>
 
         <SectionContainer header='Using the grid' flexCenter>
-          <MDBBtn onClick={this.toggle(16)}>Modal</MDBBtn>
-          <MDBModal isOpen={modal16} toggle={this.toggle(16)}>
-            <MDBModalHeader toggle={this.toggle(16)}>Modal title</MDBModalHeader>
-            <MDBModalBody>
-              <MDBContainer fluid className='text-white'>
-                <MDBRow>
-                  <MDBCol md='4' className='bg-info'>
-                    .col-md-4
-                  </MDBCol>
-                  <MDBCol md='4' className='ml-auto bg-info'>
-                    .col-md-4 .ml-auto
-                  </MDBCol>
-                </MDBRow>
+          <lgBBtn onClick={this.toggle(16)}>Modal</lgBBtn>
+          <lgBModal isOpen={modal16} toggle={this.toggle(16)}>
+            <lgBModalHeader toggle={this.toggle(16)}>Modal title</lgBModalHeader>
+            <lgBModalBody>
+              <lgBContainer fluid className='text-white'>
+                <lgBRow>
+                  <lgBCol lg='4' className='bg-info'>
+                    .col-lg-4
+                  </lgBCol>
+                  <lgBCol lg='4' className='ml-auto bg-info'>
+                    .col-lg-4 .ml-auto
+                  </lgBCol>
+                </lgBRow>
                 <br />
-                <MDBRow>
-                  <MDBCol md='3' className='ml-auto bg-info'>
-                    .col-md-3 .ml-auto
-                  </MDBCol>
-                  <MDBCol md='2' className='ml-auto bg-info'>
-                    .col-md-2 .ml-auto
-                  </MDBCol>
-                </MDBRow>
-                <MDBRow>
-                  <MDBCol md='6' className='ml-5 bg-info'>
-                    .col-md-6 .ml-5
-                  </MDBCol>
-                </MDBRow>
+                <lgBRow>
+                  <lgBCol lg='3' className='ml-auto bg-info'>
+                    .col-lg-3 .ml-auto
+                  </lgBCol>
+                  <lgBCol lg='2' className='ml-auto bg-info'>
+                    .col-lg-2 .ml-auto
+                  </lgBCol>
+                </lgBRow>
+                <lgBRow>
+                  <lgBCol lg='6' className='ml-5 bg-info'>
+                    .col-lg-6 .ml-5
+                  </lgBCol>
+                </lgBRow>
                 <br />
-                <MDBRow>
-                  <MDBCol sm='9' className='bg-info'>
+                <lgBRow>
+                  <lgBCol sm='9' className='bg-info'>
                     Level 1: .col-sm-9
-                    <MDBRow>
-                      <MDBCol sm='6' className='bg-info'>
+                    <lgBRow>
+                      <lgBCol sm='6' className='bg-info'>
                         Level 2: .col-8 .col-sm-6
-                      </MDBCol>
-                      <MDBCol sm='6' className='bg-info'>
+                      </lgBCol>
+                      <lgBCol sm='6' className='bg-info'>
                         Level 2: .col-4 .col-sm-6
-                      </MDBCol>
-                    </MDBRow>
-                  </MDBCol>
-                </MDBRow>
-              </MDBContainer>
-            </MDBModalBody>
-            <MDBModalFooter>
-              <MDBBtn color='secondary' onClick={this.toggle(16)}>
+                      </lgBCol>
+                    </lgBRow>
+                  </lgBCol>
+                </lgBRow>
+              </lgBContainer>
+            </lgBModalBody>
+            <lgBModalFooter>
+              <lgBBtn color='secondary' onClick={this.toggle(16)}>
                 Close
-              </MDBBtn>
-              <MDBBtn color='primary'>Save changes</MDBBtn>
-            </MDBModalFooter>
-          </MDBModal>
+              </lgBBtn>
+              <lgBBtn color='primary'>Save changes</lgBBtn>
+            </lgBModalFooter>
+          </lgBModal>
         </SectionContainer>
 
         <SectionContainer header='Varying modal content' flexCenter>
-          <MDBBtn color='primary' onClick={this.toggle(17)}>
+          <lgBBtn color='primary' onClick={this.toggle(17)}>
             Open modal for {mailAddress}
-          </MDBBtn>
-          <MDBModal isOpen={modal17} toggle={this.toggle(17)}>
-            <MDBModalHeader toggle={this.toggle(17)}>New message to {mailAddress}</MDBModalHeader>
-            <MDBModalBody>
-              <div className='md-form'>
-                <MDBInput value={mailAddress} />
-                <MDBInput type='textarea' label='Message' rows='2' />
+          </lgBBtn>
+          <lgBModal isOpen={modal17} toggle={this.toggle(17)}>
+            <lgBModalHeader toggle={this.toggle(17)}>New message to {mailAddress}</lgBModalHeader>
+            <lgBModalBody>
+              <div className='lg-form'>
+                <lgBInput value={mailAddress} />
+                <lgBInput type='textarea' label='Message' rows='2' />
               </div>
-            </MDBModalBody>
-            <MDBModalFooter>
-              <MDBBtn color='secondary' onClick={this.toggle(17)}>
+            </lgBModalBody>
+            <lgBModalFooter>
+              <lgBBtn color='secondary' onClick={this.toggle(17)}>
                 Close
-              </MDBBtn>
-              <MDBBtn color='primary'>Send message</MDBBtn>
-            </MDBModalFooter>
-          </MDBModal>
+              </lgBBtn>
+              <lgBBtn color='primary'>Send message</lgBBtn>
+            </lgBModalFooter>
+          </lgBModal>
         </SectionContainer>
 
         <SectionContainer header='Modal Events' flexCenter>
-          <MDBBtn color='warning' onClick={this.toggle(18)}>
+          <lgBBtn color='warning' onClick={this.toggle(18)}>
             Modal events
-          </MDBBtn>
-          <MDBModal
+          </lgBBtn>
+          <lgBModal
             isOpen={modal18}
             toggle={this.toggle(18)}
             hideModal={this.hideFunction}
             hiddenModal={this.hiddenFunction}
             showModal={this.showFunction}
           >
-            <MDBModalHeader toggle={this.toggle(18)}>Modal title</MDBModalHeader>
-            <MDBModalBody>
+            <lgBModalHeader toggle={this.toggle(18)}>Modal title</lgBModalHeader>
+            <lgBModalBody>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
               ea commodo consequat.
-            </MDBModalBody>
-            <MDBModalFooter>
-              <MDBBtn color='secondary' onClick={this.toggle(18)}>
+            </lgBModalBody>
+            <lgBModalFooter>
+              <lgBBtn color='secondary' onClick={this.toggle(18)}>
                 Close
-              </MDBBtn>
-              <MDBBtn color='primary'>Save changes</MDBBtn>
-            </MDBModalFooter>
-          </MDBModal>
+              </lgBBtn>
+              <lgBBtn color='primary'>Save changes</lgBBtn>
+            </lgBModalFooter>
+          </lgBModal>
         </SectionContainer>
-      </MDBContainer>
+      </lgBContainer>
     );
   }
 }

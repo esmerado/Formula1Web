@@ -1,5 +1,5 @@
 import React from 'react';
-import { MDBContainer } from 'mdbreact';
+import { lgBContainer } from 'lgbreact';
 import classNames from 'classnames';
 
 const SectionContainer = ({
@@ -35,10 +35,10 @@ const SectionContainer = ({
     <>
       {title}
       {header}
-      <MDBContainer fluid className={classes} style={style}>
+      <lgBContainer fluid className={classes} style={style}>
         {description}
         {children}
-      </MDBContainer>
+      </lgBContainer>
     </>
   );
 };

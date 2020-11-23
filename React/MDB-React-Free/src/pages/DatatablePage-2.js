@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { MDBContainer, MDBRow, MDBCol, MDBCard, MDBCardBody, MDBBadge, MDBDataTableV5 } from 'mdbreact';
+import { lgBContainer, lgBRow, lgBCol, lgBCard, lgBCardBody, lgBBadge, lgBDataTableV5 } from 'lgbreact';
 import DocsLink from '../components/docsLink';
 import SectionContainer from '../components/sectionContainer';
 import Result from '../components/result';
@@ -537,9 +537,9 @@ class DatatablePage extends Component {
         ...data.rows.map((row, order) => ({
           ...row,
           badge: (
-            <MDBBadge pill color='primary' className='p-1 px-2' key={order} searchvalue={order}>
+            <lgBBadge pill color='primary' className='p-1 px-2' key={order} searchvalue={order}>
               ID: {order + 1}
-            </MDBBadge>
+            </lgBBadge>
           )
         }))
       ]
@@ -556,15 +556,15 @@ class DatatablePage extends Component {
     };
 
     return (
-      <MDBContainer className='mt-3'>
-        <DocsLink title='Datatable' href='https://mdbootstrap.com/docs/react/tables/datatables/' />
+      <lgBContainer className='mt-3'>
+        <DocsLink title='Datatable' href='https://lgbootstrap.com/docs/react/tables/datatables/' />
 
-        <MDBRow className='py-3'>
-          <MDBCol md='12'>
+        <lgBRow className='py-3'>
+          <lgBCol lg='12'>
             <SectionContainer title='Basic example' noBorder>
-              <MDBCard>
-                <MDBCardBody>
-                  <MDBDataTableV5
+              <lgBCard>
+                <lgBCardBody>
+                  <lgBDataTableV5
                     hover
                     entriesOptions={[5, 20, 25]}
                     entries={5}
@@ -573,18 +573,18 @@ class DatatablePage extends Component {
                     searchTop
                     searchBottom={false}
                   />
-                </MDBCardBody>
-              </MDBCard>
+                </lgBCardBody>
+              </lgBCard>
             </SectionContainer>
-          </MDBCol>
-        </MDBRow>
+          </lgBCol>
+        </lgBRow>
 
-        <MDBRow className='py-3'>
-          <MDBCol md='12'>
+        <lgBRow className='py-3'>
+          <lgBCol lg='12'>
             <SectionContainer title='Full pagination' noBorder>
-              <MDBCard>
-                <MDBCardBody>
-                  <MDBDataTableV5
+              <lgBCard>
+                <lgBCardBody>
+                  <lgBDataTableV5
                     hover
                     entriesOptions={[5, 20, 25]}
                     entries={5}
@@ -592,18 +592,18 @@ class DatatablePage extends Component {
                     data={data}
                     fullPagination
                   />
-                </MDBCardBody>
-              </MDBCard>
+                </lgBCardBody>
+              </lgBCard>
             </SectionContainer>
-          </MDBCol>
-        </MDBRow>
+          </lgBCol>
+        </lgBRow>
 
-        <MDBRow className='py-3'>
-          <MDBCol md='12'>
+        <lgBRow className='py-3'>
+          <lgBCol lg='12'>
             <SectionContainer title='With search top and select' noBorder>
-              <MDBCard>
-                <MDBCardBody>
-                  <MDBDataTableV5
+              <lgBCard>
+                <lgBCardBody>
+                  <lgBDataTableV5
                     hover
                     entriesOptions={[5, 20, 25]}
                     entries={5}
@@ -613,18 +613,18 @@ class DatatablePage extends Component {
                     searchTop
                     searchBottom={false}
                   />
-                </MDBCardBody>
-              </MDBCard>
+                </lgBCardBody>
+              </lgBCard>
             </SectionContainer>
-          </MDBCol>
-        </MDBRow>
+          </lgBCol>
+        </lgBRow>
 
-        <MDBRow className='py-3'>
-          <MDBCol md='12'>
+        <lgBRow className='py-3'>
+          <lgBCol lg='12'>
             <SectionContainer title='With search top' noBorder>
-              <MDBCard>
-                <MDBCardBody>
-                  <MDBDataTableV5
+              <lgBCard>
+                <lgBCardBody>
+                  <lgBDataTableV5
                     hover
                     entriesOptions={[5, 20, 25]}
                     entries={5}
@@ -633,18 +633,18 @@ class DatatablePage extends Component {
                     searchTop
                     searchBottom={false}
                   />
-                </MDBCardBody>
-              </MDBCard>
+                </lgBCardBody>
+              </lgBCard>
             </SectionContainer>
-          </MDBCol>
-        </MDBRow>
+          </lgBCol>
+        </lgBRow>
 
-        <MDBRow className='py-3'>
-          <MDBCol md='12'>
+        <lgBRow className='py-3'>
+          <lgBCol lg='12'>
             <SectionContainer title='Search top with select reverse' noBorder>
-              <MDBCard>
-                <MDBCardBody>
-                  <MDBDataTableV5
+              <lgBCard>
+                <lgBCardBody>
+                  <lgBDataTableV5
                     hover
                     entriesOptions={[5, 20, 25]}
                     entries={5}
@@ -655,42 +655,42 @@ class DatatablePage extends Component {
                     searchBottom={false}
                     barReverse
                   />
-                </MDBCardBody>
-              </MDBCard>
+                </lgBCardBody>
+              </lgBCard>
             </SectionContainer>
-          </MDBCol>
-        </MDBRow>
+          </lgBCol>
+        </lgBRow>
 
-        <MDBRow className='py-3'>
-          <MDBCol md='12'>
+        <lgBRow className='py-3'>
+          <lgBCol lg='12'>
             <SectionContainer title='Without info' noBorder>
-              <MDBCard>
-                <MDBCardBody>
-                  <MDBDataTableV5 hover info={false} data={data} />
-                </MDBCardBody>
-              </MDBCard>
+              <lgBCard>
+                <lgBCardBody>
+                  <lgBDataTableV5 hover info={false} data={data} />
+                </lgBCardBody>
+              </lgBCard>
             </SectionContainer>
-          </MDBCol>
-        </MDBRow>
+          </lgBCol>
+        </lgBRow>
 
-        <MDBRow className='py-3'>
-          <MDBCol md='12'>
+        <lgBRow className='py-3'>
+          <lgBCol lg='12'>
             <SectionContainer title='Without sorting' noBorder>
-              <MDBCard>
-                <MDBCardBody>
-                  <MDBDataTableV5 hover sortable={false} data={data} />
-                </MDBCardBody>
-              </MDBCard>
+              <lgBCard>
+                <lgBCardBody>
+                  <lgBDataTableV5 hover sortable={false} data={data} />
+                </lgBCardBody>
+              </lgBCard>
             </SectionContainer>
-          </MDBCol>
-        </MDBRow>
+          </lgBCol>
+        </lgBRow>
 
-        <MDBRow className='py-3'>
-          <MDBCol md='12'>
+        <lgBRow className='py-3'>
+          <lgBCol lg='12'>
             <SectionContainer title='With sorting conponent' noBorder>
-              <MDBCard>
-                <MDBCardBody>
-                  <MDBDataTableV5
+              <lgBCard>
+                <lgBCardBody>
+                  <lgBDataTableV5
                     hover
                     entriesOptions={[5, 20, 25]}
                     entries={5}
@@ -698,114 +698,114 @@ class DatatablePage extends Component {
                     data={badgesData}
                     sortRows={['badge']}
                   />
-                </MDBCardBody>
-              </MDBCard>
+                </lgBCardBody>
+              </lgBCard>
             </SectionContainer>
-          </MDBCol>
-        </MDBRow>
+          </lgBCol>
+        </lgBRow>
 
-        <MDBRow className='py-3'>
-          <MDBCol md='12'>
+        <lgBRow className='py-3'>
+          <lgBCol lg='12'>
             <SectionContainer title='Initial order' noBorder>
-              <MDBCard>
-                <MDBCardBody>
-                  <MDBDataTableV5 hover order={['age', 'desc']} data={data} />
-                </MDBCardBody>
-              </MDBCard>
+              <lgBCard>
+                <lgBCardBody>
+                  <lgBDataTableV5 hover order={['age', 'desc']} data={data} />
+                </lgBCardBody>
+              </lgBCard>
             </SectionContainer>
-          </MDBCol>
-        </MDBRow>
+          </lgBCol>
+        </lgBRow>
 
-        <MDBRow className='py-3'>
-          <MDBCol md='12'>
+        <lgBRow className='py-3'>
+          <lgBCol lg='12'>
             <SectionContainer title='Without searching' noBorder>
-              <MDBCard>
-                <MDBCardBody>
-                  <MDBDataTableV5 hover searching={false} data={data} />
-                </MDBCardBody>
-              </MDBCard>
+              <lgBCard>
+                <lgBCardBody>
+                  <lgBDataTableV5 hover searching={false} data={data} />
+                </lgBCardBody>
+              </lgBCard>
             </SectionContainer>
-          </MDBCol>
-        </MDBRow>
+          </lgBCol>
+        </lgBRow>
 
-        <MDBRow className='py-3'>
-          <MDBCol md='12'>
+        <lgBRow className='py-3'>
+          <lgBCol lg='12'>
             <SectionContainer title='Bars positioning' noBorder>
-              <MDBCard>
-                <MDBCardBody>
-                  <MDBDataTableV5 barReverse hover data={data} />
-                </MDBCardBody>
-              </MDBCard>
+              <lgBCard>
+                <lgBCardBody>
+                  <lgBDataTableV5 barReverse hover data={data} />
+                </lgBCardBody>
+              </lgBCard>
             </SectionContainer>
-          </MDBCol>
-        </MDBRow>
+          </lgBCol>
+        </lgBRow>
 
-        <MDBRow className='py-3'>
-          <MDBCol md='12'>
+        <lgBRow className='py-3'>
+          <lgBCol lg='12'>
             <SectionContainer title='With scrollY property' noBorder>
-              <MDBCard>
-                <MDBCardBody>
-                  <MDBDataTableV5 hover scrollY maxHeight='300px' data={data} />
-                </MDBCardBody>
-              </MDBCard>
+              <lgBCard>
+                <lgBCardBody>
+                  <lgBDataTableV5 hover scrollY maxHeight='300px' data={data} />
+                </lgBCardBody>
+              </lgBCard>
             </SectionContainer>
-          </MDBCol>
-        </MDBRow>
+          </lgBCol>
+        </lgBRow>
 
-        <MDBRow className='py-3'>
-          <MDBCol md='12'>
+        <lgBRow className='py-3'>
+          <lgBCol lg='12'>
             <SectionContainer title='ScrollY dynamic height' noBorder>
-              <MDBCard>
-                <MDBCardBody>
-                  <MDBDataTableV5 hover scrollY maxHeight='50vh' data={data} />
-                </MDBCardBody>
-              </MDBCard>
+              <lgBCard>
+                <lgBCardBody>
+                  <lgBDataTableV5 hover scrollY maxHeight='50vh' data={data} />
+                </lgBCardBody>
+              </lgBCard>
             </SectionContainer>
-          </MDBCol>
-        </MDBRow>
+          </lgBCol>
+        </lgBRow>
 
-        <MDBRow className='py-3'>
-          <MDBCol md='12'>
+        <lgBRow className='py-3'>
+          <lgBCol lg='12'>
             <SectionContainer title='With scrollX property' noBorder>
-              <MDBCard>
-                <MDBCardBody>
-                  <MDBDataTableV5 hover scrollX data={widerData} />
-                </MDBCardBody>
-              </MDBCard>
+              <lgBCard>
+                <lgBCardBody>
+                  <lgBDataTableV5 hover scrollX data={widerData} />
+                </lgBCardBody>
+              </lgBCard>
             </SectionContainer>
-          </MDBCol>
-        </MDBRow>
+          </lgBCol>
+        </lgBRow>
 
-        <MDBRow className='py-3'>
-          <MDBCol md='12'>
+        <lgBRow className='py-3'>
+          <lgBCol lg='12'>
             <SectionContainer title='With scrollX and scrollY properties' noBorder>
-              <MDBCard>
-                <MDBCardBody>
-                  <MDBDataTableV5 hover scrollX scrollY maxHeight='300xp' data={widerData} />
-                </MDBCardBody>
-              </MDBCard>
+              <lgBCard>
+                <lgBCardBody>
+                  <lgBDataTableV5 hover scrollX scrollY maxHeight='300xp' data={widerData} />
+                </lgBCardBody>
+              </lgBCard>
             </SectionContainer>
-          </MDBCol>
-        </MDBRow>
+          </lgBCol>
+        </lgBRow>
 
-        <MDBRow className='py-3'>
-          <MDBCol md='12'>
+        <lgBRow className='py-3'>
+          <lgBCol lg='12'>
             <SectionContainer title='Without pagination' noBorder>
-              <MDBCard>
-                <MDBCardBody>
-                  <MDBDataTableV5 hover paging={false} data={data} />
-                </MDBCardBody>
-              </MDBCard>
+              <lgBCard>
+                <lgBCardBody>
+                  <lgBDataTableV5 hover paging={false} data={data} />
+                </lgBCardBody>
+              </lgBCard>
             </SectionContainer>
-          </MDBCol>
-        </MDBRow>
+          </lgBCol>
+        </lgBRow>
 
-        <MDBRow className='py-3'>
-          <MDBCol md='12'>
+        <lgBRow className='py-3'>
+          <lgBCol lg='12'>
             <SectionContainer title='With checkboxes' noBorder>
-              <MDBCard>
-                <MDBCardBody>
-                  <MDBDataTableV5
+              <lgBCard>
+                <lgBCardBody>
+                  <lgBDataTableV5
                     hover
                     entriesOptions={[5, 20, 25]}
                     entries={5}
@@ -818,19 +818,19 @@ class DatatablePage extends Component {
                       this.showLogs1(e);
                     }}
                   />
-                </MDBCardBody>
-              </MDBCard>
+                </lgBCardBody>
+              </lgBCard>
               <Result> {checkbox1 && <p>{JSON.stringify(delete checkbox1.checkbox && checkbox1)}</p>}</Result>
             </SectionContainer>
-          </MDBCol>
-        </MDBRow>
+          </lgBCol>
+        </lgBRow>
 
-        <MDBRow className='py-3'>
-          <MDBCol md='12'>
+        <lgBRow className='py-3'>
+          <lgBCol lg='12'>
             <SectionContainer title='With checkboxes on the end' noBorder>
-              <MDBCard>
-                <MDBCardBody>
-                  <MDBDataTableV5
+              <lgBCard>
+                <lgBCardBody>
+                  <lgBDataTableV5
                     hover
                     entriesOptions={[5, 20, 25]}
                     entries={5}
@@ -844,19 +844,19 @@ class DatatablePage extends Component {
                     }}
                     checkboxFirstColumn
                   />
-                </MDBCardBody>
-              </MDBCard>
+                </lgBCardBody>
+              </lgBCard>
               <Result> {checkbox2 && <p>{JSON.stringify(delete checkbox2.checkbox && checkbox2)}</p>}</Result>
             </SectionContainer>
-          </MDBCol>
-        </MDBRow>
+          </lgBCol>
+        </lgBRow>
 
-        <MDBRow className='py-3'>
-          <MDBCol md='12'>
+        <lgBRow className='py-3'>
+          <lgBCol lg='12'>
             <SectionContainer title='With multiple checkboxes' noBorder>
-              <MDBCard>
-                <MDBCardBody>
-                  <MDBDataTableV5
+              <lgBCard>
+                <lgBCardBody>
+                  <lgBDataTableV5
                     hover
                     entriesOptions={[5, 20, 25]}
                     entries={5}
@@ -873,8 +873,8 @@ class DatatablePage extends Component {
                     }}
                     multipleCheckboxes
                   />
-                </MDBCardBody>
-              </MDBCard>
+                </lgBCardBody>
+              </lgBCard>
               <Result>
                 {multiple && (
                   <p>
@@ -888,9 +888,9 @@ class DatatablePage extends Component {
                 )}
               </Result>
             </SectionContainer>
-          </MDBCol>
-        </MDBRow>
-      </MDBContainer>
+          </lgBCol>
+        </lgBRow>
+      </lgBContainer>
     );
   }
 }

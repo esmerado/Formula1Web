@@ -1,5 +1,5 @@
 # React Bootstrap with Material Design
-MDBootstrap for React
+lgBootstrap for React
 
 ## Getting Started
 To test, contribute or just see what we did follow few easy steps:
@@ -19,4 +19,4 @@ Before you report a bug, please take your time to find if an issue hasn't been r
 We're also open to pull requests
 
 ## Something Missing?
-If you still have some questions do not hesitate to ask us. Open an issue or [visit our Slack](https://mdbbetatest.slack.com)
+If you still have some questions do not hesitate to ask us. Open an issue or [visit our Slack](https://lgbbetatest.slack.com)

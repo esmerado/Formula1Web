@@ -1,18 +1,18 @@
 import React from 'react';
-import { MDBNotification, MDBContainer } from 'mdbreact';
+import { lgBNotification, lgBContainer } from 'lgbreact';
 import DocsLink from '../components/docsLink';
 import SectionContainer from '../components/sectionContainer';
 
 const NotificationPage = () => {
   return (
-    <MDBContainer>
+    <lgBContainer>
       <DocsLink
         title='Notifications'
-        href='https://mdbootstrap.com/docs/react/addons/notification/'
+        href='https://lgbootstrap.com/docs/react/addons/notification/'
       />
 
       <SectionContainer header='Default'>
-        <MDBNotification
+        <lgBNotification
           iconClassName='text-primary'
           show
           fade
@@ -26,7 +26,7 @@ const NotificationPage = () => {
         title='Accessibility'
         description='Notification with autohide! Refresh page and wait 3 sec'
       >
-        <MDBNotification
+        <lgBNotification
           iconClassName='text-primary'
           show
           fade
@@ -38,7 +38,7 @@ const NotificationPage = () => {
       </SectionContainer>
 
       <SectionContainer header='Custom icons'>
-        <MDBNotification
+        <lgBNotification
           iconClassName='green-text'
           icon='envelope'
           show
@@ -50,7 +50,7 @@ const NotificationPage = () => {
       </SectionContainer>
 
       <SectionContainer header='Translucent' dark>
-        <MDBNotification
+        <lgBNotification
           iconClassName='text-primary'
           show
           fade
@@ -61,7 +61,7 @@ const NotificationPage = () => {
       </SectionContainer>
 
       <SectionContainer header='Stacking'>
-        <MDBNotification
+        <lgBNotification
           iconClassName='text-primary'
           show
           fade
@@ -69,7 +69,7 @@ const NotificationPage = () => {
           message='See? Just like this.'
           text='just now'
         />
-        <MDBNotification
+        <lgBNotification
           iconClassName='text-primary'
           show
           fade
@@ -82,7 +82,7 @@ const NotificationPage = () => {
       <SectionContainer header='Placement' noBorder>
         <SectionContainer dark>
           <div style={{ minHeight: '200px', position: 'relative' }}>
-            <MDBNotification
+            <lgBNotification
               iconClassName='text-primary'
               show
               fade
@@ -100,7 +100,7 @@ const NotificationPage = () => {
         <SectionContainer
           style={{
             backgroundImage:
-              "url('https://mdbootstrap.com/img/Photos/Horizontal/Nature/6-col/img%20(122).jpg')",
+              "url('https://lgbootstrap.com/img/Photos/Horizontal/Nature/6-col/img%20(122).jpg')",
             minHeight: '350px'
           }}
         >
@@ -112,7 +112,7 @@ const NotificationPage = () => {
                 right: 0
               }}
             >
-              <MDBNotification
+              <lgBNotification
                 iconClassName='text-primary'
                 show
                 fade
@@ -120,7 +120,7 @@ const NotificationPage = () => {
                 message='See? Just like this.'
                 text='just now'
               />
-              <MDBNotification
+              <lgBNotification
                 icon='user'
                 show
                 fade
@@ -128,7 +128,7 @@ const NotificationPage = () => {
                 message='Heads up, toasts will stack automatically'
                 text='2 seconds ago'
               />
-              <MDBNotification
+              <lgBNotification
                 iconClassName='green-text'
                 icon='envelope'
                 show
@@ -143,7 +143,7 @@ const NotificationPage = () => {
       </SectionContainer>
 
       <SectionContainer header='Customizable'>
-        <MDBNotification
+        <lgBNotification
           autohide={0} // by default = ∞ ms
           bodyClassName='p-5 font-weight-bold white-text'
           className='stylish-color-dark'
@@ -158,7 +158,7 @@ const NotificationPage = () => {
           titleClassName='elegant-color-dark white-text'
         />
       </SectionContainer>
-    </MDBContainer>
+    </lgBContainer>
   );
 };
 

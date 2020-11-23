@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { MDBInput, MDBInputSelect, MDBFormInline, MDBBtn, MDBContainer, MDBRow, MDBCol } from 'mdbreact';
+import { lgBInput, lgBInputSelect, lgBFormInline, lgBBtn, lgBContainer, lgBRow, lgBCol } from 'lgbreact';
 import DocsLink from '../components/docsLink';
 import SectionContainer from '../components/sectionContainer';
 
@@ -20,7 +20,7 @@ class InputPage extends Component {
 
   handleSubmit = event => {
     const { value } = this.state;
-    alert(`MDBInput value: ${value}`);
+    alert(`lgBInput value: ${value}`);
     event.preventDefault();
   };
 
@@ -54,46 +54,46 @@ class InputPage extends Component {
     const { iconInput, typeInput, value } = this.state;
 
     return (
-      <MDBContainer className='mt-5'>
-        <DocsLink title='Inputs' href='https://mdbootstrap.com/docs/react/forms/inputs/' />
+      <lgBContainer className='mt-5'>
+        <DocsLink title='Inputs' href='https://lgbootstrap.com/docs/react/forms/inputs/' />
         <SectionContainer header='Basic examples'>
-          <MDBRow>
-            <MDBCol md='6'>
-              <MDBInput
+          <lgBRow>
+            <lgBCol lg='6'>
+              <lgBInput
                 label='Material input'
                 getValue={this.getValue}
                 valueDefault='Uncontrolled input with default value'
               />
-            </MDBCol>
-            <MDBCol md='6'>
-              <MDBInput label='Example label' onChange={this.handleChange} value={value} />
-            </MDBCol>
-          </MDBRow>
-          <MDBRow>
-            <MDBCol md='6'>
-              <MDBInput
+            </lgBCol>
+            <lgBCol lg='6'>
+              <lgBInput label='Example label' onChange={this.handleChange} value={value} />
+            </lgBCol>
+          </lgBRow>
+          <lgBRow>
+            <lgBCol lg='6'>
+              <lgBInput
                 label='Focus next input on change (uses ref)'
                 onChange={this.changeFocus}
                 size='sm'
                 icon='envelope'
               />
-            </MDBCol>
-            <MDBCol md='6'>
-              <MDBInput label='Example label' inputRef={ref => (this.nextInputRef = ref)} icon='envelope' />
-            </MDBCol>
-          </MDBRow>
+            </lgBCol>
+            <lgBCol lg='6'>
+              <lgBInput label='Example label' inputRef={ref => (this.nextInputRef = ref)} icon='envelope' />
+            </lgBCol>
+          </lgBRow>
 
-          <MDBRow>
-            <MDBCol md='6'>
-              <MDBInput
+          <lgBRow>
+            <lgBCol lg='6'>
+              <lgBInput
                 iconClass='iconHover'
                 label='Run function on click icon'
                 icon='bell'
                 onIconClick={() => alert('Wait! This is an alert!')}
               />
-            </MDBCol>
-            <MDBCol md='6'>
-              <MDBInput
+            </lgBCol>
+            <lgBCol lg='6'>
+              <lgBInput
                 label='Hover Eye to show password!'
                 valueDefault='Do you see me?'
                 type={typeInput}
@@ -101,16 +101,16 @@ class InputPage extends Component {
                 onIconMouseEnter={this.mouseEnter}
                 onIconMouseLeave={this.mouseLeave}
               />
-            </MDBCol>
-          </MDBRow>
+            </lgBCol>
+          </lgBRow>
 
-          <MDBInput hint='placeholder' label='Example label' />
-          <MDBInput label='Example label' />
-          <MDBBtn onClick={this.handleSubmit}>Submit</MDBBtn>
+          <lgBInput hint='placeholder' label='Example label' />
+          <lgBInput label='Example label' />
+          <lgBBtn onClick={this.handleSubmit}>Submit</lgBBtn>
 
-          <MDBRow>
-            <MDBCol md='6'>
-              <MDBInput
+          <lgBRow>
+            <lgBCol lg='6'>
+              <lgBInput
                 label='Type your email'
                 icon='envelope'
                 group
@@ -119,16 +119,16 @@ class InputPage extends Component {
                 error='wrong'
                 success='right'
               />
-            </MDBCol>
-            <MDBCol md='6'>
-              <MDBInput label='Type your password' icon='lock' group type='password' validate />
-            </MDBCol>
-          </MDBRow>
+            </lgBCol>
+            <lgBCol lg='6'>
+              <lgBInput label='Type your password' icon='lock' group type='password' validate />
+            </lgBCol>
+          </lgBRow>
 
-          <MDBInput label='Disabled' disabled />
+          <lgBInput label='Disabled' disabled />
 
-          <MDBFormInline>
-            <MDBInput
+          <lgBFormInline>
+            <lgBInput
               label='Type your email'
               icon='envelope'
               group
@@ -137,29 +137,29 @@ class InputPage extends Component {
               error='wrong'
               success='right'
             />
-            <MDBInput label='Type your password' icon='lock' group type='password' validate />
-            <MDBBtn>Login</MDBBtn>
-          </MDBFormInline>
+            <lgBInput label='Type your password' icon='lock' group type='password' validate />
+            <lgBBtn>Login</lgBBtn>
+          </lgBFormInline>
 
-          <MDBRow>
-            <MDBCol md='6'>
-              <MDBInput getValue={this.getValue} type='textarea' label='Icon Prefix' rows='2' icon='pencil-alt' />
-            </MDBCol>
-            <MDBCol md='6'>
-              <MDBInput type='textarea' label='Basic textarea' rows='2' />
-            </MDBCol>
-          </MDBRow>
+          <lgBRow>
+            <lgBCol lg='6'>
+              <lgBInput getValue={this.getValue} type='textarea' label='Icon Prefix' rows='2' icon='pencil-alt' />
+            </lgBCol>
+            <lgBCol lg='6'>
+              <lgBInput type='textarea' label='Basic textarea' rows='2' />
+            </lgBCol>
+          </lgBRow>
         </SectionContainer>
 
         <SectionContainer title='Styles' noBorder>
-          <MDBRow>
-            <MDBCol md='6' tag='section'>
+          <lgBRow>
+            <lgBCol lg='6' tag='section'>
               <SectionContainer header='Outline'>
-                <MDBInput labelClass='labelBg' outline label='Type your email' type='email' />
+                <lgBInput labelClass='labelBg' outline label='Type your email' type='email' />
 
-                <MDBInput labelClass='labelBg' outline label='Type your password' icon='lock' type='password' />
+                <lgBInput labelClass='labelBg' outline label='Type your password' icon='lock' type='password' />
 
-                <MDBInput
+                <lgBInput
                   labelClass='labelBg'
                   outline
                   getValue={this.getValue}
@@ -169,17 +169,17 @@ class InputPage extends Component {
                   icon='pencil-alt'
                 />
 
-                <MDBInput labelClass='labelBg' outline type='textarea' label='Basic textarea' rows='2' />
+                <lgBInput labelClass='labelBg' outline type='textarea' label='Basic textarea' rows='2' />
               </SectionContainer>
-            </MDBCol>
+            </lgBCol>
 
-            <MDBCol md='6' tag='section'>
+            <lgBCol lg='6' tag='section'>
               <SectionContainer header='With background'>
-                <MDBInput labelClass='labelBg' background label='Type your email' type='email' />
+                <lgBInput labelClass='labelBg' background label='Type your email' type='email' />
 
-                <MDBInput labelClass='labelBg' background label='Type your password' icon='lock' type='password' />
+                <lgBInput labelClass='labelBg' background label='Type your password' icon='lock' type='password' />
 
-                <MDBInput
+                <lgBInput
                   labelClass='labelBg'
                   background
                   getValue={this.getValue}
@@ -189,20 +189,20 @@ class InputPage extends Component {
                   icon='pencil-alt'
                 />
 
-                <MDBInput labelClass='labelBg' background type='textarea' label='Basic textarea' rows='2' />
+                <lgBInput labelClass='labelBg' background type='textarea' label='Basic textarea' rows='2' />
               </SectionContainer>
-            </MDBCol>
-          </MDBRow>
+            </lgBCol>
+          </lgBRow>
         </SectionContainer>
 
         <SectionContainer header='Numeric'>
-          <MDBCol md='5'>
-            <MDBInputSelect getValue={this.getValue} min={5} max={15} value={10} className='mb-2' />
+          <lgBCol lg='5'>
+            <lgBInputSelect getValue={this.getValue} min={5} max={15} value={10} className='mb-2' />
 
-            <MDBInputSelect precision={2} value={50.3} step={0.1} className='mb-2' />
+            <lgBInputSelect precision={2} value={50.3} step={0.1} className='mb-2' />
 
-            <MDBInputSelect precision={2} value={50.3} step={0.5} snap className='mb-2' />
-          </MDBCol>
+            <lgBInputSelect precision={2} value={50.3} step={0.5} snap className='mb-2' />
+          </lgBCol>
         </SectionContainer>
 
         <SectionContainer header='Default Bootstrap'>
@@ -215,7 +215,7 @@ class InputPage extends Component {
           <input type='text' id='inputDisabledEx2' className='form-control' disabled />
         </SectionContainer>
 
-        <SectionContainer header='MDBInput fields'>
+        <SectionContainer header='lgBInput fields'>
           <input className='form-control form-control-lg mb-3' type='text' placeholder='Large input' />
           <input className='form-control mb-3' type='text' placeholder='Medium input' />
           <input className='form-control form-control-sm' type='text' placeholder='Small input' />
@@ -233,40 +233,40 @@ class InputPage extends Component {
         </SectionContainer>
 
         <SectionContainer noBorder className='row'>
-          <MDBCol md='6'>
+          <lgBCol lg='6'>
             <SectionContainer header='Form grid' tag='form'>
-              <MDBRow>
-                <MDBCol>
+              <lgBRow>
+                <lgBCol>
                   <input type='text' className='form-control' placeholder='First name' />
-                </MDBCol>
-                <MDBCol>
+                </lgBCol>
+                <lgBCol>
                   <input type='text' className='form-control' placeholder='Last name' />
-                </MDBCol>
-              </MDBRow>
+                </lgBCol>
+              </lgBRow>
             </SectionContainer>
-          </MDBCol>
-          <MDBCol md='6'>
+          </lgBCol>
+          <lgBCol lg='6'>
             <SectionContainer header='Form row' tag='form'>
               <div className='form-row'>
-                <MDBCol>
+                <lgBCol>
                   <input type='text' className='form-control' placeholder='First name' />
-                </MDBCol>
-                <MDBCol>
+                </lgBCol>
+                <lgBCol>
                   <input type='text' className='form-control' placeholder='Last name' />
-                </MDBCol>
+                </lgBCol>
               </div>
             </SectionContainer>
-          </MDBCol>
+          </lgBCol>
         </SectionContainer>
 
         <SectionContainer header='Form layout'>
           <form>
             <div className='form-row'>
-              <div className='form-group col-md-6'>
+              <div className='form-group col-lg-6'>
                 <label htmlFor='inputEmail4'>Email</label>
                 <input type='email' className='form-control' id='inputEmail4' placeholder='Email' />
               </div>
-              <div className='form-group col-md-6'>
+              <div className='form-group col-lg-6'>
                 <label htmlFor='inputPassword4'>Password</label>
                 <input type='password' className='form-control' id='inputPassword4' placeholder='Password' />
               </div>
@@ -285,16 +285,16 @@ class InputPage extends Component {
               />
             </div>
             <div className='form-row'>
-              <div className='form-group col-md-6'>
+              <div className='form-group col-lg-6'>
                 <label htmlFor='inputCity'>City</label>
                 <input type='text' className='form-control' id='inputCity' placeholder='New York City' />
               </div>
-              <div className='form-group col-md-6'>
+              <div className='form-group col-lg-6'>
                 <label htmlFor='inputZip'>Zip</label>
                 <input type='text' className='form-control' id='inputZip' placeholder='11206-1117' />
               </div>
             </div>
-            <button type='submit' className='btn btn-primary btn-md'>
+            <button type='submit' className='btn btn-primary btn-lg'>
               Sign in
             </button>
           </form>
@@ -320,7 +320,7 @@ class InputPage extends Component {
             </div>
             <div className='form-group row'>
               <div className='col-sm-10'>
-                <button type='submit' className='btn btn-primary btn-md'>
+                <button type='submit' className='btn btn-primary btn-lg'>
                   Sign in
                 </button>
               </div>
@@ -365,7 +365,7 @@ class InputPage extends Component {
                 </div>
               </div>
               <div className='col-auto'>
-                <button type='submit' className='btn btn-primary btn-md mt-0'>
+                <button type='submit' className='btn btn-primary btn-lg mt-0'>
                   Submit
                 </button>
               </div>
@@ -419,7 +419,7 @@ class InputPage extends Component {
             </div>
           </form>
         </SectionContainer>
-      </MDBContainer>
+      </lgBContainer>
     );
   }
 }

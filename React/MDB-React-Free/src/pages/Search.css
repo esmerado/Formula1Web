@@ -64,22 +64,22 @@
 .active-pink-3 .fa, .active-pink-4 .fa {
   color: #f48fb1;
 }
-.input-group.md-form.form-sm.form-1 input{
+.input-group.lg-form.form-sm.form-1 input{
   border: 1px solid #bdbdbd;
   border-top-right-radius: 0.25rem;
   border-bottom-right-radius: 0.25rem;
 }
-.input-group.md-form.form-sm.form-2 input {
+.input-group.lg-form.form-sm.form-2 input {
   border: 1px solid #bdbdbd;
   border-top-left-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
 }
-.input-group.md-form.form-sm.form-2 input.red-border  {
+.input-group.lg-form.form-sm.form-2 input.red-border  {
   border: 1px solid #ef9a9a;
 }
-.input-group.md-form.form-sm.form-2 input.lime-border  {
+.input-group.lg-form.form-sm.form-2 input.lime-border  {
   border: 1px solid #cddc39;
 }
-.input-group.md-form.form-sm.form-2 input.amber-border  {
+.input-group.lg-form.form-sm.form-2 input.amber-border  {
   border: 1px solid #ffca28;
 }

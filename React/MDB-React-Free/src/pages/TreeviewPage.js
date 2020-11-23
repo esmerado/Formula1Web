@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import {
-  MDBContainer,
-  MDBTreeview,
-  MDBTreeviewList,
-  MDBTreeviewItem,
-  MDBCol,
-  MDBRow
-} from 'mdbreact';
+  lgBContainer,
+  lgBTreeview,
+  lgBTreeviewList,
+  lgBTreeviewItem,
+  lgBCol,
+  lgBRow
+} from 'lgbreact';
 import DocsLink from '../components/docsLink';
 import SectionContainer from '../components/sectionContainer';
 
@@ -23,163 +23,163 @@ class TreeviewPage extends Component {
 
   render() {
     return (
-      <MDBContainer>
+      <lgBContainer>
         <DocsLink
           title='Tabs'
-          href='https://mdbootstrap.com/plugins/react/treeview/'
+          href='https://lgbootstrap.com/plugins/react/treeview/'
         />
         <SectionContainer header='Basic example'>
-          <MDBCol md='4'>
-            <MDBTreeview
+          <lgBCol lg='4'>
+            <lgBTreeview
               header='Folders'
               className='w-20'
               getValue={value => console.log(value)}
             >
-              <MDBTreeviewList icon='envelope-open' title='Mail' far>
-                <MDBTreeviewItem icon='address-book' title='Contact' far />
-                <MDBTreeviewItem icon='bell' title='Offer' far />
-                <MDBTreeviewList icon='calendar' title='Calendar' far>
-                  <MDBTreeviewItem icon='clock' title='Deadlines' far />
-                  <MDBTreeviewItem icon='users' title='Meetings' />
-                  <MDBTreeviewItem icon='basketball-ball' title='Workouts' />
-                  <MDBTreeviewItem icon='mug-hot' title='Events' />
-                </MDBTreeviewList>
-              </MDBTreeviewList>
-              <MDBTreeviewList title='Inbox'>
-                <MDBTreeviewItem title='Admin' far />
-                <MDBTreeviewItem title='Corporate' far />
-                <MDBTreeviewItem title='Finance' far />
-                <MDBTreeviewItem title='Other' far />
-              </MDBTreeviewList>
-              <MDBTreeviewList icon='gem' title='Favourites' far>
-                <MDBTreeviewItem icon='pepper-hot' title='Restaurants' />
-                <MDBTreeviewItem icon='eye' title='Places' far />
-                <MDBTreeviewItem icon='gamepad' title='Games' />
-                <MDBTreeviewItem icon='cocktail' title='Cocktails' />
-                <MDBTreeviewItem icon='pizza-slice' title='Food' />
-              </MDBTreeviewList>
-              <MDBTreeviewItem icon='comment' title='Notes' far />
-              <MDBTreeviewItem icon='cog' title='Settings' />
-              <MDBTreeviewItem icon='desktop' title='Devices' />
-              <MDBTreeviewItem icon='trash-alt' title='Deleted items' />
-            </MDBTreeview>
-          </MDBCol>
+              <lgBTreeviewList icon='envelope-open' title='Mail' far>
+                <lgBTreeviewItem icon='address-book' title='Contact' far />
+                <lgBTreeviewItem icon='bell' title='Offer' far />
+                <lgBTreeviewList icon='calendar' title='Calendar' far>
+                  <lgBTreeviewItem icon='clock' title='Deadlines' far />
+                  <lgBTreeviewItem icon='users' title='Meetings' />
+                  <lgBTreeviewItem icon='basketball-ball' title='Workouts' />
+                  <lgBTreeviewItem icon='mug-hot' title='Events' />
+                </lgBTreeviewList>
+              </lgBTreeviewList>
+              <lgBTreeviewList title='Inbox'>
+                <lgBTreeviewItem title='Admin' far />
+                <lgBTreeviewItem title='Corporate' far />
+                <lgBTreeviewItem title='Finance' far />
+                <lgBTreeviewItem title='Other' far />
+              </lgBTreeviewList>
+              <lgBTreeviewList icon='gem' title='Favourites' far>
+                <lgBTreeviewItem icon='pepper-hot' title='Restaurants' />
+                <lgBTreeviewItem icon='eye' title='Places' far />
+                <lgBTreeviewItem icon='gamepad' title='Games' />
+                <lgBTreeviewItem icon='cocktail' title='Cocktails' />
+                <lgBTreeviewItem icon='pizza-slice' title='Food' />
+              </lgBTreeviewList>
+              <lgBTreeviewItem icon='comment' title='Notes' far />
+              <lgBTreeviewItem icon='cog' title='Settings' />
+              <lgBTreeviewItem icon='desktop' title='Devices' />
+              <lgBTreeviewItem icon='trash-alt' title='Deleted items' />
+            </lgBTreeview>
+          </lgBCol>
         </SectionContainer>
 
         <SectionContainer header='Animated'>
-          <MDBCol md='4'>
-            <MDBTreeview
+          <lgBCol lg='4'>
+            <lgBTreeview
               theme='animated'
               header='Folders'
               className='w-20'
               getValue={value => console.log(value)}
             >
-              <MDBTreeviewList icon='envelope-open' title='Mail' far open>
-                <MDBTreeviewItem icon='address-book' title='Contact' far />
-                <MDBTreeviewItem icon='bell' title='Offer' far />
-                <MDBTreeviewList icon='calendar' title='Calendar' far open>
-                  <MDBTreeviewItem icon='clock' title='Deadlines' far />
-                  <MDBTreeviewItem icon='users' title='Meetings' opened />
-                  <MDBTreeviewItem icon='basketball-ball' title='Workouts' />
-                  <MDBTreeviewItem icon='mug-hot' title='Events' />
-                </MDBTreeviewList>
-              </MDBTreeviewList>
-              <MDBTreeviewList title='Inbox' far>
-                <MDBTreeviewItem title='Admin' far />
-                <MDBTreeviewItem title='Corporate' far />
-                <MDBTreeviewItem title='Finance' far />
-                <MDBTreeviewItem title='Other' far />
-              </MDBTreeviewList>
-              <MDBTreeviewList icon='gem' title='Favourites' far>
-                <MDBTreeviewItem icon='pepper-hot' title='Restaurants' />
-                <MDBTreeviewItem icon='eye' title='Places' far />
-                <MDBTreeviewItem icon='gamepad' title='Games' />
-                <MDBTreeviewItem icon='cocktail' title='Cocktails' />
-                <MDBTreeviewItem icon='pizza-slice' title='Food' />
-              </MDBTreeviewList>
-              <MDBTreeviewItem icon='comment' title='Notes' far />
-              <MDBTreeviewItem icon='cog' title='Settings' />
-              <MDBTreeviewItem icon='desktop' title='Devices' />
-              <MDBTreeviewItem icon='trash-alt' title='Deleted items' />
-            </MDBTreeview>
-          </MDBCol>
+              <lgBTreeviewList icon='envelope-open' title='Mail' far open>
+                <lgBTreeviewItem icon='address-book' title='Contact' far />
+                <lgBTreeviewItem icon='bell' title='Offer' far />
+                <lgBTreeviewList icon='calendar' title='Calendar' far open>
+                  <lgBTreeviewItem icon='clock' title='Deadlines' far />
+                  <lgBTreeviewItem icon='users' title='Meetings' opened />
+                  <lgBTreeviewItem icon='basketball-ball' title='Workouts' />
+                  <lgBTreeviewItem icon='mug-hot' title='Events' />
+                </lgBTreeviewList>
+              </lgBTreeviewList>
+              <lgBTreeviewList title='Inbox' far>
+                <lgBTreeviewItem title='Admin' far />
+                <lgBTreeviewItem title='Corporate' far />
+                <lgBTreeviewItem title='Finance' far />
+                <lgBTreeviewItem title='Other' far />
+              </lgBTreeviewList>
+              <lgBTreeviewList icon='gem' title='Favourites' far>
+                <lgBTreeviewItem icon='pepper-hot' title='Restaurants' />
+                <lgBTreeviewItem icon='eye' title='Places' far />
+                <lgBTreeviewItem icon='gamepad' title='Games' />
+                <lgBTreeviewItem icon='cocktail' title='Cocktails' />
+                <lgBTreeviewItem icon='pizza-slice' title='Food' />
+              </lgBTreeviewList>
+              <lgBTreeviewItem icon='comment' title='Notes' far />
+              <lgBTreeviewItem icon='cog' title='Settings' />
+              <lgBTreeviewItem icon='desktop' title='Devices' />
+              <lgBTreeviewItem icon='trash-alt' title='Deleted items' />
+            </lgBTreeview>
+          </lgBCol>
         </SectionContainer>
 
         <SectionContainer header='Colorful'>
-          <MDBCol md='4'>
-            <MDBTreeview
+          <lgBCol lg='4'>
+            <lgBTreeview
               theme='colorful'
               header='Folders'
               className='border-secondary w-20 '
               getValue={value => console.log(value)}
             >
-              <MDBTreeviewList icon='envelope-open' title='Mail' far>
-                <MDBTreeviewItem icon='address-book' title='Contact' far />
-                <MDBTreeviewItem icon='bell' title='Offer' far />
-                <MDBTreeviewList icon='calendar' title='Calendar' far>
-                  <MDBTreeviewItem icon='clock' title='Deadlines' far />
-                  <MDBTreeviewItem icon='users' title='Meetings' />
-                  <MDBTreeviewItem icon='basketball-ball' title='Workouts' />
-                  <MDBTreeviewItem icon='mug-hot' title='Events' />
-                </MDBTreeviewList>
-              </MDBTreeviewList>
-              <MDBTreeviewList title='Inbox' far>
-                <MDBTreeviewItem title='Admin' far />
-                <MDBTreeviewItem title='Corporate' far />
-                <MDBTreeviewItem title='Finance' far />
-                <MDBTreeviewItem title='Other' far />
-              </MDBTreeviewList>
-              <MDBTreeviewList icon='gem' title='Favourites' far>
-                <MDBTreeviewItem icon='pepper-hot' title='Restaurants' />
-                <MDBTreeviewItem icon='eye' title='Places' far />
-                <MDBTreeviewItem icon='gamepad' title='Games' />
-                <MDBTreeviewItem icon='cocktail' title='Cocktails' />
-                <MDBTreeviewItem icon='pizza-slice' title='Food' />
-              </MDBTreeviewList>
-              <MDBTreeviewItem icon='comment' title='Notes' far />
-              <MDBTreeviewItem icon='cog' title='Settings' />
-              <MDBTreeviewItem icon='desktop' title='Devices' />
-              <MDBTreeviewItem icon='trash-alt' title='Deleted items' />
-            </MDBTreeview>
-          </MDBCol>
+              <lgBTreeviewList icon='envelope-open' title='Mail' far>
+                <lgBTreeviewItem icon='address-book' title='Contact' far />
+                <lgBTreeviewItem icon='bell' title='Offer' far />
+                <lgBTreeviewList icon='calendar' title='Calendar' far>
+                  <lgBTreeviewItem icon='clock' title='Deadlines' far />
+                  <lgBTreeviewItem icon='users' title='Meetings' />
+                  <lgBTreeviewItem icon='basketball-ball' title='Workouts' />
+                  <lgBTreeviewItem icon='mug-hot' title='Events' />
+                </lgBTreeviewList>
+              </lgBTreeviewList>
+              <lgBTreeviewList title='Inbox' far>
+                <lgBTreeviewItem title='Admin' far />
+                <lgBTreeviewItem title='Corporate' far />
+                <lgBTreeviewItem title='Finance' far />
+                <lgBTreeviewItem title='Other' far />
+              </lgBTreeviewList>
+              <lgBTreeviewList icon='gem' title='Favourites' far>
+                <lgBTreeviewItem icon='pepper-hot' title='Restaurants' />
+                <lgBTreeviewItem icon='eye' title='Places' far />
+                <lgBTreeviewItem icon='gamepad' title='Games' />
+                <lgBTreeviewItem icon='cocktail' title='Cocktails' />
+                <lgBTreeviewItem icon='pizza-slice' title='Food' />
+              </lgBTreeviewList>
+              <lgBTreeviewItem icon='comment' title='Notes' far />
+              <lgBTreeviewItem icon='cog' title='Settings' />
+              <lgBTreeviewItem icon='desktop' title='Devices' />
+              <lgBTreeviewItem icon='trash-alt' title='Deleted items' />
+            </lgBTreeview>
+          </lgBCol>
         </SectionContainer>
 
         <SectionContainer header='Control elements'>
-          <MDBRow>
-          <MDBCol md='4'>
-            <MDBTreeview
+          <lgBRow>
+          <lgBCol lg='4'>
+            <lgBTreeview
               theme='animated'
               header='Open and disabled elements'
               className='border-secondary w-20 '
               getValue={value => console.log(value)}
             >
-              <MDBTreeviewList icon='envelope-open' title='Normal folder' far>
-                <MDBTreeviewItem icon='address-book' title='Contact' far/>
-                <MDBTreeviewItem icon='bell' title='Offer' far />
-                <MDBTreeviewList icon='calendar' title='Calendar' far>
-                  <MDBTreeviewItem icon='clock' title='Deadlines' far />
-                  <MDBTreeviewItem icon='users' title='Meetings' />
-                  <MDBTreeviewItem icon='basketball-ball' title='Workouts' />
-                  <MDBTreeviewItem icon='mug-hot' title='Events' />
-                </MDBTreeviewList>
-              </MDBTreeviewList>
-              <MDBTreeviewList title='Disabled folder' icon='folder-minus' disabled disabledClassName='disabled text-muted'/>
-              <MDBTreeviewList icon='gem' title='Opened folder' opened far>
-                <MDBTreeviewItem icon='pepper-hot' title='Restaurants' />
-                <MDBTreeviewItem icon='eye' title='Places' far />
-                <MDBTreeviewItem icon='gamepad' title='Games' />
-              </MDBTreeviewList>
-              <MDBTreeviewList icon='folder-open' title='Opened and disabled folder' opened disabled disabledClassName='disabled'>
-                <MDBTreeviewItem icon='folder' title='Normal item' />
-                <MDBTreeviewItem icon='folder-minus' title='Disabled item' disabled disabledClassName='disabled text-muted'/>
-                <MDBTreeviewItem icon='folder' far title='Opened item' opened />
-              </MDBTreeviewList>
-            </MDBTreeview>
+              <lgBTreeviewList icon='envelope-open' title='Normal folder' far>
+                <lgBTreeviewItem icon='address-book' title='Contact' far/>
+                <lgBTreeviewItem icon='bell' title='Offer' far />
+                <lgBTreeviewList icon='calendar' title='Calendar' far>
+                  <lgBTreeviewItem icon='clock' title='Deadlines' far />
+                  <lgBTreeviewItem icon='users' title='Meetings' />
+                  <lgBTreeviewItem icon='basketball-ball' title='Workouts' />
+                  <lgBTreeviewItem icon='mug-hot' title='Events' />
+                </lgBTreeviewList>
+              </lgBTreeviewList>
+              <lgBTreeviewList title='Disabled folder' icon='folder-minus' disabled disabledClassName='disabled text-muted'/>
+              <lgBTreeviewList icon='gem' title='Opened folder' opened far>
+                <lgBTreeviewItem icon='pepper-hot' title='Restaurants' />
+                <lgBTreeviewItem icon='eye' title='Places' far />
+                <lgBTreeviewItem icon='gamepad' title='Games' />
+              </lgBTreeviewList>
+              <lgBTreeviewList icon='folder-open' title='Opened and disabled folder' opened disabled disabledClassName='disabled'>
+                <lgBTreeviewItem icon='folder' title='Normal item' />
+                <lgBTreeviewItem icon='folder-minus' title='Disabled item' disabled disabledClassName='disabled text-muted'/>
+                <lgBTreeviewItem icon='folder' far title='Opened item' opened />
+              </lgBTreeviewList>
+            </lgBTreeview>
             
-          </MDBCol>
-          </MDBRow>
+          </lgBCol>
+          </lgBRow>
         </SectionContainer>
-      </MDBContainer>
+      </lgBContainer>
     );
   }
 }

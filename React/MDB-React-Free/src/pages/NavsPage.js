@@ -1,404 +1,404 @@
 import React, { Component } from 'react';
 import {
-  MDBContainer,
-  MDBRow,
-  MDBCol,
-  MDBNav,
-  MDBNavItem,
-  MDBLink
-} from 'mdbreact';
+  lgBContainer,
+  lgBRow,
+  lgBCol,
+  lgBNav,
+  lgBNavItem,
+  lgBLink
+} from 'lgbreact';
 import DocsLink from '../components/docsLink';
 import SectionContainer from '../components/sectionContainer';
 
 class NavsPage extends Component {
   render() {
     return (
-      <MDBContainer>
+      <lgBContainer>
         <DocsLink
           title='Navs'
-          href='https://mdbootstrap.com/docs/react/navigation/navs/'
+          href='https://lgbootstrap.com/docs/react/navigation/navs/'
         />
 
         <SectionContainer title='Basic examples' noBorder>
           <SectionContainer header='Left'>
-            <MDBNav>
-              <MDBNavItem>
-                <MDBLink active to='#!'>
+            <lgBNav>
+              <lgBNavItem>
+                <lgBLink active to='#!'>
                   Active
-                </MDBLink>
-              </MDBNavItem>
-              <MDBNavItem>
-                <MDBLink to='#!'>Link</MDBLink>
-              </MDBNavItem>
-              <MDBNavItem>
-                <MDBLink to='#!'>Link</MDBLink>
-              </MDBNavItem>
-              <MDBNavItem>
-                <MDBLink disabled to='#!'>
+                </lgBLink>
+              </lgBNavItem>
+              <lgBNavItem>
+                <lgBLink to='#!'>Link</lgBLink>
+              </lgBNavItem>
+              <lgBNavItem>
+                <lgBLink to='#!'>Link</lgBLink>
+              </lgBNavItem>
+              <lgBNavItem>
+                <lgBLink disabled to='#!'>
                   Disabled
-                </MDBLink>
-              </MDBNavItem>
-            </MDBNav>
+                </lgBLink>
+              </lgBNavItem>
+            </lgBNav>
           </SectionContainer>
 
           <SectionContainer header='Center'>
-            <MDBNav className='justify-content-center'>
-              <MDBNavItem>
-                <MDBLink active to='#!'>
+            <lgBNav className='justify-content-center'>
+              <lgBNavItem>
+                <lgBLink active to='#!'>
                   Active
-                </MDBLink>
-              </MDBNavItem>
-              <MDBNavItem>
-                <MDBLink to='#!'>Link</MDBLink>
-              </MDBNavItem>
-              <MDBNavItem>
-                <MDBLink to='#!'>Link</MDBLink>
-              </MDBNavItem>
-              <MDBNavItem>
-                <MDBLink disabled to='#!'>
+                </lgBLink>
+              </lgBNavItem>
+              <lgBNavItem>
+                <lgBLink to='#!'>Link</lgBLink>
+              </lgBNavItem>
+              <lgBNavItem>
+                <lgBLink to='#!'>Link</lgBLink>
+              </lgBNavItem>
+              <lgBNavItem>
+                <lgBLink disabled to='#!'>
                   Disabled
-                </MDBLink>
-              </MDBNavItem>
-            </MDBNav>
+                </lgBLink>
+              </lgBNavItem>
+            </lgBNav>
           </SectionContainer>
 
           <SectionContainer header='Right'>
-            <MDBNav className='justify-content-end'>
-              <MDBNavItem>
-                <MDBLink active to='#!'>
+            <lgBNav className='justify-content-end'>
+              <lgBNavItem>
+                <lgBLink active to='#!'>
                   Active
-                </MDBLink>
-              </MDBNavItem>
-              <MDBNavItem>
-                <MDBLink to='#!'>Link</MDBLink>
-              </MDBNavItem>
-              <MDBNavItem>
-                <MDBLink to='#!'>Link</MDBLink>
-              </MDBNavItem>
-              <MDBNavItem>
-                <MDBLink disabled to='#!'>
+                </lgBLink>
+              </lgBNavItem>
+              <lgBNavItem>
+                <lgBLink to='#!'>Link</lgBLink>
+              </lgBNavItem>
+              <lgBNavItem>
+                <lgBLink to='#!'>Link</lgBLink>
+              </lgBNavItem>
+              <lgBNavItem>
+                <lgBLink disabled to='#!'>
                   Disabled
-                </MDBLink>
-              </MDBNavItem>
-            </MDBNav>
+                </lgBLink>
+              </lgBNavItem>
+            </lgBNav>
           </SectionContainer>
 
           <SectionContainer header='Vertical'>
-            <MDBNav className='flex-column'>
-              <MDBNavItem>
-                <MDBLink active to='#!'>
+            <lgBNav className='flex-column'>
+              <lgBNavItem>
+                <lgBLink active to='#!'>
                   Active
-                </MDBLink>
-              </MDBNavItem>
-              <MDBNavItem>
-                <MDBLink to='#!'>Link</MDBLink>
-              </MDBNavItem>
-              <MDBNavItem>
-                <MDBLink to='#!'>Link</MDBLink>
-              </MDBNavItem>
-              <MDBNavItem>
-                <MDBLink disabled to='#!'>
+                </lgBLink>
+              </lgBNavItem>
+              <lgBNavItem>
+                <lgBLink to='#!'>Link</lgBLink>
+              </lgBNavItem>
+              <lgBNavItem>
+                <lgBLink to='#!'>Link</lgBLink>
+              </lgBNavItem>
+              <lgBNavItem>
+                <lgBLink disabled to='#!'>
                   Disabled
-                </MDBLink>
-              </MDBNavItem>
-            </MDBNav>
+                </lgBLink>
+              </lgBNavItem>
+            </lgBNav>
           </SectionContainer>
         </SectionContainer>
 
         <hr className='my-5' />
 
         <SectionContainer header='With bold font' noBorder>
-          <MDBRow>
-            <MDBCol md='6'>
+          <lgBRow>
+            <lgBCol lg='6'>
               <SectionContainer>
-                <MDBNav className='font-weight-bold'>
-                  <MDBLink active to='#!'>
+                <lgBNav className='font-weight-bold'>
+                  <lgBLink active to='#!'>
                     Active
-                  </MDBLink>
-                  <MDBLink to='#!'>Link</MDBLink>
-                  <MDBLink to='#!'>Link</MDBLink>
-                  <MDBLink disabled to='#!'>
+                  </lgBLink>
+                  <lgBLink to='#!'>Link</lgBLink>
+                  <lgBLink to='#!'>Link</lgBLink>
+                  <lgBLink disabled to='#!'>
                     Disabled
-                  </MDBLink>
-                </MDBNav>
+                  </lgBLink>
+                </lgBNav>
               </SectionContainer>
-            </MDBCol>
-            <MDBCol md='6'>
+            </lgBCol>
+            <lgBCol lg='6'>
               <SectionContainer>
-                <MDBNav className='flex-column font-weight-bold'>
-                  <MDBLink active to='#!'>
+                <lgBNav className='flex-column font-weight-bold'>
+                  <lgBLink active to='#!'>
                     Active
-                  </MDBLink>
-                  <MDBLink to='#!'>Link</MDBLink>
-                  <MDBLink to='#!'>Link</MDBLink>
-                  <MDBLink disabled to='#!'>
+                  </lgBLink>
+                  <lgBLink to='#!'>Link</lgBLink>
+                  <lgBLink to='#!'>Link</lgBLink>
+                  <lgBLink disabled to='#!'>
                     Disabled
-                  </MDBLink>
-                </MDBNav>
+                  </lgBLink>
+                </lgBNav>
               </SectionContainer>
-            </MDBCol>
-          </MDBRow>
+            </lgBCol>
+          </lgBRow>
         </SectionContainer>
 
         <SectionContainer header='With various font and background color'>
-          <MDBRow>
-            <MDBCol>
-              <MDBNav color='grey' className='flex-column font-weight-bold'>
-                <MDBLink className='white-text' active to='#!'>
+          <lgBRow>
+            <lgBCol>
+              <lgBNav color='grey' className='flex-column font-weight-bold'>
+                <lgBLink className='white-text' active to='#!'>
                   Active
-                </MDBLink>
-                <MDBLink className='white-text' to='#!'>
+                </lgBLink>
+                <lgBLink className='white-text' to='#!'>
                   Link 1
-                </MDBLink>
-                <MDBLink className='white-text' to='#!'>
+                </lgBLink>
+                <lgBLink className='white-text' to='#!'>
                   Link 2
-                </MDBLink>
-                <MDBLink className='white-text' to='#!'>
+                </lgBLink>
+                <lgBLink className='white-text' to='#!'>
                   Link 3
-                </MDBLink>
-              </MDBNav>
-            </MDBCol>
+                </lgBLink>
+              </lgBNav>
+            </lgBCol>
 
-            <MDBCol>
-              <MDBNav color='amber' className='flex-column font-weight-bold'>
-                <MDBLink active to='#!' className='dark-grey-text'>
+            <lgBCol>
+              <lgBNav color='amber' className='flex-column font-weight-bold'>
+                <lgBLink active to='#!' className='dark-grey-text'>
                   Active
-                </MDBLink>
-                <MDBLink to='#!' className='dark-grey-text'>
+                </lgBLink>
+                <lgBLink to='#!' className='dark-grey-text'>
                   Link 1
-                </MDBLink>
-                <MDBLink to='#!' className='dark-grey-text'>
+                </lgBLink>
+                <lgBLink to='#!' className='dark-grey-text'>
                   Link 2
-                </MDBLink>
-                <MDBLink to='#!' className='dark-grey-text'>
+                </lgBLink>
+                <lgBLink to='#!' className='dark-grey-text'>
                   Link 3
-                </MDBLink>
-              </MDBNav>
-            </MDBCol>
+                </lgBLink>
+              </lgBNav>
+            </lgBCol>
 
-            <MDBCol>
-              <MDBNav color='cyan' className='flex-column font-weight-bold'>
-                <MDBLink active to='#!' className='indigo-text'>
+            <lgBCol>
+              <lgBNav color='cyan' className='flex-column font-weight-bold'>
+                <lgBLink active to='#!' className='indigo-text'>
                   Active
-                </MDBLink>
-                <MDBLink to='#!'>Link 1</MDBLink>
-                <MDBLink to='#!'>Link 2</MDBLink>
-                <MDBLink to='#!'>Link 3</MDBLink>
-              </MDBNav>
-            </MDBCol>
-          </MDBRow>
+                </lgBLink>
+                <lgBLink to='#!'>Link 1</lgBLink>
+                <lgBLink to='#!'>Link 2</lgBLink>
+                <lgBLink to='#!'>Link 3</lgBLink>
+              </lgBNav>
+            </lgBCol>
+          </lgBRow>
         </SectionContainer>
 
         <SectionContainer header='With gradient background'>
-          <MDBRow>
-            <MDBCol md='6'>
-              <MDBNav
+          <lgBRow>
+            <lgBCol lg='6'>
+              <lgBNav
                 color='peach-gradient'
                 className='font-weight-bold py-4 px-2 mb-4'
               >
-                <MDBLink className='white-text' active to='#!'>
+                <lgBLink className='white-text' active to='#!'>
                   Active
-                </MDBLink>
-                <MDBLink className='white-text' to='#!'>
+                </lgBLink>
+                <lgBLink className='white-text' to='#!'>
                   Link 1
-                </MDBLink>
-                <MDBLink className='white-text' to='#!'>
+                </lgBLink>
+                <lgBLink className='white-text' to='#!'>
                   Link 2
-                </MDBLink>
-                <MDBLink className='white-text' to='#!'>
+                </lgBLink>
+                <lgBLink className='white-text' to='#!'>
                   Link 3
-                </MDBLink>
-              </MDBNav>
-            </MDBCol>
-            <MDBCol md='6'>
-              <MDBNav
+                </lgBLink>
+              </lgBNav>
+            </lgBCol>
+            <lgBCol lg='6'>
+              <lgBNav
                 color='purple-gradient'
                 className='font-weight-bold py-4 px-2 mb-4'
               >
-                <MDBLink className='white-text' active to='#!'>
+                <lgBLink className='white-text' active to='#!'>
                   Active
-                </MDBLink>
-                <MDBLink className='white-text' to='#!'>
+                </lgBLink>
+                <lgBLink className='white-text' to='#!'>
                   Link 1
-                </MDBLink>
-                <MDBLink className='white-text' to='#!'>
+                </lgBLink>
+                <lgBLink className='white-text' to='#!'>
                   Link 2
-                </MDBLink>
-                <MDBLink className='white-text' to='#!'>
+                </lgBLink>
+                <lgBLink className='white-text' to='#!'>
                   Link 3
-                </MDBLink>
-              </MDBNav>
-            </MDBCol>
-            <MDBCol md='6'>
-              <MDBNav
+                </lgBLink>
+              </lgBNav>
+            </lgBCol>
+            <lgBCol lg='6'>
+              <lgBNav
                 color='aqua-gradient'
                 className='font-weight-bold py-4 px-2 mb-4'
               >
-                <MDBLink className='white-text' active to='#!'>
+                <lgBLink className='white-text' active to='#!'>
                   Active
-                </MDBLink>
-                <MDBLink className='white-text' to='#!'>
+                </lgBLink>
+                <lgBLink className='white-text' to='#!'>
                   Link 1
-                </MDBLink>
-                <MDBLink className='white-text' to='#!'>
+                </lgBLink>
+                <lgBLink className='white-text' to='#!'>
                   Link 2
-                </MDBLink>
-                <MDBLink className='white-text' to='#!'>
+                </lgBLink>
+                <lgBLink className='white-text' to='#!'>
                   Link 3
-                </MDBLink>
-              </MDBNav>
-            </MDBCol>
-            <MDBCol md='6'>
-              <MDBNav
+                </lgBLink>
+              </lgBNav>
+            </lgBCol>
+            <lgBCol lg='6'>
+              <lgBNav
                 color='blue-gradient'
                 className='font-weight-bold py-4 px-2 mb-4'
               >
-                <MDBLink className='white-text' active to='#!'>
+                <lgBLink className='white-text' active to='#!'>
                   Active
-                </MDBLink>
-                <MDBLink className='white-text' to='#!'>
+                </lgBLink>
+                <lgBLink className='white-text' to='#!'>
                   Link 1
-                </MDBLink>
-                <MDBLink className='white-text' to='#!'>
+                </lgBLink>
+                <lgBLink className='white-text' to='#!'>
                   Link 2
-                </MDBLink>
-                <MDBLink className='white-text' to='#!'>
+                </lgBLink>
+                <lgBLink className='white-text' to='#!'>
                   Link 3
-                </MDBLink>
-              </MDBNav>
-            </MDBCol>
-          </MDBRow>
+                </lgBLink>
+              </lgBNav>
+            </lgBCol>
+          </lgBRow>
         </SectionContainer>
 
         <SectionContainer title='Wtih tabs & pills' noBorder>
-          <MDBRow>
-            <MDBCol md='6'>
+          <lgBRow>
+            <lgBCol lg='6'>
               <SectionContainer header='Tabs'>
-                <MDBNav className='nav-tabs'>
-                  <MDBNavItem>
-                    <MDBLink active to='#!'>
+                <lgBNav className='nav-tabs'>
+                  <lgBNavItem>
+                    <lgBLink active to='#!'>
                       Active
-                    </MDBLink>
-                  </MDBNavItem>
-                  <MDBNavItem>
-                    <MDBLink to='#!'>Link 1</MDBLink>
-                  </MDBNavItem>
-                  <MDBNavItem>
-                    <MDBLink to='#!'>Link 2</MDBLink>
-                  </MDBNavItem>
-                  <MDBNavItem>
-                    <MDBLink to='#!'>Link 3</MDBLink>
-                  </MDBNavItem>
-                </MDBNav>
+                    </lgBLink>
+                  </lgBNavItem>
+                  <lgBNavItem>
+                    <lgBLink to='#!'>Link 1</lgBLink>
+                  </lgBNavItem>
+                  <lgBNavItem>
+                    <lgBLink to='#!'>Link 2</lgBLink>
+                  </lgBNavItem>
+                  <lgBNavItem>
+                    <lgBLink to='#!'>Link 3</lgBLink>
+                  </lgBNavItem>
+                </lgBNav>
               </SectionContainer>
-            </MDBCol>
-            <MDBCol md='6'>
+            </lgBCol>
+            <lgBCol lg='6'>
               <SectionContainer header='Pills'>
-                <MDBNav className='nav-pills'>
-                  <MDBNavItem>
-                    <MDBLink active to='#!'>
+                <lgBNav className='nav-pills'>
+                  <lgBNavItem>
+                    <lgBLink active to='#!'>
                       Active
-                    </MDBLink>
-                  </MDBNavItem>
-                  <MDBNavItem>
-                    <MDBLink to='#!'>Link 1</MDBLink>
-                  </MDBNavItem>
-                  <MDBNavItem>
-                    <MDBLink to='#!'>Link 2</MDBLink>
-                  </MDBNavItem>
-                  <MDBNavItem>
-                    <MDBLink to='#!'>Link 3</MDBLink>
-                  </MDBNavItem>
-                </MDBNav>
+                    </lgBLink>
+                  </lgBNavItem>
+                  <lgBNavItem>
+                    <lgBLink to='#!'>Link 1</lgBLink>
+                  </lgBNavItem>
+                  <lgBNavItem>
+                    <lgBLink to='#!'>Link 2</lgBLink>
+                  </lgBNavItem>
+                  <lgBNavItem>
+                    <lgBLink to='#!'>Link 3</lgBLink>
+                  </lgBNavItem>
+                </lgBNav>
               </SectionContainer>
-            </MDBCol>
-          </MDBRow>
+            </lgBCol>
+          </lgBRow>
           <SectionContainer header='Fill & justify'>
-            <MDBContainer className='mt-4'>
-              <MDBNav className='nav-pills nav-fill'>
-                <MDBNavItem>
-                  <MDBLink active to='#!'>
+            <lgBContainer className='mt-4'>
+              <lgBNav className='nav-pills nav-fill'>
+                <lgBNavItem>
+                  <lgBLink active to='#!'>
                     Active
-                  </MDBLink>
-                </MDBNavItem>
-                <MDBNavItem>
-                  <MDBLink to='#!'>Longer nav link</MDBLink>
-                </MDBNavItem>
-                <MDBNavItem>
-                  <MDBLink to='#!'>Link</MDBLink>
-                </MDBNavItem>
-                <MDBNavItem>
-                  <MDBLink disabled to='#!'>
+                  </lgBLink>
+                </lgBNavItem>
+                <lgBNavItem>
+                  <lgBLink to='#!'>Longer nav link</lgBLink>
+                </lgBNavItem>
+                <lgBNavItem>
+                  <lgBLink to='#!'>Link</lgBLink>
+                </lgBNavItem>
+                <lgBNavItem>
+                  <lgBLink disabled to='#!'>
                     Disabled
-                  </MDBLink>
-                </MDBNavItem>
-              </MDBNav>
-            </MDBContainer>
-            <MDBContainer className='mt-4'>
-              <MDBNav className='nav-tabs nav-fill'>
-                <MDBNavItem>
-                  <MDBLink active to='#!'>
+                  </lgBLink>
+                </lgBNavItem>
+              </lgBNav>
+            </lgBContainer>
+            <lgBContainer className='mt-4'>
+              <lgBNav className='nav-tabs nav-fill'>
+                <lgBNavItem>
+                  <lgBLink active to='#!'>
                     Active
-                  </MDBLink>
-                </MDBNavItem>
-                <MDBNavItem>
-                  <MDBLink to='#!'>Longer nav link</MDBLink>
-                </MDBNavItem>
-                <MDBNavItem>
-                  <MDBLink to='#!'>Link</MDBLink>
-                </MDBNavItem>
-                <MDBNavItem>
-                  <MDBLink disabled to='#!'>
+                  </lgBLink>
+                </lgBNavItem>
+                <lgBNavItem>
+                  <lgBLink to='#!'>Longer nav link</lgBLink>
+                </lgBNavItem>
+                <lgBNavItem>
+                  <lgBLink to='#!'>Link</lgBLink>
+                </lgBNavItem>
+                <lgBNavItem>
+                  <lgBLink disabled to='#!'>
                     Disabled
-                  </MDBLink>
-                </MDBNavItem>
-              </MDBNav>
-            </MDBContainer>
+                  </lgBLink>
+                </lgBNavItem>
+              </lgBNav>
+            </lgBContainer>
 
-            <MDBContainer className='mt-4'>
-              <MDBNav className='nav-pills nav-justified'>
-                <MDBNavItem>
-                  <MDBLink active to='#!'>
+            <lgBContainer className='mt-4'>
+              <lgBNav className='nav-pills nav-justified'>
+                <lgBNavItem>
+                  <lgBLink active to='#!'>
                     Active
-                  </MDBLink>
-                </MDBNavItem>
-                <MDBNavItem>
-                  <MDBLink to='#!'>Longer nav link</MDBLink>
-                </MDBNavItem>
-                <MDBNavItem>
-                  <MDBLink to='#!'>Link</MDBLink>
-                </MDBNavItem>
-                <MDBNavItem>
-                  <MDBLink disabled to='#!'>
+                  </lgBLink>
+                </lgBNavItem>
+                <lgBNavItem>
+                  <lgBLink to='#!'>Longer nav link</lgBLink>
+                </lgBNavItem>
+                <lgBNavItem>
+                  <lgBLink to='#!'>Link</lgBLink>
+                </lgBNavItem>
+                <lgBNavItem>
+                  <lgBLink disabled to='#!'>
                     Disabled
-                  </MDBLink>
-                </MDBNavItem>
-              </MDBNav>
-            </MDBContainer>
+                  </lgBLink>
+                </lgBNavItem>
+              </lgBNav>
+            </lgBContainer>
 
-            <MDBContainer className='mt-4'>
-              <MDBNav className='nav-tabs nav-justified'>
-                <MDBNavItem>
-                  <MDBLink active to='#!'>
+            <lgBContainer className='mt-4'>
+              <lgBNav className='nav-tabs nav-justified'>
+                <lgBNavItem>
+                  <lgBLink active to='#!'>
                     Active
-                  </MDBLink>
-                </MDBNavItem>
-                <MDBNavItem>
-                  <MDBLink to='#!'>Longer nav link</MDBLink>
-                </MDBNavItem>
-                <MDBNavItem>
-                  <MDBLink to='#!'>Link</MDBLink>
-                </MDBNavItem>
-                <MDBNavItem>
-                  <MDBLink disabled to='#!'>
+                  </lgBLink>
+                </lgBNavItem>
+                <lgBNavItem>
+                  <lgBLink to='#!'>Longer nav link</lgBLink>
+                </lgBNavItem>
+                <lgBNavItem>
+                  <lgBLink to='#!'>Link</lgBLink>
+                </lgBNavItem>
+                <lgBNavItem>
+                  <lgBLink disabled to='#!'>
                     Disabled
-                  </MDBLink>
-                </MDBNavItem>
-              </MDBNav>
-            </MDBContainer>
+                  </lgBLink>
+                </lgBNavItem>
+              </lgBNav>
+            </lgBContainer>
           </SectionContainer>
         </SectionContainer>
-      </MDBContainer>
+      </lgBContainer>
     );
   }
 }

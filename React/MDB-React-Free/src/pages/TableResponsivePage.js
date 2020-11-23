@@ -1,14 +1,14 @@
 import React from 'react';
 import {
-  MDBContainer,
-  MDBRow,
-  MDBCol,
-  MDBCard,
-  MDBCardBody,
-  MDBTable,
-  MDBTableBody,
-  MDBTableHead
-} from 'mdbreact';
+  lgBContainer,
+  lgBRow,
+  lgBCol,
+  lgBCard,
+  lgBCardBody,
+  lgBTable,
+  lgBTableBody,
+  lgBTableHead
+} from 'lgbreact';
 import DocsLink from '../components/docsLink';
 import SectionContainer from '../components/sectionContainer';
 
@@ -279,98 +279,98 @@ const TableResponsivePage = props => {
   };
 
   return (
-    <MDBContainer className='mt-3'>
-      <DocsLink title='Table Responsive' href='https://mdbootstrap.com/docs/react/tables/responsive/' />
-      <MDBRow className='py-3'>
-        <MDBCol md='12'>
+    <lgBContainer className='mt-3'>
+      <DocsLink title='Table Responsive' href='https://lgbootstrap.com/docs/react/tables/responsive/' />
+      <lgBRow className='py-3'>
+        <lgBCol lg='12'>
           <SectionContainer noBorder header='Always responsive'>
-            <MDBCard>
-              <MDBCardBody>
-                <MDBTable responsive>
-                  <MDBTableHead columns={data.columns} />
-                  <MDBTableBody rows={data.rows} />
-                </MDBTable>
-              </MDBCardBody>
-            </MDBCard>
+            <lgBCard>
+              <lgBCardBody>
+                <lgBTable responsive>
+                  <lgBTableHead columns={data.columns} />
+                  <lgBTableBody rows={data.rows} />
+                </lgBTable>
+              </lgBCardBody>
+            </lgBCard>
           </SectionContainer>
-        </MDBCol>
-      </MDBRow>
+        </lgBCol>
+      </lgBRow>
 
-      <MDBRow className='py-3'>
-        <MDBCol md='12'>
+      <lgBRow className='py-3'>
+        <lgBCol lg='12'>
           <SectionContainer noBorder header='Breakpoint specific'>
-            <MDBCard>
-              <MDBCardBody>
-                <MDBTable responsiveSm>
-                  <MDBTableHead columns={data.columns} color='primary-color' textWhite />
-                  <MDBTableBody rows={data.rows} />
-                </MDBTable>
+            <lgBCard>
+              <lgBCardBody>
+                <lgBTable responsiveSm>
+                  <lgBTableHead columns={data.columns} color='primary-color' textWhite />
+                  <lgBTableBody rows={data.rows} />
+                </lgBTable>
 
-                <MDBTable responsiveMd>
-                  <MDBTableHead columns={data.columns} color='default-color' textWhite />
-                  <MDBTableBody rows={data.rows} />
-                </MDBTable>
+                <lgBTable responsivelg>
+                  <lgBTableHead columns={data.columns} color='default-color' textWhite />
+                  <lgBTableBody rows={data.rows} />
+                </lgBTable>
 
-                <MDBTable responsiveLg>
-                  <MDBTableHead columns={data.columns} color='secondary-color' textWhite />
-                  <MDBTableBody rows={data.rows} />
-                </MDBTable>
+                <lgBTable responsiveLg>
+                  <lgBTableHead columns={data.columns} color='secondary-color' textWhite />
+                  <lgBTableBody rows={data.rows} />
+                </lgBTable>
 
-                <MDBTable responsiveXl>
-                  <MDBTableHead columns={data.columns} color='success-color' textWhite />
-                  <MDBTableBody rows={data.rows} />
-                </MDBTable>
-              </MDBCardBody>
-            </MDBCard>
+                <lgBTable responsiveXl>
+                  <lgBTableHead columns={data.columns} color='success-color' textWhite />
+                  <lgBTableBody rows={data.rows} />
+                </lgBTable>
+              </lgBCardBody>
+            </lgBCard>
           </SectionContainer>
-        </MDBCol>
-      </MDBRow>
+        </lgBCol>
+      </lgBRow>
 
-      <MDBRow className='py-3'>
-        <MDBCol md='12'>
+      <lgBRow className='py-3'>
+        <lgBCol lg='12'>
           <SectionContainer noBorder header='Columns with auto width'>
-            <MDBCard>
-              <MDBCardBody>
-                <MDBTable autoWidth striped>
-                  <MDBTableHead columns={data_people.columns} />
-                  <MDBTableBody rows={data_people.rows} />
-                </MDBTable>
-              </MDBCardBody>
-            </MDBCard>
+            <lgBCard>
+              <lgBCardBody>
+                <lgBTable autoWidth striped>
+                  <lgBTableHead columns={data_people.columns} />
+                  <lgBTableBody rows={data_people.rows} />
+                </lgBTable>
+              </lgBCardBody>
+            </lgBCard>
           </SectionContainer>
-        </MDBCol>
-      </MDBRow>
+        </lgBCol>
+      </lgBRow>
 
-      <MDBRow className='py-3'>
-        <MDBCol md='12'>
+      <lgBRow className='py-3'>
+        <lgBCol lg='12'>
           <SectionContainer noBorder header='Columns with minimal width'>
-            <MDBCard>
-              <MDBCardBody>
-                <MDBTable striped bordered>
-                  <MDBTableHead columns={data_minimal_width.columns} />
-                  <MDBTableBody rows={data_minimal_width.rows} />
-                </MDBTable>
-              </MDBCardBody>
-            </MDBCard>
+            <lgBCard>
+              <lgBCardBody>
+                <lgBTable striped bordered>
+                  <lgBTableHead columns={data_minimal_width.columns} />
+                  <lgBTableBody rows={data_minimal_width.rows} />
+                </lgBTable>
+              </lgBCardBody>
+            </lgBCard>
           </SectionContainer>
-        </MDBCol>
-      </MDBRow>
+        </lgBCol>
+      </lgBRow>
 
-      <MDBRow className='py-3'>
-        <MDBCol md='12'>
+      <lgBRow className='py-3'>
+        <lgBCol lg='12'>
           <SectionContainer noBorder header='Columns with fixed width'>
-            <MDBCard>
-              <MDBCardBody>
-                <MDBTable fixed bordered>
-                  <MDBTableHead columns={data_people.columns} />
-                  <MDBTableBody rows={data_people.rows} />
-                </MDBTable>
-              </MDBCardBody>
-            </MDBCard>
+            <lgBCard>
+              <lgBCardBody>
+                <lgBTable fixed bordered>
+                  <lgBTableHead columns={data_people.columns} />
+                  <lgBTableBody rows={data_people.rows} />
+                </lgBTable>
+              </lgBCardBody>
+            </lgBCard>
           </SectionContainer>
-        </MDBCol>
-      </MDBRow>
-    </MDBContainer>
+        </lgBCol>
+      </lgBRow>
+    </lgBContainer>
   );
 };
 

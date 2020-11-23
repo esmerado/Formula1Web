@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { MDBContainer, MDBRow, MDBCol, MDBInput, MDBBtn } from 'mdbreact';
+import { lgBContainer, lgBRow, lgBCol, lgBInput, lgBBtn } from 'lgbreact';
 import DocsLink from '../components/docsLink';
 import SectionContainer from '../components/sectionContainer';
 
@@ -26,10 +26,10 @@ class ValidationPage extends Component {
     const { fname, lname, email, city, state, zip } = this.state
 
     return (
-      <MDBContainer>
+      <lgBContainer>
         <DocsLink
           title='Form Validation'
-          href='https://mdbootstrap.com/docs/react/forms/validation/'
+          href='https://lgbootstrap.com/docs/react/forms/validation/'
         />
 
         <SectionContainer header='Validations'>
@@ -38,8 +38,8 @@ class ValidationPage extends Component {
             onSubmit={this.submitHandler}
             noValidate
           >
-            <MDBRow>
-              <MDBCol md='4' className='mb-3'>
+            <lgBRow>
+              <lgBCol lg='4' className='mb-3'>
                 <label
                   htmlFor='defaultFormRegisterNameEx'
                   className='grey-text'
@@ -57,8 +57,8 @@ class ValidationPage extends Component {
                   required
                 />
                 <div className='valid-feedback'>Looks good!</div>
-              </MDBCol>
-              <MDBCol md='4' className='mb-3'>
+              </lgBCol>
+              <lgBCol lg='4' className='mb-3'>
                 <label
                   htmlFor='defaultFormRegisterEmailEx2'
                   className='grey-text'
@@ -76,8 +76,8 @@ class ValidationPage extends Component {
                   required
                 />
                 <div className='valid-feedback'>Looks good!</div>
-              </MDBCol>
-              <MDBCol md='4' className='mb-3'>
+              </lgBCol>
+              <lgBCol lg='4' className='mb-3'>
                 <label
                   htmlFor='defaultFormRegisterConfirmEx3'
                   className='grey-text'
@@ -96,10 +96,10 @@ class ValidationPage extends Component {
                 <small id='emailHelp' className='form-text text-muted'>
                   We'll never share your email with anyone else.
                 </small>
-              </MDBCol>
-            </MDBRow>
-            <MDBRow>
-              <MDBCol md='4' className='mb-3'>
+              </lgBCol>
+            </lgBRow>
+            <lgBRow>
+              <lgBCol lg='4' className='mb-3'>
                 <label
                   htmlFor='defaultFormRegisterPasswordEx4'
                   className='grey-text'
@@ -120,8 +120,8 @@ class ValidationPage extends Component {
                   Please provide a valid city.
                 </div>
                 <div className='valid-feedback'>Looks good!</div>
-              </MDBCol>
-              <MDBCol md='4' className='mb-3'>
+              </lgBCol>
+              <lgBCol lg='4' className='mb-3'>
                 <label
                   htmlFor='defaultFormRegisterPasswordEx4'
                   className='grey-text'
@@ -142,8 +142,8 @@ class ValidationPage extends Component {
                   Please provide a valid state.
                 </div>
                 <div className='valid-feedback'>Looks good!</div>
-              </MDBCol>
-              <MDBCol md='4' className='mb-3'>
+              </lgBCol>
+              <lgBCol lg='4' className='mb-3'>
                 <label
                   htmlFor='defaultFormRegisterPasswordEx4'
                   className='grey-text'
@@ -164,9 +164,9 @@ class ValidationPage extends Component {
                   Please provide a valid zip.
                 </div>
                 <div className='valid-feedback'>Looks good!</div>
-              </MDBCol>
-            </MDBRow>
-            <MDBCol md='4' className='mb-3'>
+              </lgBCol>
+            </lgBRow>
+            <lgBCol lg='4' className='mb-3'>
               <div className='custom-control custom-checkbox pl-3'>
                 <input
                   className='custom-control-input'
@@ -182,18 +182,18 @@ class ValidationPage extends Component {
                   You must agree before submitting.
                 </div>
               </div>
-            </MDBCol>
-            <MDBBtn color='unique' type='submit'>
+            </lgBCol>
+            <lgBBtn color='unique' type='submit'>
               Submit Form
-            </MDBBtn>
+            </lgBBtn>
           </form>
         </SectionContainer>
 
         <SectionContainer header='Browser defualt validation'>
           <form>
-            <MDBRow>
-              <MDBCol md='4'>
-                <MDBInput
+            <lgBRow>
+              <lgBCol lg='4'>
+                <lgBInput
                   value={fname}
                   name='fname'
                   onChange={this.changeHandler}
@@ -202,9 +202,9 @@ class ValidationPage extends Component {
                   label='First name'
                   required
                 />
-              </MDBCol>
-              <MDBCol md='4'>
-                <MDBInput
+              </lgBCol>
+              <lgBCol lg='4'>
+                <lgBInput
                   value={lname}
                   name='lname'
                   onChange={this.changeHandler}
@@ -213,9 +213,9 @@ class ValidationPage extends Component {
                   label='Last name'
                   required
                 />
-              </MDBCol>
-              <MDBCol md='4'>
-                <MDBInput
+              </lgBCol>
+              <lgBCol lg='4'>
+                <lgBInput
                   value={email}
                   onChange={this.changeHandler}
                   type='email'
@@ -223,11 +223,11 @@ class ValidationPage extends Component {
                   name='email'
                   label='Your Email address'
                 />
-              </MDBCol>
-            </MDBRow>
-            <MDBRow>
-              <MDBCol md='4'>
-                <MDBInput
+              </lgBCol>
+            </lgBRow>
+            <lgBRow>
+              <lgBCol lg='4'>
+                <lgBInput
                   value={city}
                   onChange={this.changeHandler}
                   type='text'
@@ -236,9 +236,9 @@ class ValidationPage extends Component {
                   label='City'
                   required
                 />
-              </MDBCol>
-              <MDBCol md='4'>
-                <MDBInput
+              </lgBCol>
+              <lgBCol lg='4'>
+                <lgBInput
                   value={state}
                   onChange={this.changeHandler}
                   type='text'
@@ -247,9 +247,9 @@ class ValidationPage extends Component {
                   label='State'
                   required
                 />
-              </MDBCol>
-              <MDBCol md='4'>
-                <MDBInput
+              </lgBCol>
+              <lgBCol lg='4'>
+                <lgBInput
                   value={zip}
                   onChange={this.changeHandler}
                   type='text'
@@ -258,10 +258,10 @@ class ValidationPage extends Component {
                   label='Zip'
                   required
                 />
-              </MDBCol>
-            </MDBRow>
-            <MDBRow>
-              <MDBCol md='4' className='mb-3'>
+              </lgBCol>
+            </lgBRow>
+            <lgBRow>
+              <lgBCol lg='4' className='mb-3'>
                 <div className='custom-control custom-checkbox pl-3'>
                   <input
                     className='custom-control-input'
@@ -280,16 +280,16 @@ class ValidationPage extends Component {
                     You must agree before submitting.
                   </div>
                 </div>
-              </MDBCol>
-            </MDBRow>
-            <MDBBtn color='primary' type='submit'>
+              </lgBCol>
+            </lgBRow>
+            <lgBBtn color='primary' type='submit'>
               Submit Form
-            </MDBBtn>
+            </lgBBtn>
           </form>
         </SectionContainer>
 
         <SectionContainer header='Supported elements'>
-          <MDBCol md='4'>
+          <lgBCol lg='4'>
             <form className='was-validated' noValidate>
               <div className='custom-control custom-checkbox mb-3'>
                 <input
@@ -344,7 +344,7 @@ class ValidationPage extends Component {
               </div>
 
               <div className='form-group'>
-                <select className='custom-select bMDBRowser-default' required>
+                <select className='custom-select blgBRowser-default' required>
                   <option value=''>Open this select menu</option>
                   <option value='1'>One</option>
                   <option value='2'>Two</option>
@@ -373,18 +373,18 @@ class ValidationPage extends Component {
                 </div>
               </div>
             </form>
-          </MDBCol>
+          </lgBCol>
         </SectionContainer>
 
         <SectionContainer header='Tooltips'>
-          <MDBCol md=''>
+          <lgBCol lg=''>
             <form
               className='needs-validation'
               onSubmit={this.submitHandler}
               noValidate
             >
-              <MDBRow>
-                <div className='col-md-4 mb-3'>
+              <lgBRow>
+                <div className='col-lg-4 mb-3'>
                   <label
                     htmlFor='defaultFormRegisterNameEx'
                     className='grey-text'
@@ -405,7 +405,7 @@ class ValidationPage extends Component {
                     Looks good!
                   </div>
                 </div>
-                <div className='col-md-4 mb-3'>
+                <div className='col-lg-4 mb-3'>
                   <label
                     htmlFor='defaultFormRegisterEmailEx2'
                     className='grey-text'
@@ -426,7 +426,7 @@ class ValidationPage extends Component {
                     Looks good!
                   </div>
                 </div>
-                <div className='col-md-4 mb-3'>
+                <div className='col-lg-4 mb-3'>
                   <label
                     htmlFor='defaultFormRegisterConfirmEx3'
                     className='grey-text'
@@ -446,9 +446,9 @@ class ValidationPage extends Component {
                     We'll never share your email with anyone else.
                   </small>
                 </div>
-              </MDBRow>
-              <MDBRow>
-                <div className='col-md-4 mb-3'>
+              </lgBRow>
+              <lgBRow>
+                <div className='col-lg-4 mb-3'>
                   <label
                     htmlFor='defaultFormRegisterPasswordEx4'
                     className='grey-text'
@@ -472,7 +472,7 @@ class ValidationPage extends Component {
                     Looks good!
                   </div>
                 </div>
-                <div className='col-md-4 mb-3'>
+                <div className='col-lg-4 mb-3'>
                   <label
                     htmlFor='defaultFormRegisterPasswordEx4'
                     className='grey-text'
@@ -496,7 +496,7 @@ class ValidationPage extends Component {
                     Looks good!
                   </div>
                 </div>
-                <div className='col-md-4 mb-3'>
+                <div className='col-lg-4 mb-3'>
                   <label
                     htmlFor='defaultFormRegisterPasswordEx4'
                     className='grey-text'
@@ -520,14 +520,14 @@ class ValidationPage extends Component {
                     Looks good!
                   </div>
                 </div>
-              </MDBRow>
+              </lgBRow>
               <button className='btn btn-unique' type='submit'>
                 Submit Form
               </button>
             </form>
-          </MDBCol>
+          </lgBCol>
         </SectionContainer>
-      </MDBContainer>
+      </lgBContainer>
     );
   }
 }

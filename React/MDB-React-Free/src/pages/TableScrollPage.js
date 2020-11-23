@@ -1,14 +1,14 @@
 import React from 'react';
 import {
-  MDBContainer,
-  MDBRow,
-  MDBCol,
-  MDBCard,
-  MDBCardBody,
-  MDBTable,
-  MDBTableBody,
-  MDBTableHead
-} from 'mdbreact';
+  lgBContainer,
+  lgBRow,
+  lgBCol,
+  lgBCard,
+  lgBCardBody,
+  lgBTable,
+  lgBTableBody,
+  lgBTableHead
+} from 'lgbreact';
 import DocsLink from '../components/docsLink';
 import SectionContainer from '../components/sectionContainer';
 
@@ -41,7 +41,7 @@ const TableScrollPage = props => {
         id: 1,
         first: 'Mark',
         last: 'Otto',
-        handle: '@mdo'
+        handle: '@lgo'
       },
       {
         id: 2,
@@ -59,7 +59,7 @@ const TableScrollPage = props => {
         id: 4,
         first: 'Mark',
         last: 'Otto',
-        handle: '@mdo'
+        handle: '@lgo'
       },
       {
         id: 5,
@@ -77,23 +77,23 @@ const TableScrollPage = props => {
   };
 
   return (
-    <MDBContainer className='mt-3'>
-      <DocsLink title='MDBTable Scroll' href='https://mdbootstrap.com/docs/react/tables/scroll/' />
-      <MDBRow className='py-3'>
-        <MDBCol md='12'>
+    <lgBContainer className='mt-3'>
+      <DocsLink title='lgBTable Scroll' href='https://lgbootstrap.com/docs/react/tables/scroll/' />
+      <lgBRow className='py-3'>
+        <lgBCol lg='12'>
           <SectionContainer noBorder header='Static table vertical scroll'>
-            <MDBCard>
-              <MDBCardBody>
-                <MDBTable scrollY>
-                  <MDBTableHead columns={data.columns} />
-                  <MDBTableBody rows={data.rows} />
-                </MDBTable>
-              </MDBCardBody>
-            </MDBCard>
+            <lgBCard>
+              <lgBCardBody>
+                <lgBTable scrollY>
+                  <lgBTableHead columns={data.columns} />
+                  <lgBTableBody rows={data.rows} />
+                </lgBTable>
+              </lgBCardBody>
+            </lgBCard>
           </SectionContainer>
-        </MDBCol>
-      </MDBRow>
-    </MDBContainer>
+        </lgBCol>
+      </lgBRow>
+    </lgBContainer>
   );
 };
 

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { MDBBtn, MDBCollapse, MDBContainer } from 'mdbreact';
+import { lgBBtn, lgBCollapse, lgBContainer } from 'lgbreact';
 import DocsLink from '../components/docsLink';
 import SectionContainer from '../components/sectionContainer';
 
@@ -17,49 +17,49 @@ class CollapsePage extends Component {
   render() {
     const { collapseID } = this.state;
     return (
-      <MDBContainer>
+      <lgBContainer>
         <DocsLink
           title='Collapse'
-          href='https://mdbootstrap.com/docs/react/advanced/collapse/'
+          href='https://lgbootstrap.com/docs/react/advanced/collapse/'
         />
 
         <SectionContainer header='Basic examples'>
-          <MDBBtn
+          <lgBBtn
             color='primary'
             onClick={this.toggleCollapse('basicCollapse')}
             style={{ marginBottom: '1rem' }}
           >
             Toggle1
-          </MDBBtn>
-          <MDBBtn
+          </lgBBtn>
+          <lgBBtn
             color='info'
             onClick={this.toggleCollapse('basicCollapse')}
             style={{ marginBottom: '1rem' }}
           >
             Toggle2
-          </MDBBtn>
-          <MDBCollapse id='basicCollapse' isOpen={collapseID}>
+          </lgBBtn>
+          <lgBCollapse id='basicCollapse' isOpen={collapseID}>
             <p>
               Anim pariatur cliche reprehenderit, enim eiusmod high life
               accusamus terry richardson ad squid. Nihil anim keffiyeh
               helvetica, craft beer labore wes anderson cred nesciunt sapiente
               ea proident.
             </p>
-          </MDBCollapse>
+          </lgBCollapse>
         </SectionContainer>
 
         <SectionContainer header='Accordion without icon'>
           <div>
             <div>
-              <MDBBtn
+              <lgBBtn
                 color='primary'
                 onClick={this.toggleCollapse('accordion1')}
                 style={{ marginBottom: '1rem' }}
               >
                 Collapsible Group Item #1
-              </MDBBtn>
+              </lgBBtn>
             </div>
-            <MDBCollapse id='accordion1' isOpen={collapseID}>
+            <lgBCollapse id='accordion1' isOpen={collapseID}>
               Anim pariatur cliche reprehenderit, enim eiusmod high life
               accusamus terry richardson ad squid. 3 wolf moon officia aute, non
               cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
@@ -70,18 +70,18 @@ class CollapsePage extends Component {
               lomo. Leggings occaecat craft beer farm-to-table, raw denim
               aesthetic synth nesciunt you probably haven&apos;t heard of them
               accusamus labore sustainable VHS.
-            </MDBCollapse>
+            </lgBCollapse>
 
             <div>
-              <MDBBtn
+              <lgBBtn
                 color='primary'
                 onClick={this.toggleCollapse('accordion2')}
                 style={{ marginBottom: '1rem' }}
               >
                 Collapsible Group Item #2
-              </MDBBtn>
+              </lgBBtn>
             </div>
-            <MDBCollapse id='accordion2' isOpen={collapseID}>
+            <lgBCollapse id='accordion2' isOpen={collapseID}>
               Anim pariatur cliche reprehenderit, enim eiusmod high life
               accusamus terry richardson ad squid. 3 wolf moon officia aute, non
               cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
@@ -92,18 +92,18 @@ class CollapsePage extends Component {
               lomo. Leggings occaecat craft beer farm-to-table, raw denim
               aesthetic synth nesciunt you probably haven&apos;t heard of them
               accusamus labore sustainable VHS.
-            </MDBCollapse>
+            </lgBCollapse>
 
             <div>
-              <MDBBtn
+              <lgBBtn
                 color='primary'
                 onClick={this.toggleCollapse('accordion3')}
                 style={{ marginBottom: '1rem' }}
               >
                 Collapsible Group Item #2
-              </MDBBtn>
+              </lgBBtn>
             </div>
-            <MDBCollapse id='accordion3' isOpen={collapseID}>
+            <lgBCollapse id='accordion3' isOpen={collapseID}>
               Anim pariatur cliche reprehenderit, enim eiusmod high life
               accusamus terry richardson ad squid. 3 wolf moon officia aute, non
               cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
@@ -114,10 +114,10 @@ class CollapsePage extends Component {
               lomo. Leggings occaecat craft beer farm-to-table, raw denim
               aesthetic synth nesciunt you probably haven&apos;t heard of them
               accusamus labore sustainable VHS.
-            </MDBCollapse>
+            </lgBCollapse>
           </div>
         </SectionContainer>
-      </MDBContainer>
+      </lgBContainer>
     );
   }
 }

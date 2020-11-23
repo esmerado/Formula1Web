@@ -1,27 +1,27 @@
 import React from 'react';
-import { MDBCol, MDBContainer, MDBRow, MDBFooter } from 'mdbreact';
+import { lgBCol, lgBContainer, lgBRow, lgBFooter } from 'lgbreact';
 import DocsLink from '../components/docsLink';
 import SectionContainer from '../components/sectionContainer';
 
 const FooterPage = () => {
   return (
-    <MDBContainer>
+    <lgBContainer>
       <DocsLink
         title='Footer'
-        href='https://mdbootstrap.com/docs/react/navigation/footer/'
+        href='https://lgbootstrap.com/docs/react/navigation/footer/'
       />
       <SectionContainer header='Basic example'>
-        <MDBFooter color='blue' className='font-small pt-4 mt-4'>
-          <MDBContainer fluid className='text-center text-md-left'>
-            <MDBRow>
-              <MDBCol md='6'>
+        <lgBFooter color='blue' className='font-small pt-4 mt-4'>
+          <lgBContainer fluid className='text-center text-lg-left'>
+            <lgBRow>
+              <lgBCol lg='6'>
                 <h5 className='title'>Footer Content</h5>
                 <p>
                   Here you can use rows and columns here to organize your footer
                   content.
                 </p>
-              </MDBCol>
-              <MDBCol md='6'>
+              </lgBCol>
+              <lgBCol lg='6'>
                 <h5 className='title'>Links</h5>
                 <ul>
                   <li className='list-unstyled'>
@@ -37,18 +37,18 @@ const FooterPage = () => {
                     <a href='#!'>Link 4</a>
                   </li>
                 </ul>
-              </MDBCol>
-            </MDBRow>
-          </MDBContainer>
+              </lgBCol>
+            </lgBRow>
+          </lgBContainer>
           <div className='footer-copyright text-center py-3'>
-            <MDBContainer fluid>
+            <lgBContainer fluid>
               &copy; {new Date().getFullYear()} Copyright:{' '}
-              <a href='https://www.MDBootstrap.com'> MDBootstrap.com </a>
-            </MDBContainer>
+              <a href='https://www.lgBootstrap.com'> lgBootstrap.com </a>
+            </lgBContainer>
           </div>
-        </MDBFooter>
+        </lgBFooter>
       </SectionContainer>
-    </MDBContainer>
+    </lgBContainer>
   );
 };
 

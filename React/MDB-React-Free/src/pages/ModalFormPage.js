@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import {
-  MDBContainer,
-  MDBBtn,
-  MDBModal,
-  MDBModalBody,
-  MDBModalHeader,
-  MDBModalFooter,
-  MDBInput,
-  MDBIcon
-} from 'mdbreact';
+  lgBContainer,
+  lgBBtn,
+  lgBModal,
+  lgBModalBody,
+  lgBModalHeader,
+  lgBModalFooter,
+  lgBInput,
+  lgBIcon
+} from 'lgbreact';
 import DocsLink from '../components/docsLink';
 import SectionContainer from '../components/sectionContainer';
 
@@ -31,27 +31,27 @@ class ModalFormPage extends Component {
   render() {
     const { modal1, modal2, modal3, modal4, modal5, modal6 } = this.state;
     return (
-      <MDBContainer>
+      <lgBContainer>
         <DocsLink
           title='Modal Form'
-          href='https://mdbootstrap.com/docs/react/modals/basic/'
+          href='https://lgbootstrap.com/docs/react/modals/basic/'
         />
 
         <SectionContainer header='Simple modal login' flexCenter>
-          <MDBBtn rounded onClick={this.toggle(1)}>
+          <lgBBtn rounded onClick={this.toggle(1)}>
             Launch Modal Login Form
-          </MDBBtn>
-          <MDBModal isOpen={modal1} toggle={this.toggle(1)}>
-            <MDBModalHeader
+          </lgBBtn>
+          <lgBModal isOpen={modal1} toggle={this.toggle(1)}>
+            <lgBModalHeader
               className='text-center'
               titleClass='w-100 font-weight-bold'
               toggle={this.toggle(1)}
             >
               Sign in
-            </MDBModalHeader>
-            <MDBModalBody>
+            </lgBModalHeader>
+            <lgBModalBody>
               <form className='mx-3 grey-text'>
-                <MDBInput
+                <lgBInput
                   label='Type your email'
                   icon='envelope'
                   group
@@ -60,7 +60,7 @@ class ModalFormPage extends Component {
                   error='wrong'
                   success='right'
                 />
-                <MDBInput
+                <lgBInput
                   label='Type your password'
                   icon='lock'
                   group
@@ -68,28 +68,28 @@ class ModalFormPage extends Component {
                   validate
                 />
               </form>
-            </MDBModalBody>
-            <MDBModalFooter className='justify-content-center'>
-              <MDBBtn onClick={this.toggle(1)}>Login</MDBBtn>
-            </MDBModalFooter>
-          </MDBModal>
+            </lgBModalBody>
+            <lgBModalFooter className='justify-content-center'>
+              <lgBBtn onClick={this.toggle(1)}>Login</lgBBtn>
+            </lgBModalFooter>
+          </lgBModal>
         </SectionContainer>
 
         <SectionContainer header='Simple modal register' flexCenter>
-          <MDBBtn rounded onClick={this.toggle(2)}>
+          <lgBBtn rounded onClick={this.toggle(2)}>
             Launch Modal Register Form
-          </MDBBtn>
-          <MDBModal isOpen={modal2} toggle={this.toggle(2)}>
-            <MDBModalHeader
+          </lgBBtn>
+          <lgBModal isOpen={modal2} toggle={this.toggle(2)}>
+            <lgBModalHeader
               className='text-center'
               titleClass='w-100 font-weight-bold'
               toggle={this.toggle(2)}
             >
               Sign in
-            </MDBModalHeader>
-            <MDBModalBody>
+            </lgBModalHeader>
+            <lgBModalBody>
               <form className='mx-3 grey-text'>
-                <MDBInput
+                <lgBInput
                   label='Your name'
                   icon='user'
                   group
@@ -98,7 +98,7 @@ class ModalFormPage extends Component {
                   error='wrong'
                   success='right'
                 />
-                <MDBInput
+                <lgBInput
                   label='Your email'
                   icon='envelope'
                   group
@@ -107,7 +107,7 @@ class ModalFormPage extends Component {
                   error='wrong'
                   success='right'
                 />
-                <MDBInput
+                <lgBInput
                   label='Your password'
                   icon='lock'
                   group
@@ -115,37 +115,37 @@ class ModalFormPage extends Component {
                   validate
                 />
               </form>
-            </MDBModalBody>
-            <MDBModalFooter className='justify-content-center'>
-              <MDBBtn color='deep-orange' onClick={this.toggle(2)}>
+            </lgBModalBody>
+            <lgBModalFooter className='justify-content-center'>
+              <lgBBtn color='deep-orange' onClick={this.toggle(2)}>
                 SIGN UP
-              </MDBBtn>
-            </MDBModalFooter>
-          </MDBModal>
+              </lgBBtn>
+            </lgBModalFooter>
+          </lgBModal>
         </SectionContainer>
 
         <SectionContainer header='Simple modal subscription' flexCenter>
-          <MDBBtn rounded onClick={this.toggle(3)}>
+          <lgBBtn rounded onClick={this.toggle(3)}>
             Launch Modal subscription Form
-          </MDBBtn>
-          <MDBModal isOpen={modal3} toggle={this.toggle(3)}>
-            <MDBModalHeader
+          </lgBBtn>
+          <lgBModal isOpen={modal3} toggle={this.toggle(3)}>
+            <lgBModalHeader
               className='text-center'
               titleClass='w-100 font-weight-bold'
               toggle={this.toggle(3)}
             >
               Subscribe
-            </MDBModalHeader>
-            <MDBModalBody>
+            </lgBModalHeader>
+            <lgBModalBody>
               <form className='mx-3 grey-text'>
-                <MDBInput
+                <lgBInput
                   label='Your name'
                   icon='user'
                   group
                   type='text'
                   validate
                 />
-                <MDBInput
+                <lgBInput
                   label='Your email'
                   icon='envelope'
                   group
@@ -155,38 +155,38 @@ class ModalFormPage extends Component {
                   success='right'
                 />
               </form>
-            </MDBModalBody>
-            <MDBModalFooter className='justify-content-center'>
-              <MDBBtn color='indigo' onClick={this.toggle(3)}>
+            </lgBModalBody>
+            <lgBModalFooter className='justify-content-center'>
+              <lgBBtn color='indigo' onClick={this.toggle(3)}>
                 Send
-                <MDBIcon icon='paper-plane' className='ml-2' />
-              </MDBBtn>
-            </MDBModalFooter>
-          </MDBModal>
+                <lgBIcon icon='paper-plane' className='ml-2' />
+              </lgBBtn>
+            </lgBModalFooter>
+          </lgBModal>
         </SectionContainer>
 
         <SectionContainer header='Simple modal contact' flexCenter>
-          <MDBBtn rounded onClick={this.toggle(4)}>
+          <lgBBtn rounded onClick={this.toggle(4)}>
             Launch Modal Contact Form
-          </MDBBtn>
-          <MDBModal isOpen={modal4} toggle={this.toggle(4)}>
-            <MDBModalHeader
+          </lgBBtn>
+          <lgBModal isOpen={modal4} toggle={this.toggle(4)}>
+            <lgBModalHeader
               className='text-center'
               titleClass='w-100 font-weight-bold'
               toggle={this.toggle(4)}
             >
               Write to us
-            </MDBModalHeader>
-            <MDBModalBody>
+            </lgBModalHeader>
+            <lgBModalBody>
               <form className='mx-3 grey-text'>
-                <MDBInput
+                <lgBInput
                   label='Your name'
                   icon='user'
                   group
                   type='text'
                   validate
                 />
-                <MDBInput
+                <lgBInput
                   label='Your email'
                   icon='envelope'
                   group
@@ -195,84 +195,84 @@ class ModalFormPage extends Component {
                   error='wrong'
                   success='right'
                 />
-                <MDBInput label='Your Subject' icon='tag' group type='text' />
-                <MDBInput
+                <lgBInput label='Your Subject' icon='tag' group type='text' />
+                <lgBInput
                   type='textarea'
                   rows='2'
                   label='Your message'
                   icon='pencil'
                 />
               </form>
-            </MDBModalBody>
-            <MDBModalFooter className='justify-content-center'>
-              <MDBBtn color='unique' onClick={this.toggle(4)}>
+            </lgBModalBody>
+            <lgBModalFooter className='justify-content-center'>
+              <lgBBtn color='unique' onClick={this.toggle(4)}>
                 Send
-                <MDBIcon icon='paper-plane' className='ml-2' />
-              </MDBBtn>
-            </MDBModalFooter>
-          </MDBModal>
+                <lgBIcon icon='paper-plane' className='ml-2' />
+              </lgBBtn>
+            </lgBModalFooter>
+          </lgBModal>
         </SectionContainer>
 
         <SectionContainer header='Modal with avatar' flexCenter>
-          <MDBBtn rounded onClick={this.toggle(5)}>
+          <lgBBtn rounded onClick={this.toggle(5)}>
             Launch Modal Login With Avatar
-          </MDBBtn>
-          <MDBModal
+          </lgBBtn>
+          <lgBModal
             size='sm'
             cascading
             className='modal-avatar'
             isOpen={modal5}
             toggle={this.toggle(5)}
           >
-            <MDBModalHeader className='mx-auto'>
+            <lgBModalHeader className='mx-auto'>
               <img
-                src='https://mdbootstrap.com/img/Photos/Avatars/img%20%281%29.jpg'
+                src='https://lgbootstrap.com/img/Photos/Avatars/img%20%281%29.jpg'
                 alt='avatar'
                 className='rounded-circle img-responsive'
               />
-            </MDBModalHeader>
-            <MDBModalBody className='text-center mb-1'>
+            </lgBModalHeader>
+            <lgBModalBody className='text-center mb-1'>
               <h5 className='mt-1 mb-2'>Maria Doe</h5>
               <form className='mx-3 grey-text'>
-                <MDBInput
+                <lgBInput
                   label='Enter password'
                   group
                   type='password'
                   validate
                 />
               </form>
-            </MDBModalBody>
-            <MDBModalFooter className='justify-content-center'>
-              <MDBBtn color='cyan' onClick={this.toggle(5)}>
+            </lgBModalBody>
+            <lgBModalFooter className='justify-content-center'>
+              <lgBBtn color='cyan' onClick={this.toggle(5)}>
                 Login
-                <MDBIcon icon='sign-in-alt' className='ml-2' />
-              </MDBBtn>
-            </MDBModalFooter>
-          </MDBModal>
+                <lgBIcon icon='sign-in-alt' className='ml-2' />
+              </lgBBtn>
+            </lgBModalFooter>
+          </lgBModal>
         </SectionContainer>
 
         <SectionContainer
           header='Subscription modal with orange header'
           flexCenter
         >
-          <MDBBtn rounded onClick={this.toggle(6)}>
+          <lgBBtn rounded onClick={this.toggle(6)}>
             Launch Modal Subscription
-          </MDBBtn>
-          <MDBModal
+          </lgBBtn>
+          <lgBModal
             className='modal-notify modal-warning white-text'
             isOpen={modal6}
             toggle={this.toggle(6)}
           >
-            <MDBModalHeader
+            <lgBModalHeader
               className='text-center'
               titleClass='w-100 font-weight-bold'
               toggle={this.toggle(6)}
             >
               Subscribe
-            </MDBModalHeader>
-            <MDBModalBody>
+            </lgBModalHeader>
+            <lgBModalBody>
               <form className='mx-3 grey-text'>
-                <MDBInput
+                <lgBInput
                   label='Your name'
                   icon='user'
                   iconClass='grey-text'
@@ -282,7 +282,7 @@ class ModalFormPage extends Component {
                   error='wrong'
                   success='right'
                 />
-                <MDBInput
+                <lgBInput
                   label='Your email'
                   icon='envelope'
                   iconClass='grey-text'
@@ -293,16 +293,16 @@ class ModalFormPage extends Component {
                   success='right'
                 />
               </form>
-            </MDBModalBody>
-            <MDBModalFooter className='justify-content-center'>
-              <MDBBtn color='warning' outline onClick={this.toggle(6)}>
+            </lgBModalBody>
+            <lgBModalFooter className='justify-content-center'>
+              <lgBBtn color='warning' outline onClick={this.toggle(6)}>
                 Send
-                <MDBIcon icon='paper-plane' className='ml-2' />
-              </MDBBtn>
-            </MDBModalFooter>
-          </MDBModal>
+                <lgBIcon icon='paper-plane' className='ml-2' />
+              </lgBBtn>
+            </lgBModalFooter>
+          </lgBModal>
         </SectionContainer>
-      </MDBContainer>
+      </lgBContainer>
     );
   }
 }

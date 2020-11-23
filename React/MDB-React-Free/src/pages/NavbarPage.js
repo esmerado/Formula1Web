@@ -1,20 +1,20 @@
 import React, { Component } from 'react';
 import {
-  MDBNavbar,
-  MDBNavbarBrand,
-  MDBNavbarNav,
-  MDBNavItem,
-  MDBLink,
-  MDBNavbarToggler,
-  MDBCollapse,
-  MDBFormInline,
-  MDBDropdown,
-  MDBDropdownToggle,
-  MDBDropdownMenu,
-  MDBDropdownItem,
-  MDBContainer,
-  MDBIcon
-} from 'mdbreact';
+  lgBNavbar,
+  lgBNavbarBrand,
+  lgBNavbarNav,
+  lgBNavItem,
+  lgBLink,
+  lgBNavbarToggler,
+  lgBCollapse,
+  lgBFormInline,
+  lgBDropdown,
+  lgBDropdownToggle,
+  lgBDropdownMenu,
+  lgBDropdownItem,
+  lgBContainer,
+  lgBIcon
+} from 'lgbreact';
 import DocsLink from '../components/docsLink';
 import SectionContainer from '../components/sectionContainer';
 
@@ -31,53 +31,53 @@ class NavbarPage extends Component {
   render() {
     const { isOpen, collapseID } = this.state;
     return (
-      <MDBContainer>
+      <lgBContainer>
         <DocsLink
           title='Navbar'
-          href='https://mdbootstrap.com/docs/react/navigation/navbar/'
+          href='https://lgbootstrap.com/docs/react/navigation/navbar/'
         />
 
         <SectionContainer header='Basic example'>
-          <MDBNavbar color='indigo' dark expand='md'>
-            <MDBNavbarBrand>
+          <lgBNavbar color='indigo' dark expand='lg'>
+            <lgBNavbarBrand>
               <strong className='white-text'>Navbar</strong>
-            </MDBNavbarBrand>
-            <MDBNavbarToggler onClick={this.toggleCollapse} />
-            <MDBCollapse id='navbarCollapse3' isOpen={isOpen} navbar>
-              <MDBNavbarNav left>
-                <MDBNavItem active>
-                  <MDBLink to='#!'>Home</MDBLink>
-                </MDBNavItem>
-                <MDBNavItem>
-                  <MDBLink to='#!'>Features</MDBLink>
-                </MDBNavItem>
-                <MDBNavItem>
-                  <MDBLink to='#!'>Pricing</MDBLink>
-                </MDBNavItem>
-                <MDBNavItem>
-                  <MDBDropdown>
-                    <MDBDropdownToggle nav caret>
+            </lgBNavbarBrand>
+            <lgBNavbarToggler onClick={this.toggleCollapse} />
+            <lgBCollapse id='navbarCollapse3' isOpen={isOpen} navbar>
+              <lgBNavbarNav left>
+                <lgBNavItem active>
+                  <lgBLink to='#!'>Home</lgBLink>
+                </lgBNavItem>
+                <lgBNavItem>
+                  <lgBLink to='#!'>Features</lgBLink>
+                </lgBNavItem>
+                <lgBNavItem>
+                  <lgBLink to='#!'>Pricing</lgBLink>
+                </lgBNavItem>
+                <lgBNavItem>
+                  <lgBDropdown>
+                    <lgBDropdownToggle nav caret>
                       <span className='mr-2'>Dropdown</span>
-                    </MDBDropdownToggle>
-                    <MDBDropdownMenu>
-                      <MDBDropdownItem href='#!'>Action</MDBDropdownItem>
-                      <MDBDropdownItem href='#!'>
+                    </lgBDropdownToggle>
+                    <lgBDropdownMenu>
+                      <lgBDropdownItem href='#!'>Action</lgBDropdownItem>
+                      <lgBDropdownItem href='#!'>
                         Another Action
-                      </MDBDropdownItem>
-                      <MDBDropdownItem href='#!'>
+                      </lgBDropdownItem>
+                      <lgBDropdownItem href='#!'>
                         Something else here
-                      </MDBDropdownItem>
-                      <MDBDropdownItem href='#!'>
+                      </lgBDropdownItem>
+                      <lgBDropdownItem href='#!'>
                         Something else here
-                      </MDBDropdownItem>
-                    </MDBDropdownMenu>
-                  </MDBDropdown>
-                </MDBNavItem>
-              </MDBNavbarNav>
-              <MDBNavbarNav right>
-                <MDBNavItem>
-                  <MDBFormInline waves>
-                    <div className='md-form my-0'>
+                      </lgBDropdownItem>
+                    </lgBDropdownMenu>
+                  </lgBDropdown>
+                </lgBNavItem>
+              </lgBNavbarNav>
+              <lgBNavbarNav right>
+                <lgBNavItem>
+                  <lgBFormInline waves>
+                    <div className='lg-form my-0'>
                       <input
                         className='form-control mr-sm-2'
                         type='text'
@@ -85,57 +85,57 @@ class NavbarPage extends Component {
                         aria-label='Search'
                       />
                     </div>
-                  </MDBFormInline>
-                </MDBNavItem>
-              </MDBNavbarNav>
-            </MDBCollapse>
-          </MDBNavbar>
-          <MDBNavbar
+                  </lgBFormInline>
+                </lgBNavItem>
+              </lgBNavbarNav>
+            </lgBCollapse>
+          </lgBNavbar>
+          <lgBNavbar
             color='unique-color-dark'
             style={{ marginTop: '20px' }}
             dark
           >
-            <MDBNavbarBrand href='#'>
+            <lgBNavbarBrand href='#'>
               <img
-                src='https://mdbootstrap.com/img/logo/mdb-transparent.png'
+                src='https://lgbootstrap.com/img/logo/lgb-transparent.png'
                 height='30'
                 alt=''
               />
-            </MDBNavbarBrand>
-          </MDBNavbar>
+            </lgBNavbarBrand>
+          </lgBNavbar>
         </SectionContainer>
 
         <SectionContainer header='Color schemes'>
-          <MDBNavbar
+          <lgBNavbar
             color='bg-danger'
             style={{ marginTop: '20px' }}
             dark
-            expand='md'
+            expand='lg'
             scrolling
           >
-            <MDBContainer>
-              <MDBNavbarBrand>
-                <strong className='white-text'>MDB</strong>
-              </MDBNavbarBrand>
-              <MDBNavbarToggler
+            <lgBContainer>
+              <lgBNavbarBrand>
+                <strong className='white-text'>lgB</strong>
+              </lgBNavbarBrand>
+              <lgBNavbarToggler
                 onClick={this.toggleCollapse('navbarCollapse')}
               />
-              <MDBCollapse id='navbarCollapse' isOpen={collapseID} navbar>
-                <MDBNavbarNav left>
-                  <MDBNavItem active>
-                    <MDBLink to='#!'>Home</MDBLink>
-                  </MDBNavItem>
-                  <MDBNavItem>
-                    <MDBLink to='#!'>Link</MDBLink>
-                  </MDBNavItem>
-                  <MDBNavItem>
-                    <MDBLink to='#!'>Profile</MDBLink>
-                  </MDBNavItem>
-                </MDBNavbarNav>
-                <MDBNavbarNav right>
-                  <MDBNavItem>
-                    <MDBFormInline waves>
-                      <div className='md-form my-0'>
+              <lgBCollapse id='navbarCollapse' isOpen={collapseID} navbar>
+                <lgBNavbarNav left>
+                  <lgBNavItem active>
+                    <lgBLink to='#!'>Home</lgBLink>
+                  </lgBNavItem>
+                  <lgBNavItem>
+                    <lgBLink to='#!'>Link</lgBLink>
+                  </lgBNavItem>
+                  <lgBNavItem>
+                    <lgBLink to='#!'>Profile</lgBLink>
+                  </lgBNavItem>
+                </lgBNavbarNav>
+                <lgBNavbarNav right>
+                  <lgBNavItem>
+                    <lgBFormInline waves>
+                      <div className='lg-form my-0'>
                         <input
                           className='form-control mr-sm-2'
                           type='text'
@@ -143,42 +143,42 @@ class NavbarPage extends Component {
                           aria-label='Search'
                         />
                       </div>
-                    </MDBFormInline>
-                  </MDBNavItem>
-                </MDBNavbarNav>
-              </MDBCollapse>
-            </MDBContainer>
-          </MDBNavbar>
-          <MDBNavbar
+                    </lgBFormInline>
+                  </lgBNavItem>
+                </lgBNavbarNav>
+              </lgBCollapse>
+            </lgBContainer>
+          </lgBNavbar>
+          <lgBNavbar
             color='default-color'
             style={{ marginTop: '20px' }}
             dark
-            expand='md'
+            expand='lg'
             scrolling
           >
-            <MDBContainer>
-              <MDBNavbarBrand>
-                <strong className='white-text'>MDB</strong>
-              </MDBNavbarBrand>
-              <MDBNavbarToggler
+            <lgBContainer>
+              <lgBNavbarBrand>
+                <strong className='white-text'>lgB</strong>
+              </lgBNavbarBrand>
+              <lgBNavbarToggler
                 onClick={this.toggleCollapse('navbarCollapse1')}
               />
-              <MDBCollapse id='navbarCollapse1' isOpen={collapseID} navbar>
-                <MDBNavbarNav left>
-                  <MDBNavItem active>
-                    <MDBLink to='#!'>Home</MDBLink>
-                  </MDBNavItem>
-                  <MDBNavItem>
-                    <MDBLink to='#!'>Link</MDBLink>
-                  </MDBNavItem>
-                  <MDBNavItem>
-                    <MDBLink to='#!'>Profile</MDBLink>
-                  </MDBNavItem>
-                </MDBNavbarNav>
-                <MDBNavbarNav right>
-                  <MDBNavItem>
-                    <MDBFormInline waves>
-                      <div className='md-form my-0'>
+              <lgBCollapse id='navbarCollapse1' isOpen={collapseID} navbar>
+                <lgBNavbarNav left>
+                  <lgBNavItem active>
+                    <lgBLink to='#!'>Home</lgBLink>
+                  </lgBNavItem>
+                  <lgBNavItem>
+                    <lgBLink to='#!'>Link</lgBLink>
+                  </lgBNavItem>
+                  <lgBNavItem>
+                    <lgBLink to='#!'>Profile</lgBLink>
+                  </lgBNavItem>
+                </lgBNavbarNav>
+                <lgBNavbarNav right>
+                  <lgBNavItem>
+                    <lgBFormInline waves>
+                      <div className='lg-form my-0'>
                         <input
                           className='form-control mr-sm-2'
                           type='text'
@@ -186,41 +186,41 @@ class NavbarPage extends Component {
                           aria-label='Search'
                         />
                       </div>
-                    </MDBFormInline>
-                  </MDBNavItem>
-                </MDBNavbarNav>
-              </MDBCollapse>
-            </MDBContainer>
-          </MDBNavbar>
-          <MDBNavbar
+                    </lgBFormInline>
+                  </lgBNavItem>
+                </lgBNavbarNav>
+              </lgBCollapse>
+            </lgBContainer>
+          </lgBNavbar>
+          <lgBNavbar
             color='amber lighten-4'
             style={{ marginTop: '20px' }}
-            expand='md'
+            expand='lg'
             light
           >
-            <MDBContainer>
-              <MDBNavbarBrand>
-                <strong>MDB</strong>
-              </MDBNavbarBrand>
-              <MDBNavbarToggler
+            <lgBContainer>
+              <lgBNavbarBrand>
+                <strong>lgB</strong>
+              </lgBNavbarBrand>
+              <lgBNavbarToggler
                 onClick={this.toggleCollapse('navbarCollapse2')}
               />
-              <MDBCollapse id='navbarCollapse2' isOpen={collapseID} navbar>
-                <MDBNavbarNav left>
-                  <MDBNavItem active>
-                    <MDBLink to='#!'>Home</MDBLink>
-                  </MDBNavItem>
-                  <MDBNavItem>
-                    <MDBLink to='#!'>Link</MDBLink>
-                  </MDBNavItem>
-                  <MDBNavItem>
-                    <MDBLink to='#!'>Profile</MDBLink>
-                  </MDBNavItem>
-                </MDBNavbarNav>
-                <MDBNavbarNav right>
-                  <MDBNavItem>
-                    <MDBFormInline waves>
-                      <div className='md-form my-0'>
+              <lgBCollapse id='navbarCollapse2' isOpen={collapseID} navbar>
+                <lgBNavbarNav left>
+                  <lgBNavItem active>
+                    <lgBLink to='#!'>Home</lgBLink>
+                  </lgBNavItem>
+                  <lgBNavItem>
+                    <lgBLink to='#!'>Link</lgBLink>
+                  </lgBNavItem>
+                  <lgBNavItem>
+                    <lgBLink to='#!'>Profile</lgBLink>
+                  </lgBNavItem>
+                </lgBNavbarNav>
+                <lgBNavbarNav right>
+                  <lgBNavItem>
+                    <lgBFormInline waves>
+                      <div className='lg-form my-0'>
                         <input
                           className='form-control mr-sm-2'
                           type='text'
@@ -228,41 +228,41 @@ class NavbarPage extends Component {
                           aria-label='Search'
                         />
                       </div>
-                    </MDBFormInline>
-                  </MDBNavItem>
-                </MDBNavbarNav>
-              </MDBCollapse>
-            </MDBContainer>
-          </MDBNavbar>
-          <MDBNavbar
+                    </lgBFormInline>
+                  </lgBNavItem>
+                </lgBNavbarNav>
+              </lgBCollapse>
+            </lgBContainer>
+          </lgBNavbar>
+          <lgBNavbar
             color='secondary-color'
             style={{ marginTop: '20px' }}
             dark
-            expand='md'
+            expand='lg'
           >
-            <MDBContainer>
-              <MDBNavbarBrand>
-                <strong className='white-text'>MDB</strong>
-              </MDBNavbarBrand>
-              <MDBNavbarToggler
+            <lgBContainer>
+              <lgBNavbarBrand>
+                <strong className='white-text'>lgB</strong>
+              </lgBNavbarBrand>
+              <lgBNavbarToggler
                 onClick={this.toggleCollapse('navbarCollapse3')}
               />
-              <MDBCollapse id='navbarCollapse3' isOpen={collapseID} navbar>
-                <MDBNavbarNav left>
-                  <MDBNavItem active>
-                    <MDBLink to='#!'>Home</MDBLink>
-                  </MDBNavItem>
-                  <MDBNavItem>
-                    <MDBLink to='#!'>Link</MDBLink>
-                  </MDBNavItem>
-                  <MDBNavItem>
-                    <MDBLink to='#!'>Profile</MDBLink>
-                  </MDBNavItem>
-                </MDBNavbarNav>
-                <MDBNavbarNav right>
-                  <MDBNavItem>
-                    <MDBFormInline waves>
-                      <div className='md-form my-0'>
+              <lgBCollapse id='navbarCollapse3' isOpen={collapseID} navbar>
+                <lgBNavbarNav left>
+                  <lgBNavItem active>
+                    <lgBLink to='#!'>Home</lgBLink>
+                  </lgBNavItem>
+                  <lgBNavItem>
+                    <lgBLink to='#!'>Link</lgBLink>
+                  </lgBNavItem>
+                  <lgBNavItem>
+                    <lgBLink to='#!'>Profile</lgBLink>
+                  </lgBNavItem>
+                </lgBNavbarNav>
+                <lgBNavbarNav right>
+                  <lgBNavItem>
+                    <lgBFormInline waves>
+                      <div className='lg-form my-0'>
                         <input
                           className='form-control mr-sm-2'
                           type='text'
@@ -270,62 +270,62 @@ class NavbarPage extends Component {
                           aria-label='Search'
                         />
                       </div>
-                    </MDBFormInline>
-                  </MDBNavItem>
-                </MDBNavbarNav>
-              </MDBCollapse>
-            </MDBContainer>
-          </MDBNavbar>
+                    </lgBFormInline>
+                  </lgBNavItem>
+                </lgBNavbarNav>
+              </lgBCollapse>
+            </lgBContainer>
+          </lgBNavbar>
         </SectionContainer>
 
         <SectionContainer header='With dropdown'>
-          <MDBNavbar
+          <lgBNavbar
             color='indigo'
             dark
-            expand='md'
+            expand='lg'
             style={{ marginTop: '20px' }}
           >
-            <MDBNavbarBrand>
-              <strong className='white-text'>MDBNavbar</strong>
-            </MDBNavbarBrand>
-            <MDBNavbarToggler
+            <lgBNavbarBrand>
+              <strong className='white-text'>lgBNavbar</strong>
+            </lgBNavbarBrand>
+            <lgBNavbarToggler
               onClick={this.toggleCollapse('navbarCollapse3')}
             />
-            <MDBCollapse id='navbarCollapse3' isOpen={collapseID} navbar>
-              <MDBNavbarNav left>
-                <MDBNavItem active>
-                  <MDBLink to='#!'>Home</MDBLink>
-                </MDBNavItem>
-                <MDBNavItem>
-                  <MDBLink to='#!'>Features</MDBLink>
-                </MDBNavItem>
-                <MDBNavItem>
-                  <MDBLink to='#!'>Pricing</MDBLink>
-                </MDBNavItem>
-                <MDBNavItem>
-                  <MDBDropdown>
-                    <MDBDropdownToggle nav caret>
-                      <div className='d-none d-md-inline'>MDBDropdown</div>
-                    </MDBDropdownToggle>
-                    <MDBDropdownMenu right>
-                      <MDBDropdownItem href='#!'>Action</MDBDropdownItem>
-                      <MDBDropdownItem href='#!'>
+            <lgBCollapse id='navbarCollapse3' isOpen={collapseID} navbar>
+              <lgBNavbarNav left>
+                <lgBNavItem active>
+                  <lgBLink to='#!'>Home</lgBLink>
+                </lgBNavItem>
+                <lgBNavItem>
+                  <lgBLink to='#!'>Features</lgBLink>
+                </lgBNavItem>
+                <lgBNavItem>
+                  <lgBLink to='#!'>Pricing</lgBLink>
+                </lgBNavItem>
+                <lgBNavItem>
+                  <lgBDropdown>
+                    <lgBDropdownToggle nav caret>
+                      <div className='d-none d-lg-inline'>lgBDropdown</div>
+                    </lgBDropdownToggle>
+                    <lgBDropdownMenu right>
+                      <lgBDropdownItem href='#!'>Action</lgBDropdownItem>
+                      <lgBDropdownItem href='#!'>
                         Another Action
-                      </MDBDropdownItem>
-                      <MDBDropdownItem href='#!'>
+                      </lgBDropdownItem>
+                      <lgBDropdownItem href='#!'>
                         Something else here
-                      </MDBDropdownItem>
-                      <MDBDropdownItem href='#!'>
+                      </lgBDropdownItem>
+                      <lgBDropdownItem href='#!'>
                         Something else here
-                      </MDBDropdownItem>
-                    </MDBDropdownMenu>
-                  </MDBDropdown>
-                </MDBNavItem>
-              </MDBNavbarNav>
-              <MDBNavbarNav right>
-                <MDBNavItem>
-                  <MDBFormInline waves>
-                    <div className='md-form my-0'>
+                      </lgBDropdownItem>
+                    </lgBDropdownMenu>
+                  </lgBDropdown>
+                </lgBNavItem>
+              </lgBNavbarNav>
+              <lgBNavbarNav right>
+                <lgBNavItem>
+                  <lgBFormInline waves>
+                    <div className='lg-form my-0'>
                       <input
                         className='form-control mr-sm-2'
                         type='text'
@@ -333,204 +333,204 @@ class NavbarPage extends Component {
                         aria-label='Search'
                       />
                     </div>
-                  </MDBFormInline>
-                </MDBNavItem>
-              </MDBNavbarNav>
-            </MDBCollapse>
-          </MDBNavbar>
-          <MDBNavbar
+                  </lgBFormInline>
+                </lgBNavItem>
+              </lgBNavbarNav>
+            </lgBCollapse>
+          </lgBNavbar>
+          <lgBNavbar
             color='default-color'
             dark
-            expand='md'
+            expand='lg'
             style={{ marginTop: '20px' }}
           >
-            <MDBNavbarBrand>
-              <strong className='white-text'>MDBNavbar</strong>
-            </MDBNavbarBrand>
-            <MDBNavbarToggler
+            <lgBNavbarBrand>
+              <strong className='white-text'>lgBNavbar</strong>
+            </lgBNavbarBrand>
+            <lgBNavbarToggler
               onClick={this.toggleCollapse('navbarCollapse3')}
             />
-            <MDBCollapse id='navbarCollapse3' isOpen={collapseID} navbar>
-              <MDBNavbarNav left>
-                <MDBNavItem active>
-                  <MDBLink to='#!'>Home</MDBLink>
-                </MDBNavItem>
-                <MDBNavItem>
-                  <MDBLink to='#!'>Features</MDBLink>
-                </MDBNavItem>
-                <MDBNavItem>
-                  <MDBLink to='#!'>Pricing</MDBLink>
-                </MDBNavItem>
-                <MDBNavItem>
-                  <MDBDropdown>
-                    <MDBDropdownToggle nav caret>
-                      <div className='d-none d-md-inline'>MDBDropdown</div>
-                    </MDBDropdownToggle>
-                    <MDBDropdownMenu className='dropdown-default' right>
-                      <MDBDropdownItem href='#!'>Action</MDBDropdownItem>
-                      <MDBDropdownItem href='#!'>
+            <lgBCollapse id='navbarCollapse3' isOpen={collapseID} navbar>
+              <lgBNavbarNav left>
+                <lgBNavItem active>
+                  <lgBLink to='#!'>Home</lgBLink>
+                </lgBNavItem>
+                <lgBNavItem>
+                  <lgBLink to='#!'>Features</lgBLink>
+                </lgBNavItem>
+                <lgBNavItem>
+                  <lgBLink to='#!'>Pricing</lgBLink>
+                </lgBNavItem>
+                <lgBNavItem>
+                  <lgBDropdown>
+                    <lgBDropdownToggle nav caret>
+                      <div className='d-none d-lg-inline'>lgBDropdown</div>
+                    </lgBDropdownToggle>
+                    <lgBDropdownMenu className='dropdown-default' right>
+                      <lgBDropdownItem href='#!'>Action</lgBDropdownItem>
+                      <lgBDropdownItem href='#!'>
                         Another Action
-                      </MDBDropdownItem>
-                      <MDBDropdownItem href='#!'>
+                      </lgBDropdownItem>
+                      <lgBDropdownItem href='#!'>
                         Something else here
-                      </MDBDropdownItem>
-                      <MDBDropdownItem href='#!'>
+                      </lgBDropdownItem>
+                      <lgBDropdownItem href='#!'>
                         Something else here
-                      </MDBDropdownItem>
-                    </MDBDropdownMenu>
-                  </MDBDropdown>
-                </MDBNavItem>
-              </MDBNavbarNav>
-              <MDBNavbarNav right>
-                <MDBNavItem>
-                  <MDBLink className='waves-effect waves-light' to='#!'>
-                    <MDBIcon brand icon='twitter' />
-                  </MDBLink>
-                </MDBNavItem>
-                <MDBNavItem>
-                  <MDBLink className='waves-effect waves-light' to='#!'>
-                    <MDBIcon brand icon='google-plus' />
-                  </MDBLink>
-                </MDBNavItem>
-                <MDBNavItem>
-                  <MDBDropdown>
-                    <MDBDropdownToggle nav caret>
-                      <MDBIcon icon='user' />
-                    </MDBDropdownToggle>
-                    <MDBDropdownMenu className='dropdown-default' right>
-                      <MDBDropdownItem href='#!'>Action</MDBDropdownItem>
-                      <MDBDropdownItem href='#!'>
+                      </lgBDropdownItem>
+                    </lgBDropdownMenu>
+                  </lgBDropdown>
+                </lgBNavItem>
+              </lgBNavbarNav>
+              <lgBNavbarNav right>
+                <lgBNavItem>
+                  <lgBLink className='waves-effect waves-light' to='#!'>
+                    <lgBIcon brand icon='twitter' />
+                  </lgBLink>
+                </lgBNavItem>
+                <lgBNavItem>
+                  <lgBLink className='waves-effect waves-light' to='#!'>
+                    <lgBIcon brand icon='google-plus' />
+                  </lgBLink>
+                </lgBNavItem>
+                <lgBNavItem>
+                  <lgBDropdown>
+                    <lgBDropdownToggle nav caret>
+                      <lgBIcon icon='user' />
+                    </lgBDropdownToggle>
+                    <lgBDropdownMenu className='dropdown-default' right>
+                      <lgBDropdownItem href='#!'>Action</lgBDropdownItem>
+                      <lgBDropdownItem href='#!'>
                         Another Action
-                      </MDBDropdownItem>
-                      <MDBDropdownItem href='#!'>
+                      </lgBDropdownItem>
+                      <lgBDropdownItem href='#!'>
                         Something else here
-                      </MDBDropdownItem>
-                      <MDBDropdownItem href='#!'>
+                      </lgBDropdownItem>
+                      <lgBDropdownItem href='#!'>
                         Something else here
-                      </MDBDropdownItem>
-                    </MDBDropdownMenu>
-                  </MDBDropdown>
-                </MDBNavItem>
-              </MDBNavbarNav>
-            </MDBCollapse>
-          </MDBNavbar>
+                      </lgBDropdownItem>
+                    </lgBDropdownMenu>
+                  </lgBDropdown>
+                </lgBNavItem>
+              </lgBNavbarNav>
+            </lgBCollapse>
+          </lgBNavbar>
         </SectionContainer>
 
         <SectionContainer header='Supportet content'>
-          <MDBNavbar
+          <lgBNavbar
             color='info-color'
             dark
-            expand='md'
+            expand='lg'
             style={{ marginTop: '20px' }}
           >
-            <MDBNavbarBrand>
-              <strong className='white-text'>MDBNavbar</strong>
-            </MDBNavbarBrand>
-            <MDBNavbarToggler
+            <lgBNavbarBrand>
+              <strong className='white-text'>lgBNavbar</strong>
+            </lgBNavbarBrand>
+            <lgBNavbarToggler
               onClick={this.toggleCollapse('navbarCollapse3')}
             />
-            <MDBCollapse id='navbarCollapse3' isOpen={collapseID} navbar>
-              <MDBNavbarNav right>
-                <MDBNavItem>
-                  <MDBLink className='waves-effect waves-light' to='#!'>
-                    <MDBIcon icon='envelope' className='mr-1' />
+            <lgBCollapse id='navbarCollapse3' isOpen={collapseID} navbar>
+              <lgBNavbarNav right>
+                <lgBNavItem>
+                  <lgBLink className='waves-effect waves-light' to='#!'>
+                    <lgBIcon icon='envelope' className='mr-1' />
                     Contact
-                  </MDBLink>
-                </MDBNavItem>
-                <MDBNavItem>
-                  <MDBLink className='waves-effect waves-light' to='#!'>
-                    <MDBIcon icon='cog' className='mr-1' />
+                  </lgBLink>
+                </lgBNavItem>
+                <lgBNavItem>
+                  <lgBLink className='waves-effect waves-light' to='#!'>
+                    <lgBIcon icon='cog' className='mr-1' />
                     Settings
-                  </MDBLink>
-                </MDBNavItem>
-                <MDBNavItem>
-                  <MDBDropdown>
-                    <MDBDropdownToggle nav caret>
-                      <MDBIcon icon='user' className='mr-1' />
+                  </lgBLink>
+                </lgBNavItem>
+                <lgBNavItem>
+                  <lgBDropdown>
+                    <lgBDropdownToggle nav caret>
+                      <lgBIcon icon='user' className='mr-1' />
                       Profile
-                    </MDBDropdownToggle>
-                    <MDBDropdownMenu className='dropdown-default' right>
-                      <MDBDropdownItem href='#!'>My account</MDBDropdownItem>
-                      <MDBDropdownItem href='#!'>Log out</MDBDropdownItem>
-                    </MDBDropdownMenu>
-                  </MDBDropdown>
-                </MDBNavItem>
-              </MDBNavbarNav>
-            </MDBCollapse>
-          </MDBNavbar>
-          <MDBNavbar
+                    </lgBDropdownToggle>
+                    <lgBDropdownMenu className='dropdown-default' right>
+                      <lgBDropdownItem href='#!'>My account</lgBDropdownItem>
+                      <lgBDropdownItem href='#!'>Log out</lgBDropdownItem>
+                    </lgBDropdownMenu>
+                  </lgBDropdown>
+                </lgBNavItem>
+              </lgBNavbarNav>
+            </lgBCollapse>
+          </lgBNavbar>
+          <lgBNavbar
             color='secondary-color'
             dark
-            expand='md'
+            expand='lg'
             style={{ marginTop: '20px' }}
           >
-            <MDBNavbarBrand>
-              <strong className='white-text'>MDBNavbar</strong>
-            </MDBNavbarBrand>
-            <MDBNavbarToggler
+            <lgBNavbarBrand>
+              <strong className='white-text'>lgBNavbar</strong>
+            </lgBNavbarBrand>
+            <lgBNavbarToggler
               onClick={this.toggleCollapse('navbarCollapse3')}
             />
-            <MDBCollapse id='navbarCollapse3' isOpen={collapseID} navbar>
-              <MDBNavbarNav left>
-                <MDBNavItem active>
-                  <MDBLink to='#!'>Home</MDBLink>
-                </MDBNavItem>
-                <MDBNavItem>
-                  <MDBLink to='#!'>Features</MDBLink>
-                </MDBNavItem>
-                <MDBNavItem>
-                  <MDBLink to='#!'>Pricing</MDBLink>
-                </MDBNavItem>
-                <MDBNavItem>
-                  <MDBDropdown>
-                    <MDBDropdownToggle nav caret>
-                      <div className='d-none d-md-inline'>MDBDropdown</div>
-                    </MDBDropdownToggle>
-                    <MDBDropdownMenu className='dropdown-default' right>
-                      <MDBDropdownItem href='#!'>Action</MDBDropdownItem>
-                      <MDBDropdownItem href='#!'>
+            <lgBCollapse id='navbarCollapse3' isOpen={collapseID} navbar>
+              <lgBNavbarNav left>
+                <lgBNavItem active>
+                  <lgBLink to='#!'>Home</lgBLink>
+                </lgBNavItem>
+                <lgBNavItem>
+                  <lgBLink to='#!'>Features</lgBLink>
+                </lgBNavItem>
+                <lgBNavItem>
+                  <lgBLink to='#!'>Pricing</lgBLink>
+                </lgBNavItem>
+                <lgBNavItem>
+                  <lgBDropdown>
+                    <lgBDropdownToggle nav caret>
+                      <div className='d-none d-lg-inline'>lgBDropdown</div>
+                    </lgBDropdownToggle>
+                    <lgBDropdownMenu className='dropdown-default' right>
+                      <lgBDropdownItem href='#!'>Action</lgBDropdownItem>
+                      <lgBDropdownItem href='#!'>
                         Another Action
-                      </MDBDropdownItem>
-                      <MDBDropdownItem href='#!'>
+                      </lgBDropdownItem>
+                      <lgBDropdownItem href='#!'>
                         Something else here
-                      </MDBDropdownItem>
-                      <MDBDropdownItem href='#!'>
+                      </lgBDropdownItem>
+                      <lgBDropdownItem href='#!'>
                         Something else here
-                      </MDBDropdownItem>
-                    </MDBDropdownMenu>
-                  </MDBDropdown>
-                </MDBNavItem>
-              </MDBNavbarNav>
-              <MDBNavbarNav right>
-                <MDBNavItem>
-                  <MDBLink
+                      </lgBDropdownItem>
+                    </lgBDropdownMenu>
+                  </lgBDropdown>
+                </lgBNavItem>
+              </lgBNavbarNav>
+              <lgBNavbarNav right>
+                <lgBNavItem>
+                  <lgBLink
                     className='waves-effect waves-light d-flex align-items-center'
                     to='#!'
                   >
-                    1<MDBIcon icon='envelope' className='ml-1' />
-                  </MDBLink>
-                </MDBNavItem>
-                <MDBNavItem>
-                  <MDBDropdown>
-                    <MDBDropdownToggle className='dopdown-toggle' nav>
+                    1<lgBIcon icon='envelope' className='ml-1' />
+                  </lgBLink>
+                </lgBNavItem>
+                <lgBNavItem>
+                  <lgBDropdown>
+                    <lgBDropdownToggle className='dopdown-toggle' nav>
                       <img
-                        src='https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg'
+                        src='https://lgbootstrap.com/img/Photos/Avatars/avatar-2.jpg'
                         className='rounded-circle z-depth-0'
                         style={{ height: '35px', padding: 0 }}
                         alt=''
                       />
-                    </MDBDropdownToggle>
-                    <MDBDropdownMenu className='dropdown-default' right>
-                      <MDBDropdownItem href='#!'>My account</MDBDropdownItem>
-                      <MDBDropdownItem href='#!'>Log out</MDBDropdownItem>
-                    </MDBDropdownMenu>
-                  </MDBDropdown>
-                </MDBNavItem>
-              </MDBNavbarNav>
-            </MDBCollapse>
-          </MDBNavbar>
+                    </lgBDropdownToggle>
+                    <lgBDropdownMenu className='dropdown-default' right>
+                      <lgBDropdownItem href='#!'>My account</lgBDropdownItem>
+                      <lgBDropdownItem href='#!'>Log out</lgBDropdownItem>
+                    </lgBDropdownMenu>
+                  </lgBDropdown>
+                </lgBNavItem>
+              </lgBNavbarNav>
+            </lgBCollapse>
+          </lgBNavbar>
         </SectionContainer>
-      </MDBContainer>
+      </lgBContainer>
     );
   }
 }

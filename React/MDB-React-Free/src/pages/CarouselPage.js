@@ -1,26 +1,26 @@
 import React from 'react';
 import {
-  MDBCarousel,
-  MDBCarouselCaption,
-  MDBCarouselInner,
-  MDBCarouselItem,
-  MDBView,
-  MDBMask,
-  MDBContainer
-} from 'mdbreact';
+  lgBCarousel,
+  lgBCarouselCaption,
+  lgBCarouselInner,
+  lgBCarouselItem,
+  lgBView,
+  lgBMask,
+  lgBContainer
+} from 'lgbreact';
 import DocsLink from '../components/docsLink';
 import SectionContainer from '../components/sectionContainer';
 
 const CarouselPage = () => {
   return (
-    <MDBContainer className='pb-5'>
+    <lgBContainer className='pb-5'>
       <DocsLink
         title='Carousel'
-        href='https://mdbootstrap.com/docs/react/advanced/carousel/'
+        href='https://lgbootstrap.com/docs/react/advanced/carousel/'
       />
 
       <SectionContainer header='Slides Only'>
-        <MDBCarousel
+        <lgBCarousel
           activeItem={1}
           length={3}
           showControls={false}
@@ -28,40 +28,40 @@ const CarouselPage = () => {
           className='z-depth-1'
           slide
         >
-          <MDBCarouselInner>
-            <MDBCarouselItem itemId='1'>
-              <MDBView>
+          <lgBCarouselInner>
+            <lgBCarouselItem itemId='1'>
+              <lgBView>
                 <img
                   className='d-block w-100'
-                  src='https://mdbootstrap.com/img/Photos/Slides/img%20(35).jpg'
+                  src='https://lgbootstrap.com/img/Photos/Slides/img%20(35).jpg'
                   alt='First slide'
                 />
-              </MDBView>
-            </MDBCarouselItem>
-            <MDBCarouselItem itemId='2'>
-              <MDBView>
+              </lgBView>
+            </lgBCarouselItem>
+            <lgBCarouselItem itemId='2'>
+              <lgBView>
                 <img
                   className='d-block w-100'
-                  src='https://mdbootstrap.com/img/Photos/Slides/img%20(33).jpg'
+                  src='https://lgbootstrap.com/img/Photos/Slides/img%20(33).jpg'
                   alt='Second slide'
                 />
-              </MDBView>
-            </MDBCarouselItem>
-            <MDBCarouselItem itemId='3'>
-              <MDBView>
+              </lgBView>
+            </lgBCarouselItem>
+            <lgBCarouselItem itemId='3'>
+              <lgBView>
                 <img
                   className='d-block w-100'
-                  src='https://mdbootstrap.com/img/Photos/Slides/img%20(31).jpg'
+                  src='https://lgbootstrap.com/img/Photos/Slides/img%20(31).jpg'
                   alt='Third slide'
                 />
-              </MDBView>
-            </MDBCarouselItem>
-          </MDBCarouselInner>
-        </MDBCarousel>
+              </lgBView>
+            </lgBCarouselItem>
+          </lgBCarouselInner>
+        </lgBCarousel>
       </SectionContainer>
 
       <SectionContainer header='With Captions'>
-        <MDBCarousel
+        <lgBCarousel
           activeItem={1}
           length={4}
           showControls
@@ -69,188 +69,188 @@ const CarouselPage = () => {
           className='z-depth-1'
           slide
         >
-          <MDBCarouselInner>
-            <MDBCarouselItem itemId='1'>
-              <MDBView>
+          <lgBCarouselInner>
+            <lgBCarouselItem itemId='1'>
+              <lgBView>
                 <img
                   className='d-block w-100'
-                  src='https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg'
+                  src='https://lgbootstrap.com/img/Photos/Slides/img%20(68).jpg'
                   alt='First slide'
                 />
-                <MDBMask overlay='black-light' />
-              </MDBView>
-              <MDBCarouselCaption>
+                <lgBMask overlay='black-light' />
+              </lgBView>
+              <lgBCarouselCaption>
                 <h3 className='h3-responsive'>Light mask</h3>
                 <p>First text</p>
-              </MDBCarouselCaption>
-            </MDBCarouselItem>
-            <MDBCarouselItem itemId='2'>
-              <MDBView>
+              </lgBCarouselCaption>
+            </lgBCarouselItem>
+            <lgBCarouselItem itemId='2'>
+              <lgBView>
                 <img
                   className='d-block w-100'
-                  src='https://mdbootstrap.com/img/Photos/Slides/img%20(99).jpg'
+                  src='https://lgbootstrap.com/img/Photos/Slides/img%20(99).jpg'
                   alt='Second slide'
                 />
-                <MDBMask overlay='black-strong' />
-              </MDBView>
-              <MDBCarouselCaption>
+                <lgBMask overlay='black-strong' />
+              </lgBView>
+              <lgBCarouselCaption>
                 <h3 className='h3-responsive'>Strong mask</h3>
                 <p>Second text</p>
-              </MDBCarouselCaption>
-            </MDBCarouselItem>
-            <MDBCarouselItem itemId='3'>
-              <MDBView>
+              </lgBCarouselCaption>
+            </lgBCarouselItem>
+            <lgBCarouselItem itemId='3'>
+              <lgBView>
                 <img
                   className='d-block w-100'
-                  src='https://mdbootstrap.com/img/Photos/Slides/img%20(17).jpg'
+                  src='https://lgbootstrap.com/img/Photos/Slides/img%20(17).jpg'
                   alt='Third slide'
                 />
-                <MDBMask overlay='black-slight' />
-              </MDBView>
-              <MDBCarouselCaption>
+                <lgBMask overlay='black-slight' />
+              </lgBView>
+              <lgBCarouselCaption>
                 <h3 className='h3-responsive'>Slight mask</h3>
                 <p>Third text</p>
-              </MDBCarouselCaption>
-            </MDBCarouselItem>
-            <MDBCarouselItem itemId='4'>
-              <MDBView>
+              </lgBCarouselCaption>
+            </lgBCarouselItem>
+            <lgBCarouselItem itemId='4'>
+              <lgBView>
                 <img
                   className='d-block w-100'
-                  src='https://mdbootstrap.com/img/Photos/Slides/img%20%28143%29.jpg'
+                  src='https://lgbootstrap.com/img/Photos/Slides/img%20%28143%29.jpg'
                   alt="Mattonit's item"
                 />
-                <MDBMask overlay='black-light' />
-              </MDBView>
-              <MDBCarouselCaption>
+                <lgBMask overlay='black-light' />
+              </lgBView>
+              <lgBCarouselCaption>
                 <h3 className='h3-responsive'>Sopot Beach</h3>
                 <p>Taken june 21th by @mattonit</p>
-              </MDBCarouselCaption>
-            </MDBCarouselItem>
-          </MDBCarouselInner>
-        </MDBCarousel>
+              </lgBCarouselCaption>
+            </lgBCarouselItem>
+          </lgBCarouselInner>
+        </lgBCarousel>
       </SectionContainer>
 
       <SectionContainer header='Fade effect'>
-        <MDBCarousel
+        <lgBCarousel
           activeItem={1}
           length={3}
           showControls
           className='z-depth-1'
         >
-          <MDBCarouselInner>
-            <MDBCarouselItem itemId='1'>
-              <MDBView>
+          <lgBCarouselInner>
+            <lgBCarouselItem itemId='1'>
+              <lgBView>
                 <img
                   className='d-block w-100'
-                  src='https://mdbootstrap.com/img/Photos/Slides/img%20(92).jpg'
+                  src='https://lgbootstrap.com/img/Photos/Slides/img%20(92).jpg'
                   alt='First slide'
                 />
-              </MDBView>
-            </MDBCarouselItem>
-            <MDBCarouselItem itemId='2'>
-              <MDBView>
+              </lgBView>
+            </lgBCarouselItem>
+            <lgBCarouselItem itemId='2'>
+              <lgBView>
                 <img
                   className='d-block w-100'
-                  src='https://mdbootstrap.com/img/Photos/Slides/img%20(90).jpg'
+                  src='https://lgbootstrap.com/img/Photos/Slides/img%20(90).jpg'
                   alt='Second slide'
                 />
-              </MDBView>
-            </MDBCarouselItem>
-            <MDBCarouselItem itemId='3'>
-              <MDBView>
+              </lgBView>
+            </lgBCarouselItem>
+            <lgBCarouselItem itemId='3'>
+              <lgBView>
                 <img
                   className='d-block w-100'
-                  src='https://mdbootstrap.com/img/Photos/Slides/img%20(91).jpg'
+                  src='https://lgbootstrap.com/img/Photos/Slides/img%20(91).jpg'
                   alt='Third slide'
                 />
-              </MDBView>
-            </MDBCarouselItem>
-          </MDBCarouselInner>
-        </MDBCarousel>
+              </lgBView>
+            </lgBCarouselItem>
+          </lgBCarouselInner>
+        </lgBCarousel>
       </SectionContainer>
 
       <SectionContainer header='With Controls'>
-        <MDBCarousel
+        <lgBCarousel
           activeItem={1}
           length={3}
           showControls
           showIndicators={false}
           className='z-depth-1'
         >
-          <MDBCarouselInner>
-            <MDBCarouselItem itemId='1'>
-              <MDBView>
+          <lgBCarouselInner>
+            <lgBCarouselItem itemId='1'>
+              <lgBView>
                 <img
                   className='d-block w-100'
-                  src='https://mdbootstrap.com/img/Photos/Slides/img%20(45).jpg'
+                  src='https://lgbootstrap.com/img/Photos/Slides/img%20(45).jpg'
                   alt='First slide'
                 />
-              </MDBView>
-            </MDBCarouselItem>
-            <MDBCarouselItem itemId='2'>
-              <MDBView>
+              </lgBView>
+            </lgBCarouselItem>
+            <lgBCarouselItem itemId='2'>
+              <lgBView>
                 <img
                   className='d-block w-100'
-                  src='https://mdbootstrap.com/img/Photos/Slides/img%20(46).jpg'
+                  src='https://lgbootstrap.com/img/Photos/Slides/img%20(46).jpg'
                   alt='Second slide'
                 />
-              </MDBView>
-            </MDBCarouselItem>
-            <MDBCarouselItem itemId='3'>
-              <MDBView>
+              </lgBView>
+            </lgBCarouselItem>
+            <lgBCarouselItem itemId='3'>
+              <lgBView>
                 <img
                   className='d-block w-100'
-                  src='https://mdbootstrap.com/img/Photos/Slides/img%20(47).jpg'
+                  src='https://lgbootstrap.com/img/Photos/Slides/img%20(47).jpg'
                   alt='Third slide'
                 />
-              </MDBView>
-            </MDBCarouselItem>
-          </MDBCarouselInner>
-        </MDBCarousel>
+              </lgBView>
+            </lgBCarouselItem>
+          </lgBCarouselInner>
+        </lgBCarousel>
       </SectionContainer>
 
       <SectionContainer header='With Indicators'>
-        <MDBCarousel
+        <lgBCarousel
           activeItem={1}
           length={3}
           showControls
           showIndicators
           className='z-depth-1'
         >
-          <MDBCarouselInner>
-            <MDBCarouselItem itemId='1'>
-              <MDBView>
+          <lgBCarouselInner>
+            <lgBCarouselItem itemId='1'>
+              <lgBView>
                 <img
                   className='d-block w-100'
-                  src='https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg'
+                  src='https://lgbootstrap.com/img/Photos/Slides/img%20(130).jpg'
                   alt='First slide'
                 />
-              </MDBView>
-            </MDBCarouselItem>
-            <MDBCarouselItem itemId='2'>
-              <MDBView>
+              </lgBView>
+            </lgBCarouselItem>
+            <lgBCarouselItem itemId='2'>
+              <lgBView>
                 <img
                   className='d-block w-100'
-                  src='https://mdbootstrap.com/img/Photos/Slides/img%20(129).jpg'
+                  src='https://lgbootstrap.com/img/Photos/Slides/img%20(129).jpg'
                   alt='Second slide'
                 />
-              </MDBView>
-            </MDBCarouselItem>
-            <MDBCarouselItem itemId='3'>
-              <MDBView>
+              </lgBView>
+            </lgBCarouselItem>
+            <lgBCarouselItem itemId='3'>
+              <lgBView>
                 <img
                   className='d-block w-100'
-                  src='https://mdbootstrap.com/img/Photos/Slides/img%20(70).jpg'
+                  src='https://lgbootstrap.com/img/Photos/Slides/img%20(70).jpg'
                   alt='Third slide'
                 />
-              </MDBView>
-            </MDBCarouselItem>
-          </MDBCarouselInner>
-        </MDBCarousel>
+              </lgBView>
+            </lgBCarouselItem>
+          </lgBCarouselInner>
+        </lgBCarousel>
       </SectionContainer>
 
       <SectionContainer header='Stop when mouse is on the carousel'>
-        <MDBCarousel
+        <lgBCarousel
           interval={1500}
           activeItem={1}
           length={3}
@@ -258,38 +258,38 @@ const CarouselPage = () => {
           showIndicators
           className='z-depth-1'
         >
-          <MDBCarouselInner>
-            <MDBCarouselItem itemId='1'>
-              <MDBView>
+          <lgBCarouselInner>
+            <lgBCarouselItem itemId='1'>
+              <lgBView>
                 <img
                   className='d-block w-100'
-                  src='https://mdbootstrap.com/img/Photos/Slides/img%20(131).jpg'
+                  src='https://lgbootstrap.com/img/Photos/Slides/img%20(131).jpg'
                   alt='First slide'
                 />
-              </MDBView>
-            </MDBCarouselItem>
-            <MDBCarouselItem itemId='2'>
-              <MDBView>
+              </lgBView>
+            </lgBCarouselItem>
+            <lgBCarouselItem itemId='2'>
+              <lgBView>
                 <img
                   className='d-block w-100'
-                  src='https://mdbootstrap.com/img/Photos/Slides/img%20(132).jpg'
+                  src='https://lgbootstrap.com/img/Photos/Slides/img%20(132).jpg'
                   alt='Second slide'
                 />
-              </MDBView>
-            </MDBCarouselItem>
-            <MDBCarouselItem itemId='3'>
-              <MDBView>
+              </lgBView>
+            </lgBCarouselItem>
+            <lgBCarouselItem itemId='3'>
+              <lgBView>
                 <img
                   className='d-block w-100'
-                  src='https://mdbootstrap.com/img/Photos/Slides/img%20(133).jpg'
+                  src='https://lgbootstrap.com/img/Photos/Slides/img%20(133).jpg'
                   alt='Third slide'
                 />
-              </MDBView>
-            </MDBCarouselItem>
-          </MDBCarouselInner>
-        </MDBCarousel>
+              </lgBView>
+            </lgBCarouselItem>
+          </lgBCarouselInner>
+        </lgBCarousel>
       </SectionContainer>
-    </MDBContainer>
+    </lgBContainer>
   );
 };
 

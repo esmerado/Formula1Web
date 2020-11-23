@@ -1,14 +1,14 @@
 import React from 'react';
-import { MDBContainer } from 'mdbreact';
+import { lgBContainer } from 'lgbreact';
 import DocsLink from '../components/docsLink';
 import SectionContainer from '../components/sectionContainer';
 
 const SpinnerPage = () => {
   return (
-    <MDBContainer>
+    <lgBContainer>
       <DocsLink
         title='Loader/Spinner'
-        href='https://mdbootstrap.com/docs/react/components/spinners/'
+        href='https://lgbootstrap.com/docs/react/components/spinners/'
       />
 
       <SectionContainer header='Colorful'>
@@ -82,7 +82,7 @@ const SpinnerPage = () => {
           </div>
         </div>
       </SectionContainer>
-    </MDBContainer>
+    </lgBContainer>
   );
 };
 

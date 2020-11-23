@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { MDBContainer } from 'mdbreact';
+import { lgBContainer } from 'lgbreact';
 import DocsLink from '../components/docsLink';
 import SectionContainer from '../components/sectionContainer';
 import './Masonry.css';
@@ -26,10 +26,10 @@ class MasonryPage extends React.Component {
 
   render() {
     return (
-      <MDBContainer className='mt-5'>
+      <lgBContainer className='mt-5'>
         <DocsLink
           title='Masks'
-          href='https://mdbootstrap.com/docs/react/css/masks/'
+          href='https://lgbootstrap.com/docs/react/css/masks/'
         />
 
         <SectionContainer noBorder header='Column layout'>
@@ -95,7 +95,7 @@ class MasonryPage extends React.Component {
             <div>15</div>
           </div>
         </SectionContainer>
-      </MDBContainer>
+      </lgBContainer>
     );
   }
 }

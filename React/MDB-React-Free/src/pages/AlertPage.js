@@ -1,108 +1,108 @@
 import React from 'react';
-import { MDBContainer, MDBAlert } from 'mdbreact';
+import { lgBContainer, lgBAlert } from 'lgbreact';
 import DocsLink from '../components/docsLink';
 import SectionContainer from '../components/sectionContainer';
 
 const AlertPage = () => {
   return (
-    <MDBContainer>
+    <lgBContainer>
       <DocsLink
         title='Alerts'
-        href='https://mdbootstrap.com/docs/react/advanced/alerts/'
+        href='https://lgbootstrap.com/docs/react/advanced/alerts/'
       />
 
       <SectionContainer header='Basic examples'>
-        <MDBAlert color='primary' dismiss>
+        <lgBAlert color='primary' dismiss>
           A simple primary alert—check it out!
-        </MDBAlert>
-        <MDBAlert color='secondary' dismiss>
+        </lgBAlert>
+        <lgBAlert color='secondary' dismiss>
           A simple secondary alert—check it out!
-        </MDBAlert>
-        <MDBAlert color='success' dismiss>
+        </lgBAlert>
+        <lgBAlert color='success' dismiss>
           A simple success alert—check it out!
-        </MDBAlert>
-        <MDBAlert color='danger' dismiss>
+        </lgBAlert>
+        <lgBAlert color='danger' dismiss>
           A simple success alert—check it out!
-        </MDBAlert>
-        <MDBAlert color='warning' dismiss>
+        </lgBAlert>
+        <lgBAlert color='warning' dismiss>
           A simple warning alert—check it out!
-        </MDBAlert>
-        <MDBAlert color='info' dismiss>
+        </lgBAlert>
+        <lgBAlert color='info' dismiss>
           A simple info alert—check it out!
-        </MDBAlert>
-        <MDBAlert color='dark' dismiss>
+        </lgBAlert>
+        <lgBAlert color='dark' dismiss>
           A simple dark alert—check it out!
-        </MDBAlert>
+        </lgBAlert>
         <SectionContainer dark noBottom>
-          <MDBAlert color='light' dismiss>
+          <lgBAlert color='light' dismiss>
             A simple light alert—check it out!
-          </MDBAlert>
+          </lgBAlert>
         </SectionContainer>
       </SectionContainer>
 
       <SectionContainer header='Link color'>
-        <MDBAlert color='primary'>
+        <lgBAlert color='primary'>
           A simple primary alert with{' '}
           <a href='#!' className='alert-link'>
             an example link
           </a>
           . Give it a click if you like.
-        </MDBAlert>
-        <MDBAlert color='secondary'>
+        </lgBAlert>
+        <lgBAlert color='secondary'>
           A simple primary alert with{' '}
           <a href='#!' className='alert-link'>
             an example link
           </a>
           . Give it a click if you like.
-        </MDBAlert>
-        <MDBAlert color='success'>
+        </lgBAlert>
+        <lgBAlert color='success'>
           A simple primary alert with{' '}
           <a href='#!' className='alert-link'>
             an example link
           </a>
           . Give it a click if you like.
-        </MDBAlert>
-        <MDBAlert color='danger'>
+        </lgBAlert>
+        <lgBAlert color='danger'>
           A simple primary alert with{' '}
           <a href='#!' className='alert-link'>
             an example link
           </a>
           . Give it a click if you like.
-        </MDBAlert>
-        <MDBAlert color='warning'>
+        </lgBAlert>
+        <lgBAlert color='warning'>
           A simple primary alert with{' '}
           <a href='#!' className='alert-link'>
             an example link
           </a>
           . Give it a click if you like.
-        </MDBAlert>
-        <MDBAlert color='info'>
+        </lgBAlert>
+        <lgBAlert color='info'>
           A simple primary alert with{' '}
           <a href='#!' className='alert-link'>
             an example link
           </a>
           . Give it a click if you like.
-        </MDBAlert>
-        <MDBAlert color='dark'>
+        </lgBAlert>
+        <lgBAlert color='dark'>
           A simple primary alert with{' '}
           <a href='#!' className='alert-link'>
             an example link
           </a>
           . Give it a click if you like.
-        </MDBAlert>
+        </lgBAlert>
         <SectionContainer dark noBottom>
-          <MDBAlert color='light'>
+          <lgBAlert color='light'>
             A simple primary alert with{' '}
             <a href='#!' className='alert-link'>
               an example link
             </a>
             . Give it a click if you like.
-          </MDBAlert>
+          </lgBAlert>
         </SectionContainer>
       </SectionContainer>
 
       <SectionContainer header='Additional content'>
-        <MDBAlert color='success'>
+        <lgBAlert color='success'>
           <h4 className='alert-heading'>Well done!</h4>
           <p>
             Aww yeah, you successfully read this important alert message. This
@@ -114,11 +114,11 @@ const AlertPage = () => {
             Whenever you need to, be sure to use margin utilities to keep things
             nice and tidy.
           </p>
-        </MDBAlert>
+        </lgBAlert>
       </SectionContainer>
 
       <SectionContainer header='With methods'>
-        <MDBAlert
+        <lgBAlert
           color='danger'
           dismiss
           onClose={() =>
@@ -134,9 +134,9 @@ const AlertPage = () => {
         >
           Alert component exposes a few events for hooking into alert
           functionality.
-        </MDBAlert>
+        </lgBAlert>
       </SectionContainer>
-    </MDBContainer>
+    </lgBContainer>
   );
 };
 

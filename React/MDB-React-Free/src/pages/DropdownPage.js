@@ -1,283 +1,283 @@
 import React from 'react';
 import {
-  MDBDropdown,
-  MDBDropdownToggle,
-  MDBDropdownMenu,
-  MDBDropdownItem,
-  MDBContainer
-} from 'mdbreact';
+  lgBDropdown,
+  lgBDropdownToggle,
+  lgBDropdownMenu,
+  lgBDropdownItem,
+  lgBContainer
+} from 'lgbreact';
 import DocsLink from '../components/docsLink';
 import SectionContainer from '../components/sectionContainer';
 
 const DropdownPage = () => {
   return (
-    <MDBContainer>
+    <lgBContainer>
       <DocsLink
-        title='MDBDropdown'
-        href='https://mdbootstrap.com/docs/react/components/dropdowns/'
+        title='lgBDropdown'
+        href='https://lgbootstrap.com/docs/react/components/dropdowns/'
       />
 
       <SectionContainer header='Basic example' flexCenter className='flex-wrap'>
-        <MDBDropdown>
-          <MDBDropdownToggle caret color='primary'>
+        <lgBDropdown>
+          <lgBDropdownToggle caret color='primary'>
             Dropdown
-          </MDBDropdownToggle>
-          <MDBDropdownMenu>
-            <MDBDropdownItem>Action</MDBDropdownItem>
-            <MDBDropdownItem>Another Action</MDBDropdownItem>
-            <MDBDropdownItem>Something else here</MDBDropdownItem>
-            <MDBDropdownItem divider />
-            <MDBDropdownItem>Separated link</MDBDropdownItem>
-          </MDBDropdownMenu>
-        </MDBDropdown>
-        <MDBDropdown>
-          <MDBDropdownToggle caret color='default'>
+          </lgBDropdownToggle>
+          <lgBDropdownMenu>
+            <lgBDropdownItem>Action</lgBDropdownItem>
+            <lgBDropdownItem>Another Action</lgBDropdownItem>
+            <lgBDropdownItem>Something else here</lgBDropdownItem>
+            <lgBDropdownItem divider />
+            <lgBDropdownItem>Separated link</lgBDropdownItem>
+          </lgBDropdownMenu>
+        </lgBDropdown>
+        <lgBDropdown>
+          <lgBDropdownToggle caret color='default'>
             Dropdown
-          </MDBDropdownToggle>
-          <MDBDropdownMenu color='default'>
-            <MDBDropdownItem>Action</MDBDropdownItem>
-            <MDBDropdownItem>Another Action</MDBDropdownItem>
-            <MDBDropdownItem>Something else here</MDBDropdownItem>
-            <MDBDropdownItem divider />
-            <MDBDropdownItem>Separated link</MDBDropdownItem>
-          </MDBDropdownMenu>
-        </MDBDropdown>
-        <MDBDropdown>
-          <MDBDropdownToggle caret color='secondary'>
+          </lgBDropdownToggle>
+          <lgBDropdownMenu color='default'>
+            <lgBDropdownItem>Action</lgBDropdownItem>
+            <lgBDropdownItem>Another Action</lgBDropdownItem>
+            <lgBDropdownItem>Something else here</lgBDropdownItem>
+            <lgBDropdownItem divider />
+            <lgBDropdownItem>Separated link</lgBDropdownItem>
+          </lgBDropdownMenu>
+        </lgBDropdown>
+        <lgBDropdown>
+          <lgBDropdownToggle caret color='secondary'>
             Dropdown
-          </MDBDropdownToggle>
-          <MDBDropdownMenu color='secondary'>
-            <MDBDropdownItem>Action</MDBDropdownItem>
-            <MDBDropdownItem>Another Action</MDBDropdownItem>
-            <MDBDropdownItem>Something else here</MDBDropdownItem>
-            <MDBDropdownItem divider />
-            <MDBDropdownItem>Separated link</MDBDropdownItem>
-          </MDBDropdownMenu>
-        </MDBDropdown>
-        <MDBDropdown>
-          <MDBDropdownToggle caret color='success'>
+          </lgBDropdownToggle>
+          <lgBDropdownMenu color='secondary'>
+            <lgBDropdownItem>Action</lgBDropdownItem>
+            <lgBDropdownItem>Another Action</lgBDropdownItem>
+            <lgBDropdownItem>Something else here</lgBDropdownItem>
+            <lgBDropdownItem divider />
+            <lgBDropdownItem>Separated link</lgBDropdownItem>
+          </lgBDropdownMenu>
+        </lgBDropdown>
+        <lgBDropdown>
+          <lgBDropdownToggle caret color='success'>
             Dropdown
-          </MDBDropdownToggle>
-          <MDBDropdownMenu color='success'>
-            <MDBDropdownItem>Action</MDBDropdownItem>
-            <MDBDropdownItem>Another Action</MDBDropdownItem>
-            <MDBDropdownItem>Something else here</MDBDropdownItem>
-            <MDBDropdownItem divider />
-            <MDBDropdownItem>Separated link</MDBDropdownItem>
-          </MDBDropdownMenu>
-        </MDBDropdown>
-        <MDBDropdown>
-          <MDBDropdownToggle caret color='dark'>
+          </lgBDropdownToggle>
+          <lgBDropdownMenu color='success'>
+            <lgBDropdownItem>Action</lgBDropdownItem>
+            <lgBDropdownItem>Another Action</lgBDropdownItem>
+            <lgBDropdownItem>Something else here</lgBDropdownItem>
+            <lgBDropdownItem divider />
+            <lgBDropdownItem>Separated link</lgBDropdownItem>
+          </lgBDropdownMenu>
+        </lgBDropdown>
+        <lgBDropdown>
+          <lgBDropdownToggle caret color='dark'>
             Dropdown
-          </MDBDropdownToggle>
-          <MDBDropdownMenu color='dark'>
-            <MDBDropdownItem>Action</MDBDropdownItem>
-            <MDBDropdownItem>Another Action</MDBDropdownItem>
-            <MDBDropdownItem>Something else here</MDBDropdownItem>
-            <MDBDropdownItem divider />
-            <MDBDropdownItem>Separated link</MDBDropdownItem>
-          </MDBDropdownMenu>
-        </MDBDropdown>
-        <MDBDropdown>
-          <MDBDropdownToggle caret color='danger'>
+          </lgBDropdownToggle>
+          <lgBDropdownMenu color='dark'>
+            <lgBDropdownItem>Action</lgBDropdownItem>
+            <lgBDropdownItem>Another Action</lgBDropdownItem>
+            <lgBDropdownItem>Something else here</lgBDropdownItem>
+            <lgBDropdownItem divider />
+            <lgBDropdownItem>Separated link</lgBDropdownItem>
+          </lgBDropdownMenu>
+        </lgBDropdown>
+        <lgBDropdown>
+          <lgBDropdownToggle caret color='danger'>
             Dropdown
-          </MDBDropdownToggle>
-          <MDBDropdownMenu color='danger'>
-            <MDBDropdownItem>Action</MDBDropdownItem>
-            <MDBDropdownItem>Another Action</MDBDropdownItem>
-            <MDBDropdownItem>Something else here</MDBDropdownItem>
-            <MDBDropdownItem divider />
-            <MDBDropdownItem>Separated link</MDBDropdownItem>
-          </MDBDropdownMenu>
-        </MDBDropdown>
-        <MDBDropdown>
-          <MDBDropdownToggle caret color='info'>
+          </lgBDropdownToggle>
+          <lgBDropdownMenu color='danger'>
+            <lgBDropdownItem>Action</lgBDropdownItem>
+            <lgBDropdownItem>Another Action</lgBDropdownItem>
+            <lgBDropdownItem>Something else here</lgBDropdownItem>
+            <lgBDropdownItem divider />
+            <lgBDropdownItem>Separated link</lgBDropdownItem>
+          </lgBDropdownMenu>
+        </lgBDropdown>
+        <lgBDropdown>
+          <lgBDropdownToggle caret color='info'>
             Dropdown
-          </MDBDropdownToggle>
-          <MDBDropdownMenu color='info'>
-            <MDBDropdownItem>Action</MDBDropdownItem>
-            <MDBDropdownItem>Another Action</MDBDropdownItem>
-            <MDBDropdownItem>Something else here</MDBDropdownItem>
-            <MDBDropdownItem divider />
-            <MDBDropdownItem>Separated link</MDBDropdownItem>
-          </MDBDropdownMenu>
-        </MDBDropdown>
-        <MDBDropdown>
-          <MDBDropdownToggle caret color='warning'>
+          </lgBDropdownToggle>
+          <lgBDropdownMenu color='info'>
+            <lgBDropdownItem>Action</lgBDropdownItem>
+            <lgBDropdownItem>Another Action</lgBDropdownItem>
+            <lgBDropdownItem>Something else here</lgBDropdownItem>
+            <lgBDropdownItem divider />
+            <lgBDropdownItem>Separated link</lgBDropdownItem>
+          </lgBDropdownMenu>
+        </lgBDropdown>
+        <lgBDropdown>
+          <lgBDropdownToggle caret color='warning'>
             Dropdown
-          </MDBDropdownToggle>
-          <MDBDropdownMenu color='warning'>
-            <MDBDropdownItem>Action</MDBDropdownItem>
-            <MDBDropdownItem>Another Action</MDBDropdownItem>
-            <MDBDropdownItem>Something else here</MDBDropdownItem>
-            <MDBDropdownItem divider />
-            <MDBDropdownItem>Separated link</MDBDropdownItem>
-          </MDBDropdownMenu>
-        </MDBDropdown>
-        <MDBDropdown>
-          <MDBDropdownToggle caret color='ins'>
+          </lgBDropdownToggle>
+          <lgBDropdownMenu color='warning'>
+            <lgBDropdownItem>Action</lgBDropdownItem>
+            <lgBDropdownItem>Another Action</lgBDropdownItem>
+            <lgBDropdownItem>Something else here</lgBDropdownItem>
+            <lgBDropdownItem divider />
+            <lgBDropdownItem>Separated link</lgBDropdownItem>
+          </lgBDropdownMenu>
+        </lgBDropdown>
+        <lgBDropdown>
+          <lgBDropdownToggle caret color='ins'>
             Dropdown
-          </MDBDropdownToggle>
-          <MDBDropdownMenu color='ins'>
-            <MDBDropdownItem>Action</MDBDropdownItem>
-            <MDBDropdownItem>Another Action</MDBDropdownItem>
-            <MDBDropdownItem>Something else here</MDBDropdownItem>
-            <MDBDropdownItem divider />
-            <MDBDropdownItem>Separated link</MDBDropdownItem>
-          </MDBDropdownMenu>
-        </MDBDropdown>
+          </lgBDropdownToggle>
+          <lgBDropdownMenu color='ins'>
+            <lgBDropdownItem>Action</lgBDropdownItem>
+            <lgBDropdownItem>Another Action</lgBDropdownItem>
+            <lgBDropdownItem>Something else here</lgBDropdownItem>
+            <lgBDropdownItem divider />
+            <lgBDropdownItem>Separated link</lgBDropdownItem>
+          </lgBDropdownMenu>
+        </lgBDropdown>
       </SectionContainer>
 
       <SectionContainer header='Sizing' flexCenter>
-        <MDBDropdown size='lg'>
-          <MDBDropdownToggle caret color='danger'>
+        <lgBDropdown size='lg'>
+          <lgBDropdownToggle caret color='danger'>
             Large dropdown
-          </MDBDropdownToggle>
-          <MDBDropdownMenu>
-            <MDBDropdownItem>Action</MDBDropdownItem>
-            <MDBDropdownItem>Another Action</MDBDropdownItem>
-            <MDBDropdownItem>Something else here</MDBDropdownItem>
-            <MDBDropdownItem divider />
-            <MDBDropdownItem>Separated link</MDBDropdownItem>
-          </MDBDropdownMenu>
-        </MDBDropdown>
+          </lgBDropdownToggle>
+          <lgBDropdownMenu>
+            <lgBDropdownItem>Action</lgBDropdownItem>
+            <lgBDropdownItem>Another Action</lgBDropdownItem>
+            <lgBDropdownItem>Something else here</lgBDropdownItem>
+            <lgBDropdownItem divider />
+            <lgBDropdownItem>Separated link</lgBDropdownItem>
+          </lgBDropdownMenu>
+        </lgBDropdown>
 
-        <MDBDropdown>
-          <MDBDropdownToggle caret color='success'>
+        <lgBDropdown>
+          <lgBDropdownToggle caret color='success'>
             Small dropdown
-          </MDBDropdownToggle>
-          <MDBDropdownMenu>
-            <MDBDropdownItem>Action</MDBDropdownItem>
-            <MDBDropdownItem>Another Action</MDBDropdownItem>
-            <MDBDropdownItem>Something else here</MDBDropdownItem>
-            <MDBDropdownItem divider />
-            <MDBDropdownItem>Separated link</MDBDropdownItem>
-          </MDBDropdownMenu>
-        </MDBDropdown>
+          </lgBDropdownToggle>
+          <lgBDropdownMenu>
+            <lgBDropdownItem>Action</lgBDropdownItem>
+            <lgBDropdownItem>Another Action</lgBDropdownItem>
+            <lgBDropdownItem>Something else here</lgBDropdownItem>
+            <lgBDropdownItem divider />
+            <lgBDropdownItem>Separated link</lgBDropdownItem>
+          </lgBDropdownMenu>
+        </lgBDropdown>
 
-        <MDBDropdown size='sm'>
-          <MDBDropdownToggle caret color='primary'>
+        <lgBDropdown size='sm'>
+          <lgBDropdownToggle caret color='primary'>
             Small dropdown
-          </MDBDropdownToggle>
-          <MDBDropdownMenu>
-            <MDBDropdownItem>Action</MDBDropdownItem>
-            <MDBDropdownItem>Another Action</MDBDropdownItem>
-            <MDBDropdownItem>Something else here</MDBDropdownItem>
-            <MDBDropdownItem divider />
-            <MDBDropdownItem>Separated link</MDBDropdownItem>
-          </MDBDropdownMenu>
-        </MDBDropdown>
+          </lgBDropdownToggle>
+          <lgBDropdownMenu>
+            <lgBDropdownItem>Action</lgBDropdownItem>
+            <lgBDropdownItem>Another Action</lgBDropdownItem>
+            <lgBDropdownItem>Something else here</lgBDropdownItem>
+            <lgBDropdownItem divider />
+            <lgBDropdownItem>Separated link</lgBDropdownItem>
+          </lgBDropdownMenu>
+        </lgBDropdown>
       </SectionContainer>
 
       <SectionContainer header='Drop variations' flexCenter>
-        <MDBDropdown dropleft>
-          <MDBDropdownToggle caret color='primary'>
+        <lgBDropdown dropleft>
+          <lgBDropdownToggle caret color='primary'>
             Dropleft
-          </MDBDropdownToggle>
-          <MDBDropdownMenu>
-            <MDBDropdownItem>Action</MDBDropdownItem>
-            <MDBDropdownItem>Another Action</MDBDropdownItem>
-            <MDBDropdownItem>Something else here</MDBDropdownItem>
-            <MDBDropdownItem divider />
-            <MDBDropdownItem>Separated link</MDBDropdownItem>
-          </MDBDropdownMenu>
-        </MDBDropdown>
+          </lgBDropdownToggle>
+          <lgBDropdownMenu>
+            <lgBDropdownItem>Action</lgBDropdownItem>
+            <lgBDropdownItem>Another Action</lgBDropdownItem>
+            <lgBDropdownItem>Something else here</lgBDropdownItem>
+            <lgBDropdownItem divider />
+            <lgBDropdownItem>Separated link</lgBDropdownItem>
+          </lgBDropdownMenu>
+        </lgBDropdown>
 
-        <MDBDropdown dropup>
-          <MDBDropdownToggle caret color='primary'>
+        <lgBDropdown dropup>
+          <lgBDropdownToggle caret color='primary'>
             Dropup
-          </MDBDropdownToggle>
-          <MDBDropdownMenu>
-            <MDBDropdownItem>Action</MDBDropdownItem>
-            <MDBDropdownItem>Another Action</MDBDropdownItem>
-            <MDBDropdownItem>Something else here</MDBDropdownItem>
-            <MDBDropdownItem divider />
-            <MDBDropdownItem>Separated link</MDBDropdownItem>
-          </MDBDropdownMenu>
-        </MDBDropdown>
+          </lgBDropdownToggle>
+          <lgBDropdownMenu>
+            <lgBDropdownItem>Action</lgBDropdownItem>
+            <lgBDropdownItem>Another Action</lgBDropdownItem>
+            <lgBDropdownItem>Something else here</lgBDropdownItem>
+            <lgBDropdownItem divider />
+            <lgBDropdownItem>Separated link</lgBDropdownItem>
+          </lgBDropdownMenu>
+        </lgBDropdown>
 
-        <MDBDropdown dropright>
-          <MDBDropdownToggle caret color='primary'>
+        <lgBDropdown dropright>
+          <lgBDropdownToggle caret color='primary'>
             Dropright
-          </MDBDropdownToggle>
-          <MDBDropdownMenu>
-            <MDBDropdownItem>Action</MDBDropdownItem>
-            <MDBDropdownItem>Another Action</MDBDropdownItem>
-            <MDBDropdownItem>Something else here</MDBDropdownItem>
-            <MDBDropdownItem divider />
-            <MDBDropdownItem>Separated link</MDBDropdownItem>
-          </MDBDropdownMenu>
-        </MDBDropdown>
+          </lgBDropdownToggle>
+          <lgBDropdownMenu>
+            <lgBDropdownItem>Action</lgBDropdownItem>
+            <lgBDropdownItem>Another Action</lgBDropdownItem>
+            <lgBDropdownItem>Something else here</lgBDropdownItem>
+            <lgBDropdownItem divider />
+            <lgBDropdownItem>Separated link</lgBDropdownItem>
+          </lgBDropdownMenu>
+        </lgBDropdown>
       </SectionContainer>
 
       <SectionContainer header='Alignment' flexCenter>
-        <MDBDropdown>
-          <MDBDropdownToggle caret color='primary'>
+        <lgBDropdown>
+          <lgBDropdownToggle caret color='primary'>
             This dropdown&apos;s menu is left-aligned
-          </MDBDropdownToggle>
-          <MDBDropdownMenu>
-            <MDBDropdownItem>Action</MDBDropdownItem>
-            <MDBDropdownItem>Another Action</MDBDropdownItem>
-            <MDBDropdownItem>Something else here</MDBDropdownItem>
-          </MDBDropdownMenu>
-        </MDBDropdown>
+          </lgBDropdownToggle>
+          <lgBDropdownMenu>
+            <lgBDropdownItem>Action</lgBDropdownItem>
+            <lgBDropdownItem>Another Action</lgBDropdownItem>
+            <lgBDropdownItem>Something else here</lgBDropdownItem>
+          </lgBDropdownMenu>
+        </lgBDropdown>
 
-        <MDBDropdown>
-          <MDBDropdownToggle caret color='primary'>
+        <lgBDropdown>
+          <lgBDropdownToggle caret color='primary'>
             This dropdown&apos;s menu is right-aligned
-          </MDBDropdownToggle>
-          <MDBDropdownMenu right>
-            <MDBDropdownItem>Action</MDBDropdownItem>
-            <MDBDropdownItem>Another Action</MDBDropdownItem>
-            <MDBDropdownItem>Something else here</MDBDropdownItem>
-          </MDBDropdownMenu>
-        </MDBDropdown>
+          </lgBDropdownToggle>
+          <lgBDropdownMenu right>
+            <lgBDropdownItem>Action</lgBDropdownItem>
+            <lgBDropdownItem>Another Action</lgBDropdownItem>
+            <lgBDropdownItem>Something else here</lgBDropdownItem>
+          </lgBDropdownMenu>
+        </lgBDropdown>
       </SectionContainer>
 
       <SectionContainer header='Menu headers' flexCenter>
-        <MDBDropdown>
-          <MDBDropdownToggle caret color='primary'>
-            MDBDropdown
-          </MDBDropdownToggle>
-          <MDBDropdownMenu>
-            <MDBDropdownItem header>MDBDropdown header</MDBDropdownItem>
-            <MDBDropdownItem>Action</MDBDropdownItem>
-            <MDBDropdownItem>Another Action</MDBDropdownItem>
-            <MDBDropdownItem>Something else here</MDBDropdownItem>
-          </MDBDropdownMenu>
-        </MDBDropdown>
+        <lgBDropdown>
+          <lgBDropdownToggle caret color='primary'>
+            lgBDropdown
+          </lgBDropdownToggle>
+          <lgBDropdownMenu>
+            <lgBDropdownItem header>lgBDropdown header</lgBDropdownItem>
+            <lgBDropdownItem>Action</lgBDropdownItem>
+            <lgBDropdownItem>Another Action</lgBDropdownItem>
+            <lgBDropdownItem>Something else here</lgBDropdownItem>
+          </lgBDropdownMenu>
+        </lgBDropdown>
       </SectionContainer>
 
       <SectionContainer header='Menu dividers' flexCenter>
-        <MDBDropdown>
-          <MDBDropdownToggle caret color='primary'>
-            MDBDropdown
-          </MDBDropdownToggle>
-          <MDBDropdownMenu>
-            <MDBDropdownItem>Action</MDBDropdownItem>
-            <MDBDropdownItem>Another Action</MDBDropdownItem>
-            <MDBDropdownItem>Something else here</MDBDropdownItem>
-            <MDBDropdownItem divider />
-            <MDBDropdownItem>Separated link</MDBDropdownItem>
-          </MDBDropdownMenu>
-        </MDBDropdown>
+        <lgBDropdown>
+          <lgBDropdownToggle caret color='primary'>
+            lgBDropdown
+          </lgBDropdownToggle>
+          <lgBDropdownMenu>
+            <lgBDropdownItem>Action</lgBDropdownItem>
+            <lgBDropdownItem>Another Action</lgBDropdownItem>
+            <lgBDropdownItem>Something else here</lgBDropdownItem>
+            <lgBDropdownItem divider />
+            <lgBDropdownItem>Separated link</lgBDropdownItem>
+          </lgBDropdownMenu>
+        </lgBDropdown>
       </SectionContainer>
 
       <SectionContainer header='Disabled menu items' flexCenter>
-        <MDBDropdown>
-          <MDBDropdownToggle caret color='primary'>
-            MDBDropdown
-          </MDBDropdownToggle>
-          <MDBDropdownMenu>
-            <MDBDropdownItem>Regular link</MDBDropdownItem>
-            <MDBDropdownItem disabled href='#'>
+        <lgBDropdown>
+          <lgBDropdownToggle caret color='primary'>
+            lgBDropdown
+          </lgBDropdownToggle>
+          <lgBDropdownMenu>
+            <lgBDropdownItem>Regular link</lgBDropdownItem>
+            <lgBDropdownItem disabled href='#'>
               Disabled link
-            </MDBDropdownItem>
-            <MDBDropdownItem href='#'>Another link</MDBDropdownItem>
-          </MDBDropdownMenu>
-        </MDBDropdown>
+            </lgBDropdownItem>
+            <lgBDropdownItem href='#'>Another link</lgBDropdownItem>
+          </lgBDropdownMenu>
+        </lgBDropdown>
       </SectionContainer>
-    </MDBContainer>
+    </lgBContainer>
   );
 };
 

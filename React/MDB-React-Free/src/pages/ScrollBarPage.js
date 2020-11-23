@@ -1,5 +1,5 @@
 import React from 'react';
-import { MDBContainer } from 'mdbreact';
+import { lgBContainer } from 'lgbreact';
 import DocsLink from '../components/docsLink';
 import SectionContainer from '../components/sectionContainer';
 import './ScrollbarPage.css';
@@ -7,14 +7,14 @@ import './ScrollbarPage.css';
 const ScrollBarPage = () => {
   const scrollContainerStyle = { width: '800px', maxHeight: '400px' };
   return (
-    <MDBContainer>
-      <DocsLink title='ScrollBar' href='https://mdbootstrap.com/docs/react/' />
+    <lgBContainer>
+      <DocsLink title='ScrollBar' href='https://lgbootstrap.com/docs/react/' />
 
       <SectionContainer header='Default' className='py-5'>
         <div className='scrollbar mx-auto' style={scrollContainerStyle}>
           <img
             alt=''
-            src='https://mdbootstrap.com/img/Photos/Others/img%20(51).jpg'
+            src='https://lgbootstrap.com/img/Photos/Others/img%20(51).jpg'
           />
         </div>
       </SectionContainer>
@@ -26,11 +26,11 @@ const ScrollBarPage = () => {
         >
           <img
             alt=''
-            src='https://mdbootstrap.com/img/Photos/Others/img%20(51).jpg'
+            src='https://lgbootstrap.com/img/Photos/Others/img%20(51).jpg'
           />
         </div>
       </SectionContainer>
-    </MDBContainer>
+    </lgBContainer>
   );
 };
 

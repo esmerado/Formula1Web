@@ -1,143 +1,143 @@
 import React from 'react';
 import {
-  MDBBtnGroup,
-  MDBIcon,
-  MDBContainer,
-  MDBCol,
-  MDBRow,
-  MDBDropdown,
-  MDBDropdownToggle,
-  MDBDropdownMenu,
-  MDBDropdownItem,
-  MDBBtn
-} from 'mdbreact';
+  lgBBtnGroup,
+  lgBIcon,
+  lgBContainer,
+  lgBCol,
+  lgBRow,
+  lgBDropdown,
+  lgBDropdownToggle,
+  lgBDropdownMenu,
+  lgBDropdownItem,
+  lgBBtn
+} from 'lgbreact';
 import DocsLink from '../components/docsLink';
 import SectionContainer from '../components/sectionContainer';
 
 const ButtonPage = () => {
   return (
-    <MDBContainer>
+    <lgBContainer>
       <DocsLink
         title='Buttons'
-        href='https://mdbootstrap.com/docs/react/components/buttons/'
+        href='https://lgbootstrap.com/docs/react/components/buttons/'
       />
 
       <SectionContainer className='text-center' header='Disabled'>
-        <MDBBtn disabled color='primary'>
+        <lgBBtn disabled color='primary'>
           Primary disabled
-        </MDBBtn>
-        <MDBBtn disabled href='#' color='primary'>
+        </lgBBtn>
+        <lgBBtn disabled href='#' color='primary'>
           Primary href disabled
-        </MDBBtn>
+        </lgBBtn>
       </SectionContainer>
 
       <SectionContainer className='text-center' header='Active'>
-        <MDBBtn
+        <lgBBtn
           active
-          href='https://www.mdbootstrap.com'
+          href='https://www.lgbootstrap.com'
           target='_blank'
           color='primary'
         >
           Primary href target blank
-        </MDBBtn>
-        <MDBBtn active color='primary'>
+        </lgBBtn>
+        <lgBBtn active color='primary'>
           Primary active
-        </MDBBtn>
+        </lgBBtn>
       </SectionContainer>
 
       <SectionContainer className='text-center' header='Basic examples'>
-        <MDBBtn color='primary'>Primary</MDBBtn>
-        <MDBBtn>Default</MDBBtn>
-        <MDBBtn color='secondary'>Secondary</MDBBtn>
-        <MDBBtn color='success'>Success</MDBBtn>
-        <MDBBtn color='info'>Info</MDBBtn>
-        <MDBBtn color='warning'>Warning</MDBBtn>
-        <MDBBtn color='danger'>Danger</MDBBtn>
+        <lgBBtn color='primary'>Primary</lgBBtn>
+        <lgBBtn>Default</lgBBtn>
+        <lgBBtn color='secondary'>Secondary</lgBBtn>
+        <lgBBtn color='success'>Success</lgBBtn>
+        <lgBBtn color='info'>Info</lgBBtn>
+        <lgBBtn color='warning'>Warning</lgBBtn>
+        <lgBBtn color='danger'>Danger</lgBBtn>
       </SectionContainer>
 
       <SectionContainer className='text-center' header='Additional styles'>
-        <MDBBtn color='elegant'>Elegant</MDBBtn>
-        <MDBBtn color='unique'>Unique</MDBBtn>
-        <MDBBtn color='pink'>Pink</MDBBtn>
-        <MDBBtn color='purple'>Purple</MDBBtn>
-        <MDBBtn color='deep-purple'>Deep-purple</MDBBtn>
-        <MDBBtn color='indigo'>Indigo</MDBBtn>
-        <MDBBtn color='light-blue'>Light blue</MDBBtn>
-        <MDBBtn color='cyan'>Cyan</MDBBtn>
-        <MDBBtn color='dark-green'>Dark-green</MDBBtn>
-        <MDBBtn color='light-green'>Light-green</MDBBtn>
-        <MDBBtn color='yellow'>Yellow</MDBBtn>
-        <MDBBtn color='amber'>Amber</MDBBtn>
-        <MDBBtn color='deep-orange'>Deep-orange</MDBBtn>
-        <MDBBtn color='brown'>Brown</MDBBtn>
-        <MDBBtn color='blue-grey'>Blue-grey</MDBBtn>
-        <MDBBtn color='mdb-color'>MDB</MDBBtn>
+        <lgBBtn color='elegant'>Elegant</lgBBtn>
+        <lgBBtn color='unique'>Unique</lgBBtn>
+        <lgBBtn color='pink'>Pink</lgBBtn>
+        <lgBBtn color='purple'>Purple</lgBBtn>
+        <lgBBtn color='deep-purple'>Deep-purple</lgBBtn>
+        <lgBBtn color='indigo'>Indigo</lgBBtn>
+        <lgBBtn color='light-blue'>Light blue</lgBBtn>
+        <lgBBtn color='cyan'>Cyan</lgBBtn>
+        <lgBBtn color='dark-green'>Dark-green</lgBBtn>
+        <lgBBtn color='light-green'>Light-green</lgBBtn>
+        <lgBBtn color='yellow'>Yellow</lgBBtn>
+        <lgBBtn color='amber'>Amber</lgBBtn>
+        <lgBBtn color='deep-orange'>Deep-orange</lgBBtn>
+        <lgBBtn color='brown'>Brown</lgBBtn>
+        <lgBBtn color='blue-grey'>Blue-grey</lgBBtn>
+        <lgBBtn color='lgb-color'>lgB</lgBBtn>
       </SectionContainer>
 
       <SectionContainer className='text-center' header='Outline'>
-        <MDBBtn outline color='primary'>
+        <lgBBtn outline color='primary'>
           Primary
-        </MDBBtn>
-        <MDBBtn outline>Default</MDBBtn>
-        <MDBBtn outline color='secondary'>
+        </lgBBtn>
+        <lgBBtn outline>Default</lgBBtn>
+        <lgBBtn outline color='secondary'>
           Secondary
-        </MDBBtn>
-        <MDBBtn outline color='success'>
+        </lgBBtn>
+        <lgBBtn outline color='success'>
           Success
-        </MDBBtn>
-        <MDBBtn outline color='info'>
+        </lgBBtn>
+        <lgBBtn outline color='info'>
           Info
-        </MDBBtn>
-        <MDBBtn outline color='warning'>
+        </lgBBtn>
+        <lgBBtn outline color='warning'>
           Warning
-        </MDBBtn>
-        <MDBBtn outline color='danger'>
+        </lgBBtn>
+        <lgBBtn outline color='danger'>
           Danger
-        </MDBBtn>
+        </lgBBtn>
       </SectionContainer>
 
       <SectionContainer className='text-center' header='With icons'>
         <div className='mb-3'>
-          <MDBBtn color='primary'>
-            <MDBIcon icon='magic' className='mr-1' /> Left
-          </MDBBtn>
-          <MDBBtn color='default'>
-            Right <MDBIcon icon='magic' className='ml-1' />
-          </MDBBtn>
+          <lgBBtn color='primary'>
+            <lgBIcon icon='magic' className='mr-1' /> Left
+          </lgBBtn>
+          <lgBBtn color='default'>
+            Right <lgBIcon icon='magic' className='ml-1' />
+          </lgBBtn>
         </div>
 
         <div>
-          <MDBBtn color='indigo lighten-2'>
-            <MDBIcon icon='hourglass-start' />
-          </MDBBtn>
-          <MDBBtn color='blue lighten-2'>
-            <MDBIcon icon='heart' />
-          </MDBBtn>
-          <MDBBtn color='light-blue lighten-2'>
-            <MDBIcon icon='user' />
-          </MDBBtn>
-          <MDBBtn color='cyan lighten-2'>
-            <MDBIcon icon='twitter' brand />
-          </MDBBtn>
+          <lgBBtn color='indigo lighten-2'>
+            <lgBIcon icon='hourglass-start' />
+          </lgBBtn>
+          <lgBBtn color='blue lighten-2'>
+            <lgBIcon icon='heart' />
+          </lgBBtn>
+          <lgBBtn color='light-blue lighten-2'>
+            <lgBIcon icon='user' />
+          </lgBBtn>
+          <lgBBtn color='cyan lighten-2'>
+            <lgBIcon icon='twitter' brand />
+          </lgBBtn>
         </div>
       </SectionContainer>
 
       <SectionContainer className='text-center' header='Tags'>
-        <MDBBtn color='primary' href='#'>
+        <lgBBtn color='primary' href='#'>
           Link
-        </MDBBtn>
-        <MDBBtn color='primary' type='submit'>
-          MDBBtn
-        </MDBBtn>
+        </lgBBtn>
+        <lgBBtn color='primary' type='submit'>
+          lgBBtn
+        </lgBBtn>
       </SectionContainer>
 
       <SectionContainer className='text-center' header='Block level buttons'>
-        <MDBBtn block style={{ marginBottom: '1rem' }}>
+        <lgBBtn block style={{ marginBottom: '1rem' }}>
           Block level button
-        </MDBBtn>
-        <MDBBtn block color='primary' style={{ marginBottom: '0rem' }}>
+        </lgBBtn>
+        <lgBBtn block color='primary' style={{ marginBottom: '0rem' }}>
           Block level button
-        </MDBBtn>
+        </lgBBtn>
       </SectionContainer>
 
       <SectionContainer
@@ -145,36 +145,36 @@ const ButtonPage = () => {
         header='Vertical alignment'
         className='text-center'
       >
-        <MDBBtnGroup vertical>
-          <MDBBtn>Left</MDBBtn>
-          <MDBBtn>Middle</MDBBtn>
-          <MDBBtn>Right</MDBBtn>
-        </MDBBtnGroup>
+        <lgBBtnGroup vertical>
+          <lgBBtn>Left</lgBBtn>
+          <lgBBtn>Middle</lgBBtn>
+          <lgBBtn>Right</lgBBtn>
+        </lgBBtnGroup>
       </SectionContainer>
 
       <SectionContainer className='text-center' header='Sizing'>
         <div className='my-3'>
-          <MDBBtnGroup size='lg'>
-            <MDBBtn>Left</MDBBtn>
-            <MDBBtn>Middle</MDBBtn>
-            <MDBBtn>Right</MDBBtn>
-          </MDBBtnGroup>
+          <lgBBtnGroup size='lg'>
+            <lgBBtn>Left</lgBBtn>
+            <lgBBtn>Middle</lgBBtn>
+            <lgBBtn>Right</lgBBtn>
+          </lgBBtnGroup>
         </div>
 
         <div className='my-3'>
-          <MDBBtnGroup>
-            <MDBBtn>Left</MDBBtn>
-            <MDBBtn>Middle</MDBBtn>
-            <MDBBtn>Right</MDBBtn>
-          </MDBBtnGroup>
+          <lgBBtnGroup>
+            <lgBBtn>Left</lgBBtn>
+            <lgBBtn>Middle</lgBBtn>
+            <lgBBtn>Right</lgBBtn>
+          </lgBBtnGroup>
         </div>
 
         <div className='my-3'>
-          <MDBBtnGroup size='sm'>
-            <MDBBtn>Left</MDBBtn>
-            <MDBBtn>Middle</MDBBtn>
-            <MDBBtn>Right</MDBBtn>
-          </MDBBtnGroup>
+          <lgBBtnGroup size='sm'>
+            <lgBBtn>Left</lgBBtn>
+            <lgBBtn>Middle</lgBBtn>
+            <lgBBtn>Right</lgBBtn>
+          </lgBBtnGroup>
         </div>
       </SectionContainer>
 
@@ -184,150 +184,150 @@ const ButtonPage = () => {
           role='toolbar'
           aria-label='Toolbar with button groups'
         >
-          <MDBBtnGroup className='mr-2'>
-            <MDBBtn>1</MDBBtn>
-            <MDBBtn>2</MDBBtn>
-            <MDBBtn>3</MDBBtn>
-            <MDBBtn>4</MDBBtn>
-          </MDBBtnGroup>
-          <MDBBtnGroup className='mr-2'>
-            <MDBBtn>5</MDBBtn>
-            <MDBBtn>6</MDBBtn>
-            <MDBBtn>7</MDBBtn>
-          </MDBBtnGroup>
-          <MDBBtnGroup>
-            <MDBBtn>8</MDBBtn>
-          </MDBBtnGroup>
+          <lgBBtnGroup className='mr-2'>
+            <lgBBtn>1</lgBBtn>
+            <lgBBtn>2</lgBBtn>
+            <lgBBtn>3</lgBBtn>
+            <lgBBtn>4</lgBBtn>
+          </lgBBtnGroup>
+          <lgBBtnGroup className='mr-2'>
+            <lgBBtn>5</lgBBtn>
+            <lgBBtn>6</lgBBtn>
+            <lgBBtn>7</lgBBtn>
+          </lgBBtnGroup>
+          <lgBBtnGroup>
+            <lgBBtn>8</lgBBtn>
+          </lgBBtnGroup>
         </div>
       </SectionContainer>
 
       <SectionContainer className='text-center' header='Nesting'>
-        <MDBBtnGroup>
-          <MDBBtn color='info' size='lg'>
+        <lgBBtnGroup>
+          <lgBBtn color='info' size='lg'>
             1
-          </MDBBtn>
-          <MDBBtn color='info' size='lg'>
+          </lgBBtn>
+          <lgBBtn color='info' size='lg'>
             2
-          </MDBBtn>
-          <MDBBtnGroup>
-            <MDBDropdown>
-              <MDBDropdownToggle caret color='info' className='h-100'>
+          </lgBBtn>
+          <lgBBtnGroup>
+            <lgBDropdown>
+              <lgBDropdownToggle caret color='info' className='h-100'>
                 Dropdown
-              </MDBDropdownToggle>
-              <MDBDropdownMenu basic color='info'>
-                <MDBDropdownItem>Dropdown link</MDBDropdownItem>
-                <MDBDropdownItem>Dropdown link</MDBDropdownItem>
-              </MDBDropdownMenu>
-            </MDBDropdown>
-          </MDBBtnGroup>
-        </MDBBtnGroup>
+              </lgBDropdownToggle>
+              <lgBDropdownMenu basic color='info'>
+                <lgBDropdownItem>Dropdown link</lgBDropdownItem>
+                <lgBDropdownItem>Dropdown link</lgBDropdownItem>
+              </lgBDropdownMenu>
+            </lgBDropdown>
+          </lgBBtnGroup>
+        </lgBBtnGroup>
       </SectionContainer>
 
       <SectionContainer
         header='Vertical variation'
         className='d-flex justify-content-center'
       >
-        <MDBCol xl='2' lg='3' md='4' className='mb-md-0 mb-4'>
-          <MDBBtnGroup vertical>
-            <MDBBtn color='amber' className='ml-0'>
+        <lgBCol xl='2' lg='3' lg='4' className='mb-lg-0 mb-4'>
+          <lgBBtnGroup vertical>
+            <lgBBtn color='amber' className='ml-0'>
               Button
-            </MDBBtn>
-            <MDBBtn color='amber'>Button</MDBBtn>
-            <MDBBtn color='amber'>Button</MDBBtn>
-            <MDBBtn color='amber'>Button</MDBBtn>
-            <MDBBtn color='amber'>Button</MDBBtn>
-            <MDBBtn color='amber'>Button</MDBBtn>
-          </MDBBtnGroup>
-        </MDBCol>
+            </lgBBtn>
+            <lgBBtn color='amber'>Button</lgBBtn>
+            <lgBBtn color='amber'>Button</lgBBtn>
+            <lgBBtn color='amber'>Button</lgBBtn>
+            <lgBBtn color='amber'>Button</lgBBtn>
+            <lgBBtn color='amber'>Button</lgBBtn>
+          </lgBBtnGroup>
+        </lgBCol>
 
-        <MDBCol xl='2' lg='3' md='4'>
-          <MDBBtnGroup vertical>
-            <MDBBtn color='indigo' className='ml-0'>
+        <lgBCol xl='2' lg='3' lg='4'>
+          <lgBBtnGroup vertical>
+            <lgBBtn color='indigo' className='ml-0'>
               Button
-            </MDBBtn>
-            <MDBBtn color='indigo'>Button</MDBBtn>
+            </lgBBtn>
+            <lgBBtn color='indigo'>Button</lgBBtn>
 
-            <MDBDropdown className='w-100'>
-              <MDBDropdownToggle caret color='indigo' className='m-0'>
+            <lgBDropdown className='w-100'>
+              <lgBDropdownToggle caret color='indigo' className='m-0'>
                 Dropdown
-              </MDBDropdownToggle>
-              <MDBDropdownMenu basic color='info'>
-                <MDBDropdownItem>Dropdown link</MDBDropdownItem>
-                <MDBDropdownItem>Dropdown link</MDBDropdownItem>
-              </MDBDropdownMenu>
-            </MDBDropdown>
+              </lgBDropdownToggle>
+              <lgBDropdownMenu basic color='info'>
+                <lgBDropdownItem>Dropdown link</lgBDropdownItem>
+                <lgBDropdownItem>Dropdown link</lgBDropdownItem>
+              </lgBDropdownMenu>
+            </lgBDropdown>
 
-            <MDBBtn color='indigo'>Button</MDBBtn>
-            <MDBBtn color='indigo'>Button</MDBBtn>
+            <lgBBtn color='indigo'>Button</lgBBtn>
+            <lgBBtn color='indigo'>Button</lgBBtn>
 
-            <MDBDropdown className='w-100'>
-              <MDBDropdownToggle caret color='indigo' className='m-0 rounded-0'>
+            <lgBDropdown className='w-100'>
+              <lgBDropdownToggle caret color='indigo' className='m-0 rounded-0'>
                 Dropdown
-              </MDBDropdownToggle>
-              <MDBDropdownMenu basic color='indigo'>
-                <MDBDropdownItem>Dropdown link</MDBDropdownItem>
-                <MDBDropdownItem>Dropdown link</MDBDropdownItem>
-              </MDBDropdownMenu>
-            </MDBDropdown>
-            <MDBDropdown className='w-100'>
-              <MDBDropdownToggle caret color='indigo' className='m-0 rounded-0'>
+              </lgBDropdownToggle>
+              <lgBDropdownMenu basic color='indigo'>
+                <lgBDropdownItem>Dropdown link</lgBDropdownItem>
+                <lgBDropdownItem>Dropdown link</lgBDropdownItem>
+              </lgBDropdownMenu>
+            </lgBDropdown>
+            <lgBDropdown className='w-100'>
+              <lgBDropdownToggle caret color='indigo' className='m-0 rounded-0'>
                 Dropdown
-              </MDBDropdownToggle>
-              <MDBDropdownMenu basic color='indigo'>
-                <MDBDropdownItem>Dropdown link</MDBDropdownItem>
-                <MDBDropdownItem>Dropdown link</MDBDropdownItem>
-              </MDBDropdownMenu>
-            </MDBDropdown>
-            <MDBDropdown className='w-100'>
-              <MDBDropdownToggle caret color='indigo' className='m-0 rounded-0'>
+              </lgBDropdownToggle>
+              <lgBDropdownMenu basic color='indigo'>
+                <lgBDropdownItem>Dropdown link</lgBDropdownItem>
+                <lgBDropdownItem>Dropdown link</lgBDropdownItem>
+              </lgBDropdownMenu>
+            </lgBDropdown>
+            <lgBDropdown className='w-100'>
+              <lgBDropdownToggle caret color='indigo' className='m-0 rounded-0'>
                 Dropdown
-              </MDBDropdownToggle>
-              <MDBDropdownMenu basic color='indigo'>
-                <MDBDropdownItem>Dropdown link</MDBDropdownItem>
-                <MDBDropdownItem>Dropdown link</MDBDropdownItem>
-              </MDBDropdownMenu>
-            </MDBDropdown>
-          </MDBBtnGroup>
-        </MDBCol>
+              </lgBDropdownToggle>
+              <lgBDropdownMenu basic color='indigo'>
+                <lgBDropdownItem>Dropdown link</lgBDropdownItem>
+                <lgBDropdownItem>Dropdown link</lgBDropdownItem>
+              </lgBDropdownMenu>
+            </lgBDropdown>
+          </lgBBtnGroup>
+        </lgBCol>
       </SectionContainer>
 
       <SectionContainer header='Multicolored button group'>
-        <MDBRow className='d-flex align-items-center justify-content-center'>
-          <MDBCol xl='4' md='12' className='mb-xl-0 mb-4 align-self-center'>
-            <MDBBtnGroup>
-              <MDBBtn color='primary'>Left</MDBBtn>
-              <MDBBtn color='warning'>Middle</MDBBtn>
-              <MDBBtn color='danger'>Right</MDBBtn>
-            </MDBBtnGroup>
-          </MDBCol>
+        <lgBRow className='d-flex align-items-center justify-content-center'>
+          <lgBCol xl='4' lg='12' className='mb-xl-0 mb-4 align-self-center'>
+            <lgBBtnGroup>
+              <lgBBtn color='primary'>Left</lgBBtn>
+              <lgBBtn color='warning'>Middle</lgBBtn>
+              <lgBBtn color='danger'>Right</lgBBtn>
+            </lgBBtnGroup>
+          </lgBCol>
 
-          <MDBCol
+          <lgBCol
             xl='4'
-            md='12'
+            lg='12'
             className='mb-xl-0 mb-4 d-flex justify-content-center'
           >
-            <MDBBtnGroup vertical>
-              <MDBBtn color='primary'>1</MDBBtn>
-              <MDBBtn color='pink'>2</MDBBtn>
-              <MDBBtn color='success'>3</MDBBtn>
-              <MDBBtn color='amber'>4</MDBBtn>
-              <MDBBtn color='red'>5</MDBBtn>
-            </MDBBtnGroup>
-          </MDBCol>
+            <lgBBtnGroup vertical>
+              <lgBBtn color='primary'>1</lgBBtn>
+              <lgBBtn color='pink'>2</lgBBtn>
+              <lgBBtn color='success'>3</lgBBtn>
+              <lgBBtn color='amber'>4</lgBBtn>
+              <lgBBtn color='red'>5</lgBBtn>
+            </lgBBtnGroup>
+          </lgBCol>
 
-          <MDBCol xl='4' md='12' className='mb-xl-0 align-self-center'>
+          <lgBCol xl='4' lg='12' className='mb-xl-0 align-self-center'>
             <div className='btn-toolbar' role='toolbar'>
-              <MDBBtnGroup>
-                <MDBBtn color='mdb-color lighten-2'>1</MDBBtn>
-                <MDBBtn color='indigo lighten-2'>2</MDBBtn>
-                <MDBBtn color='blue lighten-2'>3</MDBBtn>
-                <MDBBtn color='light-blue lighten-2'>4</MDBBtn>
-              </MDBBtnGroup>
+              <lgBBtnGroup>
+                <lgBBtn color='lgb-color lighten-2'>1</lgBBtn>
+                <lgBBtn color='indigo lighten-2'>2</lgBBtn>
+                <lgBBtn color='blue lighten-2'>3</lgBBtn>
+                <lgBBtn color='light-blue lighten-2'>4</lgBBtn>
+              </lgBBtnGroup>
             </div>
-          </MDBCol>
-        </MDBRow>
+          </lgBCol>
+        </lgBRow>
       </SectionContainer>
-    </MDBContainer>
+    </lgBContainer>
   );
 };
 

@@ -1,13 +1,13 @@
 import React from 'react';
 import {
-  MDBDataTable,
-  MDBContainer,
-  MDBRow,
-  MDBCol,
-  MDBCard,
-  MDBCardBody,
-  MDBBadge
-} from 'mdbreact';
+  lgBDataTable,
+  lgBContainer,
+  lgBRow,
+  lgBCol,
+  lgBCard,
+  lgBCardBody,
+  lgBBadge
+} from 'lgbreact';
 import DocsLink from '../components/docsLink';
 import SectionContainer from '../components/sectionContainer';
 
@@ -33,14 +33,14 @@ class DatatableApiPage extends React.Component {
         rows = rows.map((row, key) => ({
           ...row,
           id: (
-            <MDBBadge
+            <lgBBadge
               color='info'
               className='w-100'
               searchvalue={key}
               key={key}
             >
               {key}
-            </MDBBadge>
+            </lgBBadge>
           )
         }));
 
@@ -55,37 +55,37 @@ class DatatableApiPage extends React.Component {
   render() {
     const { data } = this.state;
     return (
-      <MDBContainer className='mt-3'>
+      <lgBContainer className='mt-3'>
         <DocsLink
           title='Datatable'
-          href='https://mdbootstrap.com/docs/react/tables/datatables/'
+          href='https://lgbootstrap.com/docs/react/tables/datatables/'
         />
-        <MDBRow className='py-3'>
-          <MDBCol md='12'>
+        <lgBRow className='py-3'>
+          <lgBCol lg='12'>
             <SectionContainer header='Datatable with data from API' noBorder>
-              <MDBCard>
-                <MDBCardBody>
-                  <MDBDataTable
+              <lgBCard>
+                <lgBCardBody>
+                  <lgBDataTable
                     striped
                     bordered
                     hover
                     data='https://my-json-server.typicode.com/Rotarepmi/exjson/db'
                   />
-                </MDBCardBody>
-              </MDBCard>
+                </lgBCardBody>
+              </lgBCard>
             </SectionContainer>
-          </MDBCol>
-        </MDBRow>
+          </lgBCol>
+        </lgBRow>
 
-        <MDBRow className='py-3'>
-          <MDBCol md='12'>
+        <lgBRow className='py-3'>
+          <lgBCol lg='12'>
             <SectionContainer
               header='With scrollX and scrollY properties'
               noBorder
             >
-              <MDBCard>
-                <MDBCardBody>
-                  <MDBDataTable
+              <lgBCard>
+                <lgBCardBody>
+                  <lgBDataTable
                     striped
                     bordered
                     hover
@@ -94,33 +94,33 @@ class DatatableApiPage extends React.Component {
                     maxHeight='300xp'
                     data='https://my-json-server.typicode.com/Rotarepmi/exjson/db'
                   />
-                </MDBCardBody>
-              </MDBCard>
+                </lgBCardBody>
+              </lgBCard>
             </SectionContainer>
-          </MDBCol>
-        </MDBRow>
+          </lgBCol>
+        </lgBRow>
 
-        <MDBRow className='py-3'>
-          <MDBCol md='12'>
+        <lgBRow className='py-3'>
+          <lgBCol lg='12'>
             <SectionContainer
               header='Datatable with data from API + custom data'
               noBorder
             >
-              <MDBCard>
-                <MDBCardBody>
-                  <MDBDataTable
+              <lgBCard>
+                <lgBCardBody>
+                  <lgBDataTable
                     striped
                     bordered
                     hover
                     data={data}
                     sortRows={['id']}
                   />
-                </MDBCardBody>
-              </MDBCard>
+                </lgBCardBody>
+              </lgBCard>
             </SectionContainer>
-          </MDBCol>
-        </MDBRow>
-      </MDBContainer>
+          </lgBCol>
+        </lgBRow>
+      </lgBContainer>
     );
   }
 }

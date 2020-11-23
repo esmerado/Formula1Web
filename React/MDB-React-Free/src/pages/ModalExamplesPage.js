@@ -1,19 +1,19 @@
 import React, { Component } from 'react';
 import {
-  MDBContainer,
-  MDBBtn,
-  MDBModal,
-  MDBModalBody,
-  MDBModalHeader,
-  MDBModalFooter,
-  MDBRow,
-  MDBIcon,
-  MDBBadge,
-  MDBCol,
-  MDBTable,
-  MDBTableBody,
-  MDBTableHead
-} from 'mdbreact';
+  lgBContainer,
+  lgBBtn,
+  lgBModal,
+  lgBModalBody,
+  lgBModalHeader,
+  lgBModalFooter,
+  lgBRow,
+  lgBIcon,
+  lgBBadge,
+  lgBCol,
+  lgBTable,
+  lgBTableBody,
+  lgBTableHead
+} from 'lgbreact';
 import './ModalExamplesPage.css';
 import DocsLink from '../components/docsLink';
 import SectionContainer from '../components/sectionContainer';
@@ -55,71 +55,71 @@ class ModalExamplesPage extends Component {
       modal7
     } = this.state;
     return (
-      <MDBContainer>
+      <lgBContainer>
         <DocsLink
           title='Modal Templates & Examples'
-          href='https://mdbootstrap.com/docs/react/modals/basic/'
+          href='https://lgbootstrap.com/docs/react/modals/basic/'
         />
 
         <SectionContainer header='Cookies' flexCenter>
-          <MDBBtn onClick={this.toggle(1)}>Launch Modal</MDBBtn>
-          <MDBModal
+          <lgBBtn onClick={this.toggle(1)}>Launch Modal</lgBBtn>
+          <lgBModal
             position='top'
             backdrop={false}
             frame
             isOpen={modal1}
             toggle={this.toggle(1)}
           >
-            <MDBModalBody>
-              <MDBRow className='justify-content-center align-items-center'>
+            <lgBModalBody>
+              <lgBRow className='justify-content-center align-items-center'>
                 <p className='pt-3 pr-2'>
                   We use cookies to improve your website experience
                 </p>
-                <MDBBtn color='primary' onClick={this.toggle(1)}>
+                <lgBBtn color='primary' onClick={this.toggle(1)}>
                   Learn more
-                  <MDBIcon icon='book' className='ml-1' />
-                </MDBBtn>
-                <MDBBtn color='primary' outline onClick={this.toggle(1)}>
+                  <lgBIcon icon='book' className='ml-1' />
+                </lgBBtn>
+                <lgBBtn color='primary' outline onClick={this.toggle(1)}>
                   Ok, thanks
-                </MDBBtn>
-              </MDBRow>
-            </MDBModalBody>
-          </MDBModal>
+                </lgBBtn>
+              </lgBRow>
+            </lgBModalBody>
+          </lgBModal>
         </SectionContainer>
 
         <SectionContainer header='Coupon' flexCenter>
-          <MDBBtn onClick={this.toggle(2)}>Launch Modal</MDBBtn>
-          <MDBModal
+          <lgBBtn onClick={this.toggle(2)}>Launch Modal</lgBBtn>
+          <lgBModal
             position='bottom'
             backdrop={false}
             frame
             isOpen={modal2}
             toggle={this.toggle(2)}
           >
-            <MDBModalBody>
-              <MDBRow className='justify-content-center align-items-center'>
+            <lgBModalBody>
+              <lgBRow className='justify-content-center align-items-center'>
                 <h3>
-                  <MDBBadge color='success'>v52gs1</MDBBadge>
+                  <lgBBadge color='success'>v52gs1</lgBBadge>
                 </h3>
                 <p className='pt-3 mx-4'>
                   We have a gift for you! Use this code to get a{' '}
                   <strong>10% discount</strong>.
                 </p>
-                <MDBBtn color='success' onClick={this.toggle(2)}>
+                <lgBBtn color='success' onClick={this.toggle(2)}>
                   Learn more
-                  <MDBIcon icon='book' className='ml-1' />
-                </MDBBtn>
-                <MDBBtn color='success' outline onClick={this.toggle(2)}>
+                  <lgBIcon icon='book' className='ml-1' />
+                </lgBBtn>
+                <lgBBtn color='success' outline onClick={this.toggle(2)}>
                   No, thanks
-                </MDBBtn>
-              </MDBRow>
-            </MDBModalBody>
-          </MDBModal>
+                </lgBBtn>
+              </lgBRow>
+            </lgBModalBody>
+          </lgBModal>
         </SectionContainer>
 
         <SectionContainer header='Discount' flexCenter>
-          <MDBBtn onClick={this.toggle(3)}>Launch Modal</MDBBtn>
-          <MDBModal
+          <lgBBtn onClick={this.toggle(3)}>Launch Modal</lgBBtn>
+          <lgBModal
             size='lg'
             className='modal-notify modal-danger text-white'
             side
@@ -128,18 +128,18 @@ class ModalExamplesPage extends Component {
             isOpen={modal3}
             toggle={this.toggle(3)}
           >
-            <MDBModalHeader tag='p' toggle={this.toggle(3)}>
+            <lgBModalHeader tag='p' toggle={this.toggle(3)}>
               Discount offer: <strong>10% off</strong>
-            </MDBModalHeader>
-            <MDBModalBody>
-              <MDBRow>
-                <MDBCol
+            </lgBModalHeader>
+            <lgBModalBody>
+              <lgBRow>
+                <lgBCol
                   size='3'
                   className='d-flex justify-content-center align-items-center'
                 >
-                  <MDBIcon size='4x' icon='gift' className='ml-1' />
-                </MDBCol>
-                <MDBCol size='9'>
+                  <lgBIcon size='4x' icon='gift' className='ml-1' />
+                </lgBCol>
+                <lgBCol size='9'>
                   <p>
                     Sharing is caring. Therefore, from time to time we like to
                     give our visitors small gifts. Today is one of those days.
@@ -151,26 +151,26 @@ class ModalExamplesPage extends Component {
                     </strong>
                   </p>
                   <h3>
-                    <MDBBadge color='danger'>v52gs1</MDBBadge>
+                    <lgBBadge color='danger'>v52gs1</lgBBadge>
                   </h3>
-                </MDBCol>
-              </MDBRow>
-            </MDBModalBody>
-            <MDBModalFooter className='justify-content-center'>
-              <MDBBtn color='danger' onClick={this.toggle(3)}>
+                </lgBCol>
+              </lgBRow>
+            </lgBModalBody>
+            <lgBModalFooter className='justify-content-center'>
+              <lgBBtn color='danger' onClick={this.toggle(3)}>
                 Get it now
-                <MDBIcon icon='diamond' className='ml-1 white-text' />
-              </MDBBtn>
-              <MDBBtn color='danger' outline onClick={this.toggle(3)}>
+                <lgBIcon icon='diamond' className='ml-1 white-text' />
+              </lgBBtn>
+              <lgBBtn color='danger' outline onClick={this.toggle(3)}>
                 No, thanks
-              </MDBBtn>
-            </MDBModalFooter>
-          </MDBModal>
+              </lgBBtn>
+            </lgBModalFooter>
+          </lgBModal>
         </SectionContainer>
 
         <SectionContainer header='Related content' flexCenter>
-          <MDBBtn onClick={this.toggle(4)}>Launch Modal</MDBBtn>
-          <MDBModal
+          <lgBBtn onClick={this.toggle(4)}>Launch Modal</lgBBtn>
+          <lgBModal
             className='modal-notify modal-info text-white'
             side
             position='bottom-right'
@@ -178,42 +178,42 @@ class ModalExamplesPage extends Component {
             isOpen={modal4}
             toggle={this.toggle(4)}
           >
-            <MDBModalHeader tag='p' toggle={this.toggle(4)}>
+            <lgBModalHeader tag='p' toggle={this.toggle(4)}>
               Related article
-            </MDBModalHeader>
-            <MDBModalBody>
-              <MDBRow>
-                <MDBCol size='5'>
+            </lgBModalHeader>
+            <lgBModalBody>
+              <lgBRow>
+                <lgBCol size='5'>
                   <img
-                    src='https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(55).jpg'
+                    src='https://lgbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(55).jpg'
                     className='img-fluid'
                     alt=''
                   />
-                </MDBCol>
-                <MDBCol size='7'>
+                </lgBCol>
+                <lgBCol size='7'>
                   <p>
                     <strong>My travel to paradise</strong>
                   </p>
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit...
                   </p>
-                  <MDBBtn
+                  <lgBBtn
                     color='primary'
-                    size='md'
+                    size='lg'
                     outline
                     onClick={this.toggle(4)}
                   >
                     Read more
-                  </MDBBtn>
-                </MDBCol>
-              </MDBRow>
-            </MDBModalBody>
-          </MDBModal>
+                  </lgBBtn>
+                </lgBCol>
+              </lgBRow>
+            </lgBModalBody>
+          </lgBModal>
         </SectionContainer>
 
         <SectionContainer header='Abandoned cart' flexCenter>
-          <MDBBtn onClick={this.toggle(5)}>Launch Modal</MDBBtn>
-          <MDBModal
+          <lgBBtn onClick={this.toggle(5)}>Launch Modal</lgBBtn>
+          <lgBModal
             className='modal-notify modal-info text-white'
             side
             position='top-right'
@@ -221,40 +221,40 @@ class ModalExamplesPage extends Component {
             isOpen={modal5}
             toggle={this.toggle(5)}
           >
-            <MDBModalHeader tag='p' toggle={this.toggle(5)}>
+            <lgBModalHeader tag='p' toggle={this.toggle(5)}>
               Product in the cart
-            </MDBModalHeader>
-            <MDBModalBody>
-              <MDBRow>
-                <MDBCol
+            </lgBModalHeader>
+            <lgBModalBody>
+              <lgBRow>
+                <lgBCol
                   size='3'
                   className='d-flex justify-content-center align-items-center'
                 >
-                  <MDBIcon size='4x' icon='shopping-cart' className='ml-1' />
-                </MDBCol>
-                <MDBCol size='9'>
+                  <lgBIcon size='4x' icon='shopping-cart' className='ml-1' />
+                </lgBCol>
+                <lgBCol size='9'>
                   <p>Do you need more time to make a purchase decision?</p>
                   <p>
                     No pressure, your product will be waiting for you in the
                     cart.
                   </p>
-                </MDBCol>
-              </MDBRow>
-            </MDBModalBody>
-            <MDBModalFooter className='justify-content-center'>
-              <MDBBtn color='primary' onClick={this.toggle(5)}>
+                </lgBCol>
+              </lgBRow>
+            </lgBModalBody>
+            <lgBModalFooter className='justify-content-center'>
+              <lgBBtn color='primary' onClick={this.toggle(5)}>
                 Go to cart
-              </MDBBtn>
-              <MDBBtn color='primary' outline onClick={this.toggle(5)}>
+              </lgBBtn>
+              <lgBBtn color='primary' outline onClick={this.toggle(5)}>
                 Cancel
-              </MDBBtn>
-            </MDBModalFooter>
-          </MDBModal>
+              </lgBBtn>
+            </lgBModalFooter>
+          </lgBModal>
         </SectionContainer>
 
         <SectionContainer header='Abandoned cart' flexCenter>
-          <MDBBtn onClick={this.toggle(6)}>Launch Modal</MDBBtn>
-          <MDBModal
+          <lgBBtn onClick={this.toggle(6)}>Launch Modal</lgBBtn>
+          <lgBModal
             modalStyle='danger'
             className='text-white'
             size='sm'
@@ -264,49 +264,49 @@ class ModalExamplesPage extends Component {
             isOpen={modal6}
             toggle={this.toggle(6)}
           >
-            <MDBModalHeader
+            <lgBModalHeader
               className='text-center'
               titleClass='w-100'
               tag='p'
               toggle={this.toggle(6)}
             >
               Are you sure?
-            </MDBModalHeader>
-            <MDBModalBody className='text-center'>
-              <MDBIcon icon='times' size='4x' className='animated rotateIn' />
-            </MDBModalBody>
-            <MDBModalFooter className='justify-content-center'>
-              <MDBBtn color='danger' onClick={this.toggle(6)}>
+            </lgBModalHeader>
+            <lgBModalBody className='text-center'>
+              <lgBIcon icon='times' size='4x' className='animated rotateIn' />
+            </lgBModalBody>
+            <lgBModalFooter className='justify-content-center'>
+              <lgBBtn color='danger' onClick={this.toggle(6)}>
                 Yes
-              </MDBBtn>
-              <MDBBtn color='danger' outline onClick={this.toggle(6)}>
+              </lgBBtn>
+              <lgBBtn color='danger' outline onClick={this.toggle(6)}>
                 No
-              </MDBBtn>
-            </MDBModalFooter>
-          </MDBModal>
+              </lgBBtn>
+            </lgBModalFooter>
+          </lgBModal>
         </SectionContainer>
 
         <SectionContainer header='Cart' flexCenter>
-          <MDBBtn onClick={this.toggle(10)}>Launch Modal</MDBBtn>
-          <MDBModal isOpen={modal10} toggle={this.toggle(10)}>
-            <MDBModalHeader toggle={this.toggle(10)}>Your cart</MDBModalHeader>
-            <MDBModalBody>
-              <MDBTable striped>
-                <MDBTableHead>
+          <lgBBtn onClick={this.toggle(10)}>Launch Modal</lgBBtn>
+          <lgBModal isOpen={modal10} toggle={this.toggle(10)}>
+            <lgBModalHeader toggle={this.toggle(10)}>Your cart</lgBModalHeader>
+            <lgBModalBody>
+              <lgBTable striped>
+                <lgBTableHead>
                   <tr>
                     <th />
                     <th>Product name</th>
                     <th>Price</th>
                     <th>Remove</th>
                   </tr>
-                </MDBTableHead>
-                <MDBTableBody>
+                </lgBTableHead>
+                <lgBTableBody>
                   <tr>
                     <td>1</td>
                     <td>Product 1</td>
                     <td>$100</td>
                     <td>
-                      <MDBIcon icon='remove' />
+                      <lgBIcon icon='remove' />
                     </td>
                   </tr>
                   <tr>
@@ -314,7 +314,7 @@ class ModalExamplesPage extends Component {
                     <td>Product 2</td>
                     <td>1 340$</td>
                     <td>
-                      <MDBIcon icon='remove' />
+                      <lgBIcon icon='remove' />
                     </td>
                   </tr>
                   <tr>
@@ -322,7 +322,7 @@ class ModalExamplesPage extends Component {
                     <td>Product 3</td>
                     <td>30$</td>
                     <td>
-                      <MDBIcon icon='remove' />
+                      <lgBIcon icon='remove' />
                     </td>
                   </tr>
                   <tr>
@@ -335,32 +335,32 @@ class ModalExamplesPage extends Component {
                     </td>
                     <td />
                   </tr>
-                </MDBTableBody>
-              </MDBTable>
-            </MDBModalBody>
-            <MDBModalFooter className='justify-content-end'>
-              <MDBBtn color='primary' outline onClick={this.toggle(10)}>
+                </lgBTableBody>
+              </lgBTable>
+            </lgBModalBody>
+            <lgBModalFooter className='justify-content-end'>
+              <lgBBtn color='primary' outline onClick={this.toggle(10)}>
                 Close
-              </MDBBtn>
-              <MDBBtn color='primary' onClick={this.toggle(10)}>
+              </lgBBtn>
+              <lgBBtn color='primary' onClick={this.toggle(10)}>
                 Checkout
-              </MDBBtn>
-            </MDBModalFooter>
-          </MDBModal>
+              </lgBBtn>
+            </lgBModalFooter>
+          </lgBModal>
         </SectionContainer>
 
         <SectionContainer header='Push' flexCenter>
-          <MDBBtn onClick={this.toggle(7)}>Launch Modal</MDBBtn>
-          <MDBModal
+          <lgBBtn onClick={this.toggle(7)}>Launch Modal</lgBBtn>
+          <lgBModal
             className='modal-notify modal-info text-white'
             isOpen={modal7}
             toggle={this.toggle(7)}
           >
-            <MDBModalHeader className='text-center' titleClass='w-100' tag='p'>
+            <lgBModalHeader className='text-center' titleClass='w-100' tag='p'>
               Be always up to date
-            </MDBModalHeader>
-            <MDBModalBody className='text-center'>
-              <MDBIcon
+            </lgBModalHeader>
+            <lgBModalBody className='text-center'>
+              <lgBIcon
                 icon='bell'
                 size='4x'
                 className='animated rotateIn mb-4'
@@ -369,22 +369,22 @@ class ModalExamplesPage extends Component {
                 Do you want to receive the push notification about the newest
                 posts?
               </p>
-            </MDBModalBody>
-            <MDBModalFooter className='justify-content-center'>
-              <MDBBtn color='primary' onClick={this.toggle(7)}>
+            </lgBModalBody>
+            <lgBModalFooter className='justify-content-center'>
+              <lgBBtn color='primary' onClick={this.toggle(7)}>
                 Yes
-              </MDBBtn>
-              <MDBBtn color='primary' outline onClick={this.toggle(7)}>
+              </lgBBtn>
+              <lgBBtn color='primary' outline onClick={this.toggle(7)}>
                 No
-              </MDBBtn>
-            </MDBModalFooter>
-          </MDBModal>
+              </lgBBtn>
+            </lgBModalFooter>
+          </lgBModal>
         </SectionContainer>
 
         <SectionContainer header='YouTube' flexCenter>
-          <MDBBtn onClick={this.toggle(11)}>Launch Modal</MDBBtn>
-          <MDBModal size='lg' isOpen={modal11} toggle={this.toggle(11)}>
-            <MDBModalBody className='mb-0 p-0'>
+          <lgBBtn onClick={this.toggle(11)}>Launch Modal</lgBBtn>
+          <lgBModal size='lg' isOpen={modal11} toggle={this.toggle(11)}>
+            <lgBModalBody className='mb-0 p-0'>
               <div className='embed-responsive embed-responsive-16by9 z-depth-1-half'>
                 <iframe
                   title='youtube'
@@ -394,39 +394,39 @@ class ModalExamplesPage extends Component {
                   allowFullScreen
                 />
               </div>
-            </MDBModalBody>
-            <MDBModalFooter className='justify-content-center'>
+            </lgBModalBody>
+            <lgBModalFooter className='justify-content-center'>
               <span className='mr-4'>Spread the word!</span>
-              <MDBBtn tag='a' size='sm' floating social='fb'>
-                <MDBIcon fab icon='facebook' />
-              </MDBBtn>
-              <MDBBtn tag='a' size='sm' floating social='tw'>
-                <MDBIcon fab icon='twitter' />
-              </MDBBtn>
-              <MDBBtn tag='a' size='sm' floating social='gplus'>
-                <MDBIcon fab icon='google-plus' />
-              </MDBBtn>
-              <MDBBtn tag='a' size='sm' floating social='li'>
-                <MDBIcon fab icon='linkedin' />
-              </MDBBtn>
-              <MDBBtn
+              <lgBBtn tag='a' size='sm' floating social='fb'>
+                <lgBIcon fab icon='facebook' />
+              </lgBBtn>
+              <lgBBtn tag='a' size='sm' floating social='tw'>
+                <lgBIcon fab icon='twitter' />
+              </lgBBtn>
+              <lgBBtn tag='a' size='sm' floating social='gplus'>
+                <lgBIcon fab icon='google-plus' />
+              </lgBBtn>
+              <lgBBtn tag='a' size='sm' floating social='li'>
+                <lgBIcon fab icon='linkedin' />
+              </lgBBtn>
+              <lgBBtn
                 color='primary'
                 outline
                 rounded
-                size='md'
+                size='lg'
                 className='ml-4'
                 onClick={this.toggle(11)}
               >
                 Close
-              </MDBBtn>
-            </MDBModalFooter>
-          </MDBModal>
+              </lgBBtn>
+            </lgBModalFooter>
+          </lgBModal>
         </SectionContainer>
 
         <SectionContainer header='Vimeo' flexCenter>
-          <MDBBtn onClick={this.toggle(12)}>Launch Modal</MDBBtn>
-          <MDBModal size='lg' isOpen={modal12} toggle={this.toggle(12)}>
-            <MDBModalBody className='mb-0 p-0'>
+          <lgBBtn onClick={this.toggle(12)}>Launch Modal</lgBBtn>
+          <lgBModal size='lg' isOpen={modal12} toggle={this.toggle(12)}>
+            <lgBModalBody className='mb-0 p-0'>
               <div className='embed-responsive embed-responsive-16by9 z-depth-1-half'>
                 <iframe
                   title='vimeo'
@@ -436,35 +436,35 @@ class ModalExamplesPage extends Component {
                   allowFullScreen
                 />
               </div>
-            </MDBModalBody>
-            <MDBModalFooter className='justify-content-center'>
+            </lgBModalBody>
+            <lgBModalFooter className='justify-content-center'>
               <span className='mr-4'>Spread the word!</span>
-              <MDBBtn tag='a' size='sm' floating social='fb'>
-                <MDBIcon icon='facebook-f' fab />
-              </MDBBtn>
-              <MDBBtn tag='a' size='sm' floating social='tw'>
-                <MDBIcon icon='twitter' fab />
-              </MDBBtn>
-              <MDBBtn tag='a' size='sm' floating social='gplus'>
-                <MDBIcon icon='google-plus' fab />
-              </MDBBtn>
-              <MDBBtn tag='a' size='sm' floating social='li'>
-                <MDBIcon icon='linkedin' fab />
-              </MDBBtn>
-              <MDBBtn
+              <lgBBtn tag='a' size='sm' floating social='fb'>
+                <lgBIcon icon='facebook-f' fab />
+              </lgBBtn>
+              <lgBBtn tag='a' size='sm' floating social='tw'>
+                <lgBIcon icon='twitter' fab />
+              </lgBBtn>
+              <lgBBtn tag='a' size='sm' floating social='gplus'>
+                <lgBIcon icon='google-plus' fab />
+              </lgBBtn>
+              <lgBBtn tag='a' size='sm' floating social='li'>
+                <lgBIcon icon='linkedin' fab />
+              </lgBBtn>
+              <lgBBtn
                 color='primary'
                 outline
                 rounded
-                size='md'
+                size='lg'
                 className='ml-4'
                 onClick={this.toggle(12)}
               >
                 Close
-              </MDBBtn>
-            </MDBModalFooter>
-          </MDBModal>
+              </lgBBtn>
+            </lgBModalFooter>
+          </lgBModal>
         </SectionContainer>
-      </MDBContainer>
+      </lgBContainer>
     );
   }
 }

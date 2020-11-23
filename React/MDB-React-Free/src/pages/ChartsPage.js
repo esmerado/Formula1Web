@@ -11,7 +11,7 @@ import {
   Scatter,
   Chart
 } from 'react-chartjs-2';
-import { MDBContainer } from 'mdbreact';
+import { lgBContainer } from 'lgbreact';
 import DocsLink from '../components/docsLink';
 import SectionContainer from '../components/sectionContainer';
 
@@ -395,10 +395,10 @@ const scatterOptions = {
 
 const ChartsPage = () => {
   return (
-    <MDBContainer>
+    <lgBContainer>
       <DocsLink
         title='Charts'
-        href='https://mdbootstrap.com/docs/react/advanced/charts/'
+        href='https://lgbootstrap.com/docs/react/advanced/charts/'
       />
 
       <SectionContainer header='Line chart'>
@@ -436,7 +436,7 @@ const ChartsPage = () => {
       <SectionContainer header='Scatter chart'>
         <Scatter data={dataScatter} options={scatterOptions} />
       </SectionContainer>
-    </MDBContainer>
+    </lgBContainer>
   );
 };
 

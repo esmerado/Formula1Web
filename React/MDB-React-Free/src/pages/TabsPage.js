@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import {
-  MDBContainer,
-  MDBRow,
-  MDBCol,
-  MDBTabPane,
-  MDBTabContent,
-  MDBNav,
-  MDBNavItem,
-  MDBNavLink
-} from 'mdbreact';
+  lgBContainer,
+  lgBRow,
+  lgBCol,
+  lgBTabPane,
+  lgBTabContent,
+  lgBNav,
+  lgBNavItem,
+  lgBNavLink
+} from 'lgbreact';
 import DocsLink from '../components/docsLink';
 import SectionContainer from '../components/sectionContainer';
 
@@ -28,18 +28,18 @@ class TabsPage extends Component {
   render() {
     const { activeItem } = this.state;
     return (
-      <MDBContainer>
+      <lgBContainer>
         <DocsLink
           title='Tabs'
-          href='https://mdbootstrap.com/docs/react/components/tabs/'
+          href='https://lgbootstrap.com/docs/react/components/tabs/'
         />
-        <MDBContainer>
-          <MDBRow>
-            <MDBCol md='12'>
+        <lgBContainer>
+          <lgBRow>
+            <lgBCol lg='12'>
               <SectionContainer header='Basic example'>
-                <MDBNav className='nav-tabs'>
-                  <MDBNavItem>
-                    <MDBNavLink
+                <lgBNav className='nav-tabs'>
+                  <lgBNavItem>
+                    <lgBNavLink
                       link
                       to='#'
                       active={activeItem === '1'}
@@ -47,10 +47,10 @@ class TabsPage extends Component {
                       role='tab'
                     >
                       Home
-                    </MDBNavLink>
-                  </MDBNavItem>
-                  <MDBNavItem>
-                    <MDBNavLink
+                    </lgBNavLink>
+                  </lgBNavItem>
+                  <lgBNavItem>
+                    <lgBNavLink
                       link
                       to='#'
                       active={activeItem === '2'}
@@ -58,10 +58,10 @@ class TabsPage extends Component {
                       role='tab'
                     >
                       Profile
-                    </MDBNavLink>
-                  </MDBNavItem>
-                  <MDBNavItem>
-                    <MDBNavLink
+                    </lgBNavLink>
+                  </lgBNavItem>
+                  <lgBNavItem>
+                    <lgBNavLink
                       link
                       to='#'
                       active={activeItem === '3'}
@@ -69,11 +69,11 @@ class TabsPage extends Component {
                       role='tab'
                     >
                       Profile
-                    </MDBNavLink>
-                  </MDBNavItem>
-                </MDBNav>
-                <MDBTabContent activeItem={activeItem}>
-                  <MDBTabPane tabId='1' role='tabpanel'>
+                    </lgBNavLink>
+                  </lgBNavItem>
+                </lgBNav>
+                <lgBTabContent activeItem={activeItem}>
+                  <lgBTabPane tabId='1' role='tabpanel'>
                     <p className='mt-2'>
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                       Nihil odit magnam minima, soluta doloribus reiciendis
@@ -81,8 +81,8 @@ class TabsPage extends Component {
                       pariatur. Tempora, placeat ratione porro voluptate odit
                       minima.
                     </p>
-                  </MDBTabPane>
-                  <MDBTabPane tabId='2' role='tabpanel'>
+                  </lgBTabPane>
+                  <lgBTabPane tabId='2' role='tabpanel'>
                     <p className='mt-2'>
                       Quisquam aperiam, pariatur. Tempora, placeat ratione porro
                       voluptate odit minima. Lorem ipsum dolor sit amet,
@@ -97,8 +97,8 @@ class TabsPage extends Component {
                       soluta doloribus reiciendis molestiae placeat unde eos
                       molestias.
                     </p>
-                  </MDBTabPane>
-                  <MDBTabPane tabId='3' role='tabpanel'>
+                  </lgBTabPane>
+                  <lgBTabPane tabId='3' role='tabpanel'>
                     <p className='mt-2'>
                       Quisquam aperiam, pariatur. Tempora, placeat ratione porro
                       voluptate odit minima. Lorem ipsum dolor sit amet,
@@ -106,13 +106,13 @@ class TabsPage extends Component {
                       soluta doloribus reiciendis molestiae placeat unde eos
                       molestias.
                     </p>
-                  </MDBTabPane>
-                </MDBTabContent>
+                  </lgBTabPane>
+                </lgBTabContent>
               </SectionContainer>
-            </MDBCol>
-          </MDBRow>
-        </MDBContainer>
-      </MDBContainer>
+            </lgBCol>
+          </lgBRow>
+        </lgBContainer>
+      </lgBContainer>
     );
   }
 }

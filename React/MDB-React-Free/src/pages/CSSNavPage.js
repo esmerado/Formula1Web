@@ -1,26 +1,26 @@
 import React from 'react';
 import {
-  MDBEdgeHeader,
-  MDBContainer,
-  MDBRow,
-  MDBCol,
-  MDBJumbotron,
-  MDBIcon,
-  MDBAnimation
-} from 'mdbreact';
+  lgBEdgeHeader,
+  lgBContainer,
+  lgBRow,
+  lgBCol,
+  lgBJumbotron,
+  lgBIcon,
+  lgBAnimation
+} from 'lgbreact';
 import MenuLink from '../components/menuLink';
 
 const CSSPage = () => {
   return (
     <>
-    <MDBEdgeHeader color='indigo darken-3' className='sectionPage' />
-      <MDBAnimation type='zoomIn' duration='500ms'>
-        <MDBContainer>
-          <MDBRow>
-            <MDBCol md='8' className='mx-auto'>
-                <MDBJumbotron className='mt-3'>
+    <lgBEdgeHeader color='indigo darken-3' className='sectionPage' />
+      <lgBAnimation type='zoomIn' duration='500ms'>
+        <lgBContainer>
+          <lgBRow>
+            <lgBCol lg='8' className='mx-auto'>
+                <lgBJumbotron className='mt-3'>
                   <h1 className='text-center'>
-                    <MDBIcon icon='css3' brand className='indigo-text mr-w' />
+                    <lgBIcon icon='css3' brand className='indigo-text mr-w' />
                     CSS
                   </h1>
                   <ul className='list-unstyled example-components-list'>
@@ -32,11 +32,11 @@ const CSSPage = () => {
                     <MenuLink to='/css/masks' title='Masks' />
                     <MenuLink to='/css/masonry' title='Masonry Layout' />
                   </ul>
-                </MDBJumbotron>
-            </MDBCol>
-          </MDBRow>
-        </MDBContainer>
-      </MDBAnimation>
+                </lgBJumbotron>
+            </lgBCol>
+          </lgBRow>
+        </lgBContainer>
+      </lgBAnimation>
     </>
   );
 };

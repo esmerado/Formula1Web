@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
 import {
-  MDBContainer,
-  MDBRow,
-  MDBCol,
-  MDBInput,
-  MDBBtn,
-  MDBIcon,
-  MDBCard,
-  MDBCardBody,
-  MDBModal,
-  MDBModalBody,
-  MDBModalFooter
-} from 'mdbreact';
+  lgBContainer,
+  lgBRow,
+  lgBCol,
+  lgBInput,
+  lgBBtn,
+  lgBIcon,
+  lgBCard,
+  lgBCardBody,
+  lgBModal,
+  lgBModalBody,
+  lgBModalFooter
+} from 'lgbreact';
 import DocsLink from '../components/docsLink';
 import SectionContainer from '../components/sectionContainer';
 
@@ -31,19 +31,19 @@ class FormsPage extends Component {
     const { modal } = this.state;
 
     return (
-      <MDBContainer className='mt-5'>
+      <lgBContainer className='mt-5'>
         <DocsLink
           title='Forms'
-          href='https://mdbootstrap.com/docs/react/forms/basic/'
+          href='https://lgbootstrap.com/docs/react/forms/basic/'
         />
         <SectionContainer header='Sign in' noBorder>
-          <MDBRow>
-            <MDBCol md='6'>
+          <lgBRow>
+            <lgBCol lg='6'>
               <SectionContainer>
                 <form>
                   <p className='h5 text-center mb-4'>Sign in</p>
                   <div className='grey-text'>
-                    <MDBInput
+                    <lgBInput
                       label='Type your email'
                       icon='envelope'
                       group
@@ -52,7 +52,7 @@ class FormsPage extends Component {
                       error='wrong'
                       success='right'
                     />
-                    <MDBInput
+                    <lgBInput
                       label='Type your password'
                       icon='lock'
                       group
@@ -61,12 +61,12 @@ class FormsPage extends Component {
                     />
                   </div>
                   <div className='text-center'>
-                    <MDBBtn>Login</MDBBtn>
+                    <lgBBtn>Login</lgBBtn>
                   </div>
                 </form>
               </SectionContainer>
-            </MDBCol>
-            <MDBCol md='6'>
+            </lgBCol>
+            <lgBCol lg='6'>
               <SectionContainer>
                 <form>
                   <p className='h5 text-center mb-4'>Sign in</p>
@@ -100,17 +100,17 @@ class FormsPage extends Component {
                   </div>
                 </form>
               </SectionContainer>
-            </MDBCol>
-          </MDBRow>
+            </lgBCol>
+          </lgBRow>
         </SectionContainer>
 
         <SectionContainer header='Register' className='row' noBorder>
-          <MDBCol md='6'>
+          <lgBCol lg='6'>
             <SectionContainer>
               <form>
                 <p className='h5 text-center mb-4'>Sign up</p>
                 <div className='grey-text'>
-                  <MDBInput
+                  <lgBInput
                     label='Your name'
                     icon='user'
                     group
@@ -119,7 +119,7 @@ class FormsPage extends Component {
                     error='wrong'
                     success='right'
                   />
-                  <MDBInput
+                  <lgBInput
                     label='Your email'
                     icon='envelope'
                     group
@@ -128,7 +128,7 @@ class FormsPage extends Component {
                     error='wrong'
                     success='right'
                   />
-                  <MDBInput
+                  <lgBInput
                     label='Confirm your email'
                     icon='exclamation-triangle'
                     group
@@ -137,7 +137,7 @@ class FormsPage extends Component {
                     error='wrong'
                     success='right'
                   />
-                  <MDBInput
+                  <lgBInput
                     label='Your password'
                     icon='lock'
                     group
@@ -146,12 +146,12 @@ class FormsPage extends Component {
                   />
                 </div>
                 <div className='text-center'>
-                  <MDBBtn color='primary'>Register</MDBBtn>
+                  <lgBBtn color='primary'>Register</lgBBtn>
                 </div>
               </form>
             </SectionContainer>
-          </MDBCol>
-          <MDBCol md='6'>
+          </lgBCol>
+          <lgBCol lg='6'>
             <SectionContainer>
               <form>
                 <p className='h5 text-center mb-4'>Sign up</p>
@@ -209,16 +209,16 @@ class FormsPage extends Component {
                 </div>
               </form>
             </SectionContainer>
-          </MDBCol>
+          </lgBCol>
         </SectionContainer>
 
         <SectionContainer header='Subscription' className='row' noBorder>
-          <MDBCol md='6'>
+          <lgBCol lg='6'>
             <SectionContainer>
               <form>
                 <p className='h5 text-center mb-4'>Subscribe</p>
                 <div className='grey-text'>
-                  <MDBInput
+                  <lgBInput
                     label='Your name'
                     icon='user'
                     group
@@ -227,7 +227,7 @@ class FormsPage extends Component {
                     error='wrong'
                     success='right'
                   />
-                  <MDBInput
+                  <lgBInput
                     label='Your email'
                     icon='envelope'
                     group
@@ -238,14 +238,14 @@ class FormsPage extends Component {
                   />
                 </div>
                 <div className='text-center'>
-                  <MDBBtn outline color='info'>
-                    Send <MDBIcon icon='paper-plane' className='ml-1' />
-                  </MDBBtn>
+                  <lgBBtn outline color='info'>
+                    Send <lgBIcon icon='paper-plane' className='ml-1' />
+                  </lgBBtn>
                 </div>
               </form>
             </SectionContainer>
-          </MDBCol>
-          <MDBCol md='6'>
+          </lgBCol>
+          <lgBCol lg='6'>
             <SectionContainer>
               <form>
                 <p className='h5 text-center mb-4'>Subscribe</p>
@@ -275,21 +275,21 @@ class FormsPage extends Component {
                 <div className='text-center mt-4'>
                   <button className='btn btn-outline-purple' type='submit'>
                     Send
-                    <MDBIcon icon='paper-plane' className='ml-2' />
+                    <lgBIcon icon='paper-plane' className='ml-2' />
                   </button>
                 </div>
               </form>
             </SectionContainer>
-          </MDBCol>
+          </lgBCol>
         </SectionContainer>
 
         <SectionContainer header='Contact' className='row' noBorder>
-          <MDBCol md='6'>
+          <lgBCol lg='6'>
             <SectionContainer>
               <form>
                 <p className='h5 text-center mb-4'>Write to us</p>
                 <div className='grey-text'>
-                  <MDBInput
+                  <lgBInput
                     label='Your name'
                     icon='user'
                     group
@@ -298,7 +298,7 @@ class FormsPage extends Component {
                     error='wrong'
                     success='right'
                   />
-                  <MDBInput
+                  <lgBInput
                     label='Your email'
                     icon='envelope'
                     group
@@ -307,7 +307,7 @@ class FormsPage extends Component {
                     error='wrong'
                     success='right'
                   />
-                  <MDBInput
+                  <lgBInput
                     label='Subject'
                     icon='tag'
                     group
@@ -316,7 +316,7 @@ class FormsPage extends Component {
                     error='wrong'
                     success='right'
                   />
-                  <MDBInput
+                  <lgBInput
                     type='textarea'
                     rows='2'
                     label='Your message'
@@ -324,14 +324,14 @@ class FormsPage extends Component {
                   />
                 </div>
                 <div className='text-center'>
-                  <MDBBtn outline color='secondary'>
-                    Send <MDBIcon icon='paper-plane' className='ml-1' />
-                  </MDBBtn>
+                  <lgBBtn outline color='secondary'>
+                    Send <lgBIcon icon='paper-plane' className='ml-1' />
+                  </lgBBtn>
                 </div>
               </form>
             </SectionContainer>
-          </MDBCol>
-          <MDBCol md='6'>
+          </lgBCol>
+          <lgBCol lg='6'>
             <SectionContainer>
               <form>
                 <p className='h5 text-center mb-4'>Write to us</p>
@@ -383,22 +383,22 @@ class FormsPage extends Component {
                 <div className='text-center mt-4'>
                   <button className='btn btn-outline-warning' type='submit'>
                     Send
-                    <MDBIcon icon='paper-plane' className='ml-2' />
+                    <lgBIcon icon='paper-plane' className='ml-2' />
                   </button>
                 </div>
               </form>
             </SectionContainer>
-          </MDBCol>
+          </lgBCol>
         </SectionContainer>
 
         <SectionContainer header='Within a card' className='row' noBorder>
-          <MDBCol md='6'>
-            <MDBCard>
-              <MDBCardBody>
+          <lgBCol lg='6'>
+            <lgBCard>
+              <lgBCardBody>
                 <form>
                   <p className='h4 text-center py-4'>Sign up</p>
                   <div className='grey-text'>
-                    <MDBInput
+                    <lgBInput
                       label='Your name'
                       icon='user'
                       group
@@ -407,7 +407,7 @@ class FormsPage extends Component {
                       error='wrong'
                       success='right'
                     />
-                    <MDBInput
+                    <lgBInput
                       label='Your email'
                       icon='envelope'
                       group
@@ -416,7 +416,7 @@ class FormsPage extends Component {
                       error='wrong'
                       success='right'
                     />
-                    <MDBInput
+                    <lgBInput
                       label='Confirm your email'
                       icon='exclamation-triangle'
                       group
@@ -425,7 +425,7 @@ class FormsPage extends Component {
                       error='wrong'
                       success='right'
                     />
-                    <MDBInput
+                    <lgBInput
                       label='Your password'
                       icon='lock'
                       group
@@ -434,15 +434,15 @@ class FormsPage extends Component {
                     />
                   </div>
                   <div className='text-center py-4 mt-3'>
-                    <MDBBtn color='cyan' type='submit'>
+                    <lgBBtn color='cyan' type='submit'>
                       Register
-                    </MDBBtn>
+                    </lgBBtn>
                   </div>
                 </form>
-              </MDBCardBody>
-            </MDBCard>
-          </MDBCol>
-          <MDBCol md='6'>
+              </lgBCardBody>
+            </lgBCard>
+          </lgBCol>
+          <lgBCol lg='6'>
             <div className='card mx-xl-5'>
               <div className='card-body'>
                 <form>
@@ -473,35 +473,35 @@ class FormsPage extends Component {
                   <div className='text-center py-4 mt-3'>
                     <button className='btn btn-outline-purple' type='submit'>
                       Send
-                      <MDBIcon icon='paper-plane' className='ml-2' />
+                      <lgBIcon icon='paper-plane' className='ml-2' />
                     </button>
                   </div>
                 </form>
               </div>
             </div>
-          </MDBCol>
+          </lgBCol>
         </SectionContainer>
 
         <SectionContainer header='Within a modal' flexCenter>
-          <MDBBtn color='info' onClick={this.toggle}>
+          <lgBBtn color='info' onClick={this.toggle}>
             Launch modal contact form
-          </MDBBtn>
-          <MDBModal
+          </lgBBtn>
+          <lgBModal
             isOpen={modal}
             toggle={this.toggle}
             className='cascading-modal'
           >
             <div className='modal-header primary-color white-text'>
               <h4 className='title'>
-                <MDBIcon icon='pencil-alt' /> Contact form
+                <lgBIcon icon='pencil-alt' /> Contact form
               </h4>
               <button type='button' className='close' onClick={this.toggle}>
                 <span aria-hidden='true'>×</span>
               </button>
             </div>
-            <MDBModalBody>
+            <lgBModalBody>
               <form className='grey-text'>
-                <MDBInput
+                <lgBInput
                   size='sm'
                   label='Your name'
                   icon='user'
@@ -511,7 +511,7 @@ class FormsPage extends Component {
                   error='wrong'
                   success='right'
                 />
-                <MDBInput
+                <lgBInput
                   size='sm'
                   label='Your email'
                   icon='envelope'
@@ -521,7 +521,7 @@ class FormsPage extends Component {
                   error='wrong'
                   success='right'
                 />
-                <MDBInput
+                <lgBInput
                   size='sm'
                   label='Subject'
                   icon='tag'
@@ -531,7 +531,7 @@ class FormsPage extends Component {
                   error='wrong'
                   success='right'
                 />
-                <MDBInput
+                <lgBInput
                   size='sm'
                   type='textarea'
                   rows='2'
@@ -539,16 +539,16 @@ class FormsPage extends Component {
                   icon='pencil-alt'
                 />
               </form>
-            </MDBModalBody>
-            <MDBModalFooter>
-              <MDBBtn color='secondary' onClick={this.toggle}>
+            </lgBModalBody>
+            <lgBModalFooter>
+              <lgBBtn color='secondary' onClick={this.toggle}>
                 Close
-              </MDBBtn>
-              <MDBBtn color='primary'>Save changes</MDBBtn>
-            </MDBModalFooter>
-          </MDBModal>
+              </lgBBtn>
+              <lgBBtn color='primary'>Save changes</lgBBtn>
+            </lgBModalFooter>
+          </lgBModal>
         </SectionContainer>
-      </MDBContainer>
+      </lgBContainer>
     );
   }
 }

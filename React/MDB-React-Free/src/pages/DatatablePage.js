@@ -1,5 +1,5 @@
 import React from 'react';
-import { MDBDataTable, MDBContainer, MDBRow, MDBCol, MDBCard, MDBCardBody, MDBBadge } from 'mdbreact';
+import { lgBDataTable, lgBContainer, lgBRow, lgBCol, lgBCard, lgBCardBody, lgBBadge } from 'lgbreact';
 import DocsLink from '../components/docsLink';
 import SectionContainer from '../components/sectionContainer';
 
@@ -521,9 +521,9 @@ const DatatablePage = () => {
       ...data().rows.map((row, order) => ({
         ...row,
         badge: (
-          <MDBBadge pill color='primary' className='p-1 px-2' key={order} searchvalue={order}>
+          <lgBBadge pill color='primary' className='p-1 px-2' key={order} searchvalue={order}>
             ID: {order + 1}
-          </MDBBadge>
+          </lgBBadge>
         )
       }))
     ]
@@ -540,15 +540,15 @@ const DatatablePage = () => {
   };
 
   return (
-    <MDBContainer className='mt-3'>
-      <DocsLink title='Datatable' href='https://mdbootstrap.com/docs/react/tables/datatables/' />
+    <lgBContainer className='mt-3'>
+      <DocsLink title='Datatable' href='https://lgbootstrap.com/docs/react/tables/datatables/' />
 
-      <MDBRow className='py-3'>
-        <MDBCol md='12'>
+      <lgBRow className='py-3'>
+        <lgBCol lg='12'>
           <SectionContainer title='Basic example' noBorder>
-            <MDBCard>
-              <MDBCardBody>
-                <MDBDataTable
+            <lgBCard>
+              <lgBCardBody>
+                <lgBDataTable
                   striped
                   bordered
                   hover
@@ -559,18 +559,18 @@ const DatatablePage = () => {
                   materialSearch={true}
                   proSelect
                 />
-              </MDBCardBody>
-            </MDBCard>
+              </lgBCardBody>
+            </lgBCard>
           </SectionContainer>
-        </MDBCol>
-      </MDBRow>
+        </lgBCol>
+      </lgBRow>
 
-      <MDBRow className='py-3'>
-        <MDBCol md='12'>
+      <lgBRow className='py-3'>
+        <lgBCol lg='12'>
           <SectionContainer title='Basic example' noBorder>
-            <MDBCard>
-              <MDBCardBody>
-                <MDBDataTable
+            <lgBCard>
+              <lgBCardBody>
+                <lgBDataTable
                   striped
                   bordered
                   hover
@@ -580,42 +580,42 @@ const DatatablePage = () => {
                   data={data()}
                   materialSearch
                 />
-              </MDBCardBody>
-            </MDBCard>
+              </lgBCardBody>
+            </lgBCard>
           </SectionContainer>
-        </MDBCol>
-      </MDBRow>
+        </lgBCol>
+      </lgBRow>
 
-      <MDBRow className='py-3'>
-        <MDBCol md='12'>
+      <lgBRow className='py-3'>
+        <lgBCol lg='12'>
           <SectionContainer title='Without info' noBorder>
-            <MDBCard>
-              <MDBCardBody>
-                <MDBDataTable striped bordered hover info={false} data={data()} materialSearch />
-              </MDBCardBody>
-            </MDBCard>
+            <lgBCard>
+              <lgBCardBody>
+                <lgBDataTable striped bordered hover info={false} data={data()} materialSearch />
+              </lgBCardBody>
+            </lgBCard>
           </SectionContainer>
-        </MDBCol>
-      </MDBRow>
+        </lgBCol>
+      </lgBRow>
 
-      <MDBRow className='py-3'>
-        <MDBCol md='12'>
+      <lgBRow className='py-3'>
+        <lgBCol lg='12'>
           <SectionContainer title='Without sorting' noBorder>
-            <MDBCard>
-              <MDBCardBody>
-                <MDBDataTable striped bordered hover sortable={false} data={data()} materialSearch />
-              </MDBCardBody>
-            </MDBCard>
+            <lgBCard>
+              <lgBCardBody>
+                <lgBDataTable striped bordered hover sortable={false} data={data()} materialSearch />
+              </lgBCardBody>
+            </lgBCard>
           </SectionContainer>
-        </MDBCol>
-      </MDBRow>
+        </lgBCol>
+      </lgBRow>
 
-      <MDBRow className='py-3'>
-        <MDBCol md='12'>
+      <lgBRow className='py-3'>
+        <lgBCol lg='12'>
           <SectionContainer title='With sorting conponent' noBorder>
-            <MDBCard>
-              <MDBCardBody>
-                <MDBDataTable
+            <lgBCard>
+              <lgBCardBody>
+                <lgBDataTable
                   striped
                   bordered
                   hover
@@ -626,90 +626,90 @@ const DatatablePage = () => {
                   sortRows={['badge']}
                   materialSearch
                 />
-              </MDBCardBody>
-            </MDBCard>
+              </lgBCardBody>
+            </lgBCard>
           </SectionContainer>
-        </MDBCol>
-      </MDBRow>
+        </lgBCol>
+      </lgBRow>
 
-      <MDBRow className='py-3'>
-        <MDBCol md='12'>
+      <lgBRow className='py-3'>
+        <lgBCol lg='12'>
           <SectionContainer title='Initial order' noBorder>
-            <MDBCard>
-              <MDBCardBody>
-                <MDBDataTable striped bordered hover order={['age', 'desc']} data={data()} materialSearch />
-              </MDBCardBody>
-            </MDBCard>
+            <lgBCard>
+              <lgBCardBody>
+                <lgBDataTable striped bordered hover order={['age', 'desc']} data={data()} materialSearch />
+              </lgBCardBody>
+            </lgBCard>
           </SectionContainer>
-        </MDBCol>
-      </MDBRow>
+        </lgBCol>
+      </lgBRow>
 
-      <MDBRow className='py-3'>
-        <MDBCol md='12'>
+      <lgBRow className='py-3'>
+        <lgBCol lg='12'>
           <SectionContainer title='Without searching' noBorder>
-            <MDBCard>
-              <MDBCardBody>
-                <MDBDataTable striped bordered hover searching={false} data={data()} materialSearch />
-              </MDBCardBody>
-            </MDBCard>
+            <lgBCard>
+              <lgBCardBody>
+                <lgBDataTable striped bordered hover searching={false} data={data()} materialSearch />
+              </lgBCardBody>
+            </lgBCard>
           </SectionContainer>
-        </MDBCol>
-      </MDBRow>
+        </lgBCol>
+      </lgBRow>
 
-      <MDBRow className='py-3'>
-        <MDBCol md='12'>
+      <lgBRow className='py-3'>
+        <lgBCol lg='12'>
           <SectionContainer title='Bars positioning' noBorder>
-            <MDBCard>
-              <MDBCardBody>
-                <MDBDataTable barReverse striped bordered hover data={data()} materialSearch />
-              </MDBCardBody>
-            </MDBCard>
+            <lgBCard>
+              <lgBCardBody>
+                <lgBDataTable barReverse striped bordered hover data={data()} materialSearch />
+              </lgBCardBody>
+            </lgBCard>
           </SectionContainer>
-        </MDBCol>
-      </MDBRow>
+        </lgBCol>
+      </lgBRow>
 
-      <MDBRow className='py-3'>
-        <MDBCol md='12'>
+      <lgBRow className='py-3'>
+        <lgBCol lg='12'>
           <SectionContainer title='With scrollY property' noBorder>
-            <MDBCard>
-              <MDBCardBody>
-                <MDBDataTable striped bordered hover scrollY maxHeight='300px' data={data()} materialSearch />
-              </MDBCardBody>
-            </MDBCard>
+            <lgBCard>
+              <lgBCardBody>
+                <lgBDataTable striped bordered hover scrollY maxHeight='300px' data={data()} materialSearch />
+              </lgBCardBody>
+            </lgBCard>
           </SectionContainer>
-        </MDBCol>
-      </MDBRow>
+        </lgBCol>
+      </lgBRow>
 
-      <MDBRow className='py-3'>
-        <MDBCol md='12'>
+      <lgBRow className='py-3'>
+        <lgBCol lg='12'>
           <SectionContainer title='ScrollY dynamic height' noBorder>
-            <MDBCard>
-              <MDBCardBody>
-                <MDBDataTable striped bordered hover scrollY maxHeight='50vh' data={data()} materialSearch />
-              </MDBCardBody>
-            </MDBCard>
+            <lgBCard>
+              <lgBCardBody>
+                <lgBDataTable striped bordered hover scrollY maxHeight='50vh' data={data()} materialSearch />
+              </lgBCardBody>
+            </lgBCard>
           </SectionContainer>
-        </MDBCol>
-      </MDBRow>
+        </lgBCol>
+      </lgBRow>
 
-      <MDBRow className='py-3'>
-        <MDBCol md='12'>
+      <lgBRow className='py-3'>
+        <lgBCol lg='12'>
           <SectionContainer title='With scrollX property' noBorder>
-            <MDBCard>
-              <MDBCardBody>
-                <MDBDataTable striped bordered hover scrollX data={widerData} materialSearch />
-              </MDBCardBody>
-            </MDBCard>
+            <lgBCard>
+              <lgBCardBody>
+                <lgBDataTable striped bordered hover scrollX data={widerData} materialSearch />
+              </lgBCardBody>
+            </lgBCard>
           </SectionContainer>
-        </MDBCol>
-      </MDBRow>
+        </lgBCol>
+      </lgBRow>
 
-      <MDBRow className='py-3'>
-        <MDBCol md='12'>
+      <lgBRow className='py-3'>
+        <lgBCol lg='12'>
           <SectionContainer title='With scrollX and scrollY properties' noBorder>
-            <MDBCard>
-              <MDBCardBody>
-                <MDBDataTable
+            <lgBCard>
+              <lgBCardBody>
+                <lgBDataTable
                   striped
                   bordered
                   hover
@@ -719,24 +719,24 @@ const DatatablePage = () => {
                   data={widerData}
                   materialSearch
                 />
-              </MDBCardBody>
-            </MDBCard>
+              </lgBCardBody>
+            </lgBCard>
           </SectionContainer>
-        </MDBCol>
-      </MDBRow>
+        </lgBCol>
+      </lgBRow>
 
-      <MDBRow className='py-3'>
-        <MDBCol md='12'>
+      <lgBRow className='py-3'>
+        <lgBCol lg='12'>
           <SectionContainer title='Without pagination' noBorder>
-            <MDBCard>
-              <MDBCardBody>
-                <MDBDataTable striped bordered hover paging={false} data={data()} materialSearch />
-              </MDBCardBody>
-            </MDBCard>
+            <lgBCard>
+              <lgBCardBody>
+                <lgBDataTable striped bordered hover paging={false} data={data()} materialSearch />
+              </lgBCardBody>
+            </lgBCard>
           </SectionContainer>
-        </MDBCol>
-      </MDBRow>
-    </MDBContainer>
+        </lgBCol>
+      </lgBRow>
+    </lgBContainer>
   );
 };
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { MDBContainer, MDBRow, MDBCol, MDBAnimation } from 'mdbreact';
+import { lgBContainer, lgBRow, lgBCol, lgBAnimation } from 'lgbreact';
 import DocsLink from '../components/docsLink';
 import SectionContainer from '../components/sectionContainer';
 
@@ -161,11 +161,11 @@ class AnimationPage extends React.Component {
     const increment = () => {
       count++;
       if (count < 6 || count % 5 === 0) {
-        console.log(`The MDB logo bounced ${count} times.`);
+        console.log(`The lgB logo bounced ${count} times.`);
       }
     };
     return (
-      <MDBAnimation
+      <lgBAnimation
         className='my-5'
         type={animations}
         infinite={infinite}
@@ -175,11 +175,11 @@ class AnimationPage extends React.Component {
         onAnimationIteration={increment}
       >
         <img
-          alt='MDBootstrap logo'
+          alt='lgBootstrap logo'
           className='img-fluid'
-          src='https://mdbootstrap.com/img/logo/mdb-transparent-250px.png'
+          src='https://lgbootstrap.com/img/logo/lgb-transparent-250px.png'
         />
-      </MDBAnimation>
+      </lgBAnimation>
     );
   };
   componentDidMount() {
@@ -232,18 +232,18 @@ class AnimationPage extends React.Component {
   render() {
     const { animation, delay, duration, loop, selects } = this.state;
     return (
-      <MDBContainer className='mt-5'>
+      <lgBContainer className='mt-5'>
         <DocsLink
           title='Animations'
-          href='https://mdbootstrap.com/docs/react/css/animations/'
+          href='https://lgbootstrap.com/docs/react/css/animations/'
         />
 
         <SectionContainer header='Examples & customizations'>
-          <MDBRow className='d-flex align-items-center justify-content-center'>
+          <lgBRow className='d-flex align-items-center justify-content-center'>
             {animation}
-          </MDBRow>
-          <MDBRow className='d-flex justify-content-center'>
-            <MDBCol md='2'>
+          </lgBRow>
+          <lgBRow className='d-flex justify-content-center'>
+            <lgBCol lg='2'>
               <label htmlFor='animationLoops'>Loops</label>
               <select
                 className='browser-default custom-select mb-4'
@@ -257,8 +257,8 @@ class AnimationPage extends React.Component {
                   </option>
                 ))}
               </select>
-            </MDBCol>
-            <MDBCol md='2'>
+            </lgBCol>
+            <lgBCol lg='2'>
               <label htmlFor='animationDuration'>Duration</label>
               <select
                 className='browser-default custom-select mb-4'
@@ -272,8 +272,8 @@ class AnimationPage extends React.Component {
                   </option>
                 ))}
               </select>
-            </MDBCol>
-            <MDBCol md='2'>
+            </lgBCol>
+            <lgBCol lg='2'>
               <label htmlFor='animationDelay'>Delay</label>
               <select
                 className='browser-default custom-select my-0'
@@ -287,13 +287,13 @@ class AnimationPage extends React.Component {
                   </option>
                 ))}
               </select>
-            </MDBCol>
-          </MDBRow>
+            </lgBCol>
+          </lgBRow>
 
           <hr className='my-4' />
 
-          <MDBRow className='d-flex flex-wrap'>
-            <MDBCol md='6'>
+          <lgBRow className='d-flex flex-wrap'>
+            <lgBCol lg='6'>
               <select
                 className='browser-default custom-select my-4'
                 onChange={this.getValueOfSelect}
@@ -305,8 +305,8 @@ class AnimationPage extends React.Component {
                   </option>
                 ))}
               </select>
-            </MDBCol>
-            <MDBCol md='6'>
+            </lgBCol>
+            <lgBCol lg='6'>
               <select
                 className='browser-default custom-select my-4'
                 onChange={this.getValueOfSelect}
@@ -318,8 +318,8 @@ class AnimationPage extends React.Component {
                   </option>
                 ))}
               </select>
-            </MDBCol>
-            <MDBCol md='6'>
+            </lgBCol>
+            <lgBCol lg='6'>
               <select
                 className='browser-default custom-select my-4'
                 onChange={this.getValueOfSelect}
@@ -331,8 +331,8 @@ class AnimationPage extends React.Component {
                   </option>
                 ))}
               </select>
-            </MDBCol>
-            <MDBCol md='6'>
+            </lgBCol>
+            <lgBCol lg='6'>
               <select
                 className='browser-default custom-select my-4'
                 onChange={this.getValueOfSelect}
@@ -344,8 +344,8 @@ class AnimationPage extends React.Component {
                   </option>
                 ))}
               </select>
-            </MDBCol>
-            <MDBCol md='6'>
+            </lgBCol>
+            <lgBCol lg='6'>
               <select
                 className='browser-default custom-select my-4'
                 onChange={this.getValueOfSelect}
@@ -357,8 +357,8 @@ class AnimationPage extends React.Component {
                   </option>
                 ))}
               </select>
-            </MDBCol>
-            <MDBCol md='6'>
+            </lgBCol>
+            <lgBCol lg='6'>
               <select
                 className='browser-default custom-select my-4'
                 onChange={this.getValueOfSelect}
@@ -370,8 +370,8 @@ class AnimationPage extends React.Component {
                   </option>
                 ))}
               </select>
-            </MDBCol>
-            <MDBCol md='6'>
+            </lgBCol>
+            <lgBCol lg='6'>
               <select
                 className='browser-default custom-select my-4'
                 onChange={this.getValueOfSelect}
@@ -383,8 +383,8 @@ class AnimationPage extends React.Component {
                   </option>
                 ))}
               </select>
-            </MDBCol>
-            <MDBCol md='6'>
+            </lgBCol>
+            <lgBCol lg='6'>
               <select
                 className='browser-default custom-select my-4'
                 onChange={this.getValueOfSelect}
@@ -396,8 +396,8 @@ class AnimationPage extends React.Component {
                   </option>
                 ))}
               </select>
-            </MDBCol>
-            <MDBCol md='6'>
+            </lgBCol>
+            <lgBCol lg='6'>
               <select
                 className='browser-default custom-select my-4'
                 onChange={this.getValueOfSelect}
@@ -409,8 +409,8 @@ class AnimationPage extends React.Component {
                   </option>
                 ))}
               </select>
-            </MDBCol>
-            <MDBCol md='6'>
+            </lgBCol>
+            <lgBCol lg='6'>
               <select
                 className='browser-default custom-select my-4'
                 onChange={this.getValueOfSelect}
@@ -422,8 +422,8 @@ class AnimationPage extends React.Component {
                   </option>
                 ))}
               </select>
-            </MDBCol>
-            <MDBCol md='6'>
+            </lgBCol>
+            <lgBCol lg='6'>
               <select
                 className='browser-default custom-select my-4'
                 onChange={this.getValueOfSelect}
@@ -435,8 +435,8 @@ class AnimationPage extends React.Component {
                   </option>
                 ))}
               </select>
-            </MDBCol>
-            <MDBCol md='6'>
+            </lgBCol>
+            <lgBCol lg='6'>
               <select
                 className='browser-default custom-select my-4'
                 onChange={this.getValueOfSelect}
@@ -448,8 +448,8 @@ class AnimationPage extends React.Component {
                   </option>
                 ))}
               </select>
-            </MDBCol>
-            <MDBCol md='6'>
+            </lgBCol>
+            <lgBCol lg='6'>
               <select
                 className='browser-default custom-select my-4'
                 onChange={this.getValueOfSelect}
@@ -461,8 +461,8 @@ class AnimationPage extends React.Component {
                   </option>
                 ))}
               </select>
-            </MDBCol>
-            <MDBCol md='6'>
+            </lgBCol>
+            <lgBCol lg='6'>
               <select
                 className='browser-default custom-select my-4'
                 onChange={this.getValueOfSelect}
@@ -474,64 +474,64 @@ class AnimationPage extends React.Component {
                   </option>
                 ))}
               </select>
-            </MDBCol>
-          </MDBRow>
+            </lgBCol>
+          </lgBRow>
         </SectionContainer>
 
         <hr style={{ opacity: '0', marginBottom: '50px' }} />
 
         <SectionContainer header='Reveal animations when scrolling'>
-          <MDBRow className='mb-4'>
-            <MDBCol md='4'>
-              <MDBAnimation reveal type='bounceInUp'>
+          <lgBRow className='mb-4'>
+            <lgBCol lg='4'>
+              <lgBAnimation reveal type='bounceInUp'>
                 <img
                   alt='A view on mountains.'
                   className='img-fluid'
-                  src='https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(31).jpg'
+                  src='https://lgbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(31).jpg'
                 />
-              </MDBAnimation>
-            </MDBCol>
-            <MDBCol md='4'>
-              <MDBAnimation reveal type='tada'>
+              </lgBAnimation>
+            </lgBCol>
+            <lgBCol lg='4'>
+              <lgBAnimation reveal type='tada'>
                 <img
                   alt='Cottage on a lake surrounded by mountains.'
                   className='img-fluid'
-                  src='https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(32).jpg'
+                  src='https://lgbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(32).jpg'
                 />
-              </MDBAnimation>
-            </MDBCol>
-            <MDBCol md='4'>
-              <MDBAnimation reveal type='fadeInLeft'>
+              </lgBAnimation>
+            </lgBCol>
+            <lgBCol lg='4'>
+              <lgBAnimation reveal type='fadeInLeft'>
                 <img
                   alt='A boat floating on an ocean'
                   className='img-fluid'
-                  src='https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg'
+                  src='https://lgbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg'
                 />
-              </MDBAnimation>
-            </MDBCol>
-          </MDBRow>
+              </lgBAnimation>
+            </lgBCol>
+          </lgBRow>
 
-          <MDBRow className='mb-4'>
-            <MDBCol md='4'>
-              <MDBAnimation reveal type='fadeInRight'>
+          <lgBRow className='mb-4'>
+            <lgBCol lg='4'>
+              <lgBAnimation reveal type='fadeInRight'>
                 <img
                   alt='View on mountains from mountain top.'
                   className='img-fluid'
-                  src='https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg'
+                  src='https://lgbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg'
                 />
-              </MDBAnimation>
-            </MDBCol>
-            <MDBCol md='4'>
-              <MDBAnimation reveal type='fadeInRight'>
+              </lgBAnimation>
+            </lgBCol>
+            <lgBCol lg='4'>
+              <lgBAnimation reveal type='fadeInRight'>
                 <img
                   alt='Rocky shore in the morning.'
                   className='img-fluid'
-                  src='https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(14).jpg'
+                  src='https://lgbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(14).jpg'
                 />
-              </MDBAnimation>
-            </MDBCol>
-            <MDBCol md='4'>
-              <MDBAnimation
+              </lgBAnimation>
+            </lgBCol>
+            <lgBCol lg='4'>
+              <lgBAnimation
                 reveal
                 type='fadeInUp'
                 onAnimationEnd={() =>
@@ -541,13 +541,13 @@ class AnimationPage extends React.Component {
                 <img
                   alt='Rocky shore in the morning.'
                   className='img-fluid'
-                  src='https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg'
+                  src='https://lgbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg'
                 />
-              </MDBAnimation>
-            </MDBCol>
-          </MDBRow>
+              </lgBAnimation>
+            </lgBCol>
+          </lgBRow>
         </SectionContainer>
-      </MDBContainer>
+      </lgBContainer>
     );
   }
 }

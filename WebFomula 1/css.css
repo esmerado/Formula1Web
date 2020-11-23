@@ -58,7 +58,7 @@ nav div ul li p{
     background-color: black;
     border-color: black;
     padding: 2px;
-    width: 80%;
+    width: 90%;
     font-family: formula1basic;
 
 }
@@ -69,7 +69,7 @@ nav div ul li p{
 /*Al igual que antes pero con el segundo b*/
 .imglogin{
     height: 22px;
-    width: 30px;
+    width: auto;
     margin-right: -7px;
     margin-top: -2px;
     margin-left: -5px;
@@ -343,7 +343,7 @@ table tr td img{
 }
 
 
-.flink:link, {
+.flink:link {
     font-family: formula1;
     text-decoration: none;
     color: #ffffff;
@@ -382,3 +382,66 @@ table tr td img{
     font-family: formula1basic;
     src: url(../Fuentes/Formula1-Regular.ttf);
 }
+
+/*IndexCalendario*/
+
+/*MAIN*/
+.calendario2{
+    font-family: formula1;
+    border: solid black;
+    border-top: 0px;
+    border-left: 0px;
+    border-width: 5px;
+    border-right: 0px;
+}
+
+.move{
+    text-align: center;
+    animation-name: calendario2;
+    animation-duration: 4s;
+    animation-delay: -2s;
+}
+
+@keyframes calendario2 {
+    0%   {left:0px; top:0px;}
+    25%  {left:500px; top:0px;}
+    50%  {left:900px; top:000px;}
+    75%  {left:0px; top:0px;}
+    100% {left:0px; top:0px;}
+  }
+
+
+.bordecalendario{
+    border: solid black;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.pcalendario{
+    font-family: formula1;
+    color: #3C3C3C;
+    opacity: 80%;
+
+}
+
+.fechacalendario{
+    font-family: formula1;
+    font-size: 150%;
+    padding: 2px;
+    margin-top: -20px;
+    margin-bottom: -2px;
+}
+
+.mesescalendario{
+    font-family: formula1;
+    color: #fff;
+    border: solid black;
+    width: 20%;
+    text-align: center;
+    border-radius: 10px;
+    background-color: black;
+}
+

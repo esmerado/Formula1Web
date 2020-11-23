@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { MDBContainer, MDBRating } from 'mdbreact';
+import { lgBContainer, lgBRating } from 'lgbreact';
 import DocsLink from '../components/docsLink';
 import SectionContainer from '../components/sectionContainer';
 
@@ -24,22 +24,22 @@ const RatingPage = () => {
   ]);
 
   return (
-    <MDBContainer>
+    <lgBContainer>
       <DocsLink
         title='Rating'
-        href='https://mdbootstrap.com/plugins/react/rating/'
+        href='https://lgbootstrap.com/plugins/react/rating/'
       />
 
       <SectionContainer header='Basic Example' flexCenter>
-        <MDBRating data={basic} />
+        <lgBRating data={basic} />
       </SectionContainer>
 
       <SectionContainer header='Empty five stars' flexCenter>
-        <MDBRating iconSize='2x' iconRegular />
+        <lgBRating iconSize='2x' iconRegular />
       </SectionContainer>
 
       <SectionContainer header='Faces rating' flexCenter>
-        <MDBRating
+        <lgBRating
           iconFaces
           fillClassName='black-text'
           iconSize='2x'
@@ -48,11 +48,11 @@ const RatingPage = () => {
       </SectionContainer>
 
       <SectionContainer header='Fill color on hover' flexCenter>
-        <MDBRating iconSize='2x' fillColors />
+        <lgBRating iconSize='2x' fillColors />
       </SectionContainer>
 
       <SectionContainer header='Custom fill colors on hover' flexCenter>
-        <MDBRating
+        <lgBRating
           iconFaces
           iconSize='2x'
           iconRegular
@@ -67,9 +67,9 @@ const RatingPage = () => {
       </SectionContainer>
 
       <SectionContainer header='With feedback' flexCenter>
-        <MDBRating iconSize='2x' feedback submitHandler={e => console.log(e)} />
+        <lgBRating iconSize='2x' feedback submitHandler={e => console.log(e)} />
       </SectionContainer>
-    </MDBContainer>
+    </lgBContainer>
   );
 };
 

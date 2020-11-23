@@ -1,96 +1,96 @@
 import React from 'react';
-import { MDBMask, MDBView, MDBContainer, MDBRow, MDBCol } from 'mdbreact';
+import { lgBMask, lgBView, lgBContainer, lgBRow, lgBCol } from 'lgbreact';
 import DocsLink from '../components/docsLink';
 import SectionContainer from '../components/sectionContainer';
 
 const MasksPage = () => {
   return (
-    <MDBContainer className='mt-5'>
+    <lgBContainer className='mt-5'>
       <DocsLink
         title='Masks'
-        href='https://mdbootstrap.com/docs/react/css/masks/'
+        href='https://lgbootstrap.com/docs/react/css/masks/'
       />
 
-      <MDBRow className='justify-content-center'>
-        <MDBCol md='8'>
+      <lgBRow className='justify-content-center'>
+        <lgBCol lg='8'>
           <SectionContainer header='pattern={1}'>
-            <MDBView>
+            <lgBView>
               <img
-                src='https://mdbootstrap.com/img/Photos/Others/nature-sm.jpg'
+                src='https://lgbootstrap.com/img/Photos/Others/nature-sm.jpg'
                 className='img-fluid'
                 alt=''
               />
-              <MDBMask pattern={1} className='flex-center' />
-            </MDBView>
+              <lgBMask pattern={1} className='flex-center' />
+            </lgBView>
           </SectionContainer>
-        </MDBCol>
+        </lgBCol>
 
-        <MDBCol md='8'>
+        <lgBCol lg='8'>
           <SectionContainer header='pattern={2}'>
-            <MDBView>
+            <lgBView>
               <img
-                src='https://mdbootstrap.com/img/Photos/Others/nature-sm.jpg'
+                src='https://lgbootstrap.com/img/Photos/Others/nature-sm.jpg'
                 className='img-fluid'
                 alt=''
               />
-              <MDBMask pattern={2} className='flex-center' />
-            </MDBView>
+              <lgBMask pattern={2} className='flex-center' />
+            </lgBView>
           </SectionContainer>
-        </MDBCol>
+        </lgBCol>
 
-        <MDBCol md='8'>
+        <lgBCol lg='8'>
           <SectionContainer header='pattern={3}, waves'>
-            <MDBView waves>
+            <lgBView waves>
               <img
-                src='https://mdbootstrap.com/img/Photos/Others/nature-sm.jpg'
+                src='https://lgbootstrap.com/img/Photos/Others/nature-sm.jpg'
                 className='img-fluid'
                 alt=''
               />
-              <MDBMask pattern={3} className='flex-center' />
-            </MDBView>
+              <lgBMask pattern={3} className='flex-center' />
+            </lgBView>
           </SectionContainer>
-        </MDBCol>
+        </lgBCol>
 
-        <MDBCol md='8'>
+        <lgBCol lg='8'>
           <SectionContainer header='overlay="blue-light"'>
-            <MDBView>
+            <lgBView>
               <img
-                src='https://mdbootstrap.com/img/Photos/Others/nature-sm.jpg'
+                src='https://lgbootstrap.com/img/Photos/Others/nature-sm.jpg'
                 className='img-fluid'
                 alt=''
               />
-              <MDBMask className='flex-center' overlay='blue-light' />
-            </MDBView>
+              <lgBMask className='flex-center' overlay='blue-light' />
+            </lgBView>
           </SectionContainer>
-        </MDBCol>
+        </lgBCol>
 
-        <MDBCol md='8'>
+        <lgBCol lg='8'>
           <SectionContainer header='overlay="blue-strong"'>
-            <MDBView>
+            <lgBView>
               <img
-                src='https://mdbootstrap.com/img/Photos/Others/nature-sm.jpg'
+                src='https://lgbootstrap.com/img/Photos/Others/nature-sm.jpg'
                 className='img-fluid'
                 alt=''
               />
-              <MDBMask className='flex-center' overlay='blue-strong' />
-            </MDBView>
+              <lgBMask className='flex-center' overlay='blue-strong' />
+            </lgBView>
           </SectionContainer>
-        </MDBCol>
+        </lgBCol>
 
-        <MDBCol md='8'>
+        <lgBCol lg='8'>
           <SectionContainer header='overlay="blue-slight", waves'>
-            <MDBView waves>
+            <lgBView waves>
               <img
-                src='https://mdbootstrap.com/img/Photos/Others/nature-sm.jpg'
+                src='https://lgbootstrap.com/img/Photos/Others/nature-sm.jpg'
                 className='img-fluid'
                 alt=''
               />
-              <MDBMask className='flex-center' overlay='blue-slight' />
-            </MDBView>
+              <lgBMask className='flex-center' overlay='blue-slight' />
+            </lgBView>
           </SectionContainer>
-        </MDBCol>
-      </MDBRow>
-    </MDBContainer>
+        </lgBCol>
+      </lgBRow>
+    </lgBContainer>
   );
 };
 

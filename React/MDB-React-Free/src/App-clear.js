@@ -1,28 +1,28 @@
 import React, { Component } from "react";
-import { MDBBtn, MDBCol, MDBContainer, MDBRow } from "mdbreact";
+import { lgBBtn, lgBCol, lgBContainer, lgBRow } from "lgbreact";
 import "./index.css";
 import logo from "./logo.png";
 
 class App extends Component {
   render() {
     return (
-      <MDBContainer>
-        <MDBRow center style={{ height: "100vh" }}>
-          <MDBCol middle={true} md="6" className="text-center">
+      <lgBContainer>
+        <lgBRow center style={{ height: "100vh" }}>
+          <lgBCol middle={true} lg="6" className="text-center">
             <img src={logo} alt="logo" style={{ width: "10rem" }} />
-            <h1 className="text-white">Welcome to Your MDB React App</h1>
+            <h1 className="text-white">Welcome to Your lgB React App</h1>
             <p className="mb-2 text-white">
               The application is configured and ready to import our components.
             </p>
-            <MDBBtn
-              href="https://mdbootstrap.com/docs/react/"
+            <lgBBtn
+              href="https://lgbootstrap.com/docs/react/"
               target="blank"
               color="light-blue"
             >
               <strong>Check out our docs!</strong>
-            </MDBBtn>
-          </MDBCol>
-          <MDBCol middle={true} md="6" className="text-center">
+            </lgBBtn>
+          </lgBCol>
+          <lgBCol middle={true} lg="6" className="text-center">
             <div className="d-flex mt-5">
               <div className="text-center">
                 <h2 className="h1 text-poppy-red">BLACK NOVEMBER SURPRISE!</h2>
@@ -39,16 +39,16 @@ class App extends Component {
                     target="_blank"
                     type="button"
                     className="btn btn-danger btn-rounded btn-lg text-white bg-poppy-red"
-                    href="https://mdbootstrap.com/sale/"
+                    href="https://lgbootstrap.com/sale/"
                   >
                     <i className="fas fa-cart-arrow-down"></i> CLAIM OFFER
                   </a>
                 </p>
               </div>
             </div>
-          </MDBCol>
-        </MDBRow>
-      </MDBContainer>
+          </lgBCol>
+        </lgBRow>
+      </lgBContainer>
     );
   }
 }
