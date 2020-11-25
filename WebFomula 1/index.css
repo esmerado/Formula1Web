@@ -239,11 +239,11 @@ h4{
 /*FUENTES*/
 @font-face {
     font-family: formula1;
-    src: url(../Fuentes/Formula1-Bold.ttf);
+    src: url(./Formula1-Bold.ttf);
 
 }
 
 @font-face{
     font-family: formula1basic;
-    src: url(../Fuentes/Formula1-Regular.ttf);
+    src: url(./Formula1-Regular.ttf);
 }
