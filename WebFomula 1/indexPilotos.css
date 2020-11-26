@@ -1,0 +1,303 @@
+/*Header*/
+
+header{
+    height: 70px;
+}
+
+.logo1{
+    height: 120px;
+    margin-top: -27px;
+}
+
+.boton1{
+    background-color: #000000;
+    margin-top: 15px;
+    border-color: #000000;
+    text-decoration: none;
+    border-radius: 6px;
+    height: 35px;
+    text-align: center;
+}
+
+.boton1:hover{
+    background-color: #3C3C3C;
+    transition: all .4s ease;
+    transform:scale(1.1);
+}
+
+.boton1img{
+    height: 20px;
+    text-decoration: none;
+}
+
+.boton1txt:link, .boton1txt:visited, .boton1txt::after {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: formula1basic;
+}
+
+.boton2{
+    background-color: #000000;
+    margin-top: 15px;
+    border-color: #000000;
+    text-decoration: none;
+    border-radius: 6px;
+    height: 35px;
+    text-align: center;
+}
+
+.boton2:hover{
+    background-color: #ffffff;
+    transition: all .4s ease;
+    color: #000;;
+}
+
+.boton2txt:link, .boton2txt:visited, .boton2txt::after {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: formula1basic;
+}
+
+.boton2txt:hover{
+    color: #000000;
+}
+
+
+/*NAV*/
+
+.logo2{
+    width: 85%;
+}
+
+li{
+    font-family: formula1basic;
+    padding: 10px;
+}
+
+/*FOOTER*/
+
+h4{
+    color: #fff;
+    font-family: formula1;
+}
+
+.copy{
+    color: #fff;
+}
+
+.dimensiones{
+    margin-top: 20px;
+}
+
+.ftable{
+    margin-top: -10px;
+    border-style: none;
+    border-color: #3C3C3C;
+}
+
+.flink{
+    font-family: formula1;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+.flink:link, .flink:active, .flink:visited {
+    font-family: formula1;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+table tr td img{
+    width: 50px;
+    padding: 10px;
+}
+
+/*FORMULARIO DEL FOOTER*/
+
+.box input[type = "text"],.box input[type = "password"]{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #ffffff;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+.box input[type = "text"]:focus,.box input[type = "password"]:focus{
+    width: 280px;
+    border-color: #fff;
+}
+.box input[type = "submit"]{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #ffff;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+.box input[type = "submit"]:hover{
+    background: #2ecc71;
+}
+
+/*Registrarse*/
+
+.degradado{
+    background-image: linear-gradient(to bottom right, #000000, #3C3C3C);
+    height: 350px;
+}
+
+.boxd{
+    margin-top: 30px;
+}
+
+.iniciars{
+    color: #ffffff;
+    font-family: formula1;
+}
+
+
+/*FUENTES*/
+@font-face {
+    font-family: formula1;
+    src: url(./Fuentes/Formula1-Bold.ttf);
+
+}
+
+@font-face{
+    font-family: formula1basic;
+    src: url(./Fuentes/Formula1-Regular.ttf);
+}
+
+/*PILOTOS*/
+    
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+  }
+  
+.title {
+    color: grey;
+    font-size: 15px;
+    font-family: formula1basic;
+}
+  
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+  
+.a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+  
+.button:hover{
+    opacity: 0.7;
+    color: white;
+}
+
+.a:hover{
+    opacity: 0.7;
+    color: black;
+}
+
+.h1{
+    font-family: formula1basic;
+}
+
+.escudo{
+    height: 130px;
+    margin-left: 20px;
+    margin-top: -20px;
+    margin-bottom: -30px;
+}
+
+h3{
+    font-family: formula1;
+}
+
+.escudor{
+    height: 130px;
+    width: 130px;
+    margin-left: 75px;
+    margin-top: -20px;
+    margin-bottom: -30px;
+}
+
+.escudora{
+    height: 120px;
+    width: 120px;
+    margin-left: 75px;
+    margin-top: -20px;
+    margin-bottom: -20px;
+    padding: 20px;
+}
+
+.escudorre{
+    height: 146px;
+    width: 160px;
+    margin-left: 60px;
+    margin-top: -20px;
+    margin-bottom: -20px;
+    padding: 20px;
+}
+
+.escudof{
+    height: auto;
+    width: 120px;
+    margin-left: 80px;
+    margin-top: -20px;
+    margin-bottom: -20px;
+    padding: 20px;
+}
+
+.escudoma{
+    height: 150;
+    width: 150px;
+    margin-left: 55px;
+    margin-bottom: -43px;
+}
+
+.seccionh1{
+    font-family: formula1;
+    font-size: auto;
+    border: solid #000000;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-top-right-radius: 40px;
+    border-width: 10px;
+}
+
+.escudoral{
+    height: 110px;
+}
+
+.escudow{
+    height: 110px;
+    width: 200px;
+    margin-left: 40px;
+}

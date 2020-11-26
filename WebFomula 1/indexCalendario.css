@@ -183,9 +183,9 @@ table tr td img{
 
 /*CALENDARIO*/
 
-section h1{
+.seccionh1{
     font-family: formula1;
-    font-size: 70px;
+    font-size: auto;
     border: solid #000000;
     border-bottom: 0px;
     border-left: 0px;
@@ -193,7 +193,6 @@ section h1{
     border-width: 10px;
 }
 
-/*CALENDARIO*/
 
 .t1{
     color: #FF0000;
@@ -201,13 +200,12 @@ section h1{
 }
 
 .img1{
-    width: 370px;
+    width: 100%;
     
 }
 
 .img2{
-    height: 200px;
-    width: 370px;
+    width: 100%;
 }
 
 .t2{
@@ -241,5 +239,6 @@ section h1{
 
 .b:hover{
     opacity: 100%;
+    border-color: red   ;
 
 }
